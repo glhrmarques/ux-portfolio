@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #333;
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
-    <h1 class="text-3xl font-bold">Work in progress...</h1>
+<body class="m-0 p-0 bg-gray-100 font-sans">
+    <nav id="nav" class="bg-white px-20 py-4">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+            <a href="#" class="text-gray-800 no-underline font-medium hover:underline">Início</a>
+            <div class="flex gap-8 items-center">
+                <a href="https://linkedin.com" target="_blank" class="text-gray-800 no-underline font-medium hover:underline">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="text-gray-800 no-underline font-medium hover:underline">GitHub</a>
+                <a href="#contato" class="text-gray-800 no-underline font-medium hover:underline">Contato</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="flex flex-col justify-center items-center min-h-[calc(100vh-80px)]">
+        <h1 id="first-title" class="text-2xl text-gray-800 text-center">Awesome title</h1>
+        <h1 id= "second-title" class="text-4xl font-bold text-gray-800 text-center">Work in progress...</h1>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
 
