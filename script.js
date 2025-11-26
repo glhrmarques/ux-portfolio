@@ -3,7 +3,7 @@ const elements = {
 };
 
 const flags = {
-    nav: false,
+    nav: true,
 };
 
 function hideElement() {
