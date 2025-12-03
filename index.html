@@ -8,12 +8,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portfolio - Guilherme Marques</title>
+    <style>
+        .animated-underline {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid rgb(212, 212, 212); /* neutral-300 */
+            cursor: pointer;
+        }
+        
+        .animated-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: rgb(10, 10, 10); /* neutral-950 */
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .animated-underline:hover::after {
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="m-0 p-0 bg-neutral-0 h-screen overflow-hidden" style="font-family: 'Inter', sans-serif;">
     <!-- Hero Section -->
     <section class="h-[50vh] flex items-center justify-center px-10">
         <div class="max-w-2xl mx-auto">
-            <h1 class="text-2xl font-medium mb-8">Hello, I'm Guilherme Marques</h1>
+            <h1 class="text-3xl font-medium mb-8">Hello, I'm Guilherme Marques</h1>
             
             <p class="text-[16px] leading-relaxed mb-3">
                 I’m a Senior Product Designer with 4 years of experience in Brazil, focused on delivering high-craft, high-conversion digital experiences. As an AI deployer, I implement AI-driven solutions that strengthen product quality and amplify user outcomes.
@@ -23,14 +47,14 @@
                 Across startups, B2B and B2C solutions, mobile apps, and marketplaces, I’ve helped teams shape intuitive, high-performing digital products that grow with their users.
             </p>
             
-            <div class="flex items-center gap-8">
-                <button class="px-6 py-2 border-2 border-gray-300 rounded-2xl text-lg hover:border-gray-400 transition-colors">
+            <div class="flex items-center gap-8 justify-between">
+                <a href="mailto:gmarques.pd@gmail.com" class="px-6 py-2 bg-neutral-950 text-white rounded-2xl text-lg hover:bg-neutral-700 transition-colors cursor-pointer">
                     Send email
-                </button>
+                </a>
                 
-                <div class="flex gap-6 text-lg">
-                    <a href="https://github.com/glhrmarques" class="hover:underline">GitHub</a>
-                    <a href="https://www.linkedin.com/in/glhrmarques/" class="hover:underline">Linkedin</a>
+                <div class="flex gap-10 text-lg">
+                    <a href="https://github.com/glhrmarques" target="_blank" class="animated-underline">GitHub</a>
+                    <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" class="animated-underline">Linkedin</a>
                 </div>
             </div>
         </div>
