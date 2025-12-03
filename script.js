@@ -8,30 +8,13 @@ const projectsContainer = document.querySelector("#projects-container");
 
 projects.forEach((project) => {
     const card = document.createElement("div");
-    card.className = "flex flex-col justify-center items-center flex-1";
+    card.className = "relative overflow-hidden bg-gradient-to-b from-red-600 via-red-500 to-orange-400 h-full rounded-2xl";
 
     const image = document.createElement("img");
     image.src = project.image;
     image.alt = project.name;
-    image.className = "w-full aspect-[4/5] object-cover mb-4";
-
-    const textWrapper = document.createElement("div");
-    textWrapper.className = "flex flex-row justify-between w-full px-4";
-
-    const title = document.createElement("p");
-    title.className = "project-title text-gray-900 text-lg";
-    title.textContent = project.name;
-
-    const type = document.createElement("p");
-    type.className = "skill-type text-gray-900 text-lg";
-    type.textContent = project.type;
-    
-
-    textWrapper.appendChild(title);
-    textWrapper.appendChild(type);
+    image.className = "w-full h-full object-cover";
 
     card.appendChild(image);
-    card.appendChild(textWrapper);
-    
-    projectsContainer.appendChild(card)
+    projectsContainer.appendChild(card);
 })

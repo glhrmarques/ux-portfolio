@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Portfolio</title>
+    <title>Portfolio - Guilherme Marques</title>
 </head>
-<body class="m-0 p-0 bg-gray-100 font-sans">
-    <nav id="nav" class="bg-white px-20 py-4">
-        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
-            <a href="#" class="text-gray-800 no-underline font-medium hover:underline">Início</a>
-            <div class="flex gap-8 items-center">
-                <a href="https://linkedin.com" target="_blank" class="text-gray-800 no-underline font-medium hover:underline">LinkedIn</a>
-                <a href="https://github.com" target="_blank" class="text-gray-800 no-underline font-medium hover:underline">GitHub</a>
-                <a href="#contato" class="text-gray-800 no-underline font-medium hover:underline">Contato</a>
+<body class="m-0 p-0 bg-neutral-0 h-screen overflow-hidden" style="font-family: 'Inter', sans-serif;">
+    <!-- Hero Section -->
+    <section class="h-[50vh] flex items-center justify-center px-10">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-2xl font-medium mb-8">Hello, I'm Guilherme Marques</h1>
+            
+            <p class="text-[16px] leading-relaxed mb-3">
+                I’m a Senior Product Designer with 4 years of experience in Brazil, focused on delivering high-craft, high-conversion digital experiences. As an AI deployer, I implement AI-driven solutions that strengthen product quality and amplify user outcomes.
+            </p>
+            
+            <p class="text-[16px] leading-relaxed mb-8">
+                Across startups, B2B and B2C solutions, mobile apps, and marketplaces, I’ve helped teams shape intuitive, high-performing digital products that grow with their users.
+            </p>
+            
+            <div class="flex items-center gap-8">
+                <button class="px-6 py-2 border-2 border-gray-300 rounded-2xl text-lg hover:border-gray-400 transition-colors">
+                    Send email
+                </button>
+                
+                <div class="flex gap-6 text-lg">
+                    <a href="https://github.com/glhrmarques" class="hover:underline">GitHub</a>
+                    <a href="https://www.linkedin.com/in/glhrmarques/" class="hover:underline">Linkedin</a>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="flex flex-col justify-center items-center min-h-[calc(60vh-80px)] gap-3">
-        <h1 id="first-title" class="text-2xl text-gray-800 text-center">This is the portfolio of</h1>
-        <h1 id= "second-title" class="text-5xl font-bold text-gray-800 text-center">Guilherme Marques</h1>
-    </div>
-    
-    <div class="px-20 pb-20">
-        <div id="projects-container" class="flex flex-row gap-4 justify-center items-start flex-wrap max-w-screen-xl mx-auto">
+    </section>
+
+    <!-- Projects Section -->
+    <section class="h-[50vh] px-2 pb-4">
+        <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 h-full">
+            <!-- Projects will be inserted here by JavaScript -->
         </div>
-    </div>
-    
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
