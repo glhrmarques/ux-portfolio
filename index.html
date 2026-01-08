@@ -31,23 +31,28 @@
         .animated-underline:hover::after {
             width: 100%;
         }
+
+        .menu-item.active {
+            background-color: #6c757d;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body class="bg-[#f8f9fa] h-screen overflow-hidden flex items-center justify-center" style="font-family: 'Inter', sans-serif;">
     <!-- Hero Section -->
     <section class="flex items-start px-10 mx-auto max-w-7xl w-full gap-[64px]">
-        <div class="w-[30%]">
+        <nav class="w-[30%]">
             <div class="flex flex-col gap-8 text-[14px]">
                 <h1 class="text-[18px] font-medium px-[12px]">Guilherme Marques</h1>
                 <div>
-                    <p class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Rep Sales app</p>
-                    <p class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Seller platform</p>
-                    <p class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">B2B Marketplace</p>
+                    <p data-menu-item="rep-sales" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Rep Sales app</p>
+                    <p data-menu-item="seller-platform" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Seller platform</p>
+                    <p data-menu-item="marketplace" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">B2B Marketplace</p>
                 </div>
                 <div>
                     <p class="text-[12px] px-[12px] py-[8px] text-[#6c757d]">Side projects</p>
-                    <p class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Project one</p>
-                    <p class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Project two</p>
+                    <p data-menu-item="project-one" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Project one</p>
+                    <p data-menu-item="project-two" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Project two</p>
                 </div>
                 <div class="flex flex-col">
                     <p class="text-[12px] px-[12px] py-[8px] text-[#6c757d]">Contact</p>
@@ -55,13 +60,15 @@
                     <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" class="text-[14px] py-[8px] px-[12px] hover:bg-[#6c757d] rounded-[12px] cursor-pointer transition-colors">Linkedin</a>
                 </div>                
             </div>
-        </div>
+        </nav>
         <div class="w-[70%]">            
-            <p class="text-[16px]  mb-3">
-                I'm a Product Designer based in Brazil with 4 years of experience delivering high-craft, high-conversion digital experiences. Alongside my design work, I've recently expanded into AI deployment and computer science studies.
-            </p>
+            <div id="content-container" class="transition-opacity duration-300">
+                <p class="text-[16px] mb-3">
+                    I'm a Product Designer based in Brazil with 4 years of experience delivering high-craft, high-conversion digital experiences. Alongside my design work, I've recently expanded into AI deployment and computer science studies.
+                </p>
 
-            <div class="flex items-center gap-8 justify-between">                
+                <div class="flex items-center gap-8 justify-between">                
+                </div>
             </div>
         </div>
     </section>
