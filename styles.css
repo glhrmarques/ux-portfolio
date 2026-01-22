@@ -1,0 +1,37 @@
+.animated-underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(212, 212, 212); /* neutral-300 */
+    cursor: pointer;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(10, 10, 10); /* neutral-950 */
+    transition: width 0.3s ease-in-out;
+}
+
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+.menu-item.active {
+    background-color: #E3E3E9;
+    font-weight: 500;
+}
+
+/* Hide scrollbar but keep scrolling functionality */
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
