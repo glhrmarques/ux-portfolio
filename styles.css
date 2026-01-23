@@ -35,3 +35,24 @@
 .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }
+
+/* Image Comparison Slider */
+img-comparison-slider {
+    --divider-width: 2px;
+    --divider-color: #0a0a0a;
+    --handle-opacity: 1;
+    --handle-opacity-active: 1;
+}
+
+img-comparison-slider::part(handle) {
+    background: #0a0a0a;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+img-comparison-slider::part(arrow) {
+    color: #ffffff;
+}
+
