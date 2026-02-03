@@ -3,6 +3,79 @@ const FEATURE_FLAGS = {
     showSideProjects: false  // Set to true to display side projects publicly
 };
 
+// Mobile Menu Toggle
+function setupMobileMenu() {
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const backdrop = document.getElementById('menu-backdrop');
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    function openMenu() {
+        sidebar.classList.add('mobile-open');
+        sidebar.classList.remove('mobile-closing');
+        backdrop.classList.remove('hidden');
+        backdrop.classList.add('visible');
+        hamburgerBtn.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+        sidebar.classList.add('mobile-closing');
+        backdrop.classList.remove('visible');
+        hamburgerBtn.classList.remove('open');
+        document.body.style.overflow = '';
+        
+        // Wait for animation to complete before hiding
+        setTimeout(() => {
+            sidebar.classList.remove('mobile-open', 'mobile-closing');
+            backdrop.classList.add('hidden');
+        }, 300);
+    }
+    
+    // Toggle menu on hamburger click
+    hamburgerBtn?.addEventListener('click', () => {
+        if (sidebar.classList.contains('mobile-open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+    
+    // Close menu on close button click
+    closeMenuBtn?.addEventListener('click', closeMenu);
+    
+    // Close menu on backdrop click
+    backdrop?.addEventListener('click', closeMenu);
+    
+    // Close menu when clicking a menu item on mobile
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth < 768 && sidebar.classList.contains('mobile-open')) {
+                closeMenu();
+            }
+        });
+    });
+    
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('mobile-open')) {
+            closeMenu();
+        }
+    });
+    
+    // Handle window resize - close menu if resizing to desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && sidebar.classList.contains('mobile-open')) {
+            sidebar.classList.remove('mobile-open', 'mobile-closing');
+            backdrop.classList.add('hidden');
+            backdrop.classList.remove('visible');
+            hamburgerBtn.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
 // Cache for loaded content to avoid repeated fetches
 const contentCache = {};
 
@@ -92,6 +165,9 @@ document.addEventListener('DOMContentLoaded', async function() {
     if (sideProjectsSection && !FEATURE_FLAGS.showSideProjects) {
         sideProjectsSection.style.display = 'none';
     }
+
+    // Setup mobile menu
+    setupMobileMenu();
 
     const menuItems = document.querySelectorAll('.menu-item');
     const contentContainer = document.getElementById('content-container');
