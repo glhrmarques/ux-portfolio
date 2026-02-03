@@ -1,3 +1,25 @@
-<h2 class="text-[40px] font-semibold mb-4">Seller Platform</h2>
+<h2 class="text-[40px] font-semibold mb-4">Seller Platform built with AI</h2>
 
-<p class="text-[16px] mb-4">An intuitive platform for sellers to manage their inventory, track sales, and communicate with customers seamlessly.</p>
+<form id="password-form" class="flex flex-col gap-4 max-w-[320px]">
+    <div class="flex flex-col gap-2">
+        <label for="password-input" class="text-[14px] font-medium">Password</label>
+        <input 
+            type="password" 
+            id="password-input" 
+            placeholder="Enter password"
+            class="px-4 py-3 border border-[#E3E3E9] rounded-[12px] text-[14px] focus:outline-none focus:border-[#0a0a0a] transition-colors"
+            required
+        />
+    </div>
+    <button 
+        type="submit" 
+        class="px-4 py-3 bg-[#0a0a0a] text-white text-[14px] font-medium rounded-[12px] hover:bg-[#333] transition-colors cursor-pointer"
+    >
+        Submit
+    </button>
+</form>
+
+<!-- Toast Notification -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-3 bg-[#dc2626] text-white text-[14px] rounded-[12px] transition-all duration-300" style="display: none;">
+    Wrong password
+</div>

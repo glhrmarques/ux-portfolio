@@ -1,3 +1,8 @@
+// Feature Flags
+const FEATURE_FLAGS = {
+    showSideProjects: false  // Set to true to display side projects publicly
+};
+
 // Cache for loaded content to avoid repeated fetches
 const contentCache = {};
 
@@ -32,6 +37,29 @@ function applyStaggeredAnimation(container) {
     container.classList.add('stagger-fade-in');
 }
 
+// Setup password form handler (for protected pages)
+function setupPasswordForm() {
+    const form = document.getElementById('password-form');
+    const toast = document.getElementById('toast');
+    
+    if (form && toast) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show toast
+            toast.style.display = 'block';
+            
+            // Hide toast after 3 seconds
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+            
+            // Clear the input
+            document.getElementById('password-input').value = '';
+        });
+    }
+}
+
 // Intersection Observer for scroll-triggered animations
 function setupScrollReveal() {
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
@@ -59,6 +87,12 @@ function setupScrollReveal() {
 
 // Initialize menu functionality
 document.addEventListener('DOMContentLoaded', async function() {
+    // Apply feature flags
+    const sideProjectsSection = document.getElementById('side-projects');
+    if (sideProjectsSection && !FEATURE_FLAGS.showSideProjects) {
+        sideProjectsSection.style.display = 'none';
+    }
+
     const menuItems = document.querySelectorAll('.menu-item');
     const contentContainer = document.getElementById('content-container');
     
@@ -71,6 +105,9 @@ document.addEventListener('DOMContentLoaded', async function() {
     
     // Setup scroll reveal for initial content
     setupScrollReveal();
+    
+    // Setup password form if present
+    setupPasswordForm();
     
     // Add click event to all menu items
     menuItems.forEach(item => {
@@ -95,6 +132,8 @@ document.addEventListener('DOMContentLoaded', async function() {
                 applyStaggeredAnimation(contentContainer);
                 // Setup scroll reveal for new content
                 setupScrollReveal();
+                // Setup password form if present
+                setupPasswordForm();
                 // Scroll to top of content area when switching
                 contentContainer.parentElement.scrollTop = 0;
             }, 200);
