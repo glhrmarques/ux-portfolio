@@ -22,6 +22,41 @@ async function loadContent(menuId) {
     }
 }
 
+// Apply staggered fade-in animation to content elements
+function applyStaggeredAnimation(container) {
+    // Remove animation class to reset
+    container.classList.remove('stagger-fade-in');
+    // Force reflow to restart animation
+    void container.offsetWidth;
+    // Add staggered animation class
+    container.classList.add('stagger-fade-in');
+}
+
+// Intersection Observer for scroll-triggered animations
+function setupScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    
+    if (revealElements.length === 0) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                // Optionally stop observing after reveal
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15, // Trigger when 15% of element is visible
+        rootMargin: '0px 0px -50px 0px' // Trigger slightly before fully in view
+    });
+    
+    revealElements.forEach(el => {
+        el.classList.remove('revealed'); // Reset state
+        observer.observe(el);
+    });
+}
+
 // Initialize menu functionality
 document.addEventListener('DOMContentLoaded', async function() {
     const menuItems = document.querySelectorAll('.menu-item');
@@ -30,6 +65,12 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Load default content (first menu item)
     const defaultMenuId = menuItems[0].getAttribute('data-menu-item');
     contentContainer.innerHTML = await loadContent(defaultMenuId);
+    
+    // Apply staggered fade-in animation to initial content
+    applyStaggeredAnimation(contentContainer);
+    
+    // Setup scroll reveal for initial content
+    setupScrollReveal();
     
     // Add click event to all menu items
     menuItems.forEach(item => {
@@ -42,15 +83,21 @@ document.addEventListener('DOMContentLoaded', async function() {
             // Add active class to clicked item
             this.classList.add('active');
             
-            // Update content with fade effect
+            // Fade out current content
             contentContainer.style.opacity = '0';
+            contentContainer.style.transform = 'translateY(12px)';
             
             setTimeout(async () => {
                 contentContainer.innerHTML = await loadContent(menuId);
-                contentContainer.style.opacity = '1';
+                // Reset inline styles and apply staggered animation
+                contentContainer.style.opacity = '';
+                contentContainer.style.transform = '';
+                applyStaggeredAnimation(contentContainer);
+                // Setup scroll reveal for new content
+                setupScrollReveal();
                 // Scroll to top of content area when switching
                 contentContainer.parentElement.scrollTop = 0;
-            }, 150);
+            }, 200);
         });
     });
 });
