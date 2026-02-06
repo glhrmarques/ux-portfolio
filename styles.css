@@ -22,8 +22,34 @@
 }
 
 .menu-item.active {
-    background-color: #E3E3E9;
+    background-color: #EEEEEE;
     font-weight: 500;
+}
+
+/* Image block with semi-transparent background image */
+.image-bg {
+    position: relative;
+    border-radius: 32px;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.image-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/color4bg_2026-02-06 (1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    border-radius: 32px;
+    z-index: 0;
+}
+
+.image-bg > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Hide scrollbar but keep scrolling functionality */
