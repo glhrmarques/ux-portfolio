@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 // Setup password form if present
                 setupPasswordForm();
                 // Scroll to top of content area when switching
-                contentContainer.parentElement.scrollTop = 0;
+                contentContainer.closest('article').scrollTop = 0;
             }, 200);
         });
     });
