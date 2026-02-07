@@ -1,25 +1,21 @@
-<h2 class="text-[40px] font-semibold mb-4">Seller Platform built with AI</h2>
-
-<form id="password-form" class="flex flex-col gap-4 max-w-[320px]">
-    <div class="flex flex-col gap-2">
-        <label for="password-input" class="text-[14px] font-medium">Password</label>
-        <input 
-            type="password" 
-            id="password-input" 
-            placeholder="Enter password"
-            class="px-4 py-3 border border-[#E3E3E9] rounded-[12px] text-[14px] focus:outline-none focus:border-[#0a0a0a] transition-colors"
-            required
-        />
+<div class="flex flex-col mb-8">
+    <h2 class="text-[32px] md:text-[40px] font-bold mb-1 leading-[120%] mb-4">AI-Powered routing for B2B consultants</h2>
+    <div class="flex items-center gap-3 text-[14px] md:text-[18px] text-gray-500">
+        <a href="https://inventa.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 md:gap-3 hover:underline"><img src="images/company-logo-inventa.png" alt="Inventa logo" class="w-6 h-6 md:w-8 md:h-8 rounded object-cover flex-shrink-0">Inventa</a> <span class="mx-1">·</span>Product Designer, 2022 - Current
     </div>
-    <button 
-        type="submit" 
-        class="px-4 py-3 bg-[#0a0a0a] text-white text-[14px] font-medium rounded-[12px] hover:bg-[#333] transition-colors cursor-pointer"
-    >
-        Submit
-    </button>
-</form>
+</div>
 
-<!-- Toast Notification -->
-<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-3 bg-[#dc2626] text-white text-[14px] rounded-[12px] transition-all duration-300" style="display: none;">
-    Wrong password
+<p class="text-[16px] mb-8">Working alongside a backend engineer, I operated as a <span class="font-semibold">designer engineer</span>, shaping both the user experience and the AI-driven decision logic behind route optimization.</p>
+
+<div class="image-bg bg-pink flex justify-center items-center">
+    <video src="images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoplay loop muted playsinline class="max-w-full object-contain mx-auto img-max-h rounded-[16px]"></video>
+</div>
+
+<div class="flex flex-col items-start mt-16 mb-8">
+    <p class="text-[16px] text-gray-500 mb-6">Password required</p>
+    <form id="password-form" class="flex items-center gap-3 w-full max-w-sm">
+        <input id="password-input" type="password" placeholder="Enter password" class="flex-1 px-4 py-3 text-[14px] border border-gray-300 rounded-xl focus:outline-none focus:border-gray-400 bg-white">
+        <button type="submit" class="px-5 py-3 text-[14px] font-medium bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-colors">Submit</button>
+    </form>
+    <p id="toast" class="text-[14px] text-red-500 mt-4" style="display: none;">Incorrect password. Try again.</p>
 </div>

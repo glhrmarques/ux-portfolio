@@ -38,13 +38,20 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('images/color4bg_2026-02-06 (1).png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.6;
     border-radius: 32px;
     z-index: 0;
+}
+
+.image-bg.bg-pink::before {
+    background-image: url('images/color4bg_pink.png');
+}
+
+.image-bg.bg-blue::before {
+    background-image: url('images/color4bg_2026-02-06 (1).png');
 }
 
 .image-bg > * {
