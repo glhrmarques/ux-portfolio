@@ -222,3 +222,35 @@ img-comparison-slider::part(arrow) {
     transform: translateY(-6px) rotate(-45deg);
 }
 
+/* Timeline illustration */
+.timeline-illustration {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 0;
+    background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent calc(16.66% - 1px),
+        #f0f0f0 calc(16.66% - 1px),
+        #f0f0f0 16.66%
+    );
+    border-radius: 8px;
+}
+
+.timeline-row {
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+
+.timeline-bar {
+    height: 100%;
+    background: #fae2ef;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+
