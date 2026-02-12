@@ -32,13 +32,13 @@
     
     <!-- Mobile: individual containers, Desktop: paired containers -->
     <div class="flex flex-col gap-[24px] md:hidden">
-        <div class="image-bg bg-blue flex justify-center">
+        <div class="bg-[#C9E5FF flex justify-center">
             <img src="images/sales-app-clients.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll img-max-h">
         </div>
         <div class="image-bg bg-blue flex justify-center">
             <img src="images/sales-app-catalog.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll img-max-h">
         </div>
-        <div class="image-bg bg-blue flex justify-center">
+        <div class="bg-[#C9E5FF flex justify-center">
             <img src="images/sales-app-checkout.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll img-max-h">
         </div>
         <div class="image-bg bg-blue flex justify-center">
@@ -46,15 +46,19 @@
         </div>
     </div>
     
-    <!-- Desktop: paired containers -->
-    <div class="hidden md:grid grid-cols-2 gap-[24px]">
-        <div class="image-bg bg-blue col-span-2 flex justify-center items-center gap-[80px]">
-            <img src="images/sales-app-clients.avif" alt="Rep Sales app screenshot" class="max-w-[40%] object-contain reveal-on-scroll img-max-h">
-            <img src="images/sales-app-catalog.avif" alt="Rep Sales app screenshot" class="max-w-[40%] object-contain reveal-on-scroll reveal-delay-1 img-max-h">
+    <!-- Desktop: 5-column grid with 2-3 / 3-2 layout -->
+    <div class="hidden md:grid grid-cols-5 gap-4">
+        <div class="md:col-span-2 bg-[#C9E5FF] rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
+            <img src="images/sales-app-clients.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll img-max-h">
         </div>
-        <div class="image-bg bg-blue col-span-2 flex justify-center items-center gap-[80px]">
-            <img src="images/sales-app-checkout.avif" alt="Rep Sales app screenshot" class="max-w-[40%] object-contain reveal-on-scroll img-max-h">
-            <img src="images/sales-app-payment.avif" alt="Rep Sales app screenshot" class="max-w-[40%] object-contain reveal-on-scroll reveal-delay-1 img-max-h">
+        <div class="md:col-span-3 image-bg bg-blue rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
+            <img src="images/sales-app-catalog.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll reveal-delay-1 img-max-h">
+        </div>
+        <div class="md:col-span-3 image-bg bg-blue rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
+            <img src="images/sales-app-checkout.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll img-max-h">
+        </div>
+        <div class="md:col-span-2 bg-[#C9E5FF] rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
+            <img src="images/sales-app-payment.avif" alt="Rep Sales app screenshot" class="max-w-full object-contain reveal-on-scroll reveal-delay-1 img-max-h">
         </div>
     </div>
     
