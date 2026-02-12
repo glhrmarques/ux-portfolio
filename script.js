@@ -172,9 +172,18 @@ document.addEventListener('DOMContentLoaded', async function() {
     const menuItems = document.querySelectorAll('.menu-item');
     const contentContainer = document.getElementById('content-container');
     
-    // Load default content (first menu item)
-    const defaultMenuId = menuItems[0].getAttribute('data-menu-item');
+    // Load content based on URL hash, or default to first menu item
+    const hash = window.location.hash.replace('#', '');
+    const validMenuIds = Array.from(menuItems).map(mi => mi.getAttribute('data-menu-item'));
+    const defaultMenuId = (hash && validMenuIds.includes(hash)) ? hash : menuItems[0].getAttribute('data-menu-item');
     contentContainer.innerHTML = await loadContent(defaultMenuId);
+
+    // Set the correct menu item as active
+    if (hash && validMenuIds.includes(hash)) {
+        menuItems.forEach(mi => mi.classList.remove('active'));
+        const activeItem = document.querySelector(`[data-menu-item="${hash}"]`);
+        if (activeItem) activeItem.classList.add('active');
+    }
     
     // Apply staggered fade-in animation to initial content
     applyStaggeredAnimation(contentContainer);
