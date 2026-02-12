@@ -14,7 +14,7 @@
 </head>
 <body class="bg-[#FFFFFF] text-gray-800 overflow-hidden flex items-center justify-center" style="font-family: 'Inter', sans-serif; height: 100vh; height: 100dvh;">
     <!-- Mobile Header (visible only on small screens) -->
-    <header class="fixed top-0 left-0 right-0 h-16 bg-white z-50 px-6 flex items-center justify-between md:hidden">
+    <header class="fixed top-0 left-0 right-0 h-16 bg-white/50 backdrop-blur-sm z-50 px-6 flex items-center justify-between md:hidden">
         <h1 class="text-[18px] font-medium">Guilherme Marques</h1>
         <button id="hamburger-btn" class="p-2" aria-label="Toggle menu">
             <!-- Hamburger icon (3 lines) -->
@@ -33,35 +33,35 @@
         <!-- Two Column Layout -->
         <section class="flex w-full h-full">
             <!-- Sidebar Navigation (Fixed Width) -->
-            <aside id="sidebar" class="hidden md:flex fixed md:relative inset-0 md:inset-auto z-40 md:z-auto w-full md:w-[280px] flex-shrink-0 h-full px-10 pt-24 pb-10 md:py-32 flex-col items-start justify-start bg-[#FFFFFF]">
+            <aside id="sidebar" class="hidden md:flex fixed md:relative inset-0 md:inset-auto z-40 md:z-auto w-full md:w-[280px] flex-shrink-0 h-full px-6 pt-24 pb-10 md:px-10 md:py-32 flex-col items-start justify-start bg-[#FFFFFF]">
                 <!-- Mobile Close Button -->
                 <button id="close-menu-btn" class="absolute top-5 right-6 p-2 md:hidden" aria-label="Close menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
-                <nav class="flex flex-col gap-8 text-[14px] w-full">
+                <nav class="flex flex-col gap-8 md:gap-8 w-full">
                     <h1 class="text-[18px] font-medium px-[12px] hidden md:block">Guilherme Marques</h1>
                     
                     <!-- Main Projects -->
                     <div>
-                        <p data-menu-item="seller-platform" class="menu-item active text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">AI Routing</p>
-                        <p data-menu-item="rep-sales" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Rep Sales app</p>
-                        <p data-menu-item="inventa-ds" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Inventa DS</p>
+                        <p data-menu-item="seller-platform" class="menu-item active text-[24px] md:text-[14px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">AI Routing</p>
+                        <p data-menu-item="rep-sales" class="menu-item text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Rep Sales app</p>
+                        <p data-menu-item="inventa-ds" class="menu-item text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Inventa DS</p>
                     </div>
                     
                     <!-- Side Projects -->
                     <div id="side-projects">
-                        <p class="text-[12px] px-[12px] py-[8px] text-[#6c757d]">Side projects</p>
-                        <p data-menu-item="project-one" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Project one</p>
-                        <p data-menu-item="project-two" class="menu-item text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Project two</p>
+                        <p class="text-[16px] md:text-[12px] px-[12px] py-[8px] font-[500] text-[#808080]">Side projects</p>
+                        <p data-menu-item="project-one" class="menu-item text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Project one</p>
+                        <p data-menu-item="project-two" class="menu-item text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Project two</p>
                     </div>
                     
                     <!-- Contact Links -->
                     <div class="flex flex-col">
-                        <p class="text-[12px] px-[12px] py-[8px] text-[#6c757d]">Contact</p>
-                        <a href="https://github.com/glhrmarques" target="_blank" class="text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">GitHub</a>
-                        <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" class="text-[14px] py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Linkedin</a>
+                        <p class="text-[16px] md:text-[14px] px-[12px] py-[8px] font-[500] text-[#808080]">Contact</p>
+                        <a href="https://github.com/glhrmarques" target="_blank" class="text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">GitHub</a>
+                        <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" class="text-[24px] md:text-[16px] py-[24px] md:py-[8px] px-[12px] hover:bg-[#EEEEEE] rounded-[12px] cursor-pointer transition-colors">Linkedin</a>
                     </div>
                 </nav>
             </aside>
