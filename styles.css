@@ -222,6 +222,39 @@ img-comparison-slider::part(arrow) {
     transform: translateY(-6px) rotate(-45deg);
 }
 
+/* Dot drop animation */
+@keyframes dotDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px) scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(4px) scale(1.1);
+    }
+    80% {
+        transform: translateY(-2px) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dot-drop {
+    opacity: 0;
+}
+
+.revealed .dot-drop {
+    animation: dotDrop 0.5s ease-out forwards;
+}
+
+.revealed .dot-drop:nth-child(1) { animation-delay: 0.3s; }
+.revealed .dot-drop:nth-child(2) { animation-delay: 0.6s; }
+.revealed .dot-drop:nth-child(3) { animation-delay: 0.9s; }
+.revealed .dot-drop:nth-child(4) { animation-delay: 1.2s; }
+.revealed .dot-drop:nth-child(5) { animation-delay: 1.5s; }
+
 /* Timeline illustration */
 .timeline-illustration {
     display: flex;
