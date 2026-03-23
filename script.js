@@ -1,8 +1,3 @@
-// Feature Flags
-const FEATURE_FLAGS = {
-    showSideProjects: false  // Set to true to display side projects publicly
-};
-
 // Mobile Menu Toggle
 function setupMobileMenu() {
     const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -161,10 +156,6 @@ function setupScrollReveal() {
 // Initialize menu functionality
 document.addEventListener('DOMContentLoaded', async function() {
     // Apply feature flags
-    const sideProjectsSection = document.getElementById('side-projects');
-    if (sideProjectsSection && !FEATURE_FLAGS.showSideProjects) {
-        sideProjectsSection.style.display = 'none';
-    }
 
     // Setup mobile menu
     setupMobileMenu();
