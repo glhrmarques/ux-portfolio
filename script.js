@@ -76,13 +76,12 @@ const contentCache = {};
 
 // Load content from HTML file
 async function loadContent(menuId) {
-    // Return cached content if available
     if (contentCache[menuId]) {
         return contentCache[menuId];
     }
     
     try {
-        const response = await fetch(`content/${menuId}.html`);
+        const response = await fetch(`/content/${menuId}.html`);
         if (!response.ok) {
             throw new Error(`Failed to load content: ${response.status}`);
         }
@@ -93,6 +92,10 @@ async function loadContent(menuId) {
         console.error(`Error loading content for ${menuId}:`, error);
         return `<p class="text-[16px] text-red-500">Failed to load content.</p>`;
     }
+}
+
+function getMenuIdFromPath() {
+    return window.location.pathname.replace(/^\//, '').replace(/\/$/, '') || null;
 }
 
 // Apply staggered fade-in animation to content elements
@@ -155,64 +158,71 @@ function setupScrollReveal() {
 
 // Initialize menu functionality
 document.addEventListener('DOMContentLoaded', async function() {
-    // Apply feature flags
-
-    // Setup mobile menu
     setupMobileMenu();
 
     const menuItems = document.querySelectorAll('.menu-item');
     const contentContainer = document.getElementById('content-container');
-    
-    // Load content based on URL hash, or default to first menu item
-    const hash = window.location.hash.replace('#', '');
     const validMenuIds = Array.from(menuItems).map(mi => mi.getAttribute('data-menu-item'));
-    const defaultMenuId = (hash && validMenuIds.includes(hash)) ? hash : menuItems[0].getAttribute('data-menu-item');
-    contentContainer.innerHTML = await loadContent(defaultMenuId);
 
-    // Set the correct menu item as active
+    // Backward compat: redirect legacy hash URLs to clean paths
+    const hash = window.location.hash.replace('#', '');
     if (hash && validMenuIds.includes(hash)) {
-        menuItems.forEach(mi => mi.classList.remove('active'));
-        const activeItem = document.querySelector(`[data-menu-item="${hash}"]`);
-        if (activeItem) activeItem.classList.add('active');
+        history.replaceState(null, '', `/${hash}`);
     }
-    
-    // Apply staggered fade-in animation to initial content
+
+    const pathMenuId = getMenuIdFromPath();
+    const initialMenuId = (pathMenuId && validMenuIds.includes(pathMenuId))
+        ? pathMenuId
+        : validMenuIds[0];
+
+    // Ensure the URL reflects the active section
+    if (!pathMenuId || !validMenuIds.includes(pathMenuId)) {
+        history.replaceState(null, '', `/${initialMenuId}`);
+    }
+
+    // Set active menu item
+    menuItems.forEach(mi => mi.classList.remove('active'));
+    const activeItem = document.querySelector(`[data-menu-item="${initialMenuId}"]`);
+    if (activeItem) activeItem.classList.add('active');
+
+    // Load initial content
+    contentContainer.innerHTML = await loadContent(initialMenuId);
     applyStaggeredAnimation(contentContainer);
-    
-    // Setup scroll reveal for initial content
     setupScrollReveal();
-    
-    // Setup password form if present
     setupPasswordForm();
-    
-    // Add click event to all menu items
+
+    async function switchContent(menuId, animate) {
+        menuItems.forEach(mi => mi.classList.remove('active'));
+        const item = document.querySelector(`[data-menu-item="${menuId}"]`);
+        if (item) item.classList.add('active');
+
+        if (animate) {
+            contentContainer.style.opacity = '0';
+            contentContainer.style.transform = 'translateY(12px)';
+            await new Promise(r => setTimeout(r, 200));
+        }
+
+        contentContainer.innerHTML = await loadContent(menuId);
+        contentContainer.style.opacity = '';
+        contentContainer.style.transform = '';
+        applyStaggeredAnimation(contentContainer);
+        setupScrollReveal();
+        setupPasswordForm();
+        contentContainer.closest('article').scrollTop = 0;
+    }
+
     menuItems.forEach(item => {
         item.addEventListener('click', async function() {
             const menuId = this.getAttribute('data-menu-item');
-            
-            // Remove active class from all items
-            menuItems.forEach(mi => mi.classList.remove('active'));
-            
-            // Add active class to clicked item
-            this.classList.add('active');
-            
-            // Fade out current content
-            contentContainer.style.opacity = '0';
-            contentContainer.style.transform = 'translateY(12px)';
-            
-            setTimeout(async () => {
-                contentContainer.innerHTML = await loadContent(menuId);
-                // Reset inline styles and apply staggered animation
-                contentContainer.style.opacity = '';
-                contentContainer.style.transform = '';
-                applyStaggeredAnimation(contentContainer);
-                // Setup scroll reveal for new content
-                setupScrollReveal();
-                // Setup password form if present
-                setupPasswordForm();
-                // Scroll to top of content area when switching
-                contentContainer.closest('article').scrollTop = 0;
-            }, 200);
+            history.pushState(null, '', `/${menuId}`);
+            await switchContent(menuId, true);
         });
+    });
+
+    window.addEventListener('popstate', async () => {
+        const menuId = getMenuIdFromPath();
+        if (menuId && validMenuIds.includes(menuId)) {
+            await switchContent(menuId, false);
+        }
     });
 });
