@@ -21,6 +21,29 @@
     width: 100%;
 }
 
+/* Home: bottom border stays light; dark line grows left → right on hover */
+.link-underline-ltr {
+    position: relative;
+    text-decoration: none;
+}
+
+.link-underline-ltr::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background-color: #1e1e1e;
+    transition: width 0.35s ease-out;
+    pointer-events: none;
+}
+
+.link-underline-ltr:hover::after,
+.link-underline-ltr:focus-visible::after {
+    width: 100%;
+}
+
 .menu-item.active {
     background-color: #EEEEEE;
     font-weight: 500;
