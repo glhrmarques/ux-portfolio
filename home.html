@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚫️</text></svg>">
+    <title>Guilherme Marques</title>
+</head>
+<body class="bg-white text-black antialiased" style="font-family: 'Inter', sans-serif;">
+    <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
+        <!-- Sidebar: ~277px, sticky -->
+        <aside class="w-full lg:w-[277px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none" role="img" aria-label="Profile photo (placeholder)"></div>
+            <nav class="flex flex-col w-full" aria-label="Section navigation">
+                <a href="#intro" class="block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e] hover:bg-neutral-50 transition-colors">Intro</a>
+                <a href="#work" class="block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e] hover:bg-neutral-50 transition-colors">Work</a>
+                <a href="#writing" class="block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e] hover:bg-neutral-50 transition-colors">Writing</a>
+            </nav>
+        </aside>
+
+        <!-- Main column -->
+        <div class="flex-1 min-w-0 flex flex-col gap-12 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px] lg:gap-16">
+            <section id="intro" class="flex flex-col gap-6 scroll-mt-8">
+                <p class="max-w-[533px] font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.5] text-black">
+                    I'm Guilherme Marques, product designer with 5 years of experience. Currently in São Paulo.
+                </p>
+                <p class="max-w-4xl font-['Poppins',sans-serif] text-[28px] sm:text-[36px] md:text-[44px] font-medium leading-[1.2]">
+                    <span class="text-[#7f7f7f]">Currently Product designer for End-to-End Management at Inventa</span><span class="text-[#7f7f7f]">, </span><span class="text-black">designing and delivering impactful scalable solutions.</span>
+                </p>
+                <div class="flex flex-wrap gap-x-6 gap-y-3">
+                    <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" rel="noopener noreferrer" class="inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] hover:border-[#1e1e1e] transition-colors">Linkedin</a>
+                    <a href="https://github.com/glhrmarques" target="_blank" rel="noopener noreferrer" class="inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] hover:border-[#1e1e1e] transition-colors">Github</a>
+                    <a href="#" class="inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] hover:border-[#1e1e1e] transition-colors">Resume</a>
+                    <a href="tel:+5511961747490" class="inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] hover:border-[#1e1e1e] transition-colors whitespace-nowrap">+55 1196174-7490</a>
+                </div>
+            </section>
+
+            <section id="work" class="flex flex-col gap-6 scroll-mt-8">
+                <h2 class="text-[22px] font-bold text-black">Work</h2>
+                <div class="flex flex-wrap gap-3">
+                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
+                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
+                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
+                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
+                </div>
+            </section>
+
+            <section class="flex flex-col gap-10 scroll-mt-8" aria-labelledby="languages-heading">
+                <h2 id="languages-heading" class="text-[22px] font-bold text-black">Languages</h2>
+                <div class="flex flex-col gap-4 text-[18px]">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-3">
+                        <span class="font-medium text-black sm:w-40 shrink-0">English</span>
+                        <span class="font-normal text-[#7f7f7f] sm:text-right">Professional fluency (Cambridge FCE)</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-3">
+                        <span class="font-medium text-black">Portuguese, PT-BR</span>
+                        <span class="font-normal text-[#7f7f7f] sm:text-right">Native</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col gap-10 scroll-mt-8" aria-labelledby="experience-heading">
+                <h2 id="experience-heading" class="text-[22px] font-bold text-black">Experience</h2>
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
+                        <span class="font-bold text-black sm:w-36 shrink-0">ePharma</span>
+                        <span class="font-medium text-black sm:flex-1 sm:text-center">Product Designer</span>
+                        <span class="font-normal text-[#7f7f7f] sm:w-[117px] sm:text-right shrink-0">2021-Current</span>
+                    </div>
+                    <div class="text-[18px] font-normal text-black leading-[1.5] pl-0 lg:pl-[min(457px,38%)] whitespace-pre-line">
+                        Led a complete UX redesign of the Sales Rep application, improving usability and commercial efficiency, processing approximately R$700k in monthly GMV.
+
+                        Designed and launched an exclusive application for Sales Reps and the Beauty Color back office for order tracking and commercial route creation. Responsible for the entire process from design to production deployment; the application processed around R$48k in monthly GMV.
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
+                        <span class="font-bold text-black sm:w-36 shrink-0">ePharma</span>
+                        <span class="font-medium text-black sm:flex-1 sm:text-center">Product Designer</span>
+                        <span class="font-normal text-[#7f7f7f] sm:w-[117px] sm:text-right shrink-0">2021-2022</span>
+                    </div>
+                    <div class="text-[18px] font-normal text-black leading-[1.5] pl-0 lg:pl-[min(457px,38%)]">
+                        <p class="mb-0">Prior contributions as a product designer, from discovery through delivery, partnering with engineering and stakeholders on core product initiatives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="writing" class="flex flex-col gap-10 scroll-mt-8">
+                <h2 class="text-[22px] font-bold text-black">Writing &amp; Side projects</h2>
+                <div class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <p class="flex-1 font-normal text-[24px] sm:text-[28px] text-black leading-normal">Building a currency tracker for travel expenses</p>
+                    <p class="shrink-0 font-normal text-[18px] text-[#7f7f7f] whitespace-nowrap">May, 2022</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-[#1e1e1e] w-full">
+        <div class="mx-auto w-full max-w-[1440px] flex flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">@glhrmarques</p>
+            <div class="w-full max-w-4xl h-px bg-[#333]" role="presentation" aria-hidden="true"></div>
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[28px]">2026</p>
+        </div>
+    </footer>
+</body>
+</html>
