@@ -15,7 +15,7 @@
 <body class="bg-white text-black antialiased" style="font-family: 'Inter', sans-serif;">
     <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
         <!-- Sidebar: ~277px, sticky -->
-        <aside class="w-full lg:w-[277px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+        <aside class="home-open-aside w-full lg:w-[277px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
             <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none" role="img" aria-label="Profile photo (placeholder)"></div>
             <nav class="flex flex-col w-full" aria-label="Section navigation">
                 <a href="#intro" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Intro</a>
@@ -25,7 +25,7 @@
         </aside>
 
         <!-- Main column -->
-        <div class="flex-1 min-w-0 flex flex-col gap-12 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px] lg:gap-20">
+        <div class="home-open-main flex-1 min-w-0 flex flex-col gap-12 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px] lg:gap-20">
             <section id="intro" class="flex flex-col gap-6 scroll-mt-8">
                 <p class="max-w-[520px] font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.5] text-black">
                     I'm Guilherme Marques, product designer with 5 years of experience. Currently in São Paulo.
@@ -41,7 +41,7 @@
                 </div>
             </section>
 
-            <section id="work" class="flex flex-col gap-6 scroll-mt-8">
+            <section id="work" class="home-reveal flex flex-col gap-6 scroll-mt-8">
                 <h2 class="text-[22px] font-bold text-black">Work</h2>
                 <div class="flex flex-wrap gap-3">
                     <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
@@ -51,7 +51,7 @@
                 </div>
             </section>
 
-            <section class="flex flex-col gap-10 scroll-mt-8" aria-labelledby="languages-heading">
+            <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="languages-heading">
                 <h2 id="languages-heading" class="text-[22px] font-bold text-black">Languages</h2>
                 <div class="flex flex-col gap-4 text-[18px]">
                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-3">
@@ -65,7 +65,7 @@
                 </div>
             </section>
 
-            <section class="flex flex-col gap-10 scroll-mt-8" aria-labelledby="experience-heading">
+            <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="experience-heading">
                 <h2 id="experience-heading" class="text-[22px] font-bold text-black">Experience</h2>
 
                 <div class="flex flex-col gap-4">
@@ -93,7 +93,7 @@
                 </div>
             </section>
 
-            <section id="writing" class="flex flex-col gap-10 scroll-mt-8">
+            <section id="writing" class="home-reveal flex flex-col gap-10 scroll-mt-8">
                 <h2 class="text-[22px] font-bold text-black">Writing &amp; Side projects</h2>
                 <div class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <p class="flex-1 font-normal text-[24px] sm:text-[28px] text-black leading-normal">Building a currency tracker for travel expenses</p>
@@ -103,12 +103,38 @@
         </div>
     </div>
 
-    <footer class="bg-[#1e1e1e] w-full">
-        <div class="mx-auto w-full max-w-[1440px] flex flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
+    <footer class="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
+        <div class="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
             <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">@glhrmarques</p>
             <div class="w-full max-w-4xl h-px bg-[#333]" role="presentation" aria-hidden="true"></div>
             <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[28px]">2026</p>
         </div>
     </footer>
+    <script>
+        (function () {
+            var sections = document.querySelectorAll('.home-reveal');
+            if (!sections.length) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            if (!('IntersectionObserver' in window)) {
+                sections.forEach(function (el) {
+                    el.classList.add('is-visible');
+                });
+                return;
+            }
+            var observer = new IntersectionObserver(
+                function (entries, observerInstance) {
+                    entries.forEach(function (entry) {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        observerInstance.unobserve(entry.target);
+                    });
+                },
+                { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.12 }
+            );
+            sections.forEach(function (el) {
+                observer.observe(el);
+            });
+        })();
+    </script>
 </body>
 </html>
