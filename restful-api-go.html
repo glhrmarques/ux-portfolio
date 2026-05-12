@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚫️</text></svg>">
+    <title>Creating my first RESTful API with GO - Guilherme Marques</title>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-black antialiased" style="font-family: 'Inter', sans-serif;">
+    <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none overflow-hidden" role="img" aria-label="Profile photo">
+                <img src="images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
+            </div>
+            <nav class="flex flex-col w-full" aria-label="Section navigation">
+                <a href="home.html" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Intro</a>
+                <a href="home.html#work" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Work</a>
+                <a href="home.html#writing" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Writing</a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="flex-1 min-w-0 flex flex-col gap-16 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+            <!-- Intro section -->
+            <section class="flex flex-col gap-6">
+                <a href="home.html" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Creating my first RESTful API with GO</h1>
+                <p class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-[#7f7f7f]">2026</p>
+            </section>
+
+            <!-- Stack -->
+            <section class="flex flex-col">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3 gap-1">
+                    <span class="font-bold text-black w-[145px] shrink-0">Stack</span>
+                    <span class="font-medium text-[#7f7f7f]">GO, net/http and github.com/gin-gonic/gin</span>
+                </div>
+            </section>
+
+            <!-- Content sections -->
+            <div class="flex flex-col gap-12">
+                <!-- Objective -->
+                <section class="flex flex-col gap-6">
+                    <h2 class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-black">Objective</h2>
+                    <p class="text-[18px] font-normal leading-[1.5] text-black">I've been studying software development for a couple months after a friend from the work encouraged me to start studying. Specially because he claimed it would be good for my design engineering journey.</p>
+                    <p class="text-[18px] font-normal leading-[1.5] text-black">So I built a RESTful API with 3 endpoints: 1. To return all the teams in my local storage, 2. Find a team by ID, and 3. Endpoint to add new teams.</p>
+                </section>
+
+                <!-- Breakthrough -->
+                <section class="flex flex-col gap-6">
+                    <h2 class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-black">Breakthrough</h2>
+
+                    <ol class="text-[18px] font-normal text-black leading-[1.5] list-decimal ml-7">
+                        <li>In the root folder, I created a file named as main.go and run the command:</li>
+                    </ol>
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+                            <code class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5]">$ go mod init example/web-teams-service</code>
+                        </div>
+                        <p class="text-[14px] font-normal text-[#7f7f7f] leading-[1.5]">Used to track all dependencies in the project.</p>
+                    </div>
+                </section>
+
+                <!-- Step 2: Adding the data -->
+                <section class="flex flex-col gap-6">
+                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="2">
+                        <li>Adding the data:</li>
+                    </ol>
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">package main
+
+import (
+    "net/http"
+    "github.com/gin-gonic/gin"
+)
+
+type team struct {
+   ID string `json"id"`
+   Name string `json"name"`
+   Country string `json"country"`
+}
+
+var teams = []team {
+    {ID:"1", Name:"Chelsea", Country:"England"},
+    {ID:"2", Name:"Barcelona", Country:"Spain"},
+    {ID:"3", Name:"Forest Green", Country:"England"},
+    {ID:"4", Name:"Bayer", Country:"Germany"},
+}</pre>
+                    </div>
+                </section>
+
+                <!-- Step 3: First endpoint -->
+                <section class="flex flex-col gap-6">
+                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="3">
+                        <li>Building the first endPoint, /getAllTeams.</li>
+                    </ol>
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func getAllTeams(c *gin.Context) {
+    c.IndentedJSON(http.StatusOK, teams)
+}</pre>
+                    </div>
+
+                    <!-- Explanation table -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="sm:w-[300px] lg:w-[500px] shrink-0">c</span>
+                            <span class="flex-1 sm:text-right">Stands for <em>context,</em> like a variable that it's receiving value</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="sm:w-[300px] lg:w-[500px] shrink-0">gin.Context</span>
+                            <span class="flex-1 sm:text-right">Is responsible to give context of http request and response to c</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="sm:w-[300px] lg:w-[500px] shrink-0">c.Indented(JSON)</span>
+                            <span class="flex-1 sm:text-right">It's serializing the response into a JSON response</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+    router := gin.Default()
+    router.GET("/allTeams", getAllTeams)
+    router.Run("localhost:8080")
+}</pre>
+                    </div>
+                </section>
+
+                <!-- Step 4: Second endpoint -->
+                <section class="flex flex-col gap-6">
+                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="4">
+                        <li>Building the second endPoint, /getTeamById</li>
+                    </ol>
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func getTeamByID(c *gin.Context) {
+    id := c.Param("id")
+
+    for _, t := range teams {
+        if t.ID == id {
+            c.IndentedJSON(http.StatusOK, t)
+        }
+    }
+
+    c.IndentedJSON(http.StatusNotFound, gin.H{"message":"team not found"})
+}</pre>
+                    </div>
+
+                    <!-- Explanation table -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="sm:w-[300px] lg:w-[500px] shrink-0">c.Param("id")</span>
+                            <span class="flex-1 sm:text-right">Add in the url the query id</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0">for _, t := range teams</span>
+                            <span class="flex-1 sm:text-right">Loops in the entire teams to match the id provided</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-[18px] text-black gap-2">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0 whitespace-pre-wrap">if t.ID == id {
+   c.IndentedJSON(http.StatusOK, t)
+}</span>
+                            <span class="flex-1 sm:text-right">If the ID matches, the response will be 201 and display the team that matched</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0 text-[16px] lg:text-[18px]">c.IndentedJSON(http.StatusNotFound, gin.H{"message":"team not found"})</span>
+                            <span class="flex-1 sm:text-right">In case the ID does not match, the response will be 404 and display a message team not found</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+    router := gin.Default()
+    router.GET("/allTeams", getAllTeams)
+    router.GET("/allTeams/:id", getTeamByID)
+    router.Run("localhost:8080")
+}</pre>
+                    </div>
+                </section>
+
+                <!-- Step 5: Third endpoint -->
+                <section class="flex flex-col gap-6">
+                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="5">
+                        <li>Building the third endPoint, /addNewTeam</li>
+                    </ol>
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func addTeam(c *gin.Context) {
+    var newTeam team
+
+    if err := c.BindJSON(&newTeam); err != nil {
+        return
+    }
+
+    teams = append(teams, newTeam)
+    c.IndentedJSON(http.StatusCreated, newTeam)
+
+}</pre>
+                    </div>
+
+                    <!-- Explanation table -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0">var newTeam team</span>
+                            <span class="flex-1 sm:text-right">Asign a new variable indicating the schema to be use in the new data</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0 text-[14px] lg:text-[18px]">if err := c.BindJSON(&newTeam); err != nil</span>
+                            <span class="flex-1 sm:text-right">It deserializes from the request body to a team struct, and & indicates the BindJSON() how to map it.</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0">teams = append(teams, newTeam)</span>
+                            <span class="flex-1 sm:text-right">The newTeam must be add/append into teams. So, when I use the end point /getAllTeams or by ID the response will show the new data too.</span>
+                        </div>
+                        <hr class="border-[#f0f0f0]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
+                            <span class="font-['Inconsolata',monospace] sm:w-[300px] lg:w-[500px] shrink-0 text-[14px] lg:text-[18px]">c.IndentedJSON(http.StatusCreated, newTeam)</span>
+                            <span class="flex-1 sm:text-right">If the team is successfully created, the response will be 201.</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
+<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+    router := gin.Default()
+
+    router.GET("/allTeams", getAllTeams)
+    router.GET("/allTeams/:id", getTeamByID)
+    router.POST("/allTeams", addTeam)
+    router.Run("localhost:8080")
+}</pre>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
+        <div class="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">@glhrmarques</p>
+            <div class="w-full max-w-4xl h-px bg-[#333]" role="presentation" aria-hidden="true"></div>
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[28px]">2026</p>
+        </div>
+    </footer>
+</body>
+</html>

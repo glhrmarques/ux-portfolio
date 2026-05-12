@@ -19,8 +19,10 @@
     <div id="page-top" class="h-0 w-full overflow-hidden pointer-events-none" aria-hidden="true"></div>
     <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
         <!-- Sidebar: ~277px, sticky -->
-        <aside class="home-open-aside w-full lg:w-[277px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
-            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none" role="img" aria-label="Profile photo (placeholder)"></div>
+        <aside class="home-open-aside w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none overflow-hidden" role="img" aria-label="Profile photo">
+                <img src="images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
+            </div>
             <nav class="flex flex-col w-full" aria-label="Section navigation">
                 <a href="#page-top" class="home-nav-scroll-top link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Intro</a>
                 <a href="#work" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Work</a>
@@ -41,21 +43,40 @@
                 <div class="flex flex-wrap gap-x-6 gap-y-3">
                     <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" rel="noopener noreferrer" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e]">Linkedin</a>
                     <a href="https://github.com/glhrmarques" target="_blank" rel="noopener noreferrer" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e]">Github</a>
-                    <a href="#" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e]">Resume</a>
-                    <a href="tel:+5511961747490" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] whitespace-nowrap">+55 1196174-7490</a>
+                    <button onclick="navigator.clipboard.writeText('+5511961747490').then(()=>{this.textContent='Copied!';setTimeout(()=>{this.textContent='+55 1196174-7490'},2000)})" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] whitespace-nowrap cursor-pointer bg-transparent">+55 1196174-7490</button>
                 </div>
             </section>
 
             <section id="work" class="flex flex-col gap-6 scroll-mt-8">
                 <h2 class="text-[22px] font-bold text-black">Work</h2>
                 <div class="flex flex-wrap gap-3">
-                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
-                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
-                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
-                    <div class="w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0" role="presentation" aria-hidden="true"></div>
+                    <a href="projects/seller-platform.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#C1038B] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
+                        <video src="images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoplay loop muted playsinline class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain bg-[#C1038B]"></video>
+                    </a>
+                    <a href="projects/rep-sales-app.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#2F98F9] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
+                        <img src="images/sales-app-home.avif" alt="Rep Sales App" class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain">
+                    </a>
+                    <!-- Disabled for now
+                    <a href="projects/inv-ds.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
+                        <span class="text-[14px] font-normal text-[#7f7f7f]">Inventa</span>
+                        <span class="text-[20px] font-medium text-black">Design System</span>
+                    </a>
+                    <a href="projects/converter.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
+                        <span class="text-[14px] font-normal text-[#7f7f7f]">Side project</span>
+                        <span class="text-[20px] font-medium text-black">Currency Converter</span>
+                    </a>
+                    -->
                 </div>
             </section>
             </div>
+            
+            <section id="writing" class="home-reveal flex flex-col gap-10 scroll-mt-8">
+                <h2 class="text-[22px] font-bold text-black">Writing &amp; Side projects</h2>
+                <a href="restful-api-go.html" class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 no-underline hover:opacity-70 transition-opacity">
+                    <p class="flex-1 font-normal text-[24px] sm:text-[28px] text-black leading-normal">Building my first RESTful API with GO</p>
+                    <p class="shrink-0 font-normal text-[18px] text-[#7f7f7f] whitespace-nowrap">May, 2026</p>
+                </a>
+            </section>
 
             <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="languages-heading">
                 <h2 id="languages-heading" class="text-[22px] font-bold text-black">Languages</h2>
@@ -98,13 +119,6 @@
 
             </section>
 
-            <section id="writing" class="home-reveal flex flex-col gap-10 scroll-mt-8">
-                <h2 class="text-[22px] font-bold text-black">Writing &amp; Side projects</h2>
-                <div class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <p class="flex-1 font-normal text-[24px] sm:text-[28px] text-black leading-normal">Building a currency tracker for travel expenses</p>
-                    <p class="shrink-0 font-normal text-[18px] text-[#7f7f7f] whitespace-nowrap">May, 2022</p>
-                </div>
-            </section>
         </div>
     </div>
 
