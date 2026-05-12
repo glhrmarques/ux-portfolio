@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚫️</text></svg>">
+    <title>Inventa Design System - Guilherme Marques</title>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-black antialiased" style="font-family: 'Inter', sans-serif;">
+    <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none overflow-hidden" role="img" aria-label="Profile photo">
+                <img src="../images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
+            </div>
+            <nav class="flex flex-col w-full" aria-label="Section navigation">
+                <a href="../home.html" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Intro</a>
+                <a href="../home.html#work" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Work</a>
+                <a href="../home.html#writing" class="link-underline-ltr block w-full border-b border-[#d9d9d9] border-solid px-3 py-6 text-[18px] font-semibold text-[#1e1e1e]">Writing</a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="flex-1 min-w-0 flex flex-col gap-16 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+            <!-- Back link -->
+            <a href="../home.html#work" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Project content -->
+            <section class="flex flex-col gap-12">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-[32px] md:text-[40px] font-bold mb-1 leading-[120%] text-[#1a1a1a]">Inventa Design System</h2>
+                    <div class="flex items-center gap-3 text-[14px] md:text-[18px] text-[#808080]">
+                        <a href="https://inventa.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 md:gap-3 hover:underline"><img src="../images/company-logo-inventa.png" alt="Inventa logo" class="w-6 h-6 md:w-8 md:h-8 rounded object-cover flex-shrink-0">Inventa</a> <span class="mx-1">·</span>Product Designer, 2022 - Current
+                    </div>
+                </div>
+
+                <p class="text-[16px] text-[#1a1a1a]">Led the vision for Inventa design system. Defined and evolved <span class="font-semibold">core components, patterns, tokens</span>, and interaction standards across the product.</p>
+
+                <div class="image-bg bg-blue flex justify-center items-center">
+                    <img src="../images/inventa-ds.avif" alt="Inventa Design System" class="max-w-full object-contain mx-auto img-max-h rounded-[16px]">
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <p class="text-[16px] text-[#808080] mb-6">Password required</p>
+                    <form id="password-form" class="flex items-center gap-3 w-full max-w-sm">
+                        <input id="password-input" type="password" placeholder="Enter password" class="flex-1 px-4 py-3 text-[14px] border border-gray-300 rounded-xl focus:outline-none focus:border-gray-400 bg-white">
+                        <button type="submit" class="px-5 py-3 text-[14px] font-medium bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-colors">Submit</button>
+                    </form>
+                    <p id="toast" class="text-[14px] text-red-500 mt-4" style="display: none;">Incorrect password. Try again.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
+        <div class="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">@glhrmarques</p>
+            <div class="w-full max-w-4xl h-px bg-[#333]" role="presentation" aria-hidden="true"></div>
+            <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[28px]">2026</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var form = document.getElementById('password-form');
+            var toast = document.getElementById('toast');
+            if (form && toast) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    toast.style.display = 'block';
+                    setTimeout(function () { toast.style.display = 'none'; }, 3000);
+                    document.getElementById('password-input').value = '';
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
