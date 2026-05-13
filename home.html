@@ -20,7 +20,7 @@
     <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
         <!-- Sidebar: ~277px, sticky -->
         <aside class="home-open-aside w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
-            <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none overflow-hidden" role="img" aria-label="Profile photo">
+            <div class="w-full max-w-[184px] aspect-[184/184] max-h-[184px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none overflow-hidden" role="img" aria-label="Profile photo">
                 <img src="images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
             </div>
             <nav class="flex flex-col w-full" aria-label="Section navigation">
@@ -31,93 +31,91 @@
         </aside>
 
         <!-- Main column -->
-        <div class="home-open-main flex-1 min-w-0 flex flex-col gap-12 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px] lg:gap-44">
-            <div class="flex flex-col gap-8 lg:gap-10">
-            <section id="intro" class="flex flex-col gap-6 scroll-mt-8">
-                <p class="max-w-[520px] font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.5] text-black">
-                    I'm Guilherme Marques, product designer with 5 years of experience. Currently in São Paulo.
-                </p>
-                <p class="max-w-4xl font-['Poppins',sans-serif] text-[28px] sm:text-[36px] md:text-[48px] font-medium leading-[1.2]">
-                    <span class="text-[#7f7f7f]">Currently Product designer for End-to-End Management at Inventa</span><span class="text-[#7f7f7f]">, </span><span class="text-black">designing and delivering impactful scalable solutions.</span>
+        <div class="home-open-main flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+                <section id="intro" class="flex flex-col scroll-mt-8 mb-20">                
+                    <p class="max-w-[400px] text-[18px] font-medium leading-[1.5] text-black mb-6">
+                        I’m Guilherme Marques, with 5 years of experience building and growing projects.
+                    </p>
+                <p class="max-w-4xl font-['Poppins',sans-serif] text-[28px] sm:text-[36px] md:text-[48px] font-medium leading-[1.2] mb-12">
+                    <span class="text-[#7f7f7f]">Currently Product Designer at Inventa's Fullservice backoffce for marketplaces</span><span class="text-[#7f7f7f]">, </span><span class="text-black">designing impactful scalable solutions.</span>
                 </p>
                 <div class="flex flex-wrap gap-x-6 gap-y-3">
                     <a href="https://www.linkedin.com/in/glhrmarques/" target="_blank" rel="noopener noreferrer" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e]">Linkedin</a>
                     <a href="https://github.com/glhrmarques" target="_blank" rel="noopener noreferrer" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e]">Github</a>
                     <button onclick="navigator.clipboard.writeText('+5511961747490').then(()=>{this.textContent='Copied!';setTimeout(()=>{this.textContent='+55 1196174-7490'},2000)})" class="link-underline-ltr inline-flex border-b border-[#d9d9d9] border-solid py-2 text-[18px] font-medium text-[#1e1e1e] whitespace-nowrap cursor-pointer bg-transparent">+55 1196174-7490</button>
                 </div>
-            </section>
+                </section>
 
-            <section id="work" class="flex flex-col gap-6 scroll-mt-8">
-                <h2 class="text-[22px] font-bold text-black">Work</h2>
-                <div class="flex flex-wrap gap-3">
-                    <a href="projects/seller-platform.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#C1038B] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
-                        <video src="images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoplay loop muted playsinline class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain bg-[#C1038B]"></video>
-                    </a>
-                    <a href="projects/rep-sales-app.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#2F98F9] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
-                        <img src="images/sales-app-home.avif" alt="Rep Sales App" class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain">
-                    </a>
-                    <!-- Disabled for now
-                    <a href="projects/inv-ds.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
-                        <span class="text-[14px] font-normal text-[#7f7f7f]">Inventa</span>
-                        <span class="text-[20px] font-medium text-black">Design System</span>
-                    </a>
-                    <a href="projects/converter.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
-                        <span class="text-[14px] font-normal text-[#7f7f7f]">Side project</span>
-                        <span class="text-[20px] font-medium text-black">Currency Converter</span>
-                    </a>
-                    -->
-                </div>
-            </section>
-            </div>
+                <section id="work" class="flex flex-col gap-4 scroll-mt-8 mb-40">
+                    <h2 class="text-[32px] font-medium">Selected work</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="projects/seller-platform.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#C1038B] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
+                            <video src="images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoplay loop muted playsinline class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain bg-[#C1038B]"></video>
+                        </a>
+                        <a href="projects/rep-sales-app.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#2F98F9] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden">
+                            <img src="images/sales-app-home.avif" alt="Rep Sales App" class="absolute inset-[24px] w-[calc(100%-48px)] h-[calc(100%-48px)] object-contain">
+                        </a>
+                        <!-- Disabled for now
+                        <a href="projects/inv-ds.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
+                            <span class="text-[14px] font-normal text-[#7f7f7f]">Inventa</span>
+                            <span class="text-[20px] font-medium text-black">Design System</span>
+                        </a>
+                        <a href="projects/converter.html" class="group w-full sm:w-[calc(50%-6px)] max-w-[511.5px] aspect-square bg-[#f0f0f0] shrink-0 flex flex-col items-start justify-end p-6 relative overflow-hidden hover:bg-[#e8e8e8] transition-colors">
+                            <span class="text-[14px] font-normal text-[#7f7f7f]">Side project</span>
+                            <span class="text-[20px] font-medium text-black">Currency Converter</span>
+                        </a>
+                        -->
+                    </div>
+                </section>
             
-            <section id="writing" class="home-reveal flex flex-col gap-10 scroll-mt-8">
-                <h2 class="text-[22px] font-bold text-black">Writing &amp; Side projects</h2>
-                <a href="restful-api-go.html" class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 no-underline hover:opacity-70 transition-opacity">
-                    <p class="flex-1 font-normal text-[24px] sm:text-[28px] text-black leading-normal">Building my first RESTful API with GO</p>
-                    <p class="shrink-0 font-normal text-[18px] text-[#7f7f7f] whitespace-nowrap">May, 2026</p>
-                </a>
-            </section>
+                <section id="writing" class="home-reveal flex flex-col scroll-mt-8 mb-40">
+                    <h2 class="text-[32px] font-medium mb-4 ">Writing</h2>
+                    <a href="restful-api-go.html" class="border-b border-[#f0f0f0] border-solid pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 no-underline hover:opacity-70 transition-opacity">
+                        <p class="flex-1 font-normal text-[24px] sm:text-[24px] text-black leading-normal">Building my first RESTful API with GO</p>
+                        <p class="shrink-0 font-normal text-[18px] text-[#7f7f7f] whitespace-nowrap">May, 2026</p>
+                    </a>
+                </section>
 
-            <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="languages-heading">
-                <h2 id="languages-heading" class="text-[22px] font-bold text-black">Languages</h2>
-                <div class="flex flex-col gap-4 text-[18px]">
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-3">
-                        <span class="font-medium text-black sm:w-40 shrink-0">English</span>
-                        <span class="font-normal text-[#7f7f7f] sm:text-right">Professional fluency (Cambridge FCE)</span>
+                <section class="home-reveal flex flex-col gap-10 scroll-mt-8 mb-40" aria-labelledby="languages-heading">
+                    <h2 id="languages-heading" class="text-[32px] font-medium mb-4">Languages</h2>
+                    <div class="flex flex-col gap-4 text-[18px]">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-4">
+                            <span class="font-medium text-black sm:w-40 shrink-0">English</span>
+                            <span class="font-normal text-[#7f7f7f] sm:text-right">Professional fluency (Cambridge FCE)</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-4">
+                            <span class="font-medium text-black">Portuguese</span>
+                            <span class="font-normal text-[#7f7f7f] sm:text-right">Native</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 border-b border-[#f0f0f0] border-solid pb-3">
-                        <span class="font-medium text-black">Portuguese, PT-BR</span>
-                        <span class="font-normal text-[#7f7f7f] sm:text-right">Native</span>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="experience-heading">
-                <h2 id="experience-heading" class="text-[22px] font-bold text-black">Experience</h2>
+                <section class="home-reveal flex flex-col gap-10 scroll-mt-8" aria-labelledby="experience-heading">
+                    <h2 id="experience-heading" class="text-[32px] font-medium">Experience</h2>
 
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
-                        <span class="font-bold text-black w-[145px] shrink-0">Inventa</span>
-                        <span class="font-medium text-black whitespace-nowrap shrink-0">Product Designer</span>
-                        <span class="font-normal text-[#7f7f7f] text-right w-[117px] shrink-0">2021-2022</span>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
+                            <span class="font-bold text-black w-[145px] shrink-0">Inventa</span>
+                            <span class="font-medium text-black whitespace-nowrap shrink-0">Product Designer</span>
+                            <span class="font-normal text-[#7f7f7f] text-right w-[117px] shrink-0 whitespace-nowrap">2021 - Present</span>
+                        </div>
+                        <div class="flex w-full items-start md:pl-[457px]">
+                            <p class="flex-1 min-w-0 mb-0 text-[18px] font-normal text-black leading-[1.5]">Led a complete UX redesign of the Sales Rep application, improving usability and commercial eﬃciency,processing approximately R$700k in monthly GMV.</p>
+                        </div>
                     </div>
-                    <div class="flex w-full items-start md:pl-[457px]">
-                        <p class="flex-1 min-w-0 mb-0 text-[18px] font-normal text-black leading-[1.5]">Led a complete UX redesign of the Sales Rep application, improving usability and commercial eﬃciency,processing approximately R$700k in monthly GMV.Designed and launched an exclusive application for Sales Reps and the Beauty Color back oﬃce fororder tracking and commercial route creation. Responsible for the entire process from design to production deployment; the application processed around R$48k in monthly GMV.</p>
-                    </div>
-                </div>
 
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
-                        <span class="font-bold text-black w-[145px] shrink-0">ePharma</span>
-                        <span class="font-medium text-black whitespace-nowrap shrink-0">Product Designer</span>
-                        <span class="font-normal text-[#7f7f7f] text-right w-[117px] shrink-0">2021-2022</span>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3">
+                            <span class="font-bold text-black w-[145px] shrink-0">ePharma</span>
+                            <span class="font-medium text-black whitespace-nowrap shrink-0">Product Designer</span>
+                            <span class="font-normal text-[#7f7f7f] text-right w-[117px] shrink-0">2021-2022</span>
+                        </div>
+                        <div class="flex w-full items-start md:pl-[457px]">
+                            <p class="flex-1 min-w-0 mb-0 text-[18px] font-normal text-black leading-[1.5]">Prior contributions as a product designer, from discovery through delivery, partnering with engineering and stakeholders on core product initiatives.</p>
+                        </div>
                     </div>
-                    <div class="flex w-full items-start md:pl-[457px]">
-                        <p class="flex-1 min-w-0 mb-0 text-[18px] font-normal text-black leading-[1.5]">Prior contributions as a product designer, from discovery through delivery, partnering with engineering and stakeholders on core product initiatives.</p>
-                    </div>
-                </div>
 
-            </section>
+                </section>
 
         </div>
     </div>
