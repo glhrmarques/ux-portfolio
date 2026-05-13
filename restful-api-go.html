@@ -29,40 +29,39 @@
         </aside>
 
         <!-- Main content -->
-        <main class="flex-1 min-w-0 flex flex-col gap-16 px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+        <main class="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
             <!-- Intro section -->
-            <section class="flex flex-col gap-6">
+            <section class="flex flex-col gap-6 mb-20">
                 <a href="home.html" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Creating my first RESTful API with GO</h1>
-                <p class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-[#7f7f7f]">2026</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">May, 2026</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">GO</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">net/http</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Gin</span>
+                </div>                 
             </section>
 
-            <!-- Stack -->
-            <section class="flex flex-col">
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] border-b border-[#f0f0f0] border-solid pb-3 gap-1">
-                    <span class="font-bold text-black w-[145px] shrink-0">Stack</span>
-                    <span class="font-medium text-[#7f7f7f]">GO, net/http and github.com/gin-gonic/gin</span>
-                </div>
-            </section>
+            <!-- Stack -
 
             <!-- Content sections -->
-            <div class="flex flex-col gap-12">
+            <div class="flex flex-col">
                 <!-- Objective -->
-                <section class="flex flex-col gap-6">
-                    <h2 class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-black">Objective</h2>
+                <section class="flex flex-col gap-6 mb-20">
+                    <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Objective</h2>
                     <p class="text-[18px] font-normal leading-[1.5] text-black">I've been studying software development for a couple months after a friend from the work encouraged me to start studying. Specially because he claimed it would be good for my design engineering journey.</p>
                     <p class="text-[18px] font-normal leading-[1.5] text-black">So I built a RESTful API with 3 endpoints: 1. To return all the teams in my local storage, 2. Find a team by ID, and 3. Endpoint to add new teams.</p>
                 </section>
 
                 <!-- Breakthrough -->
-                <section class="flex flex-col gap-6">
-                    <h2 class="font-['Poppins',sans-serif] text-[22px] font-medium leading-[1.2] text-black">Breakthrough</h2>
+                <section class="flex flex-col gap-6 mb-20">
+                    <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Breakthrough</h2>
 
-                    <ol class="text-[18px] font-normal text-black leading-[1.5] list-decimal ml-7">
+                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7">
                         <li>In the root folder, I created a file named as main.go and run the command:</li>
                     </ol>
                     <div class="flex flex-col gap-2">
@@ -74,7 +73,7 @@
                 </section>
 
                 <!-- Step 2: Adding the data -->
-                <section class="flex flex-col gap-6">
+                <section class="flex flex-col gap-6 mb-20">
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="2">
                         <li>Adding the data:</li>
                     </ol>
@@ -102,7 +101,7 @@ var teams = []team {
                 </section>
 
                 <!-- Step 3: First endpoint -->
-                <section class="flex flex-col gap-6">
+                <section class="flex flex-col gap-6 mb-20">
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="3">
                         <li>Building the first endPoint, /getAllTeams.</li>
                     </ol>
@@ -140,7 +139,7 @@ var teams = []team {
                 </section>
 
                 <!-- Step 4: Second endpoint -->
-                <section class="flex flex-col gap-6">
+                <section class="flex flex-col gap-6 mb-20">
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="4">
                         <li>Building the second endPoint, /getTeamById</li>
                     </ol>
@@ -194,7 +193,7 @@ var teams = []team {
                 </section>
 
                 <!-- Step 5: Third endpoint -->
-                <section class="flex flex-col gap-6">
+                <section class="flex flex-col gap-6 mb-20">
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="5">
                         <li>Building the third endPoint, /addNewTeam</li>
                     </ol>
