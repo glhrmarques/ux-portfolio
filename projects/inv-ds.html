@@ -17,7 +17,7 @@
 <body class="bg-white text-black antialiased" style="font-family: 'Inter', sans-serif;">
     <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
         <!-- Sidebar -->
-        <aside class="w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+        <aside class="w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start hidden lg:flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
             <div class="w-full aspect-[229/229] max-h-[229px] lg:max-h-none bg-[#1e1e1e] rounded-none overflow-hidden" role="img" aria-label="Profile photo">
                 <img src="../images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
             </div>
@@ -62,6 +62,27 @@
         </main>
     </div>
 
+    <!-- Mobile menu -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line class="hamburger-line" x1="0" y1="1" x2="18" y2="1" stroke="#1e1e1e" stroke-width="2"/>
+            <line class="hamburger-line" x1="0" y1="7" x2="18" y2="7" stroke="#1e1e1e" stroke-width="2"/>
+            <line class="hamburger-line" x1="0" y1="13" x2="18" y2="13" stroke="#1e1e1e" stroke-width="2"/>
+        </svg>
+    </button>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="flex flex-col items-center gap-10">
+            <div class="w-[184px] aspect-square bg-[#1e1e1e] overflow-hidden">
+                <img src="../images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
+            </div>
+            <nav class="flex flex-col items-center gap-10">
+                <a href="../home.html" class="text-[32px] font-medium text-[#1e1e1e]">Intro</a>
+                <a href="../home.html#work" class="text-[32px] font-medium text-[#1e1e1e]">Work</a>
+                <a href="../home.html#writing" class="text-[32px] font-medium text-[#1e1e1e]">Writing</a>
+            </nav>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
         <div class="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
@@ -72,6 +93,24 @@
     </footer>
 
     <script>
+        (function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var overlay = document.getElementById('mobile-menu-overlay');
+            if (!btn || !overlay) return;
+            btn.addEventListener('click', function () {
+                var isOpen = overlay.classList.contains('open');
+                overlay.classList.toggle('open');
+                btn.classList.toggle('open');
+                document.body.style.overflow = isOpen ? '' : 'hidden';
+            });
+            overlay.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    overlay.classList.remove('open');
+                    btn.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            });
+        })();
         (function () {
             var form = document.getElementById('password-form');
             var toast = document.getElementById('toast');

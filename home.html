@@ -19,7 +19,7 @@
     <div id="page-top" class="h-0 w-full overflow-hidden pointer-events-none" aria-hidden="true"></div>
     <div class="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
         <!-- Sidebar: ~277px, sticky -->
-        <aside class="home-open-aside w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
+        <aside class="home-open-aside w-full lg:w-[240px] shrink-0 lg:sticky lg:top-0 lg:self-start hidden lg:flex flex-col gap-6 px-6 py-12 lg:px-6 lg:py-[120px] border-b border-[#d9d9d9] lg:border-b-0">
             <div class="w-full max-w-[184px] aspect-[184/184] max-h-[184px] lg:max-h-none bg-[#1e1e1e] rounded-none lg:rounded-none overflow-hidden" role="img" aria-label="Profile photo">
                 <img src="images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
             </div>
@@ -32,7 +32,7 @@
 
         <!-- Main column -->
         <div class="home-open-main flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
-                <section id="intro" class="flex flex-col scroll-mt-8 mb-20">                
+                <section id="intro" class="flex flex-col justify-center scroll-mt-8 mb-20 min-h-[50dvh] lg:min-h-0 lg:justify-start">                
                     <p class="max-w-[400px] text-[18px] font-medium leading-[1.5] text-black mb-6">
                         I’m Guilherme Marques, with 5 years of experience building and growing projects.
                     </p>
@@ -120,6 +120,28 @@
         </div>
     </div>
 
+    <!-- Mobile menu -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+        <svg class="menu-icon-inactive" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+        </svg>
+        <svg class="menu-icon-active" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+    </button>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="flex flex-col items-center gap-10">
+            <div class="w-[184px] aspect-square bg-[#1e1e1e] overflow-hidden">
+                <img src="images/myself-01.png" alt="Guilherme Marques" class="w-full h-full object-cover">
+            </div>
+            <nav class="flex flex-col items-center gap-10">
+                <a href="#page-top" class="text-[32px] font-medium text-[#1e1e1e]">Intro</a>
+                <a href="#work" class="text-[32px] font-medium text-[#1e1e1e]">Work</a>
+                <a href="#writing" class="text-[32px] font-medium text-[#1e1e1e]">Writing</a>
+            </nav>
+        </div>
+    </div>
+
     <footer class="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
         <div class="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
             <p class="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">@glhrmarques</p>
@@ -128,6 +150,24 @@
         </div>
     </footer>
     <script>
+        (function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var overlay = document.getElementById('mobile-menu-overlay');
+            if (!btn || !overlay) return;
+            btn.addEventListener('click', function () {
+                var isOpen = overlay.classList.contains('open');
+                overlay.classList.toggle('open');
+                btn.classList.toggle('open');
+                document.body.style.overflow = isOpen ? '' : 'hidden';
+            });
+            overlay.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    overlay.classList.remove('open');
+                    btn.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            });
+        })();
         (function () {
             var topLink = document.querySelector('.home-nav-scroll-top');
             if (topLink) {
