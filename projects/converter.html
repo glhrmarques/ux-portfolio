@@ -30,68 +30,62 @@
 
         <!-- Main content -->
         <main class="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
-            <!-- Project content -->
-            <section class="flex flex-col [&>*]:mb-20 [&>*:last-child]:mb-0">
-                <div class="flex flex-col gap-6">
-                    <a href="../home.html#work" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <h2 class="text-[32px] md:text-[40px] font-bold mb-1 leading-[120%] text-[#1a1a1a]">Building a currency tracker for travel expenses</h2>
+            <!-- Intro section -->
+            <section class="flex flex-col gap-6 mb-20">
+                <a href="../home.html#work" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Building a currency tracker for travel expenses</h1>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Figma</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Cursor</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Claude Opus 4.6</span>
                 </div>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">In the last 3 months, I have studied JavaScript with a personal objective: to go beyond theory and build something real. I challenged myself to create a project to solve a personal problem, controlling my purchases in a foreign currency while traveling.</p>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">I pushed further into product design to deliver an end-to-end solution. I coded it myself with AI assistance to apply the concepts I learned (async functions, promises, error handling, API consumption, integrations, and creating endpoints).</p>
+            </section>
 
-                <div class="flex flex-col gap-6">
-                    <p class="text-[16px] text-[#1a1a1a]">In the last 3 months, I have studied JavaScript with a personal objective: to go beyond theory and build something real. I challenged myself to create a project to solve a personal problem, controlling my purchases in a foreign currency while traveling.</p>
-                    <p class="text-[16px] text-[#1a1a1a]">I pushed further into product design to deliver an end-to-end solution. I coded it myself with AI assistance to apply the concepts I learned (async functions, promises, error handling, API consumption, integrations, and creating endpoints).</p>
-                    <p class="text-[16px] text-[#808080]">Stack: Figma(UX/UI + MCP), Cursor and Claude Opus 4.6</p>
-                </div>
-
+            <!-- Hero video -->
+            <section class="flex flex-col gap-6 mb-20">
                 <div class="overflow-hidden md:rounded-[32px]">
                     <video src="../images/currency-001.mov" autoplay loop muted playsinline class="max-w-full object-contain mx-auto img-max-h rounded-[16px]"></video>
                 </div>
+            </section>
 
-                <hr class="border-gray-300"/>
+            <!-- Application -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Aplication</h2>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">The web app should be capable of converting currency between ARS and BRL, and be integrated with a database that registers the purchase value, ID, type of purchase, exchange rate at the time of the transaction, and timestamp.</p>
+            </section>
 
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Aplication</h3>
-                    <p class="text-[16px] text-[#1a1a1a]">The web app should be capable of converting currency between ARS and BRL, and be integrated with a database that registers the purchase value, ID, type of purchase, exchange rate at the time of the transaction, and timestamp.</p>
-                </div>
-
-                <hr class="border-gray-300"/>
-
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Backend</h3>
-                    <p class="text-[16px] text-[#1a1a1a]">A simple Node.js application hosted on Render, responsible for providing the current exchange rate between ARS and BRL, registering purchases in the database, and retrieving all recorded purchases.</p>
-                </div>
-
+            <!-- Backend -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Backend</h2>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">A simple Node.js application hosted on Render, responsible for providing the current exchange rate between ARS and BRL, registering purchases in the database, and retrieving all recorded purchases.</p>
                 <div class="overflow-hidden md:rounded-[32px]">
                     <img src="../images/currency-002.png" alt="Backend architecture" class="max-w-full object-contain mx-auto img-max-h rounded-[16px]">
                 </div>
+            </section>
 
-                <hr class="border-gray-300"/>
-
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Frontend + IA</h3>
-                    <p class="text-[16px] text-[#1a1a1a]">The interface was designed in Figma and implemented using Figma's MCP. During development, I enhanced event handling (DOM event listeners) to improve UX and add animations.</p>
-                </div>
-
+            <!-- Frontend + AI -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Frontend + IA</h2>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">The interface was designed in Figma and implemented using Figma's MCP. During development, I enhanced event handling (DOM event listeners) to improve UX and add animations.</p>
                 <div class="overflow-hidden md:rounded-[32px]">
                     <img src="../images/currency-003.png" alt="Frontend implementation" class="max-w-full object-contain mx-auto img-max-h rounded-[16px]">
                 </div>
-
-                <p class="text-[16px] text-[#1a1a1a]">I used Claude as my AI assistant for fetching data, making POST requests, endpoints, and working with sessionStorage.</p>
-
+                <p class="text-[18px] font-normal leading-[1.5] text-black">I used Claude as my AI assistant for fetching data, making POST requests, endpoints, and working with sessionStorage.</p>
                 <div class="overflow-hidden md:rounded-[32px]">
                     <img src="../images/currency-004.png" alt="AI-assisted development" class="max-w-full object-contain mx-auto img-max-h rounded-[16px]">
                 </div>
+            </section>
 
-                <hr class="border-gray-300"/>
-
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Conclusion</h3>
-                    <p class="text-[16px] text-[#1a1a1a]">This project reinforces something that has become increasingly evident: with study and AI, it is possible to transform ideas into products or businesses quickly.</p>
-                </div>
+            <!-- Conclusion -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Conclusion</h2>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">This project reinforces something that has become increasingly evident: with study and AI, it is possible to transform ideas into products or businesses quickly.</p>
             </section>
         </main>
     </div>

@@ -30,93 +30,95 @@
 
         <!-- Main content -->
         <main class="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
-            <!-- Project content -->
-            <section class="flex flex-col [&>*]:mb-20 [&>*:last-child]:mb-0">
-                <div class="flex flex-col gap-6">
-                    <a href="../home.html#work" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <h2 class="text-[32px] md:text-[40px] font-bold mb-1 leading-[120%] text-[#1a1a1a]">AI-Powered routing for B2B consultants</h2>
-                    <div class="flex items-center gap-3 text-[14px] md:text-[18px] text-[#808080]">
-                        <a href="https://inventa.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 md:gap-3 hover:underline"><img src="../images/company-logo-inventa.png" alt="Inventa logo" class="w-6 h-6 md:w-8 md:h-8 rounded object-cover flex-shrink-0">Inventa</a> <span class="mx-1">·</span>Product Designer, 2022 - Current
-                    </div>
+            <!-- Intro section -->
+            <section class="flex flex-col gap-6 mb-20">
+                <a href="../home.html#work" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">AI-Powered routing for B2B consultants</h1>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Product Designer</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Inventa</span>
+                    <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">2022 - Current</span>
                 </div>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">Working alongside a backend engineer, I operated as a <span class="font-semibold">designer engineer</span>, shaping both the user experience and the AI-driven decision logic behind route optimization.</p>
+            </section>
 
-                <p class="text-[16px] text-[#1a1a1a]">Working alongside a backend engineer, I operated as a <span class="font-semibold">designer engineer</span>, shaping both the user experience and the AI-driven decision logic behind route optimization.</p>
-
+            <!-- Hero video -->
+            <section class="flex flex-col gap-6 mb-20">
                 <div class="image-bg bg-pink flex justify-center items-center">
                     <div class="overflow-hidden md:rounded-[4px]">
                         <video src="../images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoplay loop muted playsinline class="max-w-full object-contain mx-auto img-max-h rounded-[16px]"></video>
                     </div>
                 </div>
+            </section>
 
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Main goal</h3>
-                    <p class="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Develop a system that allows Inventa's clients to <span class="font-[600]">track sales performance</span> and <span class="font-[600]">create optimized routes</span> to drive sales growth.</p>
+            <!-- Main goal -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Main goal</h2>
+                <p class="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Develop a system that allows Inventa's clients to <span class="font-[600]">track sales performance</span> and <span class="font-[600]">create optimized routes</span> to drive sales growth.</p>
+            </section>
+
+            <!-- Core experience -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Core experience</h2>
+                <p class="text-[18px] font-normal leading-[1.5] text-black">I worked closely with the customer and the business team to define a roadmap of features aligned with their operational needs within Inventa. Starting with a simple baseline, we iteratively refined the UX using user research, behavioral insights, and continuous stakeholder alignment.</p>
+                <p class="text-[18px] font-normal leading-[1.5] text-[#808080]">Inventa's operational data comes from the Sales App I redesigned. <a href="rep-sales.html" class="underline hover:text-gray-600">See the redesign.</a></p>
+                <div class="timeline-illustration reveal-on-scroll reveal-delay-1">
+                    <div class="timeline-row"><div class="timeline-bar" style="margin-left: 5%; width: 32%;">Backend setup and snowflake</div></div>
+                    <div class="timeline-row"><div class="timeline-bar" style="margin-left: 35%; width: 20%;">Sign-in and Dashboards</div></div>
+                    <div class="timeline-row"><div class="timeline-bar" style="margin-left: 44%; width: 19%;">Customer's list and AI</div></div>
+                    <div class="timeline-row"><div class="timeline-bar" style="margin-left: 50%; width: 35%;">Routes</div></div>
+                    <div class="timeline-row"><div class="timeline-bar" style="margin-left: 25%; width: 60%;">Design system</div></div>
                 </div>
+            </section>
 
-                <hr class="border-gray-300"/>
-
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Core experience</h3>
-                    <p class="text-[16px] text-[#1a1a1a]">I worked closely with the customer and the business team to define a roadmap of features aligned with their operational needs within Inventa. Starting with a simple baseline, we iteratively refined the UX using user research, behavioral insights, and continuous stakeholder alignment.</p>
-                    <p class="text-[16px] text-[#808080]">Inventa's operational data comes from the Sales App I redesigned. <a href="rep-sales.html" class="underline hover:text-gray-600">See the redesign.</a></p>
-                    <div class="timeline-illustration reveal-on-scroll reveal-delay-1">
-                        <div class="timeline-row"><div class="timeline-bar" style="margin-left: 5%; width: 32%;">Backend setup and snowflake</div></div>
-                        <div class="timeline-row"><div class="timeline-bar" style="margin-left: 35%; width: 20%;">Sign-in and Dashboards</div></div>
-                        <div class="timeline-row"><div class="timeline-bar" style="margin-left: 44%; width: 19%;">Customer's list and AI</div></div>
-                        <div class="timeline-row"><div class="timeline-bar" style="margin-left: 50%; width: 35%;">Routes</div></div>
-                        <div class="timeline-row"><div class="timeline-bar" style="margin-left: 25%; width: 60%;">Design system</div></div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col gap-4">
-                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                        <div class="md:col-span-1 image-bg bg-pink rounded-[20px] p-6 flex items-center justify-center min-h-[480px] overflow-hidden relative">
-                            <div class="flex flex-col items-center -space-y-3 reveal-on-scroll">
-                                <span class="dot-drop w-20 h-20 rounded-full bg-[#852FE0] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[5]">1</span>
-                                <span class="dot-drop w-20 h-20 rounded-full bg-[#3476EE] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[4]">2</span>
-                                <span class="dot-drop w-20 h-20 rounded-full bg-[#15AF76] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[3]">3</span>
-                                <span class="dot-drop w-20 h-20 rounded-full bg-[#ED932F] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[2]">4</span>
-                                <span class="dot-drop w-20 h-20 rounded-full bg-[#EC3D40] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[1]">5</span>
-                            </div>
-                        </div>
-                        <div class="hidden md:flex bg-[#FFF6FB] rounded-[20px] items-center justify-center overflow-hidden md:col-span-4 md:relative md:min-h-[480px]">
-                            <div class="reveal-on-scroll reveal-delay-1 absolute top-[-20%] left-[-25%] scale-[0.7]" style="border-radius: 16px; overflow: hidden;">
-                                <img src="../images/seller-02.avif" alt="Dashboard overview" class="max-w-none" style="display: block;">
-                            </div>
-                        </div>
-
-                        <div class="flex md:hidden image-bg bg-pink rounded-[20px] items-center justify-center overflow-hidden">
-                            <div class="reveal-on-scroll reveal-delay-1" style="border-radius: 16px; overflow: hidden;">
-                                <img src="../images/seller-02.avif" alt="Customer list and filters" class="max-w-full object-contain mx-auto img-max-h" style="display: block;">
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-5 image-bg bg-pink rounded-[20px] flex items-center justify-center md:min-h-[480px] overflow-hidden">
-                            <div class="reveal-on-scroll reveal-delay-1" style="border-radius: 16px; overflow: hidden;">
-                                <img src="../images/seller-03.avif" alt="Customer list and filters" class="max-w-full object-contain mx-auto img-max-h" style="display: block;">
-                            </div>
+            <!-- Screenshots -->
+            <section class="flex flex-col gap-6 mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="md:col-span-1 image-bg bg-pink rounded-[20px] p-6 flex items-center justify-center min-h-[480px] overflow-hidden relative">
+                        <div class="flex flex-col items-center -space-y-3 reveal-on-scroll">
+                            <span class="dot-drop w-20 h-20 rounded-full bg-[#852FE0] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[5]">1</span>
+                            <span class="dot-drop w-20 h-20 rounded-full bg-[#3476EE] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[4]">2</span>
+                            <span class="dot-drop w-20 h-20 rounded-full bg-[#15AF76] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[3]">3</span>
+                            <span class="dot-drop w-20 h-20 rounded-full bg-[#ED932F] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[2]">4</span>
+                            <span class="dot-drop w-20 h-20 rounded-full bg-[#EC3D40] border-3 border-white flex items-center justify-center text-white text-[22px] font-semibold z-[1]">5</span>
                         </div>
                     </div>
+                    <div class="hidden md:flex bg-[#FFF6FB] rounded-[20px] items-center justify-center overflow-hidden md:col-span-4 md:relative md:min-h-[480px]">
+                        <div class="reveal-on-scroll reveal-delay-1 absolute top-[-20%] left-[-25%] scale-[0.7]" style="border-radius: 16px; overflow: hidden;">
+                            <img src="../images/seller-02.avif" alt="Dashboard overview" class="max-w-none" style="display: block;">
+                        </div>
+                    </div>
+
+                    <div class="flex md:hidden image-bg bg-pink rounded-[20px] items-center justify-center overflow-hidden">
+                        <div class="reveal-on-scroll reveal-delay-1" style="border-radius: 16px; overflow: hidden;">
+                            <img src="../images/seller-02.avif" alt="Customer list and filters" class="max-w-full object-contain mx-auto img-max-h" style="display: block;">
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-5 image-bg bg-pink rounded-[20px] flex items-center justify-center md:min-h-[480px] overflow-hidden">
+                        <div class="reveal-on-scroll reveal-delay-1" style="border-radius: 16px; overflow: hidden;">
+                            <img src="../images/seller-03.avif" alt="Customer list and filters" class="max-w-full object-contain mx-auto img-max-h" style="display: block;">
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <hr class="border-gray-300"/>
-
-                <div class="flex flex-col gap-4">
-                    <h3 class="text-[18px] font-[500] text-[#808080]">Impact</h3>
-                    <div class="flex flex-col gap-6 reveal-on-scroll reveal-delay-1">
-                        <div class="flex w-full items-baseline justify-between">
-                            <p class="text-[16px] md:text-[24px]">Monthly GMV</p>
-                            <h3 class="text-[32px] md:text-[56px] font-semibold">R$ 43k</h3>
-                        </div>
-                        <hr class="border-gray-200"/>
-                        <div class="flex w-full items-baseline justify-between">
-                            <p class="text-[16px] md:text-[24px]">Routes created</p>
-                            <h3 class="text-[32px] md:text-[56px] font-semibold">+1200</h3>
-                        </div>
+            <!-- Impact -->
+            <section class="flex flex-col gap-6 mb-20">
+                <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impact</h2>
+                <div class="flex flex-col gap-6 reveal-on-scroll reveal-delay-1">
+                    <div class="flex w-full items-baseline justify-between">
+                        <p class="text-[16px] md:text-[24px]">Monthly GMV</p>
+                        <h3 class="text-[32px] md:text-[56px] font-semibold">R$ 43k</h3>
+                    </div>
+                    <hr class="border-gray-200"/>
+                    <div class="flex w-full items-baseline justify-between">
+                        <p class="text-[16px] md:text-[24px]">Routes created</p>
+                        <h3 class="text-[32px] md:text-[56px] font-semibold">+1200</h3>
                     </div>
                 </div>
             </section>
