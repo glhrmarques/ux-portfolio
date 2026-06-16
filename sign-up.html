@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚫️</text></svg>">
-    <title>Article Title - Guilherme Marques</title>
+    <title>Sign up/in in GO - Guilherme Marques</title>
     <style>
         html { scroll-behavior: smooth; }
     </style>
@@ -32,13 +32,13 @@
         <!-- Main content -->
         <main class="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
             <!-- Intro section -->
-            <section class="flex flex-col gap-6 mb-20">
+            <section class="flex flex-col gap-6 mb-[48px]">
                 <a href="home.html" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
-                <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Sign up/in in GO</h1>
+                <h1 class="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Sign up in GO</h1>
                 <div class="flex flex-wrap gap-2">
                     <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">June, 2026</span>
                     <span class="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">GO</span>
@@ -46,12 +46,98 @@
             </section>
 
             <!-- Content sections -->
-            <div class="flex flex-col">
-                <section class="flex flex-col gap-6 mb-20">
-                    <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Objective</h2>
+            <section class="flex flex-col gap-[48px]">
+
+                <div class="flex flex-col gap-[16px]">
+                    <h2 class="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objective</h2>
                     <p class="text-[18px] font-normal leading-[1.5] text-black">Create 2 endpoints for sign in and sign up. In this study I learned how to integrate with a database, database modeling and hashing.</p>
-                </section>
-            </div>
+                </div>
+
+                <hr class="border-[#d9d9d9]">
+
+                <h2 class="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">1. Sign up endpoint</h2>
+
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the USERS table</p>
+                        <p class="text-[18px] font-normal leading-[1.5] text-black">In the DB I created the table which will be responsible the store all users registered with SQL:</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-sql">CREATE TYPE user_tipo AS ENUM ('nutricionista', 'admin', 'paciente');
+
+CREATE TABLE usuarios (
+  id            INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  nome          VARCHAR NOT NULL,
+  email         VARCHAR UNIQUE NOT NULL,
+  senha_hash    VARCHAR NOT NULL,
+  tipo          user_tipo NOT NULL,
+  ativo         BOOLEAN DEFAULT true,
+  criado_em     TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  atualizado_em TIMESTAMP WITH TIME ZONE DEFAULT now()
+);</code></pre>
+                </div>
+
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the same schema in GO to create users.</p>
+                        <p class="text-[18px] font-normal leading-[1.5] text-black">Before, creating the schema, I imported all packages necessary to build the endpoint.</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">import (
+    "context"
+    "log"
+    "net/http"
+    "os"
+    "time"
+    "golang.org/x/crypto/bcrypt"
+    "github.com/gin-contrib/cors"
+    "github.com/gin-gonic/gin"
+    "github.com/jackc/pgx/v5/pgxpool"
+    "github.com/joho/godotenv"
+)</code></pre>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">type Users struct {
+    ID int `json:"id"`
+    Name string `json:"name"`
+    Email string `json:"email"`
+    PasswordHash string `json:"password_hash,omitempty"`
+    Type string `json:"type"`
+    Active bool `json:"active"`
+    CreatedAt time.Time `json:"created_at"`
+}</code></pre>
+                </div>
+
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the endpoint</p>
+                        <p class="text-[18px] font-normal leading-[1.5] text-black">Before, creating the schema, I imported all packages necessary to build the endpoint.</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">function addUsers(c *gin.Context){
+    var newUser Users
+
+    if err := c.ShouldBindJSON(&newUser); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+    }
+    
+    HashedPassword, err := bcrypt.GenerateFromPassword([]byte(newUser.PasswordHash), bcrypt.DefaultCost)
+
+    if err != nil {
+        c.JSON(http.InternalServerError, gin.H{"error": "failed to hash password"}) 
+    }
+
+    err := db.QueryRow(
+        `INSERT INTO users (name, email, password_hash,type)
+        VALUES ($1, $2, $3, $4)
+        RETURNING id, active, created_at`
+    ).Scan(&newUser.ID, &newUser.Active, &newUser.CreatedAt)
+
+    if err != nil {
+       c.JSON(http.InternalServerError, gin.H{"error": "failed to create user"})
+    } 
+
+    newUser.PasswordHash = ""
+    c.JSON(http.StatusCreated, newUser)
+}</code></pre>
+                </div>
+
+            </section>
         </main>
     </div>
 
@@ -104,6 +190,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-go.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-sql.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
 </body>
 </html>

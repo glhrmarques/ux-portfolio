@@ -32,7 +32,7 @@
         <!-- Main content -->
         <main class="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
             <!-- Intro section -->
-            <section class="flex flex-col gap-6 mb-20">
+            <section class="flex flex-col gap-6 mb-[48px]">
                 <a href="home.html" class="w-6 h-6 flex items-center justify-center" aria-label="Back to home">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#1e1e1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -47,36 +47,34 @@
                 </div>                 
             </section>
 
-            <!-- Stack -
-
             <!-- Content sections -->
-            <div class="flex flex-col">
+            <div class="flex flex-col gap-[48px]">
                 <!-- Objective -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Objective</h2>
+                <div class="flex flex-col gap-[16px]">
+                    <h2 class="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objective</h2>
                     <p class="text-[18px] font-normal leading-[1.5] text-black">I've been studying software development for a couple months after a friend from the work encouraged me to start studying. Specially because he claimed it would be good for my design engineering journey.</p>
                     <p class="text-[18px] font-normal leading-[1.5] text-black">So I built a RESTful API with 3 endpoints: 1. To return all the teams in my local storage, 2. Find a team by ID, and 3. Endpoint to add new teams.</p>
-                </section>
+                </div>
 
                 <!-- Breakthrough -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <h2 class="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Breakthrough</h2>
+                <div class="flex flex-col gap-[24px]">
+                    <h2 class="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Breakthrough</h2>
 
-                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7">
-                        <li>In the root folder, I created a file named as main.go and run the command:</li>
-                    </ol>
-                    <div class="flex flex-col gap-2">
-                        <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-bash">$ go mod init example/web-teams-service</code></pre>
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">1. In the root folder, I created a file named as main.go and run the command:</p>
+                    </div>
+                    <div class="flex flex-col gap-[8px]">
+                        <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-bash">$ go mod init example/web-teams-service</code></pre>
                         <p class="text-[14px] font-normal text-[#7f7f7f] leading-[1.5]">Used to track all dependencies in the project.</p>
                     </div>
-                </section>
+                </div>
 
                 <!-- Step 2: Adding the data -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="2">
-                        <li>Adding the data:</li>
-                    </ol>
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">package main
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">2. Adding the data:</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">package main
 
 import (
     "net/http"
@@ -95,14 +93,14 @@ var teams = []team {
     {ID:"3", Name:"Forest Green", Country:"England"},
     {ID:"4", Name:"Bayer", Country:"Germany"},
 }</code></pre>
-                </section>
+                </div>
 
                 <!-- Step 3: First endpoint -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="3">
-                        <li>Building the first endPoint, /getAllTeams.</li>
-                    </ol>
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func getAllTeams(c *gin.Context) {
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">3. Building the first endPoint, /getAllTeams.</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func getAllTeams(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, teams)
 }</code></pre>
 
@@ -124,19 +122,19 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func main() {
     router := gin.Default()
     router.GET("/allTeams", getAllTeams)
     router.Run("localhost:8080")
 }</code></pre>
-                </section>
+                </div>
 
                 <!-- Step 4: Second endpoint -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="4">
-                        <li>Building the second endPoint, /getTeamById</li>
-                    </ol>
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func getTeamByID(c *gin.Context) {
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">4. Building the second endPoint, /getTeamById</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func getTeamByID(c *gin.Context) {
     id := c.Param("id")
 
     for _, t := range teams {
@@ -173,20 +171,20 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func main() {
     router := gin.Default()
     router.GET("/allTeams", getAllTeams)
     router.GET("/allTeams/:id", getTeamByID)
     router.Run("localhost:8080")
 }</code></pre>
-                </section>
+                </div>
 
                 <!-- Step 5: Third endpoint -->
-                <section class="flex flex-col gap-6 mb-20">
-                    <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="5">
-                        <li>Building the third endPoint, /addNewTeam</li>
-                    </ol>
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func addTeam(c *gin.Context) {
+                <div class="flex flex-col gap-[24px]">
+                    <div class="flex flex-col gap-[8px]">
+                        <p class="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">5. Building the third endPoint, /addNewTeam</p>
+                    </div>
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func addTeam(c *gin.Context) {
     var newTeam team
 
     if err := c.BindJSON(&newTeam); err != nil {
@@ -221,7 +219,7 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code class="language-go">func main() {
     router := gin.Default()
 
     router.GET("/allTeams", getAllTeams)
@@ -229,7 +227,7 @@ var teams = []team {
     router.POST("/allTeams", addTeam)
     router.Run("localhost:8080")
 }</code></pre>
-                </section>
+                </div>
             </div>
         </main>
     </div>
