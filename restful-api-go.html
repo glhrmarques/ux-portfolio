@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚫️</text></svg>">
     <title>Creating my first RESTful API with GO - Guilherme Marques</title>
@@ -65,9 +66,7 @@
                         <li>In the root folder, I created a file named as main.go and run the command:</li>
                     </ol>
                     <div class="flex flex-col gap-2">
-                        <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-                            <code class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5]">$ go mod init example/web-teams-service</code>
-                        </div>
+                        <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-bash">$ go mod init example/web-teams-service</code></pre>
                         <p class="text-[14px] font-normal text-[#7f7f7f] leading-[1.5]">Used to track all dependencies in the project.</p>
                     </div>
                 </section>
@@ -77,8 +76,7 @@
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="2">
                         <li>Adding the data:</li>
                     </ol>
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">package main
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">package main
 
 import (
     "net/http"
@@ -96,8 +94,7 @@ var teams = []team {
     {ID:"2", Name:"Barcelona", Country:"Spain"},
     {ID:"3", Name:"Forest Green", Country:"England"},
     {ID:"4", Name:"Bayer", Country:"Germany"},
-}</pre>
-                    </div>
+}</code></pre>
                 </section>
 
                 <!-- Step 3: First endpoint -->
@@ -105,11 +102,9 @@ var teams = []team {
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="3">
                         <li>Building the first endPoint, /getAllTeams.</li>
                     </ol>
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func getAllTeams(c *gin.Context) {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func getAllTeams(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, teams)
-}</pre>
-                    </div>
+}</code></pre>
 
                     <!-- Explanation table -->
                     <div class="flex flex-col gap-4">
@@ -129,13 +124,11 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
     router := gin.Default()
     router.GET("/allTeams", getAllTeams)
     router.Run("localhost:8080")
-}</pre>
-                    </div>
+}</code></pre>
                 </section>
 
                 <!-- Step 4: Second endpoint -->
@@ -143,8 +136,7 @@ var teams = []team {
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="4">
                         <li>Building the second endPoint, /getTeamById</li>
                     </ol>
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func getTeamByID(c *gin.Context) {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func getTeamByID(c *gin.Context) {
     id := c.Param("id")
 
     for _, t := range teams {
@@ -154,8 +146,7 @@ var teams = []team {
     }
 
     c.IndentedJSON(http.StatusNotFound, gin.H{"message":"team not found"})
-}</pre>
-                    </div>
+}</code></pre>
 
                     <!-- Explanation table -->
                     <div class="flex flex-col gap-4">
@@ -182,14 +173,12 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
     router := gin.Default()
     router.GET("/allTeams", getAllTeams)
     router.GET("/allTeams/:id", getTeamByID)
     router.Run("localhost:8080")
-}</pre>
-                    </div>
+}</code></pre>
                 </section>
 
                 <!-- Step 5: Third endpoint -->
@@ -197,8 +186,7 @@ var teams = []team {
                     <ol class="text-[18px] font-bold text-black leading-[1.5] list-decimal ml-7" start="5">
                         <li>Building the third endPoint, /addNewTeam</li>
                     </ol>
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func addTeam(c *gin.Context) {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func addTeam(c *gin.Context) {
     var newTeam team
 
     if err := c.BindJSON(&newTeam); err != nil {
@@ -208,8 +196,7 @@ var teams = []team {
     teams = append(teams, newTeam)
     c.IndentedJSON(http.StatusCreated, newTeam)
 
-}</pre>
-                    </div>
+}</code></pre>
 
                     <!-- Explanation table -->
                     <div class="flex flex-col gap-4">
@@ -234,16 +221,14 @@ var teams = []team {
                         </div>
                     </div>
 
-                    <div class="bg-[#f3f3f3] rounded-lg p-3 w-full">
-<pre class="font-['Inconsolata',monospace] text-[18px] text-black leading-[1.5] whitespace-pre-wrap">func main() {
+                    <pre class="bg-[#f3f3f3] rounded-lg p-3 w-full"><code class="language-go">func main() {
     router := gin.Default()
 
     router.GET("/allTeams", getAllTeams)
     router.GET("/allTeams/:id", getTeamByID)
     router.POST("/allTeams", addTeam)
     router.Run("localhost:8080")
-}</pre>
-                    </div>
+}</code></pre>
                 </section>
             </div>
         </main>
@@ -298,5 +283,8 @@ var teams = []team {
             });
         })();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-go.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
 </body>
 </html>
