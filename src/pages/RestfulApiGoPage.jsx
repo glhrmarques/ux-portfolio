@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-go'
@@ -11,7 +12,12 @@ export default function RestfulApiGoPage() {
   }, [])
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
+    <motion.main 
+      className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-[48px]">
         <BackArrow to="/" />
@@ -200,6 +206,6 @@ var teams = []team {
 }`}</code></pre>
         </div>
       </div>
-    </main>
+    </motion.main>
   )
 }

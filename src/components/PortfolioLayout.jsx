@@ -13,9 +13,9 @@ export default function PortfolioLayout({ variant = 'inner' }) {
         setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
       }
     } else {
-      window.scrollTo(0, 0)
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
     }
-  }, [location])
+  }, [location.pathname])
 
   return (
     <>

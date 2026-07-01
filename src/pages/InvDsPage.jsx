@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 
 export default function InvDsPage() {
@@ -12,7 +13,12 @@ export default function InvDsPage() {
   }, [])
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
+    <motion.main 
+      className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <section className="flex flex-col [&>*]:mb-20 [&>*:last-child]:mb-0">
         <div className="flex flex-col gap-6">
           <BackArrow />
@@ -43,6 +49,6 @@ export default function InvDsPage() {
           )}
         </div>
       </section>
-    </main>
+    </motion.main>
   )
 }

@@ -1,3 +1,4 @@
+import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -5,7 +6,12 @@ export default function RepSalesAppPage() {
   useScrollReveal()
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
+    <motion.main 
+      className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-20">
         <BackArrow />
@@ -98,6 +104,6 @@ export default function RepSalesAppPage() {
           </div>
         </div>
       </section>
-    </main>
+    </motion.main>
   )
 }

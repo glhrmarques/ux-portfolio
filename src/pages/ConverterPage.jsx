@@ -1,8 +1,14 @@
+import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 
 export default function ConverterPage() {
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
+    <motion.main 
+      className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-20">
         <BackArrow />
@@ -56,6 +62,6 @@ export default function ConverterPage() {
         <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Conclusion</h2>
         <p className="text-[18px] font-normal leading-[1.5] text-black">This project reinforces something that has become increasingly evident: with study and AI, it is possible to transform ideas into products or businesses quickly.</p>
       </section>
-    </main>
+    </motion.main>
   )
 }
