@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
-import Sidebar from './Sidebar'
-import MobileMenu from './MobileMenu'
-import Footer from './Footer'
+import Header from './Header'
+import BottomBar from './BottomBar'
 
 export default function PortfolioLayout({ variant = 'inner' }) {
   const location = useLocation()
@@ -20,12 +19,11 @@ export default function PortfolioLayout({ variant = 'inner' }) {
 
   return (
     <>
-      <div className="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen lg:flex-row">
-        <Sidebar variant={variant} />
+      <div className="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen">
+        <Header />
         <Outlet />
       </div>
-      <MobileMenu variant={variant} />
-      <Footer />
+      <BottomBar />
     </>
   )
 }

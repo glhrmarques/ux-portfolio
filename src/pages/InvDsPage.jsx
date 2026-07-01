@@ -12,7 +12,7 @@ export default function InvDsPage() {
   }, [])
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
       <section className="flex flex-col [&>*]:mb-20 [&>*:last-child]:mb-0">
         <div className="flex flex-col gap-6">
           <BackArrow />

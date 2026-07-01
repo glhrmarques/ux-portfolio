@@ -11,16 +11,16 @@ export default function RestfulApiGoPage() {
   }, [])
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-[48px]">
         <BackArrow to="/" />
-        <h1 className="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Creating my first RESTful API with GO</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Creating my first RESTful API with GO</h1>
         <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">May, 2026</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">GO</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">net/http</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Gin</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">May, 2026</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">GO</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">net/http</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Gin</span>
         </div>
       </section>
 
@@ -28,16 +28,16 @@ export default function RestfulApiGoPage() {
       <div className="flex flex-col gap-[48px]">
         {/* Objective */}
         <div className="flex flex-col gap-[16px]">
-          <h2 className="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objective</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objective</h2>
           <p className="text-[18px] font-normal leading-[1.5] text-black">I've been studying software development for a couple months after a friend from the work encouraged me to start studying. Specially because he claimed it would be good for my design engineering journey.</p>
           <p className="text-[18px] font-normal leading-[1.5] text-black">So I built a RESTful API with 3 endpoints: 1. To return all the teams in my local storage, 2. Find a team by ID, and 3. Endpoint to add new teams.</p>
         </div>
 
         {/* Step 1 */}
         <div className="flex flex-col gap-[24px]">
-          <h2 className="font-['Poppins',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Breakthrough</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Breakthrough</h2>
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">1. In the root folder, I created a file named as main.go and run the command:</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">1. In the root folder, I created a file named as main.go and run the command:</p>
           </div>
           <div className="flex flex-col gap-[8px]">
             <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-bash">{`$ go mod init example/web-teams-service`}</code></pre>
@@ -48,7 +48,7 @@ export default function RestfulApiGoPage() {
         {/* Step 2 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">2. Adding the data:</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">2. Adding the data:</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`package main
 
@@ -74,7 +74,7 @@ var teams = []team {
         {/* Step 3 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">3. Building the first endPoint, /getAllTeams.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">3. Building the first endPoint, /getAllTeams.</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`func getAllTeams(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, teams)
@@ -107,7 +107,7 @@ var teams = []team {
         {/* Step 4 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">4. Building the second endPoint, /getTeamById</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">4. Building the second endPoint, /getTeamById</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`func getTeamByID(c *gin.Context) {
     id := c.Param("id")
@@ -154,7 +154,7 @@ var teams = []team {
         {/* Step 5 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Poppins',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">5. Building the third endPoint, /addNewTeam</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">5. Building the third endPoint, /addNewTeam</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`func addTeam(c *gin.Context) {
     var newTeam team

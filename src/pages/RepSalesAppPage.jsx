@@ -5,15 +5,15 @@ export default function RepSalesAppPage() {
   useScrollReveal()
 
   return (
-    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-10 md:py-16 lg:px-16 lg:py-[120px]">
+    <main className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16">
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-20">
         <BackArrow />
-        <h1 className="font-['Poppins',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Designing Sales Representative Reps</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Designing Sales Representative Reps</h1>
         <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Product Designer</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">Inventa</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Poppins',sans-serif]">2022 - Current</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Product Designer</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Inventa</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">2022 - Current</span>
         </div>
         <p className="text-[18px] font-normal leading-[1.5] text-black">As a Product Designer, I collaborated with engineers to scale the Sales Rep platform after the MVP validation. We focused on elevating the UX, identifying critical friction points, and increasing tool adoption.</p>
       </section>
@@ -27,13 +27,13 @@ export default function RepSalesAppPage() {
 
       {/* Main goals */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Main goals</h2>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Main goals</h2>
         <p className="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Enable sales reps to complete orders in the app <span className="font-[600]">without relying on the support</span> team.</p>
       </section>
 
       {/* Key research findings */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Key research findings</h2>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Key research findings</h2>
         <p className="text-[18px] font-normal leading-[1.5] text-black"><span className="font-semibold">The workaround:</span> To preserve the professional relationship and save time, Reps used paper notes, leading to manual errors and delayed order processing later in the day.</p>
         <p className="text-[18px] font-normal leading-[1.5] text-black">I redesigned the <span className="font-semibold">Catalog</span>, <span className="font-semibold">Shopping Cart</span>, and <span className="font-semibold">Checkout</span> flows to prioritize speed and one-handed navigation. By reducing friction in these three critical areas, I enabled Sales Reps to outperform 'pen and paper' and complete orders in real-time without disrupting the customer's busy workflow.</p>
       </section>
@@ -75,7 +75,7 @@ export default function RepSalesAppPage() {
 
       {/* Impact */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Poppins',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impact</h2>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impact</h2>
         <div className="flex flex-col gap-6 reveal-on-scroll reveal-delay-1">
           <div className="flex w-full items-baseline justify-between">
             <p className="text-[16px] md:text-[24px]">Monthly GMV</p>
