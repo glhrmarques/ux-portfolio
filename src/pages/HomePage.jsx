@@ -18,10 +18,10 @@ export default function HomePage() {
   return (
     <main className="flex flex-col gap-[104px] px-6 py-12 pb-20 md:px-[240px] md:py-16">
         {/* Intro */}
-        <section id="intro" className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+        <section id="intro" className="flex flex-col md:flex-row items-start md:items-stretch justify-between gap-10">
           <div className="flex flex-col gap-10 max-w-[421px]">
             <motion.h1 
-              className="font-['Figtree',sans-serif] text-[40px] font-medium leading-[1.5] text-black"
+              className="font-['Figtree',sans-serif] text-[44px] font-medium leading-[1.5] text-black"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
@@ -30,30 +30,29 @@ export default function HomePage() {
             </motion.h1>
             <div className="flex flex-col gap-6">
               <motion.p 
-                className="font-['Figtree',sans-serif] text-[18px] leading-[1.5] text-black"
+                className="font-['Figtree',sans-serif] text-[22px] leading-[1.5] font-medium text-black"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               >
-                Hi, I'm Guilherme Marques with 5<br />
-                years of experience in product design.
+                Focused on B2B marketplaces, sales operations, and internal tools.
               </motion.p>
               <motion.p 
-                className="font-['Figtree',sans-serif] text-[18px] leading-[1.5] text-black"
+                className="font-['Figtree',sans-serif] text-[16px] leading-[1.5] font-medium text-black"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               >
-                Currently making B2B full service<br />
-                easier in Brazil at{' '}
+                Designing systems at{' '}
                 <a 
                   href="https://inventa.com.br/" 
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7f7f7f] underline decoration-solid"
+                  className="text-[#000000] underline decoration-solid"
                 >
                   Inventa
                 </a>
+                {' '}that help marketplace teams scale workflows, reduce operational friction, and improve seller performance.
               </motion.p>
               <motion.div 
                 className="flex gap-6"
@@ -87,7 +86,7 @@ export default function HomePage() {
             </div>
           </div>
           <motion.div 
-            className="w-[200px] md:w-[260px] aspect-square bg-[#1e1e1e] shrink-0 overflow-hidden"
+            className="w-[200px] md:w-[260px] aspect-square md:aspect-auto md:self-stretch bg-[#1e1e1e] shrink-0 overflow-hidden"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -95,7 +94,7 @@ export default function HomePage() {
             <img 
               src="/images/myself-01.png" 
               alt="Guilherme Marques" 
-              className="w-full h-full object-cover" 
+              className="block w-full h-full object-cover" 
             />
           </motion.div>
         </section>

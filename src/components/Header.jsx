@@ -12,7 +12,7 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-20 bg-[#FAFAFA] flex items-center justify-between px-6 py-6 md:px-[240px]">
         <Link to="/" className="font-semibold text-[18px] text-[#1e1e1e]">
-          Glhrmarques
+          Guilherme Marques
         </Link>
         
         {/* Desktop nav */}

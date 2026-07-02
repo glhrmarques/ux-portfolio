@@ -1,12 +1,71 @@
+import { useCallback } from 'react'
+
+const contributionColors = ['#151a1f', '#093318', '#1a612d', '#4fcc62', '#4fff6a']
+
 export default function Footer() {
+  const copyPhone = useCallback((e) => {
+    navigator.clipboard.writeText('+5511961747490').then(() => {
+      e.target.textContent = 'Copied!'
+      setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
+    })
+  }, [])
+
+  const linkClassName =
+    'border-b border-[#d9d9d9] py-2 text-[16px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity'
+
   return (
-    <footer className="flex flex-col min-h-[70dvh] bg-[#1e1e1e] w-full">
-      <div className="mx-auto w-full max-w-[1440px] flex flex-1 flex-col items-center justify-center gap-6 px-6 py-20 md:py-28 lg:py-32 text-center">
-        <p className="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[clamp(2.5rem,8vw,6.5rem)] leading-none tracking-tight select-none" aria-label="Social handle">
-          @glhrmarques
-        </p>
-        <div className="w-full max-w-4xl h-px bg-[#333]" role="presentation" aria-hidden="true" />
-        <p className="font-['Inter',sans-serif] font-normal text-[#7f7f7f] text-[28px]">2026</p>
+    <footer className="w-full border-t border-[#dcdbdb] pt-20 pb-[120px] px-6 md:px-[240px]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8">
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <p className="font-semibold text-[32px] leading-none text-[#1e1e1e]">
+            Glhrmarques
+          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="font-serif text-[16px] leading-[1.5] text-black">
+              — Always commited
+            </p>
+            <div className="flex items-center gap-2" aria-hidden="true">
+              {contributionColors.map((color) => (
+                <div
+                  key={color}
+                  className="size-6 shrink-0 rounded-[4px]"
+                  style={{ backgroundColor: color }}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-wrap gap-6">
+            <a
+              href="https://www.linkedin.com/in/glhrmarques/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClassName}
+            >
+              Linkedin
+            </a>
+            <a
+              href="https://github.com/glhrmarques"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClassName}
+            >
+              Github
+            </a>
+            <button
+              type="button"
+              onClick={copyPhone}
+              className={`${linkClassName} cursor-pointer bg-transparent whitespace-nowrap`}
+            >
+              +55 1196174-7490
+            </button>
+          </div>
+          <p className="text-[18px] text-[#7f7f7f]">
+            Designed and coded by Guilherme Marques
+          </p>
+        </div>
       </div>
     </footer>
   )
