@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import BackgroundGlow from './components/BackgroundGlow'
 import PortfolioLayout from './components/PortfolioLayout'
 import HomePage from './pages/HomePage'
 import SellerPlatformPage from './pages/SellerPlatformPage'
@@ -12,7 +13,9 @@ import DietMealPage from './pages/DietMealPage'
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <BackgroundGlow />
+      <Routes>
       {/* Portfolio pages with home layout */}
       <Route element={<PortfolioLayout variant="home" />}>
         <Route path="/" element={<HomePage />} />
@@ -31,6 +34,7 @@ export default function App() {
       {/* Diet pages (standalone, no portfolio layout) */}
       <Route path="/diet" element={<DietPage />} />
       <Route path="/diet/:mealId" element={<DietMealPage />} />
-    </Routes>
+      </Routes>
+    </>
   )
 }
