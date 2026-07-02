@@ -14,8 +14,8 @@ export default function Footer() {
     'border-b border-[#d9d9d9] py-2 text-[16px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity'
 
   return (
-    <footer className="w-full border-t border-[#dcdbdb] pt-20 pb-[120px] px-6 md:px-[240px]">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8">
+    <footer className="w-full border-t border-[#dcdbdb]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-20 pb-[120px] md:px-[240px]">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <p className="font-semibold text-[32px] leading-none text-[#1e1e1e]">
             Glhrmarques

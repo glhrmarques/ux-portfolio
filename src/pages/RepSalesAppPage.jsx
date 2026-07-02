@@ -12,97 +12,112 @@ export default function RepSalesAppPage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      {/* Intro */}
-      <section className="flex flex-col gap-6 mb-20">
+      {/* Section - Intro */}
+      <section className="flex flex-col gap-14 mb-[160px]">
+        <div class="flex flex-col gap-4">
         <BackArrow />
-        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Designing Sales Representative Reps</h1>
-        <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Product Designer</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Inventa</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">2022 - Current</span>
-        </div>
-        <p className="text-[18px] font-normal leading-[1.5] text-black">As a Product Designer, I collaborated with engineers to scale the Sales Rep platform after the MVP validation. We focused on elevating the UX, identifying critical friction points, and increasing tool adoption.</p>
-      </section>
-
-      {/* Hero image */}
-      <section className="flex flex-col gap-6 mb-20">
-        <div className="image-bg bg-blue flex justify-center items-center">
-          <img src="/images/sales-app-home.avif" alt="Rep Sales app screenshot" className="max-w-full object-contain mx-auto img-max-h" />
-        </div>
-      </section>
-
-      {/* Main goals */}
-      <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Main goals</h2>
-        <p className="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Enable sales reps to complete orders in the app <span className="font-[600]">without relying on the support</span> team.</p>
-      </section>
-
-      {/* Key research findings */}
-      <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Key research findings</h2>
-        <p className="text-[18px] font-normal leading-[1.5] text-black"><span className="font-semibold">The workaround:</span> To preserve the professional relationship and save time, Reps used paper notes, leading to manual errors and delayed order processing later in the day.</p>
-        <p className="text-[18px] font-normal leading-[1.5] text-black">I redesigned the <span className="font-semibold">Catalog</span>, <span className="font-semibold">Shopping Cart</span>, and <span className="font-semibold">Checkout</span> flows to prioritize speed and one-handed navigation. By reducing friction in these three critical areas, I enabled Sales Reps to outperform 'pen and paper' and complete orders in real-time without disrupting the customer's busy workflow.</p>
-      </section>
-
-      {/* Screenshots */}
-      <section className="flex flex-col gap-6 mb-20">
-        {/* Mobile */}
-        <div className="flex flex-col gap-[24px] md:hidden">
-          <div className="bg-[#C9E5FF] rounded-[32px] p-[24px] flex justify-center">
-            <img src="/images/sales-app-clients.avif" alt="Clients list" className="max-w-full object-contain reveal-on-scroll img-max-h" />
-          </div>
-          <div className="image-bg bg-blue flex justify-center">
-            <img src="/images/sales-app-catalog.avif" alt="Catalog view" className="max-w-full object-contain reveal-on-scroll img-max-h" />
-          </div>
-          <div className="bg-[#C9E5FF] rounded-[32px] p-[24px] flex justify-center">
-            <img src="/images/sales-app-checkout.avif" alt="Checkout flow" className="max-w-full object-contain reveal-on-scroll img-max-h" />
-          </div>
-          <div className="image-bg bg-blue flex justify-center">
-            <img src="/images/sales-app-payment.avif" alt="Payment screen" className="max-w-full object-contain reveal-on-scroll img-max-h" />
-          </div>
+          <h1 className="font-['Figtree',sans-serif] text-[44px] md:text-[44px] font-medium text-[black]">Sales Reps App</h1>
+          <p className="font-['Figtree',sans-serif] text-[16px] md:text-[22px] text-[black]">The Sales Rep App is a tool used by sales representatives to manage customers, access product information, create orders, and support their sales routine in the field. The MVP had already validated that the product could support the sales operation, but usage still depended on how well it fit into the rep’s existing workflow.</p>
         </div>
 
-        {/* Desktop */}
-        <div className="hidden md:grid grid-cols-5 gap-4">
-          <div className="md:col-span-2 bg-[#C9E5FF] rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
-            <img src="/images/sales-app-clients.avif" alt="Clients list" className="max-w-full object-contain reveal-on-scroll img-max-h" />
+        {/* Team */}
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">ROLE</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">Product Designer</p>
           </div>
-          <div className="md:col-span-3 image-bg bg-blue rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
-            <img src="/images/sales-app-catalog.avif" alt="Catalog view" className="max-w-full object-contain reveal-on-scroll reveal-delay-1 img-max-h" />
+
+          <div class="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">TIMELINE</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">June - September, 2025</p>
           </div>
-          <div className="md:col-span-3 image-bg bg-blue rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
-            <img src="/images/sales-app-checkout.avif" alt="Checkout flow" className="max-w-full object-contain reveal-on-scroll img-max-h" />
+
+          <div class="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">TEAM</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">1 Product Designer</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">1 Product Manager</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">2 Backend Eng</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">1 Frontend Eng</p>
           </div>
-          <div className="md:col-span-2 bg-[#C9E5FF] rounded-[20px] flex items-center justify-center min-h-[480px] overflow-hidden">
-            <img src="/images/sales-app-payment.avif" alt="Payment screen" className="max-w-full object-contain reveal-on-scroll reveal-delay-1 img-max-h" />
+
+          <div class="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">SKILLS</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">Product Design</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">Product Strategy</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">Prototype</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] md:text-[18px] text-[black]">Design System</p>
           </div>
         </div>
       </section>
 
-      {/* Impact */}
-      <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impact</h2>
-        <div className="flex flex-col gap-6 reveal-on-scroll reveal-delay-1">
-          <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Monthly GMV</p>
-            <h3 className="text-[32px] md:text-[56px] font-semibold">R$ 402k</h3>
+      {/* Section - Problem */}
+
+      <section className="flex flex-col gap-14 mb-[160px]">
+        <div class="flex flex-col gap-4">
+          <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">PROBLEM</p>
+          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">What should Inventa improve in their first App?</h2>
+          <p className="font-['Figtree',sans-serif] text-[16px] md:text-[22px] text-[black]">Sales reps needed to move quickly between customer context, catalog browsing, product selection, and order creation. When the app slowed them down or made information hard to find, they defaulted back to manual workarounds.</p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-x-10 gap-y-[56px]">
+          {/* Text 1 */}
+          <div className="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[22px] md:text-[24px] font-medium text-black">Adoption</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Reps had existing habits and needed the app to feel faster than their manual workflow.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">The design challenge was to reduce the cost of using the tool during a live sales interaction.</p>
           </div>
-          <hr className="border-gray-200" />
-          <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Client retention</p>
-            <h3 className="text-[32px] md:text-[56px] font-semibold">64%</h3>
+
+          {/* Text 2 */}
+          <div className="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[24px] font-medium text-black">Independence</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Reps needed to decide quickly whether a store was worth visiting or reactivating.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">This will reduce the need to jump between customer details and order history.</p>
           </div>
-          <hr className="border-gray-200" />
-          <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Orders via App</p>
-            <h3 className="text-[32px] md:text-[56px] font-semibold">+6,300</h3>
-          </div>
-          <hr className="border-gray-200" />
-          <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Order Completion Time (27min to 4:36)</p>
-            <h3 className="text-[32px] md:text-[56px] font-semibold">-83%</h3>
+
+          {/* Text 3 */}
+          <div className="flex flex-col gap-2">
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[24px] font-medium text-black">Iterating with Feedback</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Continuously iterating on concepts and validating product decisions.</p>
           </div>
         </div>
+
+      </section>
+
+      {/* Section - discovery */}
+
+      <section className="flex flex-col gap-14 mb-[160px]">
+        <div class="flex flex-col gap-4">
+          <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">DISCOVERY</p>
+          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">Understanding the Adoption Gap</h2>
+          <p className="font-['Figtree',sans-serif] text-[16px] md:text-[22px] text-[black]">To understand where adoption was breaking down, I reviewed the rep workflow across customer management, catalog navigation, and order creation. I combined operational feedback, product usage signals, and conversations with the Sales Reps to identify where the app was creating unnecessary effort.</p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-x-10 gap-y-[56px]">
+          {/* Image 1 */}
+          <img
+            src="/images/shadown-01.png"
+            alt="getting feedback with sales reps"
+            className="w-full h-[400px] object-contain"
+          />
+
+          {/* Image 2 */}
+          <img
+            src="/images/shadown-02.png"
+            alt="getting feedback with sales reps"
+            className="w-full h-[400px] object-contain"
+          />
+
+          {/* Image 3 */}
+          <img
+            src="/images/shadown-03.png"
+            alt="getting feedback with sales reps"
+            className="w-full h-[400px] object-contain"
+          />
+
+          <p className="col-span-3 font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C] text-center">We observed how they used them, how they felt, and got tons of valuable feedback.</p>
+        </div>
+
       </section>
     </motion.main>
   )
