@@ -28,6 +28,19 @@ export default function HomePage() {
             >
               Product designer
             </motion.h1>
+            <motion.div 
+            className="block md:hidden w-[200px] md:w-[260px] aspect-square md:aspect-auto md:self-stretch bg-[#1e1e1e] shrink-0 overflow-hidden"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
+            <img 
+              src="/images/myself-01.png" 
+              alt="Guilherme Marques" 
+              className="block w-full h-full object-cover" 
+            />
+            
+          </motion.div>
             <div className="flex flex-col gap-6">
               <motion.p 
                 className="font-['Figtree',sans-serif] text-[22px] leading-[1.5] font-medium text-black"
@@ -86,7 +99,7 @@ export default function HomePage() {
             </div>
           </div>
           <motion.div 
-            className="w-[200px] md:w-[260px] aspect-square md:aspect-auto md:self-stretch bg-[#1e1e1e] shrink-0 overflow-hidden"
+            className="hidden md:block w-[200px] md:w-[260px] aspect-square md:aspect-auto md:self-stretch bg-[#1e1e1e] shrink-0 overflow-hidden"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -96,6 +109,7 @@ export default function HomePage() {
               alt="Guilherme Marques" 
               className="block w-full h-full object-cover" 
             />
+            
           </motion.div>
         </section>
 
@@ -109,16 +123,6 @@ export default function HomePage() {
         >
           <h2 className="font-medium text-[22px] text-black">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link to="/projects/seller-platform" className="group aspect-square bg-[#C1038B] p-6 flex items-center justify-center overflow-hidden">
-              <video 
-                src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" 
-              />
-            </Link>
             <Link to="/projects/rep-sales-app" className="group aspect-square bg-[#2F98F9] p-6 flex items-center justify-center overflow-hidden">
               <img 
                 src="/images/sales-app-home.avif" 
@@ -126,10 +130,13 @@ export default function HomePage() {
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" 
               />
             </Link>
-            <Link to="/projects/converter" className="group md:col-span-2 aspect-[2/1] bg-[#B9F1BD] p-6 flex items-center justify-center overflow-hidden">
-              <img 
-                src="/images/converter-cover.png" 
-                alt="Currency Converter" 
+            <Link to="/projects/seller-platform" className="group aspect-square bg-[#C1038B] p-6 flex items-center justify-center overflow-hidden">
+              <video 
+                src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" 
               />
             </Link>
@@ -147,17 +154,17 @@ export default function HomePage() {
           <h2 className="font-medium text-[22px] text-black mb-0">Writing</h2>
           <Link 
             to="/writing/sign-up" 
-            className="border-b border-[#a8a8a8] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
+            className="border-b border-[#dcdbdb] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
           >
-            <p className="text-[18px] font-medium text-black">Sign up/in in GO</p>
-            <p className="text-[18px] text-[#7f7f7f]">June, 2026</p>
+            <p className="text-[20px] md:text-[24px] font-medium text-black">Sign up/in in GO</p>
+            <p className="text-[16px] md:text-[18px] text-[#7f7f7f]">June, 2026</p>
           </Link>
           <Link 
             to="/writing/restful-api-go" 
-            className="border-b border-[#a8a8a8] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
+            className="border-b border-[#dcdbdb] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
           >
-            <p className="text-[18px] font-medium text-black">Building my first RESTful API with GO</p>
-            <p className="text-[18px] text-[#7f7f7f]">May, 2026</p>
+            <p className="text-[20px] md:text-[24px] font-medium text-black">Building my first RESTful API with GO</p>
+            <p className="text-[16px] md:text-[18px] text-[#7f7f7f]">May, 2026</p>
           </Link>
         </motion.section>
     </main>
