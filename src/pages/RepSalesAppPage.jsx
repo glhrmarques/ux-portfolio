@@ -21,7 +21,7 @@ export default function RepSalesAppPage() {
         </div>
 
         {/* Team */}
-        <div className="flex flex-row justify-between">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           <div className="flex flex-col gap-2">
             <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">ROLE</p>
             <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Product Designer</p>
@@ -55,28 +55,28 @@ export default function RepSalesAppPage() {
       <section className="flex flex-col gap-10 mb-[80px]">
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">PROBLEM</p>
-          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">What should Inventa improve in their first App?</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">What should Inventa improve in their first App?</h2>
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">Sales reps needed to move quickly between customer context, catalog browsing, product selection, and order creation. When the app slowed them down or made information hard to find, they defaulted back to manual workarounds.</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-12 gap-y-[56px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-[56px]">
           {/* Text 1 */}
           <div className="flex flex-col gap-2">
-            <p className="font-['Source_Serif_4',sans-serif] text-[22px] md:text-[20px] font-medium text-black">Adoption</p>
+            <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Adoption</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">Reps had existing habits and needed the app to feel faster than their manual workflow.</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">The design challenge was to reduce the cost of using the tool during a live sales interaction.</p>
           </div>
 
           {/* Text 2 */}
           <div className="flex flex-col gap-2">
-            <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[20px] font-medium text-black">Independence</p>
+            <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Independence</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">Reps needed to decide quickly whether a store was worth visiting or reactivating.</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">This will reduce the need to jump between customer details and order history.</p>
           </div>
 
           {/* Text 3 */}
           <div className="flex flex-col gap-2">
-            <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[20px] font-medium text-black">Iterating with Feedback</p>
+            <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Iterating with Feedback</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
             <p className="font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C]">Continuously iterating on concepts and validating product decisions.</p>
           </div>
@@ -89,7 +89,7 @@ export default function RepSalesAppPage() {
       <section className="flex flex-col gap-10 mb-[80px]">
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">DISCOVERY</p>
-          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">Understanding the Adoption Gap</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">Understanding the Adoption Gap</h2>
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">To understand where adoption was breaking down, I reviewed the rep workflow across customer management, catalog navigation, and order creation. I combined operational feedback, product usage signals, and conversations with the Sales Reps to identify where the app was creating unnecessary effort.</p>
         </div>
 
@@ -123,11 +123,11 @@ export default function RepSalesAppPage() {
       <section className="flex flex-col gap-14 mb-[160px]">
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">CORE FLOWS</p>
-          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">Prototyping and Testing</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">Prototyping and Testing</h2>
         </div>
 
 
-        <div className="grid grid-cols-2 gap-[80px] gap-x-10 items-end ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] gap-x-10 items-end ">
           <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
             <video
                 src="/videos/sales-app-core-1.mov"
@@ -140,7 +140,7 @@ export default function RepSalesAppPage() {
           </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Customer context</p>
+              <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Customer context</p>
               <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Add customers, credit analysis and previous orders</p>
             </div>
 
@@ -156,7 +156,7 @@ export default function RepSalesAppPage() {
           </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Catalog browser</p>
+              <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Catalog browser</p>
               <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Find products by brand and product information</p>
             </div>
 
@@ -172,7 +172,7 @@ export default function RepSalesAppPage() {
           </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Product selection</p>
+              <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Product selection</p>
               <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Shopping cart to check order minimum value and products added</p>
             </div>
 
@@ -188,7 +188,7 @@ export default function RepSalesAppPage() {
           </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Simplified payment</p>
+              <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Simplified payment</p>
               <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Installments selection with less cognitive effort</p>
             </div>
         </div>
@@ -199,18 +199,18 @@ export default function RepSalesAppPage() {
       <section className="flex flex-col gap-14 mb-[160px]">
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">DESIGN DECISIONS</p>
-          <h2 className="font-['Figtree',sans-serif] text-[44px] md:text-[32px] font-medium text-[black]">Focused by Default, Detailed When Needed</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">Focused by Default, Detailed When Needed</h2>
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">Instead of exposing every possible detail upfront, we prioritized the information reps needed most often and kept secondary details available when needed. This helped the experience stay focused without removing access to important context.</p>
         </div>
 
         
         <div className="grid grid-cols-1 gap-[24px]">
           <div className="flex flex-col gap-4">
-            <h2 className="font-['Source_Serif_4',sans-serif] text-[44px] md:text-[24px] font-medium text-[black]">Prioritize speed over exploration</h2>
+            <h2 className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[24px] font-medium text-[black]">Prioritize speed over exploration</h2>
             <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[#8C8C8C]">Because reps often use the app while speaking with customers, we prioritized speed over deep browsing. The goal was not to create a beautiful catalog experience only; it was to help reps find products, add items, and move forward with minimal interruption.</p>
           </div>
 
-          <div className="grid grid-cols-3 gap-[24px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
             <div className="w-full h-[320px] overflow-hidden bg-[#F4EAE2]">
               <img
                 src="/images/sales-app-decision-5.png"
@@ -239,21 +239,21 @@ export default function RepSalesAppPage() {
       <section className="flex flex-col gap-14 mb-[160px]">
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">OUTCOME</p>
-          <div className="grid grid-cols-3 gap-[24px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
 
             <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Orders via app</p>
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">+7.000</p>
+              <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Orders via app</p>
+              <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">+7.000</p>
             </div>
 
             <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Montly GMV</p>
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">R$ 413k</p>
+              <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Montly GMV</p>
+              <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">R$ 413k</p>
             </div>
 
             <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Active users</p>
-              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">+100</p>
+              <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Active users</p>
+              <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">+100</p>
             </div>
 
           </div>
