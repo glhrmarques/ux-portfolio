@@ -141,7 +141,7 @@ export default function RepSalesAppPage() {
 
             <div className="flex flex-col gap-2">
               <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Customer context</p>
-              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
+              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Add customers, credit analysis and previous orders</p>
             </div>
 
             <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
@@ -157,7 +157,7 @@ export default function RepSalesAppPage() {
 
             <div className="flex flex-col gap-2">
               <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Catalog browser</p>
-              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
+              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Find products by brand and product information</p>
             </div>
 
             <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
@@ -173,7 +173,7 @@ export default function RepSalesAppPage() {
 
             <div className="flex flex-col gap-2">
               <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Product selection</p>
-              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
+              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Shopping cart to check order minimum value and products added</p>
             </div>
 
             <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
@@ -189,7 +189,7 @@ export default function RepSalesAppPage() {
 
             <div className="flex flex-col gap-2">
               <p className="font-['Source_Serif_4',sans-serif] text-[16px] md:text-[28px] font-medium text-black">Simplified payment</p>
-              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Going wide in ideation and rapidly testing concepts with users.</p>
+              <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Installments selection with less cognitive effort</p>
             </div>
         </div>
 
@@ -240,9 +240,22 @@ export default function RepSalesAppPage() {
         <div className="flex flex-col gap-4">
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">OUTCOME</p>
           <div className="grid grid-cols-3 gap-[24px]">
-            <div className="w-full h-[280px] bg-[#F4EAE2] flex items-end justify-center overflow-hidden"></div>
-            <div className="w-full h-[280px] bg-[#F4EAE2] flex items-end justify-center overflow-hidden"></div>
-            <div className="w-full h-[280px] bg-[#F4EAE2] flex items-end justify-center overflow-hidden"></div>
+
+            <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Orders via app</p>
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">+7.000</p>
+            </div>
+
+            <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Montly GMV</p>
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">R$ 413k</p>
+            </div>
+
+            <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[24px] font-medium text-black">Active users</p>
+              <p className="font-['Figtree', sans-serif] text-[16px] md:text-[56px] font-regular text-black">+100</p>
+            </div>
+
           </div>
         </div>
       </section>
