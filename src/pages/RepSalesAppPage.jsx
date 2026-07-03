@@ -93,29 +93,28 @@ export default function RepSalesAppPage() {
           <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">To understand where adoption was breaking down, I reviewed the rep workflow across customer management, catalog navigation, and order creation. I combined operational feedback, product usage signals, and conversations with the Sales Reps to identify where the app was creating unnecessary effort.</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-10 gap-y-[4px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-y-[4px]">
           {/* Image 1 */}
           <img
             src="/images/shadown-01.png"
             alt="getting feedback with sales reps"
-            className="w-full h-[400px] object-contain"
+            className="w-full h-[400px] object-cover"
           />
 
           {/* Image 2 */}
           <img
             src="/images/shadown-02.png"
             alt="getting feedback with sales reps"
-            className="w-full h-[400px] object-contain"
+            className="w-full h-[400px] object-cover"
           />
 
           {/* Image 3 */}
           <img
             src="/images/shadown-03.png"
             alt="getting feedback with sales reps"
-            className="w-full h-[400px] object-contain"
+            className="w-full h-[400px] object-cover"
           />
 
-          <p className="col-span-3 font-['Figtree',sans-serif] text-[16px] font-medium text-[#8C8C8C] text-center">We observed how they used them, how they felt, and got tons of valuable feedback.</p>
         </div>
       </section>
 
