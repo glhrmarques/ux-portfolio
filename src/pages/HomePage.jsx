@@ -135,7 +135,7 @@ export default function HomePage() {
               <p>Sales Reps App</p>
             </Link>
 
-            <Link to="/projects/inv-ds" target="_blank" className="flex flex-col gap-4 mb-6">
+            <Link to="/projects/inv-ds" className="flex flex-col gap-4 mb-6">
               <div className="w-full h-[380px] bg-[url('/images/background-projects-3.png')] group flex items-center pb-10 justify-center overflow-hidden">
                 <img 
                 src="/images/cover-projects-2.png"

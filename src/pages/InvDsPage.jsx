@@ -21,8 +21,20 @@ export default function InvDsPage() {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <BackArrow />
-      <h2 className="font-['Figtree',sans-serif] text-[32px] md:text-[40px] font-bold mb-1 leading-[120%] text-white">Inventa Ds.</h2>
+      <section className="flex flex-col gap-30 mb-[80px]">
+        <BackArrow />
+        <div className="grid grid-cols-[20%_80%] gap-6">
+        <div>
+          <p className="p-4 font-['Figtree',sans-serif] text-[12px] md:text-[12px] font-bold text-[#656565]">FOUNDATIONS</p>
+          <p className="p-4 cursor-pointer bg-[#0E0E0E] rounded-[16px] font-['Figtree',sans-serif] text-[14px] md:text-[14px] font-medium text-[#fafafa]">Work in progress</p>
+
+        </div>
+        <div className="w-full h-full p-4">
+          <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[40px] font-bold text-white">Inventa Ds.</h1>
+          <p className="text-white md:text-[24px]">Design system coming soon.</p>
+        </div>
+        </div>
+      </section>
     </motion.main>
   )
 }
