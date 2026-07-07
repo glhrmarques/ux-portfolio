@@ -21,12 +21,12 @@ export default function HomePage() {
         <section id="intro" className="flex flex-col md:flex-row items-start md:items-stretch justify-between gap-10">
           <div className="flex flex-col gap-10 max-w-[421px]">
             <motion.h1 
-              className="font-['Figtree',sans-serif] text-[44px] font-medium leading-[1.5] text-black"
+              className="font-['Figtree',sans-serif] text-[44px] font-medium leading-[1.2] text-black "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              Product designer
+              Senior Product designer
             </motion.h1>
             <motion.div 
             className="block md:hidden w-[200px] md:w-[260px] aspect-square md:aspect-auto md:self-stretch bg-[#1e1e1e] shrink-0 overflow-hidden"
@@ -121,24 +121,43 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
         >
-          <h2 className="font-medium text-[22px] text-black">Projects</h2>
+          <h2 className="font-medium text-[22px] text-black">Selected projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link to="/projects/rep-sales-app" className="group aspect-square bg-[#2F98F9] p-6 flex items-center justify-center overflow-hidden">
-              <img 
-                src="/images/sales-app-home.avif" 
+
+            <Link to="/projects/rep-sales-app" className="flex flex-col gap-4 mb-6">
+              <div className="w-full h-[380px] bg-[url('/images/background-projects-1.png')] group flex items-end pb-10 justify-center overflow-hidden">
+                <img 
+                src="/images/cover-projects-1.png"
                 alt="Rep Sales App" 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" 
-              />
+                className="h-[520px] w-auto object-contain group-hover:scale-105 transition-transform duration-400" 
+                />  
+              </div>
+              <p>Sales Reps App</p>
             </Link>
-            <Link to="/projects/seller-platform" className="group aspect-square bg-[#C1038B] p-6 flex items-center justify-center overflow-hidden">
-              <video 
-                src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" 
-              />
+
+            <Link to="/projects/rep-sales-app" className="flex flex-col gap-4 mb-6">
+              <div className="w-full h-[380px] bg-[url('/images/background-projects-3.png')] group flex items-center pb-10 justify-center overflow-hidden">
+                <img 
+                src="/images/cover-projects-2.png"
+                alt="Rep Sales App" 
+                className="h-auto w-auto object-contain group-hover:scale-105 transition-transform duration-400" 
+                />  
+              </div>
+              <p>Inventa Design System</p>
+            </Link>
+
+            <Link to="/projects/seller-platform" className="md:col-span-2 flex flex-col gap-4 mb-6">
+              <div className="w-full h-auto bg-[url('/images/background-projects-2.png')] justify-center p-10 group overflow-hidden">
+                <video 
+                  src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline 
+                  className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-400" 
+                />  
+              </div>
+              <p>B2B SaS for Sales Rep</p>
             </Link>
           </div>
         </motion.section>
