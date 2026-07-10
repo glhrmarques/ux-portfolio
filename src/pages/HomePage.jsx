@@ -147,7 +147,7 @@ export default function HomePage() {
             </Link>
 
             <Link to="/projects/seller-platform" className="md:col-span-2 flex flex-col gap-4 mb-6">
-              <div className="w-full h-auto bg-[url('/images/background-projects-2.png')] justify-center md:p-10 p-3 group overflow-hidden">
+              <div className="w-full h-auto bg-[url('/images/background-projects-2.png')] justify-center md:p-10 p-2 group overflow-hidden">
                 <video 
                   src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
                   autoPlay 
