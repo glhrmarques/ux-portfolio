@@ -1,8 +1,16 @@
 import { useCallback } from 'react'
+import { useLocation } from 'react-router-dom'
+
 
 const contributionColors = ['#151a1f', '#093318', '#1a612d', '#4fcc62', '#4fff6a']
 
 export default function Footer() {
+
+  const darkRoutes = ['/projects/inv-ds',]
+
+  const isDarkPage = darkRoutes.includes(location.pathname)
+  const isVisible = isDarkPage ? 'hidden' : 'block'
+
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
       e.target.textContent = 'Copied!'
@@ -14,7 +22,7 @@ export default function Footer() {
     'border-b border-[#d9d9d9] py-2 text-[16px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity'
 
   return (
-    <footer className="w-full border-t border-[#dcdbdb]">
+    <footer className={`w-full border-t border-[#dcdbdb] ${isVisible}`}>
       <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-20 pb-[120px] md:px-[240px]">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <p className="font-semibold text-[32px] leading-none text-[#1e1e1e]">
