@@ -7,6 +7,11 @@ import BottomBar from './BottomBar'
 export default function PortfolioLayout({ variant = 'inner' }) {
   const location = useLocation()
 
+  const darkRoutes = ['/projects/inv-ds',]
+
+  const isDarkPage = darkRoutes.includes(location.pathname)
+  const bg = isDarkPage ? 'bg-[#000000]' : 'bg-[#FAFAFA]'
+
   useEffect(() => {
     if (location.hash) {
       const el = document.querySelector(location.hash)
@@ -20,7 +25,7 @@ export default function PortfolioLayout({ variant = 'inner' }) {
 
   return (
     <>
-      <div className="mx-auto w-full flex flex-col min-h-screen bg-[#FAFAFA]">
+      <div className={`mx-auto w-full flex flex-col min-h-screen ${bg}`}>
         <Header />
         <Outlet />
       </div>
