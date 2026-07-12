@@ -20,7 +20,7 @@ export default function PortfolioLayout({ variant = 'inner' }) {
 
   return (
     <>
-      <div className="mx-auto w-full max-w-[1440px] flex flex-col min-h-screen">
+      <div className="mx-auto w-full flex flex-col min-h-screen bg-[#FAFAFA]">
         <Header />
         <Outlet />
       </div>

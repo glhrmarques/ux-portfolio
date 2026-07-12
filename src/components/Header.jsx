@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 z-20 flex items-center justify-between px-6 py-6 md:px-[240px] ${bg}`}>
+      <header className={`sticky top-0 z-20 flex items-center justify-between px-6 py-6 md:px-[240px] mx-auto w-full max-w-[1440px] ${bg}`}>
         <Link to="/" className={`font-semibold text-[18px] ${text}`}>
           Guilherme Marques
         </Link>
