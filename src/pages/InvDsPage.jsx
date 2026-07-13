@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { motion } from 'motion/react'
 
-import Colors from './dsPages/Colors'
+import Intro from './dsPages/Intro'
 import Spacing from './dsPages/Spacing'
 // Continue importing your pages
 
 const menuItems = [
   {
-    id: 'colors',
-    label: 'Colors',
-    component: Colors,
+    id: 'intro',
+    label: 'Intro',
+    component: Intro,
   },
   {
     id: 'spacing',
