@@ -1,6 +1,6 @@
 export default function Colors() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-6">
       <h1 className="text-white text-[40px] font-medium">Colors</h1>
 
       <div className="flex flex-col gap-6 w-full pb-[120px]">

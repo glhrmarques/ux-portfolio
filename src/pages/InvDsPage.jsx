@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 
 import Intro from './dsPages/Intro'
 import Colors from './dsPages/Colors'
+import Padding from './dsPages/Padding'
 // Continue importing your pages
 
 const menuItems = [
@@ -15,6 +16,11 @@ const menuItems = [
     id: 'colors',
     label: 'Colors',
     component: Colors,
+  },
+  {
+    id: 'padding',
+    label: 'Padding',
+    component: Padding,
   },
 ]
 
@@ -53,7 +59,7 @@ export default function InvDsPage() {
                     ${
                       isActive
                         ? 'bg-[#0E0E0E] text-white'
-                        : 'text-[#8C8C8C] hover:bg-[#0E0E0E] hover:text-white'
+                        : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
                     }
                   `}
                 >
