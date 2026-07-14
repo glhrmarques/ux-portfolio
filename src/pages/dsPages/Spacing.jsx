@@ -48,12 +48,68 @@ export default function Spacing() {
   
         <hr className="border-t border-[#3d3d3d]" />
   
+        <div className="flex flex-col gap-6 w-full pb-[56px]">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">component-default</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+          </div>
+        </div>
+
+        <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Vertically</p>
+
+        <div className="flex flex-col gap-6 w-full">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[20px] text-white font-medium">Name</p>
+            <p className="font-['Figtree',sans-serif] text-[20px] text-white font-medium">Value</p>
+          </div>
+        </div>
+  
+        <hr className="border-t border-[#3d3d3d]" />
+
+        <div className="flex flex-col gap-6 w-full">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-text</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">8px</p>
+          </div>
+        </div>
+
+        <hr className="border-t border-[#3d3d3d]" />
+
+        <div className="flex flex-col gap-6 w-full">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">display-text-bottom</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+          </div>
+        </div>
+
+        <hr className="border-t border-[#3d3d3d]" />
+
+        <div className="flex flex-col gap-6 w-full">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">content-to-button</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">24px</p>
+          </div>
+        </div>
+
+        <hr className="border-t border-[#3d3d3d]" />
+
+        <div className="flex flex-col gap-6 w-full">
+          <div className="grid grid-cols-2 gap-6 items-center">
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-sections</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">32px</p>
+          </div>
+        </div>
+
+        <hr className="border-t border-[#3d3d3d]" />
+
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">component-default</p>
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
           </div>
         </div>
+
+
       </div>
     )
   }
