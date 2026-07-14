@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import Intro from './dsPages/Intro'
 import Colors from './dsPages/Colors'
 import Padding from './dsPages/Padding'
+import Radius from './dsPages/Radius'
 // Continue importing your pages
 
 const menuItems = [
@@ -21,6 +22,11 @@ const menuItems = [
     id: 'padding',
     label: 'Padding',
     component: Padding,
+  },
+  {
+    id: 'radius',
+    label: 'Radius',
+    component: Radius,
   },
 ]
 
