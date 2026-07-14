@@ -5,6 +5,7 @@ import Intro from './dsPages/Intro'
 import Colors from './dsPages/Colors'
 import Padding from './dsPages/Padding'
 import Radius from './dsPages/Radius'
+import Spacing from './dsPages/Spacing'
 // Continue importing your pages
 
 const menuItems = [
@@ -27,6 +28,11 @@ const menuItems = [
     id: 'radius',
     label: 'Radius',
     component: Radius,
+  },
+  {
+    id: 'spacing',
+    label: 'Spacing',
+    component: Spacing,
   },
 ]
 
@@ -64,11 +70,11 @@ export default function InvDsPage() {
                     w-full rounded-xl p-4 text-left transition-colors cursor-pointer
                     ${
                       isActive
-                        ? 'bg-[#0E0E0E] text-white'
-                        : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
+                      ? 'bg-[#0E0E0E] text-white'
+                      : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
                     }
-                  `}
-                >
+                    `}
+                    >
                   {item.label}
                 </button>
               )
