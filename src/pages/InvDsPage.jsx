@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'motion/react'
 
 import Intro from './dsPages/Intro'
-import Spacing from './dsPages/Spacing'
+import Colors from './dsPages/Colors'
 // Continue importing your pages
 
 const menuItems = [
@@ -12,14 +12,14 @@ const menuItems = [
     component: Intro,
   },
   {
-    id: 'spacing',
-    label: 'Spacing',
-    component: Spacing,
+    id: 'colors',
+    label: 'Colors',
+    component: Colors,
   },
 ]
 
 export default function InvDsPage() {
-  const [activePage, setActivePage] = useState('colors')
+  const [activePage, setActivePage] = useState('intro')
 
   const activeItem =
     menuItems.find((item) => item.id === activePage) ?? menuItems[0]
@@ -34,7 +34,7 @@ export default function InvDsPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <div className="grid grid-cols-[20%_80%] gap-6">
+        <div className="grid grid-cols-[15%_85%] gap-3">
           <aside className="flex flex-col gap-2">
             <p className="p-4 text-xs font-bold text-[#656565]">
               FOUNDATIONS
