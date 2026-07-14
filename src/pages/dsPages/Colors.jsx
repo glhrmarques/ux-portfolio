@@ -11,11 +11,11 @@ export default function Colors() {
 
         <div className="flex flex-row gap-4 w-full">
           <div className="w-full h-[200px] bg-[#005BE2] p-4 flex flex-col justify-between">
-            <p className="text-white text-[16px]">Label</p>
+            <p className="text-white text-[16px]">Inventa Light Blue</p>
             <p className="text-white">#005BE2</p>
           </div>
           <div className="w-full h-[200px] bg-[#003788] p-4 flex flex-col justify-between">
-            <p className="text-white text-[16px]">Label</p>
+            <p className="text-white text-[16px]">Inventa Strong Blue</p>
             <p className="text-white text-[16px]">#003788</p>
           </div>
         </div>
