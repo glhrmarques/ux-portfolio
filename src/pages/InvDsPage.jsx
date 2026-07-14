@@ -61,7 +61,7 @@ export default function InvDsPage() {
                   type="button"
                   onClick={() => setActivePage(item.id)}
                   className={`
-                    w-full rounded-xl p-4 text-left transition-colors
+                    w-full rounded-xl p-4 text-left transition-colors cursor-pointer
                     ${
                       isActive
                         ? 'bg-[#0E0E0E] text-white'
