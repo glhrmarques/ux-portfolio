@@ -53,7 +53,7 @@ export default function InvDsPage() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <div className="grid grid-cols-[15%_85%] gap-3">
-          <aside className="flex flex-col gap-1">
+          <aside className="pt-4 flex flex-col gap-1 md:sticky md:top-16 md:self-start">
             <p className="p-4 text-xs font-bold text-[#656565]">
               FOUNDATIONS
             </p>
