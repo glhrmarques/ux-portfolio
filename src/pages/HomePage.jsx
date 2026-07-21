@@ -158,7 +158,7 @@ export default function HomePage() {
                     className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-400" 
                   />  
                 </div>
-                <p>B2B SaS for Sales Rep</p>
+                <p>B2B SaaS for Sellers</p>
               </Link>
             </div>
           </motion.section>
