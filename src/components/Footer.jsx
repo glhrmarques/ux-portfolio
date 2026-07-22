@@ -13,7 +13,7 @@ export default function Footer() {
 
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
-      e.target.textContent = 'Copied!'
+      e.target.textContent = 'Copied'
       setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
     })
   }, [])
@@ -22,7 +22,7 @@ export default function Footer() {
     'border-b border-[#d9d9d9] py-2 text-[16px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity'
 
   return (
-    <footer className={`w-full border-t border-[#dcdbdb] ${isVisible}`}>
+    <footer className={`w-full ${isVisible}`}>
       <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-8 px-6 pt-20 pb-[120px] md:px-[240px]">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <p className="font-semibold text-[32px] leading-none text-[#1e1e1e]">
@@ -32,11 +32,11 @@ export default function Footer() {
             <p className="font-serif text-[16px] leading-[1.5] text-black">
               — Always commited
             </p>
-            <div className="flex items-center gap-2" aria-hidden="true">
+            <div className="flex items-center gap-1" aria-hidden="true">
               {contributionColors.map((color) => (
                 <div
                   key={color}
-                  className="size-6 shrink-0 rounded-[4px]"
+                  className="size-3 shrink-0 rounded-[2px]"
                   style={{ backgroundColor: color }}
                 />
               ))}
