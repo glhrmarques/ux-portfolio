@@ -15,7 +15,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium">Name</p>
-            <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium">Value</p>
+            <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium text-center">Value</p>
           </div>
         </div>
   
