@@ -22,7 +22,7 @@ export default function Radius() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">radius-small</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ export default function Radius() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">radius-medium</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">20px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">20px</p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ export default function Radius() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">radius-large</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">32px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">32px</p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function Radius() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">radius-x-large</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">40px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">40px</p>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export default function Radius() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">radius-2x-large</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">60px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">60px</p>
         </div>
       </div>
     </div>

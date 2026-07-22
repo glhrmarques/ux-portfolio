@@ -22,7 +22,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">padding-x-small</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">8px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">8px</p>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">padding-small</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">padding-medium</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">24px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">24px</p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">padding-large</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">32px</p>
+          <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">32px</p>
         </div>
       </div>
     </div>

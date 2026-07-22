@@ -6,7 +6,7 @@ import Colors from './dsPages/Colors'
 import Padding from './dsPages/Padding'
 import Radius from './dsPages/Radius'
 import Spacing from './dsPages/Spacing'
-// Continue importing your pages
+import Typography from './dsPages/Typography'
 
 const menuItems = [
   {
@@ -33,6 +33,11 @@ const menuItems = [
     id: 'spacing',
     label: 'Spacing',
     component: Spacing,
+  },
+  {
+    id: 'typography',
+    label: 'Typography',
+    component: Typography,
   },
 ]
 

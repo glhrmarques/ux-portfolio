@@ -24,7 +24,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-cards</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
           </div>
         </div>
   
@@ -33,7 +33,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-chips</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">12px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">12px</p>
           </div>
         </div>
   
@@ -42,7 +42,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">screen-mobile</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">24px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">24px</p>
           </div>
         </div>
   
@@ -51,7 +51,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full pb-[56px]">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">component-default</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-text</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">8px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">8px</p>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">display-text-bottom</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">content-to-button</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">24px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">24px</p>
           </div>
         </div>
 
@@ -96,7 +96,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">between-sections</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">32px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">32px</p>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ export default function Spacing() {
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
             <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">component-default</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">16px</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">16px</p>
           </div>
         </div>
 
