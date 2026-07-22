@@ -5,8 +5,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-6 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Core</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">As far as the public’s concerned, Wise is green. But to us, it’s Bright Green, Forest Green, and white with an 8% Forest Green tint thrown in.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Core</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">As far as the public’s concerned, Wise is green. But to us, it’s Bright Green, Forest Green, and white with an 8% Forest Green tint thrown in.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
@@ -23,8 +23,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-4 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Content</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">Our content colours are based on neutral greys, with a small percentage of green. This creates a clear and accessible visual hierarchy, and makes us distinct by adding hints of our brand colours.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Content</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">Our content colours are based on neutral greys, with a small percentage of green. This creates a clear and accessible visual hierarchy, and makes us distinct by adding hints of our brand colours.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
@@ -49,8 +49,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-4 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Surface</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">Background colours are used for larger surface areas that are light enough to be overlayed with content and other components.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Surface</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">Background colours are used for larger surface areas that are light enough to be overlayed with content and other components.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
@@ -86,8 +86,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-6 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Border</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">We use border colours to subtly separate different blocks of content.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Border</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">We use border colours to subtly separate different blocks of content.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
@@ -104,8 +104,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-6 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Sentiment</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">Our sentiment colours are used to indicate positive, negative, or warning.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Sentiment</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">Our sentiment colours are used to indicate positive, negative, or warning.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
@@ -141,8 +141,8 @@ export default function Colors() {
 
       <div className="flex flex-col gap-6 w-full pb-[120px]">
         <div className="grid grid-cols-2 gap-6 items-center">
-          <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium">Base</p>
-          <p className="font-['Figtree',sans-serif] text-[16px] text-white">Base colours are useful colours that we can use in several different scenarios.</p>
+          <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">Base</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white">Base colours are useful colours that we can use in several different scenarios.</p>
         </div>
 
         <div className="flex flex-row gap-4 w-full">

@@ -52,13 +52,13 @@ export default function Button() {
             </div>
         </div>
 
-        <p className="font-['Figtree',sans-serif] text-[24px] text-white font-medium pt-[56px]">Size</p>
+        <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium pt-[56px]">Size</p>
 
 
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-3 gap-6 items-center">
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular ">Large</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">Primary</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular ">Large</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular">Primary</p>
             <div className="flex flex-1 justify-center">
                 <button
                     type="button"
@@ -74,8 +74,8 @@ export default function Button() {
 
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-3 gap-6 items-center">
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular ">Medium</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">Primary</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular ">Medium</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular">Primary</p>
             <div className="flex flex-1 justify-center">
                 <button
                     type="button"
@@ -91,8 +91,8 @@ export default function Button() {
 
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-3 gap-6 items-center">
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular ">Small</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular">Primary</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular ">Small</p>
+            <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular">Primary</p>
             <div className="flex flex-1 justify-center">
                 <button
                     type="button"
