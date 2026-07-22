@@ -8,6 +8,8 @@ import Radius from './dsPages/Radius'
 import Spacing from './dsPages/Spacing'
 import Typography from './dsPages/Typography'
 
+import Button from './dsPages/Button'
+
 const menuItems = [
   {
     id: 'intro',
@@ -41,11 +43,21 @@ const menuItems = [
   },
 ]
 
+const menuComponent = [
+  {
+    id: 'button',
+    label: 'Button',
+    component: Button,
+  },
+]
+
+const allMenuItems = [...menuItems, ...menuComponent]
+
 export default function InvDsPage() {
   const [activePage, setActivePage] = useState('intro')
 
   const activeItem =
-    menuItems.find((item) => item.id === activePage) ?? menuItems[0]
+    allMenuItems.find((item) => item.id === activePage) ?? allMenuItems[0]
 
   const ActivePage = activeItem.component
 
@@ -64,6 +76,30 @@ export default function InvDsPage() {
             </p>
 
             {menuItems.map((item) => {
+              const isActive = activePage === item.id
+
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => setActivePage(item.id)}
+                  className={`
+                    w-full rounded-xl p-4 text-left transition-colors cursor-pointer
+                    ${
+                      isActive
+                      ? 'bg-[#0E0E0E] text-white'
+                      : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
+                    }
+                    `}
+                    >
+                  {item.label}
+                </button>
+              )
+            })}
+            <p className="p-4 text-xs font-bold text-[#656565]">
+              COMPONENTS
+            </p>
+            {menuComponent.map((item) => {
               const isActive = activePage === item.id
 
               return (
