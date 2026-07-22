@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 
 import Intro from './dsPages/Intro'
@@ -55,11 +55,16 @@ const allMenuItems = [...menuItems, ...menuComponent]
 
 export default function InvDsPage() {
   const [activePage, setActivePage] = useState('intro')
+  const contentRef = useRef(null)
 
   const activeItem =
     allMenuItems.find((item) => item.id === activePage) ?? allMenuItems[0]
 
   const ActivePage = activeItem.component
+
+  useEffect(() => {
+    contentRef.current?.scrollTo({ top: 0, behavior: 'auto' })
+  }, [activePage])
 
   return (
     <div className="mx-auto w-full max-w-[1440px]">
@@ -124,7 +129,10 @@ export default function InvDsPage() {
             </div>
           </aside>
 
-          <section className="min-h-0 min-w-0 overflow-y-auto overscroll-contain">
+          <section
+            ref={contentRef}
+            className="min-h-0 min-w-0 overflow-y-auto overscroll-contain"
+          >
             <div className="p-4 pb-24">
               <ActivePage />
             </div>
