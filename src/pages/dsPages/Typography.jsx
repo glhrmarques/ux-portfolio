@@ -62,8 +62,8 @@ export default function Typography() {
   
         <div className="flex flex-col gap-6 w-full">
           <div className="grid grid-cols-2 gap-6 items-center">
-            <p className="font-['Figtree',sans-serif] text-[20px] text-white font-regular">Title body</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">20px</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] text-white font-regular">Title body</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] text-white font-regular text-center">18px</p>
           </div>
         </div>
 
