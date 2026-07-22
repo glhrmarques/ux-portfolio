@@ -64,66 +64,70 @@ export default function InvDsPage() {
   return (
     <div className="mx-auto w-full max-w-[1440px]">
       <motion.main
-        className="min-w-0 px-6 py-12 md:px-[240px] md:py-16"
+        className="h-[calc(100dvh-76px)] min-w-0 overflow-hidden px-6 py-6 md:px-[240px] md:py-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <div className="grid grid-cols-[15%_85%] gap-3">
-          <aside className="pt-4 flex flex-col gap-1 md:sticky md:top-16 md:self-start">
-            <p className="p-4 text-xs font-bold text-[#656565]">
-              FOUNDATIONS
-            </p>
+        <div className="grid h-full min-h-0 grid-cols-[minmax(0,15fr)_minmax(0,85fr)] gap-3">
+          <aside className="min-h-0 overflow-y-auto overscroll-contain">
+            <div className="flex flex-col gap-1 pt-4">
+              <p className="p-4 text-xs font-bold text-[#656565]">
+                FOUNDATIONS
+              </p>
 
-            {menuItems.map((item) => {
-              const isActive = activePage === item.id
+              {menuItems.map((item) => {
+                const isActive = activePage === item.id
 
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => setActivePage(item.id)}
-                  className={`
-                    w-full rounded-xl p-4 text-left transition-colors cursor-pointer
-                    ${
-                      isActive
-                      ? 'bg-[#0E0E0E] text-white'
-                      : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
-                    }
-                    `}
-                    >
-                  {item.label}
-                </button>
-              )
-            })}
-            <p className="p-4 text-xs font-bold text-[#656565]">
-              COMPONENTS
-            </p>
-            {menuComponent.map((item) => {
-              const isActive = activePage === item.id
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setActivePage(item.id)}
+                    className={`
+                      w-full rounded-xl p-4 text-left transition-colors cursor-pointer
+                      ${
+                        isActive
+                        ? 'bg-[#0E0E0E] text-white'
+                        : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
+                      }
+                      `}
+                      >
+                    {item.label}
+                  </button>
+                )
+              })}
+              <p className="p-4 text-xs font-bold text-[#656565]">
+                COMPONENTS
+              </p>
+              {menuComponent.map((item) => {
+                const isActive = activePage === item.id
 
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => setActivePage(item.id)}
-                  className={`
-                    w-full rounded-xl p-4 text-left transition-colors cursor-pointer
-                    ${
-                      isActive
-                      ? 'bg-[#0E0E0E] text-white'
-                      : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
-                    }
-                    `}
-                    >
-                  {item.label}
-                </button>
-              )
-            })}
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setActivePage(item.id)}
+                    className={`
+                      w-full rounded-xl p-4 text-left transition-colors cursor-pointer
+                      ${
+                        isActive
+                        ? 'bg-[#0E0E0E] text-white'
+                        : 'text-[#FFFFFF] hover:bg-[#0E0E0E] hover:text-white'
+                      }
+                      `}
+                      >
+                    {item.label}
+                  </button>
+                )
+              })}
+            </div>
           </aside>
 
-          <section className="min-w-0 p-4">
-            <ActivePage />
+          <section className="min-h-0 min-w-0 overflow-y-auto overscroll-contain">
+            <div className="p-4 pb-24">
+              <ActivePage />
+            </div>
           </section>
         </div>
       </motion.main>
