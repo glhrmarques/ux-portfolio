@@ -137,7 +137,7 @@ export default function InvDsPage() {
 
           <section
             ref={contentRef}
-            className="min-h-0 min-w-0 overflow-y-auto overscroll-contain ds-scrollbar"
+            className="min-h-0 min-w-0 overflow-y-auto overscroll-none hide-scrollbar"
           >
             <div className="p-4 pb-24">
               <ActivePage />
