@@ -16,7 +16,7 @@ export default function SellerPlatformPage() {
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-20">
         <BackArrow />
-        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Roteirização com IA para consultores B2B</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Portal de Vendas para fornecedores</h1>
         <div className="flex flex-wrap gap-2">
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Designer de Produto</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Inventa</span>

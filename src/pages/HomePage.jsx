@@ -52,7 +52,7 @@ export default function HomePage() {
                   Focado em marketplaces B2B, operações de vendas e ferramentas internas.
                 </motion.p>
                 <motion.p 
-                  className="font-['Figtree',sans-serif] text-[18px] leading-[1.5] font-medium text-black"
+                  className="font-['Figtree',sans-serif] text-[18px] leading-[1.5] font-regular text-black"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -133,7 +133,7 @@ export default function HomePage() {
                   className="h-[520px] w-auto object-contain group-hover:scale-105 transition-transform duration-400" 
                   />  
                 </div>
-                <p>App para representantes de vendas</p>
+                <p className="text-[18px] text-black">App para representantes de vendas</p>
               </Link>
 
               <Link to="/projects/inv-ds" className="flex flex-col gap-4 mb-6">
@@ -144,7 +144,7 @@ export default function HomePage() {
                   className="h-auto w-auto object-contain group-hover:scale-105 transition-transform duration-400" 
                   />  
                 </div>
-                <p>Sistema de Design da Inventa</p>
+                <p className="text-[18px] text-black">Inventa Design System</p>
               </Link>
 
               <Link to="/projects/seller-platform" className="md:col-span-2 flex flex-col gap-4 mb-6">
@@ -158,7 +158,7 @@ export default function HomePage() {
                     className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-400" 
                   />  
                 </div>
-                <p>SaaS B2B para vendedores</p>
+                <p className="text-[18px] text-black">Portal de Vendas para fornecedores</p>
               </Link>
             </div>
           </motion.section>
