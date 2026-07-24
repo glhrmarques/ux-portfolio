@@ -26,14 +26,14 @@ export default function MobileMenu({ variant = 'portfolio' }) {
 
   const navLinks = isHome
     ? [
-        { to: '/', hash: '#page-top', label: 'Intro' },
-        { to: '/', hash: '#work', label: 'Work' },
-        { to: '/', hash: '#writing', label: 'Writing' },
+        { to: '/', hash: '#page-top', label: 'Início' },
+        { to: '/', hash: '#work', label: 'Trabalhos' },
+        { to: '/', hash: '#writing', label: 'Artigos' },
       ]
     : [
-        { to: '/', label: 'Intro' },
-        { to: '/#work', label: 'Work' },
-        { to: '/#writing', label: 'Writing' },
+        { to: '/', label: 'Início' },
+        { to: '/#work', label: 'Trabalhos' },
+        { to: '/#writing', label: 'Artigos' },
       ]
 
   return (
@@ -41,7 +41,7 @@ export default function MobileMenu({ variant = 'portfolio' }) {
       <button
         className={`mobile-menu-btn${isOpen ? ' open' : ''}`}
         onClick={toggle}
-        aria-label="Open menu"
+        aria-label="Abrir menu"
       >
         <svg className="menu-icon-inactive" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />

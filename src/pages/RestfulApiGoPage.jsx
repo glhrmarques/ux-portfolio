@@ -21,9 +21,9 @@ export default function RestfulApiGoPage() {
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-[48px]">
         <BackArrow to="/" />
-        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Creating my first RESTful API with GO</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Criando minha primeira API RESTful com GO</h1>
         <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">May, 2026</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Maio de 2026</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">GO</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">net/http</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Gin</span>
@@ -34,27 +34,27 @@ export default function RestfulApiGoPage() {
       <div className="flex flex-col gap-[48px]">
         {/* Objective */}
         <div className="flex flex-col gap-[16px]">
-          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objective</h2>
-          <p className="text-[18px] font-normal leading-[1.5] text-black">I've been studying software development for a couple months after a friend from the work encouraged me to start studying. Specially because he claimed it would be good for my design engineering journey.</p>
-          <p className="text-[18px] font-normal leading-[1.5] text-black">So I built a RESTful API with 3 endpoints: 1. To return all the teams in my local storage, 2. Find a team by ID, and 3. Endpoint to add new teams.</p>
+          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objetivo</h2>
+          <p className="text-[18px] font-normal leading-[1.5] text-black">Comecei a estudar desenvolvimento de software há alguns meses depois que um amigo do trabalho me incentivou. Principalmente porque ele acreditava que isso seria positivo para minha jornada como designer engenheiro.</p>
+          <p className="text-[18px] font-normal leading-[1.5] text-black">Por isso, criei uma API RESTful com três endpoints: um para retornar todos os times do armazenamento local, outro para encontrar um time pelo ID e um terceiro para adicionar novos times.</p>
         </div>
 
         {/* Step 1 */}
         <div className="flex flex-col gap-[24px]">
-          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Breakthrough</h2>
+          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Desenvolvimento</h2>
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">1. In the root folder, I created a file named as main.go and run the command:</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">1. Na pasta raiz, criei um arquivo chamado main.go e executei o comando:</p>
           </div>
           <div className="flex flex-col gap-[8px]">
             <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-bash">{`$ go mod init example/web-teams-service`}</code></pre>
-            <p className="text-[14px] font-normal text-[#7f7f7f] leading-[1.5]">Used to track all dependencies in the project.</p>
+            <p className="text-[14px] font-normal text-[#7f7f7f] leading-[1.5]">Usado para acompanhar todas as dependências do projeto.</p>
           </div>
         </div>
 
         {/* Step 2 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">2. Adding the data:</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">2. Adicionando os dados:</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`package main
 
@@ -80,7 +80,7 @@ var teams = []team {
         {/* Step 3 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">3. Building the first endPoint, /getAllTeams.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">3. Criando o primeiro endpoint, /getAllTeams.</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`func getAllTeams(c *gin.Context) {
     c.IndentedJSON(http.StatusOK, teams)
@@ -89,17 +89,17 @@ var teams = []team {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
               <span className="sm:w-[300px] lg:w-[500px] shrink-0">c</span>
-              <span className="flex-1 sm:text-right">Stands for <em>context,</em> like a variable that it's receiving value</span>
+              <span className="flex-1 sm:text-right">Significa <em>context</em>, como uma variável que recebe valor</span>
             </div>
             <hr className="border-[#f0f0f0]" />
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
               <span className="sm:w-[300px] lg:w-[500px] shrink-0">gin.Context</span>
-              <span className="flex-1 sm:text-right">Is responsible to give context of http request and response to c</span>
+              <span className="flex-1 sm:text-right">É responsável por fornecer a c o contexto da requisição e resposta HTTP</span>
             </div>
             <hr className="border-[#f0f0f0]" />
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[18px] text-black">
               <span className="sm:w-[300px] lg:w-[500px] shrink-0">c.Indented(JSON)</span>
-              <span className="flex-1 sm:text-right">It's serializing the response into a JSON response</span>
+              <span className="flex-1 sm:text-right">Serializa a resposta em JSON</span>
             </div>
           </div>
 
@@ -113,7 +113,7 @@ var teams = []team {
         {/* Step 4 */}
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">4. Building the second endPoint, /getTeamById</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">4. Criando o segundo endpoint, /getTeamById</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`func getTeamByID(c *gin.Context) {
     id := c.Param("id")

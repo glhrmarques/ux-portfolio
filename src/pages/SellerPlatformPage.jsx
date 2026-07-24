@@ -16,13 +16,13 @@ export default function SellerPlatformPage() {
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-20">
         <BackArrow />
-        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">AI-Powered routing for B2B consultants</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Roteirização com IA para consultores B2B</h1>
         <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Product Designer</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Designer de Produto</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Inventa</span>
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">2022 - Current</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">2022 - Atual</span>
         </div>
-        <p className="text-[18px] font-normal leading-[1.5] text-black">Working alongside a backend engineer, I operated as a <span className="font-semibold">designer engineer</span>, shaping both the user experience and the AI-driven decision logic behind route optimization.</p>
+        <p className="text-[18px] font-normal leading-[1.5] text-black">Trabalhando ao lado de um engenheiro de backend, atuei como <span className="font-semibold">designer engenheiro</span>, moldando tanto a experiência do usuário quanto a lógica de decisão orientada por IA por trás da otimização de rotas.</p>
       </section>
 
       {/* Hero video */}
@@ -36,21 +36,21 @@ export default function SellerPlatformPage() {
 
       {/* Main goal */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Main goal</h2>
-        <p className="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Develop a system that allows Inventa's clients to <span className="font-[600]">track sales performance</span> and <span className="font-[600]">create optimized routes</span> to drive sales growth.</p>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Objetivo principal</h2>
+        <p className="text-[22px] md:text-[32px] text-[#1a1a1a] md:leading-[120%] font-[300]">Desenvolver um sistema que permita aos clientes da Inventa <span className="font-[600]">acompanhar o desempenho de vendas</span> e <span className="font-[600]">criar rotas otimizadas</span> para impulsionar o crescimento das vendas.</p>
       </section>
 
       {/* Core experience */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Core experience</h2>
-        <p className="text-[18px] font-normal leading-[1.5] text-black">I worked closely with the customer and the business team to define a roadmap of features aligned with their operational needs within Inventa. Starting with a simple baseline, we iteratively refined the UX using user research, behavioral insights, and continuous stakeholder alignment.</p>
-        <p className="text-[18px] font-normal leading-[1.5] text-[#808080]">Inventa's operational data comes from the Sales App I redesigned. <Link to="/projects/rep-sales-app" className="underline hover:text-gray-600">See the redesign.</Link></p>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Experiência principal</h2>
+        <p className="text-[18px] font-normal leading-[1.5] text-black">Trabalhei em estreita colaboração com o cliente e a equipe de negócios para definir um roteiro de funcionalidades alinhado às necessidades operacionais dentro da Inventa. Partindo de uma base simples, refinamos iterativamente a UX com pesquisas de usuários, insights comportamentais e alinhamento contínuo com as partes interessadas.</p>
+        <p className="text-[18px] font-normal leading-[1.5] text-[#808080]">Os dados operacionais da Inventa vêm do App de Vendas que redesenhei. <Link to="/projects/rep-sales-app" className="underline hover:text-gray-600">Veja o redesenho.</Link></p>
         <div className="timeline-illustration reveal-on-scroll reveal-delay-1">
-          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '5%', width: '32%' }}>Backend setup and snowflake</div></div>
-          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '35%', width: '20%' }}>Sign-in and Dashboards</div></div>
-          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '44%', width: '19%' }}>Customer's list and AI</div></div>
-          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '50%', width: '35%' }}>Routes</div></div>
-          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '25%', width: '60%' }}>Design system</div></div>
+          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '5%', width: '32%' }}>Configuração do backend e Snowflake</div></div>
+          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '35%', width: '20%' }}>Login e painéis</div></div>
+          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '44%', width: '19%' }}>Lista de clientes e IA</div></div>
+          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '50%', width: '35%' }}>Rotas</div></div>
+          <div className="timeline-row"><div className="timeline-bar" style={{ marginLeft: '25%', width: '60%' }}>Sistema de design</div></div>
         </div>
       </section>
 
@@ -68,17 +68,17 @@ export default function SellerPlatformPage() {
           </div>
           <div className="hidden md:flex bg-[#FFF6FB] rounded-[20px] items-center justify-center overflow-hidden md:col-span-4 md:relative md:min-h-[480px]">
             <div className="reveal-on-scroll reveal-delay-1 absolute top-[-20%] left-[-25%] scale-[0.7]" style={{ borderRadius: 16, overflow: 'hidden' }}>
-              <img src="/images/seller-02.avif" alt="Dashboard overview" className="max-w-none" style={{ display: 'block' }} />
+              <img src="/images/seller-02.avif" alt="Visão geral do painel" className="max-w-none" style={{ display: 'block' }} />
             </div>
           </div>
           <div className="flex md:hidden image-bg bg-pink rounded-[20px] items-center justify-center overflow-hidden">
             <div className="reveal-on-scroll reveal-delay-1" style={{ borderRadius: 16, overflow: 'hidden' }}>
-              <img src="/images/seller-02.avif" alt="Customer list and filters" className="max-w-full object-contain mx-auto img-max-h" style={{ display: 'block' }} />
+              <img src="/images/seller-02.avif" alt="Lista de clientes e filtros" className="max-w-full object-contain mx-auto img-max-h" style={{ display: 'block' }} />
             </div>
           </div>
           <div className="md:col-span-5 image-bg bg-pink rounded-[20px] flex items-center justify-center md:min-h-[480px] overflow-hidden">
             <div className="reveal-on-scroll reveal-delay-1" style={{ borderRadius: 16, overflow: 'hidden' }}>
-              <img src="/images/seller-03.avif" alt="Customer list and filters" className="max-w-full object-contain mx-auto img-max-h" style={{ display: 'block' }} />
+              <img src="/images/seller-03.avif" alt="Lista de clientes e filtros" className="max-w-full object-contain mx-auto img-max-h" style={{ display: 'block' }} />
             </div>
           </div>
         </div>
@@ -86,15 +86,15 @@ export default function SellerPlatformPage() {
 
       {/* Impact */}
       <section className="flex flex-col gap-6 mb-20">
-        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impact</h2>
+        <h2 className="font-['Figtree',sans-serif] text-[24px] font-medium leading-[1.2] text-black">Impacto</h2>
         <div className="flex flex-col gap-6 reveal-on-scroll reveal-delay-1">
           <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Monthly GMV</p>
+            <p className="text-[16px] md:text-[24px]">GMV mensal</p>
             <h3 className="text-[32px] md:text-[56px] font-semibold">R$ 43k</h3>
           </div>
           <hr className="border-gray-200" />
           <div className="flex w-full items-baseline justify-between">
-            <p className="text-[16px] md:text-[24px]">Routes created</p>
+            <p className="text-[16px] md:text-[24px]">Rotas criadas</p>
             <h3 className="text-[32px] md:text-[56px] font-semibold">+1200</h3>
           </div>
         </div>

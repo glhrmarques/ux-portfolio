@@ -13,7 +13,7 @@ export default function Footer() {
 
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
-      e.target.textContent = 'Copied'
+      e.target.textContent = 'Copiado'
       setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
     })
   }, [])
@@ -30,7 +30,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <p className="font-serif text-[16px] leading-[1.5] text-black">
-              — Always commited
+              — Sempre comprometido
             </p>
             <div className="flex items-center gap-1" aria-hidden="true">
               {contributionColors.map((color) => (
@@ -71,7 +71,7 @@ export default function Footer() {
             </button>
           </div>
           <p className="text-[18px] text-[#7f7f7f]">
-            Designed and coded by Guilherme Marques
+            Design e código por Guilherme Marques
           </p>
         </div>
       </div>
