@@ -158,6 +158,24 @@ html {
   display: none;
 }
 
+.ds-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #E1E9EF #0E0E0E;
+}
+
+.ds-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ds-scrollbar::-webkit-scrollbar-track {
+  background: #0E0E0E;
+}
+
+.ds-scrollbar::-webkit-scrollbar-thumb {
+  background: #E1E9EF;
+  border-radius: 999px;
+}
+
 /* Image Comparison Slider */
 img-comparison-slider {
   --divider-width: 2px;
