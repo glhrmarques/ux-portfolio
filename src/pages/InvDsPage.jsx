@@ -9,6 +9,7 @@ import Spacing from './dsPages/Spacing'
 import Typography from './dsPages/Typography'
 
 import Button from './dsPages/Button'
+import ClientCard from './dsPages/ClientCard'
 
 const menuItems = [
   {
@@ -48,6 +49,11 @@ const menuComponent = [
     id: 'button',
     label: 'Button',
     component: Button,
+  },
+  {
+    id: 'clientCard',
+    label: 'Client Card',
+    component: ClientCard,
   },
 ]
 
