@@ -4,8 +4,8 @@ export default function Button() {
         <h1 className="text-white text-[40px] font-medium">Button</h1>
 
         <div className="grid grid-cols-2 gap-6 w-full">
-            <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+            <div className="flex flex-col w-full gap-6 pb-[80px]">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
                     className="w-fit rounded-full bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
@@ -19,10 +19,10 @@ export default function Button() {
                 </div>
             </div>
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full border border-[#E1E9EF] bg-[#FFFFFF] px-12 py-6 text-[16px] font-semibold text-black hover:bg-[#E1E9EF] cursor-pointer"
+                    className="w-fit rounded-full border-2 border-[#E1E9EF] bg-[#FFFFFF] px-12 py-6 text-[16px] font-semibold text-black hover:bg-[#E1E9EF] cursor-pointer"
                     >
                     Secondary
                     </button>
@@ -34,10 +34,10 @@ export default function Button() {
                 </div>
             </div>
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full px-12 py-6 text-[16px] underline font-semibold text-white cursor-pointer"
+                    className="w-fit rounded-full px-12 py-6 text-[16px] underline font-semibold text-black cursor-pointer"
                     >
                     Tertiary
                     </button>
@@ -48,7 +48,7 @@ export default function Button() {
                 </div>
             </div>
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
                     className="w-fit rounded-full bg-[#E1E9EF] px-12 py-6 text-[16px] font-semibold text-[#777A7C]"
@@ -67,7 +67,7 @@ export default function Button() {
 
         <div className="flex flex-row gap-6 w-full">
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
                     className="w-fit rounded-full bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
@@ -78,7 +78,7 @@ export default function Button() {
                 <p className="text-white font-semibold text-[18px]">Large</p>
             </div>
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
                     className="w-fit rounded-full bg-[#005BE2] px-10 py-4 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
@@ -89,7 +89,7 @@ export default function Button() {
                 <p className="text-white font-semibold text-[16px]">Medium</p>
             </div>
             <div className="flex flex-col w-full gap-6">
-                <div className="h-[300px] bg-[#0E0E0E] p-4 flex flex-col justify-center items-center">
+                <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
                     className="w-fit rounded-full bg-[#005BE2] px-8 py-2 text-[12px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
