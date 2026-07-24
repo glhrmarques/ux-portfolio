@@ -10,11 +10,11 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#005BE2] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#005BE2] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">Inventa Light Blue</p>
             <p className="text-white">#005BE2</p>
           </div>
-          <div className="w-full h-[200px] bg-[#003788] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#003788] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">Inventa Strong Blue</p>
             <p className="text-white text-[16px]">#003788</p>
           </div>
@@ -28,19 +28,19 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white">
+          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white rounded-[16px]">
             <p className="text-white text-[16px]">Content Primary</p>
             <p className="text-white text-[16px]">#000000</p>
           </div>
-          <div className="w-full h-[200px] bg-[#777A7C] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#777A7C] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">Content Secondary</p>
             <p className="text-white text-[16px]">#777A7C</p>
           </div>
-          <div className="w-full h-[200px] bg-[#777A7C] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#777A7C] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">Disable</p>
             <p className="text-white text-[16px]">#777A7C</p>
           </div>
-          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-black text-[16px]">On-action</p>
             <p className="text-black text-[16px]">#FFFFFF</p>
           </div>
@@ -54,30 +54,30 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#005BE2] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#005BE2] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">On-action primary</p>
             <p className="text-white text-[16px]">#005BE2</p>
           </div>
-          <div className="w-full h-[200px] bg-[#003788] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#003788] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-white text-[16px]">Action-hover primary</p>
             <p className="text-white text-[16px]">#003788</p>
           </div>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-black text-[16px]">On-action secondary</p>
             <p className="text-black text-[16px]">#FFFFFF</p>
           </div>
-          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-black text-[16px]">Action-hover secondary</p>
             <p className="text-black text-[16px]">#E1E9EF</p>
           </div>
-          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-black text-[16px]">Background Screen</p>
             <p className="text-black text-[16px]">#FFFFFF</p>
           </div>
-          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-black text-[16px]">Background Neutral</p>
             <p className="text-black text-[16px]">#E1E9EF</p>
           </div>
@@ -91,11 +91,11 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#E1E9EF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Border Neutral</p>
             <p className="text-dark">#E1E9EF</p>
           </div>
-          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white">
+          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white rounded-[16px]">
             <p className="text-white text-[16px]">Border Strong</p>
             <p className="text-white text-[16px]">#000000</p>
           </div>
@@ -109,30 +109,30 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#14C774] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#14C774] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Sentiment Positive Strong</p>
             <p className="text-dark">#14C774</p>
           </div>
-          <div className="w-full h-[200px] bg-[#D0F4E3] p-4 flex flex-col justify-between border border-white">
+          <div className="w-full h-[200px] bg-[#D0F4E3] p-4 flex flex-col justify-between border border-white rounded-[16px]">
             <p className="text-dark text-[16px]">Sentiment Positive Subtle</p>
             <p className="text-dark text-[16px]">#D0F4E3</p>
           </div>
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#FA8645] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FA8645] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Sentiment Warning Strong</p>
             <p className="text-dark">#FA8645</p>
           </div>
-          <div className="w-full h-[200px] bg-[#FFF3E5] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FFF3E5] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Sentiment Warning Subtle</p>
             <p className="text-dark text-[16px]">#FFF3E5</p>
           </div>
-          <div className="w-full h-[200px] bg-[#A8200D] p-4 flex flex-col justify-between border">
+          <div className="w-full h-[200px] bg-[#A8200D] p-4 flex flex-col justify-between border rounded-[16px]">
             <p className="text-white text-[16px]">Sentiment Negative Strong</p>
             <p className="text-white text-[16px]">#A8200D</p>
           </div>
-          <div className="w-full h-[200px] bg-[#ECBBB4] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#ECBBB4] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Sentiment Negative Subtle</p>
             <p className="text-dark text-[16px]">#ECBBB4</p>
           </div>
@@ -146,11 +146,11 @@ export default function Colors() {
         </div>
 
         <div className="flex flex-row gap-4 w-full">
-          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between">
+          <div className="w-full h-[200px] bg-[#FFFFFF] p-4 flex flex-col justify-between rounded-[16px]">
             <p className="text-dark text-[16px]">Base Light</p>
             <p className="text-dark">#FFFFFF</p>
           </div>
-          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white">
+          <div className="w-full h-[200px] bg-[#000000] p-4 flex flex-col justify-between border border-white rounded-[16px]">
             <p className="text-white text-[16px]">Base Dark</p>
             <p className="text-white text-[16px]">#000000</p>
           </div>
