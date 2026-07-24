@@ -30,7 +30,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <p className="font-serif text-[16px] leading-[1.5] text-black">
-              — Sempre comprometido
+              — Always commited
             </p>
             <div className="flex items-center gap-1" aria-hidden="true">
               {contributionColors.map((color) => (
