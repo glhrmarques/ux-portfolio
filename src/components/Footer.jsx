@@ -71,7 +71,7 @@ export default function Footer() {
             </button>
           </div>
           <p className="text-[18px] text-[#7f7f7f]">
-            Design e código por Guilherme Marques
+            Designed and Coded by Guilherme Marques
           </p>
         </div>
       </div>
