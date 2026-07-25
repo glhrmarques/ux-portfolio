@@ -26,7 +26,7 @@ export default function RepSalesAppPage() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
             <div className="flex flex-col gap-2">
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">FUNÇÃO</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Designer de Produto</p>
+              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Product Designer</p>
             </div>
 
             <div className="flex flex-col gap-2">
