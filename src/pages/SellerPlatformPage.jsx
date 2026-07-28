@@ -89,7 +89,7 @@ export default function SellerPlatformPage() {
       </section>
       
       <section className="flex flex-col gap-6 mb-20">
-      <div className="lex justify-center items-center bg-[url('/images/background-projects-2.png')] p-10 reveal-on-scroll reveal-delay-1">
+      <div className="flex justify-center items-center bg-[url('/images/background-projects-2.png')] p-10 reveal-on-scroll reveal-delay-1">
         <div className="overflow-hidden">
           <video src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" autoPlay loop muted playsInline className="max-w-full object-contain mx-auto img-max-h rounded-[16px]" />
         </div>
