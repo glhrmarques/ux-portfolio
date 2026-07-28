@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
+import CustomCursor from '../components/CustomCursor'
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -17,6 +18,7 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto w-full max-w-[1440px]">
+      <CustomCursor />
       <main className="flex flex-col gap-[104px] px-6 py-12 pb-20 md:px-[240px] md:py-16 ">
           {/* Intro */}
           <section id="intro" className="flex flex-col md:flex-row items-start md:items-stretch justify-between gap-10">
@@ -125,7 +127,7 @@ export default function HomePage() {
             <h2 className="font-medium text-[22px] text-black">Projetos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-              <Link to="/projects/rep-sales-app" className="flex flex-col gap-4 mb-6">
+              <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 mb-6">
                 <div className="w-full h-[380px] bg-[url('/images/background-projects-1.png')] group flex items-end pb-10 justify-center overflow-hidden">
                   <img 
                   src="/images/cover-projects-1.png"
@@ -136,7 +138,7 @@ export default function HomePage() {
                 <p className="text-[18px] text-black">App para representantes de vendas</p>
               </Link>
 
-              <Link to="/projects/inv-ds" className="flex flex-col gap-4 mb-6">
+              <Link to="/projects/inv-ds" className="cursor-label-target flex flex-col gap-4 mb-6">
                 <div className="w-full h-[380px] bg-[url('/images/background-projects-3.png')] group flex items-center md:p-6 p-6 justify-center overflow-hidden">
                   <img 
                   src="/images/cover-projects-2.png"
@@ -147,7 +149,7 @@ export default function HomePage() {
                 <p className="text-[18px] text-black">Inventa Design System</p>
               </Link>
 
-              <Link to="/projects/seller-platform" className="md:col-span-2 flex flex-col gap-4 mb-6">
+              <Link to="/projects/seller-platform" className="cursor-label-target md:col-span-2 flex flex-col gap-4 mb-6">
                 <div className="w-full h-auto bg-[url('/images/background-projects-2.png')] justify-center md:p-10 p-3 group overflow-hidden">
                   <video 
                     src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 

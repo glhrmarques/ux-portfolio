@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .cursor-label-target {
+    cursor: none;
+  }
+}
+
 /* Link animations */
 .animated-underline {
   position: relative;
