@@ -9,6 +9,7 @@ import SignUpPage from './pages/SignUpPage'
 import RestfulApiGoPage from './pages/RestfulApiGoPage'
 import DietPage from './pages/DietPage'
 import DietMealPage from './pages/DietMealPage'
+import MarketplaceB2b from './pages/MarketplaceB2b'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <Route element={<PortfolioLayout variant="inner" />}>
         <Route path="/projects/seller-platform" element={<SellerPlatformPage />} />
         <Route path="/projects/rep-sales-app" element={<RepSalesAppPage />} />
+        <Route path="/projects/marketplace-b2b" element={<MarketplaceB2b />} />
         <Route path="/projects/converter" element={<ConverterPage />} />
         <Route path="/projects/inv-ds" element={<InvDsPage />} />
         <Route path="/writing/sign-up" element={<SignUpPage />} />
