@@ -5,7 +5,5 @@ export default function Intro() {
         <h1 className="font-['Inter',sans-serif] text-[56px] font-[600] text-white">Inventa Ds.</h1>
         <p className="font-['Inter',sans-serif] text-[20px] text-white">Estruturei o Sistema de Design com a abordagem three tiers approach para equilibrar simplicidade e escalabilidade.</p>
       </div>
-
-      
     )
   }

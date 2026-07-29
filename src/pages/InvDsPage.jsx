@@ -14,32 +14,32 @@ import ClientCard from './dsPages/ClientCard'
 const menuItems = [
   {
     id: 'intro',
-    label: 'Introdução',
+    label: 'Intro',
     component: Intro,
   },
   {
     id: 'colors',
-    label: 'Cores',
+    label: 'Colors',
     component: Colors,
   },
   {
     id: 'padding',
-    label: 'Preenchimento',
+    label: 'Padding',
     component: Padding,
   },
   {
     id: 'radius',
-    label: 'Raio',
+    label: 'Radius',
     component: Radius,
   },
   {
     id: 'spacing',
-    label: 'Espaçamento',
+    label: 'Spacing',
     component: Spacing,
   },
   {
     id: 'typography',
-    label: 'Tipografia',
+    label: 'Typography',
     component: Typography,
   },
 ]
@@ -47,12 +47,12 @@ const menuItems = [
 const menuComponent = [
   {
     id: 'button',
-    label: 'Botão',
+    label: 'Button',
     component: Button,
   },
   {
     id: 'clientCard',
-    label: 'Cartão de cliente',
+    label: 'Client Card',
     component: ClientCard,
   },
 ]
@@ -84,7 +84,7 @@ export default function InvDsPage() {
           <aside className="min-h-0 overflow-y-auto overscroll-contain ds-scrollbar">
             <div className="flex flex-col gap-1 pt-4">
               <p className="p-4 text-xs font-bold text-[#656565]">
-                FUNDAMENTOS
+                FOUNDATIONS
               </p>
 
               {menuItems.map((item) => {
@@ -109,7 +109,7 @@ export default function InvDsPage() {
                 )
               })}
               <p className="p-4 text-xs font-bold text-[#656565]">
-                COMPONENTES
+                COMPONENTS
               </p>
               {menuComponent.map((item) => {
                 const isActive = activePage === item.id
