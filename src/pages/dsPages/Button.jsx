@@ -8,7 +8,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
+                    className="w-fit rounded-[16px] bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
                     >
                     Primary
                     </button>
@@ -22,7 +22,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full border-2 border-[#E1E9EF] bg-[#FFFFFF] px-12 py-6 text-[16px] font-semibold text-black hover:bg-[#E1E9EF] cursor-pointer"
+                    className="w-fit rounded-[16px] border-2 border-[#E1E9EF] bg-[#FFFFFF] px-12 py-6 text-[16px] font-semibold text-black hover:bg-[#E1E9EF] cursor-pointer"
                     >
                     Secondary
                     </button>
@@ -51,7 +51,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full bg-[#E1E9EF] px-12 py-6 text-[16px] font-semibold text-[#777A7C]"
+                    className="w-fit rounded-[16px] bg-[#E1E9EF] px-12 py-6 text-[16px] font-semibold text-[#777A7C]"
                     >
                     Disabled
                     </button>
@@ -70,7 +70,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
+                    className="w-fit rounded-[16px] bg-[#005BE2] px-12 py-6 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
                     >
                     Large
                     </button>
@@ -81,7 +81,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full bg-[#005BE2] px-10 py-4 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
+                    className="w-fit rounded-[12px] bg-[#005BE2] px-10 py-4 text-[16px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
                     >
                     Medium
                     </button>
@@ -92,7 +92,7 @@ export default function Button() {
                 <div className="h-[300px] bg-[#ffffff] p-4 flex flex-col justify-center items-center rounded-[16px]">
                     <button
                     type="button"
-                    className="w-fit rounded-full bg-[#005BE2] px-8 py-2 text-[12px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
+                    className="w-fit rounded-[8px] bg-[#005BE2] px-8 py-2 text-[12px] font-semibold text-white hover:bg-[#003788] cursor-pointer"
                     >
                     Small
                     </button>

@@ -1,7 +1,7 @@
 export default function ClientCard() {
     return (
         <article className=" flex flex-col gap-20">
-            <h1 className="text-white text-[40px] font-medium">Cartão de cliente</h1>
+            <h1 className="text-white text-[40px] font-medium">Client Card</h1>
 
             {/* First card */}  
             <div className="flex flex-col gap-6">
@@ -37,7 +37,7 @@ export default function ClientCard() {
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
-                    <p className="text-white font-semibold text-[18px]">Crédito aprovado</p>
+                    <p className="text-white font-semibold text-[18px]">Credit Approved</p>
                     <p className="text-white font-regular text-[16px]">O limite de crédito aprovado permite que representantes de vendas realizem vendas.</p>
                 </div>
             </div>
@@ -76,7 +76,7 @@ export default function ClientCard() {
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
-                    <p className="text-white font-semibold text-[18px]">Crédito negado</p>
+                    <p className="text-white font-semibold text-[18px]">Credit denied</p>
                     <p className="text-white font-regular text-[16px]">O limite de crédito negado restringe o pagamento ao PIX.</p>
                 </div>
             </div>
@@ -113,12 +113,10 @@ export default function ClientCard() {
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
-                    <p className="text-white font-semibold text-[18px]">Cliente bloqueado</p>
+                    <p className="text-white font-semibold text-[18px]">Client blocked</p>
                     <p className="text-white font-regular text-[16px]">Outro representante de vendas está atendendo este cliente no momento.</p>
                 </div>
             </div>
-
-
         </article>
     )
 }
