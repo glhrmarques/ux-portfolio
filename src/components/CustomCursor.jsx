@@ -49,7 +49,12 @@ export default function CustomCursor() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-1/2 place-items-center  bg-zinc-950 py-3 px-4 rounded-full text-xs font-medium uppercase tracking-wide text-white"
+      className="
+        pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-1/2 place-items-center
+        py-3 px-4 rounded-full bg-black/40 border border-white/25
+        backdrop-blur-sm
+        shadow-lg shadow-black/10
+        font-medium uppercase text-xs text-white tracking-wide"
       style={{ left: cursor.x, top: cursor.y }}
     >
       <p>Ver projeto</p>
