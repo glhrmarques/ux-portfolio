@@ -75,7 +75,7 @@ export default function InvDsPage() {
   return (
     <div className="mx-auto w-full max-w-[1440px]">
       <motion.main
-        className="h-[calc(100dvh-76px)] min-w-0 overflow-hidden px-6 py-6 font-['Inter',sans-serif] md:px-[240px] md:py-8"
+        className="h-[calc(100dvh-76px)] min-w-0 overflow-hidden px-6 py-6 font-['Inter',sans-serif] md:px-[240px] md:py-1"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
