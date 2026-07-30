@@ -1,10 +1,10 @@
 export default function ClientCard() {
     return (
-        <article className=" flex flex-col gap-20">
+        <article className=" flex flex-col gap-6">
             <h1 className="text-white text-[40px] font-medium">Client Card</h1>
 
             {/* First card */}  
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 pb-[80px]">
                 <div className="flex h-[340px] items-center justify-center bg-[#ffffff] p-4 rounded-[16px]">
                     <div className="flex w-full max-w-[460px] flex-col gap-4 rounded-[16px] border-2 border-[#E1E9EF] bg-white p-4 text-[#1E1E1E] shadow-[0_12px_32px_rgba(0,0,0,0.16)]">
                         <p className="truncate text-[28px] font-bold uppercase leading-none md:text-[18px]">
@@ -43,7 +43,7 @@ export default function ClientCard() {
             </div>
 
             {/* Second card */}  
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 pb-[80px]">
                 <div className="flex h-[340px] items-center justify-center bg-[#ffffff] p-4 rounded-[16px]">
                     <div className="flex w-full max-w-[460px] flex-col gap-4 rounded-[16px] border-2 border-[#E1E9EF] bg-white p-4 text-[#1E1E1E] shadow-[0_12px_32px_rgba(0,0,0,0.16)]">
                         <p className="truncate text-[28px] font-bold uppercase leading-none md:text-[18px]">
@@ -82,7 +82,7 @@ export default function ClientCard() {
             </div>
 
             {/* third card */}  
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 pb-[80px]">
                 <div className="flex h-[340px] items-center justify-center bg-[#ffffff] p-4 rounded-[16px]">
                     <div className="flex w-full max-w-[460px] flex-col gap-4 rounded-[16px] border-2 border-[#E1E9EF] bg-white p-4 text-[#1E1E1E] shadow-[0_12px_32px_rgba(0,0,0,0.16)]">
                         <p className="truncate text-[28px] font-bold uppercase leading-none md:text-[18px]">
