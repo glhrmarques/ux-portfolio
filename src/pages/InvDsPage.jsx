@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 
-import Intro from './dsPages/Intro'
 import Colors from './dsPages/Colors'
 import Padding from './dsPages/Padding'
 import Radius from './dsPages/Radius'
@@ -14,11 +13,6 @@ import Widget from './dsPages/Widget'
 
 
 const menuItems = [
-  {
-    id: 'intro',
-    label: 'Intro',
-    component: Intro,
-  },
   {
     id: 'colors',
     label: 'Colors',
