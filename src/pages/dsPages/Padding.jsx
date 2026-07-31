@@ -13,7 +13,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium">Nome</p>
-          <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium text-center">Valor</p>
+          <p className="font-['Inter',sans-serif] text-[20px] text-white font-medium text-center">Value</p>
         </div>
       </div>
 
