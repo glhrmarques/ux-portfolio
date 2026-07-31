@@ -52,7 +52,7 @@ const menuComponent = [
   },
   {
     id: 'clientCard',
-    label: 'Client Card',
+    label: 'Customer Card',
     component: ClientCard,
   },
 ]
@@ -80,7 +80,7 @@ export default function InvDsPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <div className="grid h-full min-h-0 grid-cols-[minmax(0,15fr)_minmax(0,85fr)] gap-3">
+        <div className="grid h-full min-h-0 grid-cols-[minmax(0,20fr)_minmax(0,80fr)] gap-3">
           <aside className="min-h-0 overflow-y-auto overscroll-contain ds-scrollbar">
             <div className="flex flex-col gap-1 pt-4">
               <p className="p-4 text-xs font-bold text-[#656565]">

@@ -1,7 +1,7 @@
 export default function ClientCard() {
     return (
         <article className=" flex flex-col gap-6">
-            <h1 className="text-white text-[40px] font-medium">Client Card</h1>
+            <h1 className="text-white text-[40px] font-medium">Customer card</h1>
 
             {/* First card */}  
             <div className="flex flex-col gap-6 pb-[80px]">
@@ -38,7 +38,7 @@ export default function ClientCard() {
                 </div> 
                 <div className="flex flex-col gap-4">
                     <p className="text-white font-semibold text-[18px]">Credit Approved</p>
-                    <p className="text-white font-regular text-[16px]">O limite de crédito aprovado permite que representantes de vendas realizem vendas.</p>
+                    <p className="text-white font-regular text-[16px]">Credit limit approved that allows the shopper to purcahse.</p>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function ClientCard() {
                 </div> 
                 <div className="flex flex-col gap-4">
                     <p className="text-white font-semibold text-[18px]">Credit denied</p>
-                    <p className="text-white font-regular text-[16px]">O limite de crédito negado restringe o pagamento ao PIX.</p>
+                    <p className="text-white font-regular text-[16px]">Limit denied, shopper can only pay by PIX.</p>
                 </div>
             </div>
 
@@ -113,8 +113,8 @@ export default function ClientCard() {
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
-                    <p className="text-white font-semibold text-[18px]">Client blocked</p>
-                    <p className="text-white font-regular text-[16px]">Outro representante de vendas está atendendo este cliente no momento.</p>
+                    <p className="text-white font-semibold text-[18px]">Customer blocked</p>
+                    <p className="text-white font-regular text-[16px]">When the shopper has already been attended to by another sales representative.</p>
                 </div>
             </div>
         </article>
