@@ -164,31 +164,6 @@ export default function HomePage() {
               </Link>
             </div>
           </motion.section>
-
-          {/* Writing */}
-          <motion.section 
-            id="writing" 
-            className="flex flex-col"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-          >
-            <h2 className="font-medium text-[22px] text-black mb-0">Artigos</h2>
-            <Link 
-              to="/writing/sign-up" 
-              className="border-b border-[#dcdbdb] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
-            >
-              <p className="text-[20px] md:text-[24px] font-medium text-black">Cadastro e login em GO</p>
-              <p className="text-[16px] md:text-[18px] text-[#7f7f7f]">Junho de 2026</p>
-            </Link>
-            <Link 
-              to="/writing/restful-api-go" 
-              className="border-b border-[#dcdbdb] py-8 flex items-center justify-between no-underline hover:opacity-70 transition-opacity"
-            >
-              <p className="text-[20px] md:text-[24px] font-medium text-black">Criando minha primeira API RESTful com GO</p>
-              <p className="text-[16px] md:text-[18px] text-[#7f7f7f]">Maio de 2026</p>
-            </Link>
-          </motion.section>
       </main>
     </div>
   )
