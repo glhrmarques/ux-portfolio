@@ -10,7 +10,6 @@ import Typography from './dsPages/Typography'
 import Button from './dsPages/Button'
 import ClientCard from './dsPages/ClientCard'
 import Widget from './dsPages/Widget'
-import InputText from './dsPages/InputText'
 
 const menuItems = [
   {
@@ -55,11 +54,6 @@ const menuComponent = [
     id: 'widget',
     label: 'Widget',
     component: Widget,
-  },
-  {
-    id: 'inputText',
-    label: 'Input Text',
-    component: InputText,
   },
 ]
 
