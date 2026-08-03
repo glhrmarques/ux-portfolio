@@ -7,11 +7,12 @@ export default function InputText() {
                 <div className="flex flex-col w-full gap-6">
                     <div className="h-[300px] bg-[#ffffff] px-[200px] flex flex-col justify-center items-center rounded-[16px]">
                         <div className="flex flex-col gap-3 w-full">
-                            <label>Label</label>
+                            <label className="px-3 text-[14px] font-semibold">Label</label>
                             <input type="text" placeholder="Text" 
                                 className="
                                 border-2 border-[#E1E9EF] rounded-[12px] p-3
-                                hover:border-[#000000]
+                                hover:border-[#000000] cursor-pointer
+                                text-[16px]
                                 
                                 "></input>
                         </div>
