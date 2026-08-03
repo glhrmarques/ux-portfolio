@@ -1,0 +1,96 @@
+export default function InputText() {
+    return(
+        <article className=" flex flex-col gap-6">
+            <h1 className="text-white text-[40px] font-medium">Input Text</h1>
+
+            <section className="flex flex-col gap-6 pb-[80px]">
+                <div className="flex flex-col w-full gap-6">
+                    <div className="h-[300px] bg-[#ffffff] px-[200px] flex flex-col justify-center items-center rounded-[16px]">
+                        <form className="flex flex-col gap-2 w-full">
+                            <label className="px-3 text-[14px] font-semibold text-black">
+                                Label
+                            </label>
+                            <input type="text" placeholder="Placeholder" 
+                                className="
+                                border-2 border-[#E1E9EF] rounded-[12px] p-3
+                                hover:border-[#000000] cursor-pointer transition-colors
+                                focus:border-[#000000] focus:outline-[#000000]
+                                not-placeholder-shown:border-[#000000]
+                                text-[16px]
+                                ">
+                            </input>
+                        </form>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <p className="text-white font-semibold text-[18px]">Default</p>
+                        <p className="text-white font-regular text-[16px]">The standard state that allows users to enter text.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="grid grid-cols-2 gap-6 w-full">
+
+                <div className="flex flex-col w-full gap-6">
+                    <div className="h-[300px] bg-[#ffffff] p-6 flex flex-col justify-center items-center rounded-[16px]">
+                        <form className="flex flex-col gap-2 w-full">
+                            <label className="px-3 text-[14px] font-semibold text-black">
+                                Label
+                            </label>
+                            <input type="text" placeholder="Placeholder" value="email@123" 
+                                className="
+                                border-2 border-[#A8200D] rounded-[12px] p-3
+                                focus:border-[#A8200D] focus:outline-[#A8200D]
+                                text-[16px]
+                                ">
+                            </input>
+                            <span 
+                                className="
+                                px-2
+                                text-[12px] font-bold text-[#A8200D]
+                                min-h-[12px]
+                                ">
+                                Error message
+                            </span>
+                        </form>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <p className="text-white font-semibold text-[18px]">Error</p>
+                        <p className="text-white font-regular text-[16px]">Indicates that the current input is invalid and displays guidance on how to correct it.</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col w-full gap-6">
+                    <div className="h-[300px] bg-[#ffffff] p-6 flex flex-col justify-center items-center rounded-[16px]">
+                        <form className="flex flex-col gap-2 w-full">
+                            <label className="px-3 text-[14px] font-semibold text-[#777A7C]">
+                                Label
+                            </label>
+                            <input type="text"  disabled placeholder="email@company.com"
+                                className="
+                                border-2 border-[#E1E9EF] rounded-[12px] p-3
+                                disabled:bg-[#E1E9EF]/30
+                                text-[16px]
+                                disabled:cursor-not-allowed
+                                ">
+                            </input>
+                            <span 
+                                className="
+                                px-2
+                                text-[12px]
+                                min-h-[12px] invisible
+                                ">
+                                placeholder
+                            </span>
+                        </form>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                        <p className="text-white font-semibold text-[18px]">Disable</p>
+                        <p className="text-white font-regular text-[16px]">Indicates that the input is unavailable and cannot be edited.</p>
+                    </div>
+                </div>
+            </section>
+
+        
+        </article>
+    )
+}
