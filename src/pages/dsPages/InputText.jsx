@@ -22,8 +22,8 @@ export default function InputText() {
                         </form>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <p className="text-white font-semibold text-[18px]">Default State</p>
-                        <p className="text-white font-regular text-[16px]">Focused to display the main workflows in the app.</p>
+                        <p className="text-white font-semibold text-[18px]">Default</p>
+                        <p className="text-white font-regular text-[16px]">The standard state that allows users to enter text.</p>
                     </div>
                 </div>
             </section>
@@ -36,17 +36,18 @@ export default function InputText() {
                             <label className="px-3 text-[14px] font-semibold text-black">
                                 Label
                             </label>
-                                <input type="text" placeholder="Placeholder" value="email@123" 
-                                    className="
-                                    border-2 border-[#A8200D] rounded-[12px] p-3
-                                    focus:border-[#A8200D] focus:outline-[#A8200D]
-                                    text-[16px]
-                                    ">
-                                </input>
+                            <input type="text" placeholder="Placeholder" value="email@123" 
+                                className="
+                                border-2 border-[#A8200D] rounded-[12px] p-3
+                                focus:border-[#A8200D] focus:outline-[#A8200D]
+                                text-[16px]
+                                ">
+                            </input>
                             <span 
                                 className="
                                 px-2
                                 text-[12px] font-bold text-[#A8200D]
+                                min-h-[12px]
                                 ">
                                 Error message
                             </span>
@@ -54,7 +55,7 @@ export default function InputText() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Error</p>
-                        <p className="text-white font-regular text-[16px]">The most important action to move forward in a flow, acknowledge and dismiss, or finish a task.</p>
+                        <p className="text-white font-regular text-[16px]">Indicates that the current input is invalid and displays guidance on how to correct it.</p>
                     </div>
                 </div>
 
@@ -64,19 +65,27 @@ export default function InputText() {
                             <label className="px-3 text-[14px] font-semibold text-[#777A7C]">
                                 Label
                             </label>
-                                <input type="text"  disabled placeholder="email@company.com"
-                                    className="
-                                    border-2 border-[#E1E9EF] rounded-[12px] p-3
-                                    disabled:bg-[#E1E9EF]/30
-                                    text-[16px]
-                                    disabled:cursor-not-allowed
-                                    ">
-                                </input>
+                            <input type="text"  disabled placeholder="email@company.com"
+                                className="
+                                border-2 border-[#E1E9EF] rounded-[12px] p-3
+                                disabled:bg-[#E1E9EF]/30
+                                text-[16px]
+                                disabled:cursor-not-allowed
+                                ">
+                            </input>
+                            <span 
+                                className="
+                                px-2
+                                text-[12px]
+                                min-h-[12px] invisible
+                                ">
+                                placeholder
+                            </span>
                         </form>
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Disable</p>
-                        <p className="text-white font-regular text-[16px]">The most important action to move forward in a flow, acknowledge and dismiss, or finish a task.</p>
+                        <p className="text-white font-regular text-[16px]">Indicates that the input is unavailable and cannot be edited.</p>
                     </div>
                 </div>
             </section>
