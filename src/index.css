@@ -166,7 +166,7 @@ html {
 
 .ds-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #E1E9EF #0E0E0E;
+  scrollbar-color: #686868 #0E0E0E;
 }
 
 .ds-scrollbar::-webkit-scrollbar {

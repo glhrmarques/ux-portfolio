@@ -88,7 +88,7 @@ export default function InvDsPage() {
       >
         <div className="grid h-full min-h-0 grid-cols-[minmax(0,20fr)_minmax(0,80fr)] gap-3">
           <aside className="h-full min-h-0 overflow-y-auto overscroll-contain ds-scrollbar">
-            <div className="flex flex-col gap-1 pt-4 pb-24">
+            <div className="flex flex-col gap-1 pt-4 pb-24 pr-1">
               <p className="p-4 text-xs font-bold text-[#656565]">
                 FOUNDATIONS
               </p>
