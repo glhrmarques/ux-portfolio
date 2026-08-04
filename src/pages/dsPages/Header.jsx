@@ -9,7 +9,7 @@ export default function Header() {
                         <div className="
                             flex flex-row p-4 items-center justify-between w-full max-w-[400px]
                             border-b-2 border-[#E1E9EF]">
-                            <img src="../public/images/inventa-logo.svg" alt="Arrow" />
+                            <img src=".././images/inventa-logo.svg" alt="Inveta logo" />
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" viewBox="0 0 24 24" 
