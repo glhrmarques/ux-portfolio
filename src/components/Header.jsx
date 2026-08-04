@@ -30,13 +30,11 @@ export default function Header() {
             <>
               <a href="#intro" className="hover:opacity-70 transition-opacity">Início</a>
               <a href="#projects" className="hover:opacity-70 transition-opacity">Projetos</a>
-              <a href="#writing" className="hover:opacity-70 transition-opacity">Artigos</a>
             </>
           ) : (
             <>
               <Link to="/" className="hover:opacity-70 transition-opacity">Início</Link>
               <Link to="/#projects" className="hover:opacity-70 transition-opacity">Projetos</Link>
-              <Link to="/#writing" className="hover:opacity-70 transition-opacity">Artigos</Link>
             </>
           )}
         </nav>
@@ -63,13 +61,11 @@ export default function Header() {
           <>
             <a href="#intro" onClick={closeMenu} className="text-[24px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity">Início</a>
             <a href="#projects" onClick={closeMenu} className="text-[24px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity">Projetos</a>
-            <a href="#writing" onClick={closeMenu} className="text-[24px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity">Artigos</a>
           </>
         ) : (
           <>
             <Link to="/" onClick={closeMenu} className={`text-[24px] font-medium ${text} hover:opacity-70 transition-opacity`}>Início</Link>
             <Link to="/#projects" onClick={closeMenu} className={`text-[24px] font-medium ${text} hover:opacity-70 transition-opacity`}>Projetos</Link>
-            <Link to="/#writing" onClick={closeMenu} className={`text-[24px] font-medium ${text} hover:opacity-70 transition-opacity`}>Artigos</Link>
           </>
         )}
       </div>
