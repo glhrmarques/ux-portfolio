@@ -2,6 +2,7 @@ import { useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import CustomCursor from '../components/CustomCursor'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -9,12 +10,16 @@ const fadeUp = {
 }
 
 export default function HomePage() {
+  useScrollReveal()
+
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
       e.target.textContent = 'Copiado!'
       setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
     })
   }, [])
+
+  
 
   return (
     <main className="mx-auto w-full max-w-[1440px] px-[24px]">
@@ -101,9 +106,9 @@ export default function HomePage() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 1 }}
       transition={{ duration: 0.6, ease: "easeOut", delay: 1.5 }} 
-      className="grid grid-cols-3 gap-3">
+      className="md:grid md:grid-cols-3 gap-3">
         {/* First image */}
-        <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group">
+        <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
             <p className="text-[16px] text-black leading-none font-regular">App de Vendas</p>
             <svg 
@@ -129,7 +134,7 @@ export default function HomePage() {
           </div>
         </Link>
 
-        <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-4 group">
+        <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
             <p className="text-[16px] text-black leading-none font-regular">Rotas para Consultores</p>
             <svg 
