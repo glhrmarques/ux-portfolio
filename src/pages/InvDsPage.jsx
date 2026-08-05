@@ -91,16 +91,16 @@ export default function InvDsPage() {
   }, [activePage])
 
   return (
-    <div className="mx-auto w-full max-w-[1440px]">
+    <div className="mx-auto w-full max-w-[1220px]">
       <motion.main
-        className="h-[calc(100dvh-76px)] min-w-0 overflow-hidden px-6 py-6 font-['Inter',sans-serif] md:px-[240px] md:py-1"
+        className="h-[calc(100dvh)] overflow-hidden font-['Inter',sans-serif] border-2 border-[#ffffff]/10 pr-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <div className="grid h-full min-h-0 grid-cols-[minmax(0,20fr)_minmax(0,80fr)] gap-3">
+        <div className="grid h-full min-h-0 grid-cols-[minmax(0,20fr)_minmax(0,80fr)] gap-10">
           <aside className="h-full min-h-0 overflow-y-auto overscroll-contain ds-scrollbar">
-            <div className="flex flex-col gap-1 pt-4 pb-24 pr-1">
+            <div className="flex flex-col gap-1 pt-4 pb-24 px-4">
               <p className="p-4 text-xs font-bold text-[#656565]">
                 FOUNDATIONS
               </p>

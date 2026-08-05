@@ -9,7 +9,7 @@ export default function PortfolioLayout({ variant = 'inner' }) {
   const darkRoutes = ['/projects/inv-ds',]
 
   const isDarkPage = darkRoutes.includes(location.pathname)
-  const bg = isDarkPage ? 'bg-[#000000]' : 'bg-[#FAFAFA]'
+  const bg = isDarkPage ? 'bg-[#000000]' : 'bg-[#FFFFFF]'
 
   useEffect(() => {
     if (location.hash) {

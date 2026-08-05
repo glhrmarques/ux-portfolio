@@ -22,7 +22,7 @@ export default function HomePage() {
   
 
   return (
-    <main className="mx-auto w-full max-w-[1440px] px-[16px]">
+    <main className="mx-auto w-full max-w-[1440px] px-4">
       <CustomCursor />
 
       {/* Hero */}
@@ -163,7 +163,7 @@ export default function HomePage() {
           </div>
         </Link>
 
-        <Link to="/projects/inv-ds" className="cursor-label-target flex flex-col gap-4 group">
+        <Link to="/projects/inv-ds" target="_blank" className="cursor-label-target flex flex-col gap-4 group">
           <div className="flex flex-row justify-between">
             <p className="text-[16px] text-black leading-none font-regular">Design System</p>
             <svg 
