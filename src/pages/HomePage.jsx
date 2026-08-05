@@ -49,15 +49,15 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 1 }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                   >
-                <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
+                <p className="font-['Source_Serif_4',sans-serif] text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
                 <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
-                <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
+                <p className="font-['Source_Serif_4',sans-serif] text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
               </motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-                className="text-[14px] text-black/60">
+                className="text-[16px] text-black/60">
                   Projetando com excelência. Desenvolvendo com propósito.
               </motion.p>
             </div>
