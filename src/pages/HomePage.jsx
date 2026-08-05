@@ -26,77 +26,77 @@ export default function HomePage() {
       <CustomCursor />
 
       {/* Hero */}
-      <section className="md:grid md:grid-cols-3 gap-3 min-h-[80dvh] md:min-h-[60dvh] items-center py-[40px]">
+      <section className="grid md:grid-cols-3 md:gap-3 min-h-[80dvh] md:min-h-[60dvh] items-center py-[40px]">
         <div className="col-start-2">
           <div className="flex flex-col gap-6">
 
-        <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className=" w-[64px] h-[64px]">
-          <img 
-            src="/images/myself-01.png" 
-            alt="Guilherme Marques" 
-            className="w-full h-full object-cover" 
-          />
-        </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className=" w-[64px] h-[64px]">
+              <img 
+                src="/images/myself-01.png" 
+                alt="Guilherme Marques" 
+                className="w-full h-full object-cover" 
+              />
+            </motion.div>
 
-        <div className="flex flex-col gap-3"> 
-          <motion.div 
-              className="flex fle-row items-center"
+            <div className="flex flex-col gap-3"> 
+              <motion.div 
+                  className="flex fle-row items-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 1 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                  >
+                <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
+                <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
+                <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                className="text-[14px] text-black/60">
+                  Projetando com excelência. Desenvolvendo com propósito.
+              </motion.p>
+            </div>
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+              className="text-[16px] text-black">Product Designer com 5 anos de experiência focado em marketplaces B2B, Operações de vendas e Ferramentas internas.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+              className="flex flex-row gap-6">
+              <a 
+                href="https://www.linkedin.com/in/glhrmarques/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity"
               >
-            <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
-            <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
-            <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
-          </motion.div>
-          <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-          className="text-[14px] text-black/60">
-            Projetando com excelência. Desenvolvendo com propósito.
-          </motion.p>
-        </div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-          className="text-[16px] text-black">Product Designer com 5 anos de experiência focado em marketplaces B2B, Operações de vendas e Ferramentas internas.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
-          className="flex flex-row gap-6">
-          <a 
-            href="https://www.linkedin.com/in/glhrmarques/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity"
-          >
-            Linkedin
-          </a>
-          <a 
-            href="https://github.com/glhrmarques" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity"
-          >
-            Github
-          </a>
-          <button 
-            onClick={copyPhone} 
-            className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] whitespace-nowrap cursor-pointer bg-transparent hover:opacity-70 transition-opacity"
-          >
-            +55 1196174-7490
-          </button>
-        </motion.div>
+                Linkedin
+              </a>
+              <a 
+                href="https://github.com/glhrmarques" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity"
+              >
+                Github
+              </a>
+              <button 
+                onClick={copyPhone} 
+                className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] whitespace-nowrap cursor-pointer bg-transparent hover:opacity-70 transition-opacity"
+              >
+                +55 1196174-7490
+              </button>
+            </motion.div>
           </div>
         </div>
       </section>
