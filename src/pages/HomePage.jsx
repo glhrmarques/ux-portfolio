@@ -65,7 +65,7 @@ export default function HomePage() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
           className="flex flex-row gap-6">
@@ -97,7 +97,11 @@ export default function HomePage() {
       </section>
 
       {/* Project */}
-      <section className="grid grid-cols-3 gap-3">
+      <motion.section
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 1.5 }} 
+      className="grid grid-cols-3 gap-3">
         {/* First image */}
         <Link to="/projects/inv-ds" className="cursor-label-target flex flex-col gap-4">
         <span>App de vendedores</span>
@@ -146,7 +150,7 @@ export default function HomePage() {
             />
           </div>
         </Link>
-      </section>
+      </motion.section>
 
 
 
