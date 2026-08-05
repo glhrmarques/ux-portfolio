@@ -22,11 +22,11 @@ export default function HomePage() {
   
 
   return (
-    <main className="mx-auto w-full max-w-[1440px] px-[24px]">
+    <main className="mx-auto w-full max-w-[1440px] px-[16px]">
       <CustomCursor />
 
       {/* Hero */}
-      <section className="md:grid md:grid-cols-3 gap-3 min-h-[50dvh] items-center py-[40px]">
+      <section className="md:grid md:grid-cols-3 gap-3 min-h-[80dvh] md:min-h-[60dvh] items-center py-[40px]">
         <div className="col-start-2">
           <div className="flex flex-col gap-6">
 
@@ -44,14 +44,14 @@ export default function HomePage() {
 
         <div className="flex flex-col gap-3"> 
           <motion.div 
-              className="flex fle-row gap-3 items-center"
+              className="flex fle-row items-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               >
-            <p className="text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
-            <div className="w-[4px] h-[4px] bg-[#000000]"></div>
-            <p className="text-[22px] text-black leading-none font-semibold">Product Designer</p>
+            <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
+            <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
+            <p className="text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
           </motion.div>
           <motion.p
           initial={{ opacity: 0, y: 20 }}
