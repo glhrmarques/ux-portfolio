@@ -17,11 +17,11 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main className="mx-auto w-full max-w-[1440px] md:px-[24px]">
+    <main className="mx-auto w-full max-w-[1440px] px-[24px]">
       <CustomCursor />
 
       {/* Hero */}
-      <section className="grid grid-cols-3 gap-3 min-h-[60dvh] items-center py-[40px]">
+      <section className="md:grid md:grid-cols-3 gap-3 min-h-[50dvh] items-center py-[40px]">
         <div className="col-start-2">
           <div className="flex flex-col gap-6">
 
