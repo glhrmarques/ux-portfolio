@@ -6,6 +6,7 @@ import Padding from './dsPages/Padding'
 import Radius from './dsPages/Radius'
 import Spacing from './dsPages/Spacing'
 import Typography from './dsPages/Typography'
+import Icons from './dsPages/Icons'
 
 import Button from './dsPages/Button'
 import ClientCard from './dsPages/ClientCard'
@@ -38,6 +39,11 @@ const menuItems = [
     id: 'typography',
     label: 'Typography',
     component: Typography,
+  },
+  {
+    id: 'icons',
+    label: 'Icons',
+    component: Icons,
   },
 ]
 
