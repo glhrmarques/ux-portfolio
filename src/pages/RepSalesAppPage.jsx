@@ -14,7 +14,7 @@ export default function RepSalesAppPage() {
         >
           <BackArrow />
           <div className="flex flex-col gap-10">
-            <h1 className="text-[40px] font-regular">App de Vendedores</h1>
+            <h1 className="text-[40px] font-regular leading-none">App de Vendedores</h1>
             <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
           </div>
 
