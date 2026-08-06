@@ -8,9 +8,12 @@ export default function RepSalesAppPage() {
   return (
     <main className="mx-auto max-w-screen-2xl">
       <div className="grid grid-cols-2 w-full min-h-[90dvh]">
-        <div className="
-        flex flex-col justify-between
-        w-full p-20"
+        {/* Right column */}
+        <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="flex flex-col justify-between w-full p-20"
         >
           <BackArrow />
           <div className="flex flex-col gap-10">
@@ -34,13 +37,17 @@ export default function RepSalesAppPage() {
               <p className="text-[18px] font-[400] text-black leading-none">1 Mês</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="
+        <div 
+        className="
         w-full bg-[url('/images/cover-background-1.png')]
-        bg-no-repeat bg-cover bg-center relative"
+        bg-no-repeat bg-cover bg-center relative overflow-hidden"
         >
-          <img 
+          <motion.img
+            initial={{ opacity: 0, y: 300 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             src="/images/cover-projects-1.png"
             alt="Rep Sales App"
             className="absolute inset-0 m-auto scale-80"
