@@ -54,6 +54,15 @@ export default function RepSalesAppPage() {
           />
         </div>
       </div>
+
+      <section 
+      className="
+      flex flex-col justify-center w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2]">
+        <p
+        className="
+        text-[48px] font-[400] text-black text-center"
+        >O app de vendas da Inventa é tão ineficiente que papel e caneta se tornam a opção mais rápida para negociar e fechar pedidos.</p>
+      </section>
     </main>
   )
 }
