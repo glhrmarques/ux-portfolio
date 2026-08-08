@@ -184,9 +184,15 @@ export default function RepSalesAppPage() {
         className="
         text-[48px] font-[700] text-white text-center"
         >
-          InventaDs.
+          Inventa<span className="m-0 text-white/50">Ds.</span>
         </p>
         <p className="text-[24px] font-[400] text-white/60 text-center">Placeholder</p>
+        <button
+        onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
+        className="
+        bg-[#ffffff] p-5 text-black font-[600] hover:bg-[#000000] border 
+        hover:text-white cursor-pointer
+        ">Ver Design System</button>
       </section>
     </main>
   )
