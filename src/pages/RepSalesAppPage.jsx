@@ -22,7 +22,7 @@ export default function RepSalesAppPage() {
   }, { scope: container });
 
   return (
-    <main className=" hero mx-auto max-w-screen-2xl" ref={container}>
+    <main className="hero mx-auto max-w-screen-2xl" ref={container}>
       <div className="grid grid-cols-2 w-full min-h-[100dvh]">
         {/* Right column */}
         <motion.div
