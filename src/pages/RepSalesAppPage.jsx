@@ -77,9 +77,9 @@ export default function RepSalesAppPage() {
         <p className="text-[22px] font-[600] text-white/50 text-center">DESAFIO</p>
         <p
         className="
-        text-[48px] font-[400] text-white text-center"
+        text-[48px] font-[400] text-white/50 text-center max-w-[1000px] mx-auto"
         >
-          O app de vendas da Inventa é tão ineficiente que papel e caneta se tornam a opção mais rápida para negociar e fechar pedidos.</p>
+          O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
       </section>
       
       <section className="
@@ -106,41 +106,86 @@ export default function RepSalesAppPage() {
         >
           Identificando problemas e oportunidades
         </p>
-        <p className="text-[24px] font-[400] text-black text-center max-w-[800px] mx-auto">
-        Por meio de entrevistas com vendedores e acompanhamento de suas rotas em campo, mapeei a jornada completa do usuário, identificando os principais pontos de atrito e oportunidades de melhoria.
+        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+          Por meio de entrevistas com vendedores e acompanhamento de suas rotas em campo, mapeei a jornada completa do usuário, identificando os principais pontos de atrito e oportunidades de melhoria.
         </p>
-        <p className="text-[24px] font-[400] text-black text-center max-w-[800px] mx-auto">
-        Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
+        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+          Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
         </p>
       </section>
 
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto min-h-[80dvh] bg-[#005BE2] lg:p-20
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
         <div className="bg-[#000000]"></div>
-        <div className="flex flex-row gap-3">
-          <div className="w-full bg-[#000000]"></div>
-          <div className="w-full bg-[#000000]"></div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/clientes-01.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <video
+              src="/images/clientes-03.mov"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
         </div>
       </section>
 
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto min-h-[80dvh] bg-[#005BE2] lg:p-20
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
         <div className="bg-[#000000]"></div>
-        <div className="flex flex-row gap-3">
-          <div className="w-full bg-[#000000]"></div>
-          <div className="w-full bg-[#000000]"></div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/cover-projects-1.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <video
+              src="/images/clientes-04.webm"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
         </div>
       </section>
 
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto min-h-[80dvh] bg-[#005BE2] lg:p-20
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
         <div className="bg-[#000000]"></div>
-        <div className="flex flex-row gap-3">
-          <div className="w-full bg-[#000000]"></div>
-          <div className="w-full bg-[#000000]"></div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/clientes-06.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <video
+              src="/images/clientes-07.webm"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
         </div>
       </section>
 
