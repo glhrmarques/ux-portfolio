@@ -87,8 +87,27 @@ export default function RepSalesAppPage() {
       ">
         <div className="bg-[#005BE2] w-full h-full"></div>
         <div className="flex flex-col gap-3 w-full h-full">
-          <div className="bg-[#005BE2] w-full h-full"></div>
-          <div className="bg-[#000000] w-full h-full min-h-0 overflow-hidden relative">
+          <div className="
+          flex flex-col justify-center items-center p-6
+          bw-full bg-[url('/images/cover-background-1.png')] h-full w-full
+          bg-no-repeat bg-cover bg-center relative overflow-hidden">
+              <div className="
+              flex flex-row w-full justify-between
+              bg-[#ffffff] p-4 rounded-[12px]
+              ">
+                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
+                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
+              </div>
+              <div className="
+              flex flex-row w-full justify-between
+              bg-[#ffffff] p-4 rounded-[12px]
+              ">
+                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
+                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
+              </div>
+
+          </div>
+          <div className="w-full h-full min-h-0 overflow-hidden relative">
             <img
               src="/images/shadown-03.png"
               alt="Guilherme acompanhando representantes de venda"
@@ -98,7 +117,7 @@ export default function RepSalesAppPage() {
         </div>
         <div className="flex flex-col gap-3 w-full h-full">
           <div className="
-          basis-[70%] w-full w-full bg-[#005BE2]
+          basis-[70%] w-full bg-[#005BE2]
           bg-no-repeat bg-cover bg-center relative overflow-hidden relative">
             <img 
             src="/images/cover-projects-1.png"
@@ -108,7 +127,7 @@ export default function RepSalesAppPage() {
           </div>
           <div className="
           flex justify-center items-center p-8
-          basis-[30%] w-full w-full bg-[url('/images/cover-background-1.png')]
+          basis-[30%] w-full bg-[url('/images/cover-background-1.png')]
           bg-no-repeat bg-cover bg-center relative overflow-hidden">
             <div className="flex flex-row bg-[#005BE2] w-full justify-between items-center p-6">
               <div className="flex flex-col gap-3">
