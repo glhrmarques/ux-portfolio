@@ -88,11 +88,38 @@ export default function RepSalesAppPage() {
         <div className="bg-[#005BE2] w-full h-full"></div>
         <div className="flex flex-col gap-3 w-full h-full">
           <div className="bg-[#005BE2] w-full h-full"></div>
-          <div className="bg-[#005BE2] w-full h-full"></div>
+          <div className="bg-[#000000] w-full h-full min-h-0 overflow-hidden relative">
+            <img
+              src="/images/shadown-03.png"
+              alt="Guilherme acompanhando representantes de venda"
+              className="absolute -bottom-50 left-0 w-full object-contain"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-3 w-full h-full">
-          <div className="basis-[70%] bg-[#005BE2] w-full h-full"></div>
-          <div className="basis-[30%] bg-[#005BE2] w-full h-full"></div>
+          <div className="
+          basis-[70%] w-full w-full bg-[#005BE2]
+          bg-no-repeat bg-cover bg-center relative overflow-hidden relative">
+            <img 
+            src="/images/cover-projects-1.png"
+            alt="Rep Sales App"
+            className="absolute top-0 left-0 w-[100%] object-contain"
+            />
+          </div>
+          <div className="
+          flex justify-center items-center p-8
+          basis-[30%] w-full w-full bg-[url('/images/cover-background-1.png')]
+          bg-no-repeat bg-cover bg-center relative overflow-hidden">
+            <div className="flex flex-row bg-[#005BE2] w-full justify-between items-center p-6">
+              <div className="flex flex-col gap-3">
+                <p className="text-[14px] font-[500] text-white leading-none">Total do pedido</p>
+                <p className="text-[16px] font-[300] text-white leading-none"><span className="text-[22px] font-[500]">R$ 208,85</span> / 10 itens</p>
+              </div>
+              <p className="text-[18px] font-[500] text-white leading-none">Ver itens</p>
+            </div>
+          </div>
+
+
         </div>
       </section>
 
