@@ -176,9 +176,8 @@ export default function HomePage() {
           </div>
 
           <div className="
-            flex flex-col items-center justify-center h-[540px] w-full p-10
-            bg-[#000000] overflow-hidden
-            bg-no-repeat bg-cover bg-center relative
+            relative flex flex-col items-center justify-center h-[540px] w-full p-10
+            bg-[#000000]
             ">
             <div className="grid grid-cols-2 w-[80px] h-[44px]">
               <div className="h-full w-full bg-[#005BE2]"></div>
@@ -196,6 +195,8 @@ export default function HomePage() {
             >
             Inventa<span className="m-0 text-white/50">Ds.</span>
             </p>
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
           </div>
         </Link>
       </motion.section>
