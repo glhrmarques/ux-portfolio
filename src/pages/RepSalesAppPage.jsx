@@ -85,27 +85,53 @@ export default function RepSalesAppPage() {
       <section className="
        grid grid-cols-3 gap-3 justify-center w-full items-center m-auto min-h-[100dvh] lg:p-20 bg-[#ffffff]
       ">
-        <div className="bg-[#005BE2] w-full h-full"></div>
+        <div className="bg-[#005BE2] h-full relative overflow-hidden">
+          <img 
+          src="/images/moodboard-product.png"
+          alt="Rep Sales App"
+          className="absolute -top-40 left-[5%] w-[90%] object-contain"
+          />
+
+        </div>
         <div className="flex flex-col gap-3 w-full h-full">
           <div className="
           flex flex-col justify-center items-center p-6
           bw-full bg-[url('/images/cover-background-1.png')] h-full w-full
           bg-no-repeat bg-cover bg-center relative overflow-hidden">
-              <div className="
-              flex flex-row w-full justify-between
-              bg-[#ffffff] p-4 rounded-[12px]
-              ">
-                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
-                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
+              <div className="flex flex-col p-4 bg-[#ffffff] w-full rounded-[12px] gap-6 mb-3">
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Subtotal</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">R$ 1.000,00</p>
+                </div>
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Desconto de 3%</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">-R$ 30,00</p>
+                </div>
+                <hr className="border-[#000000]/20"/>
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Total</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">R$ 970,00</p>
+                </div>
               </div>
-              <div className="
-              flex flex-row w-full justify-between
-              bg-[#ffffff] p-4 rounded-[12px]
-              ">
-                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
-                <p className="text-[16px] font-[400] text-black leading-none">Placeholder</p>
-              </div>
+              <div className="flex flex-col p-4 bg-[#ffffff] w-full rounded-[12px] gap-6">
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <div className="flex flex-row gap-2 items-center">
+                    <p className="text-[18px] font-[500] text-black leading-none">15</p>
+                    <div className="w-1 h-1 bg-[#000000]/40 rounded-full"></div>
+                    <p className="text-[18px] font-[500] text-black leading-none">30 dias</p>
 
+                  </div>
+                  <p className="text-[18px] font-[500] text-black leading-none">2x R$ 485,00</p>
+                </div>
+              </div>
           </div>
           <div className="w-full h-full min-h-0 overflow-hidden relative">
             <img
@@ -118,7 +144,7 @@ export default function RepSalesAppPage() {
         <div className="flex flex-col gap-3 w-full h-full">
           <div className="
           basis-[70%] w-full bg-[#005BE2]
-          bg-no-repeat bg-cover bg-center relative overflow-hidden relative">
+          overflow-hidden relative">
             <img 
             src="/images/cover-projects-1.png"
             alt="Rep Sales App"
@@ -137,8 +163,6 @@ export default function RepSalesAppPage() {
               <p className="text-[18px] font-[500] text-white leading-none">Ver itens</p>
             </div>
           </div>
-
-
         </div>
       </section>
 
@@ -217,7 +241,7 @@ export default function RepSalesAppPage() {
         <div className="flex h-full min-h-0 flex-row gap-3">
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
             <img 
-              src="/images/clientes-06.png"
+              src="/images/clientes-05.png"
               alt="Lista de clientes"
               className="block h-full max-w-full object-contain"
             />
