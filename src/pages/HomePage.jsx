@@ -174,18 +174,28 @@ export default function HomePage() {
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
           </div>
+
           <div className="
-            flex items-center justify-center h-[540px] w-full p-10
-            bg-[url('/images/cover-background-3.png')] overflow-hidden
+            flex flex-col items-center justify-center h-[540px] w-full p-10
+            bg-[#000000] overflow-hidden
             bg-no-repeat bg-cover bg-center relative
             ">
-            <img 
-              src="/images/cover-projects-2.png"
-              alt="Rep Sales App" 
-              className="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-600" 
-            />
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
+            <div className="grid grid-cols-2 w-[80px] h-[44px]">
+              <div className="h-full w-full bg-[#005BE2]"></div>
+              <div className="grid grid-rows-2 w-full h-full">
+                <div className="grid grid-cols-2 h-full w-full">
+                  <div className="h-full w-full bg-[#363636]"></div>
+                  <div className="h-full w-full bg-[#01B971]"></div>
+                </div>
+                <div className="h-full w-full bg-[#ffffff]"></div>
+              </div>
+              </div>
+            <p
+            className="
+            text-center text-[36px] font-[700] text-white sm:text-[48px]"
+            >
+            Inventa<span className="m-0 text-white/50">Ds.</span>
+            </p>
           </div>
         </Link>
       </motion.section>
