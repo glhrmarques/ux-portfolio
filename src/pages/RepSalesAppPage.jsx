@@ -9,57 +9,65 @@ export default function RepSalesAppPage() {
   const container = useRef(null);
 
   useGSAP(() => {
-    const panels = gsap.utils.toArray(".project-panel");
+    const panels = gsap.utils.toArray(".project-panel", container.current);
+    const media = gsap.matchMedia();
 
-    panels.forEach((panel) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
+    media.add("(min-width: 1024px)", () => {
+      panels.forEach((panel) => {
+        ScrollTrigger.create({
+          trigger: panel,
+          start: "top top",
+          pin: true,
+          pinSpacing: false,
+        });
       });
+
     });
+
+    return () => media.revert();
   }, { scope: container });
 
   return (
     <main className="hero mx-auto max-w-screen-2xl">
       <section ref={container}>
       {/* Hero */}
-      <div className="grid grid-cols-2 w-full min-h-[100dvh]">
+      <div className="grid w-full grid-cols-1 lg:grid-cols-2 lg:min-h-[100dvh]">
         {/* Right column */}
         <motion.div
         initial={{ opacity: 0, x: -300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="flex flex-col justify-between w-full p-20"
+        className="flex sm:min-h-[60dvh] w-full flex-col justify-between gap-12 p-4 sm:p-10 lg:p-20"
         >
           <BackArrow />
-          <div className="flex flex-col gap-10">
-            <h1 className="text-[40px] font-regular leading-none">App de Vendedores</h1>
-            <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
+          <div className="flex flex-col gap-6 sm:gap-10">
+            <h1 className="text-[32px] font-regular leading-none sm:text-[40px]">App de Vendedores</h1>
+            <p className="text-[16px] lg:text-[22px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
           </div>
 
-          <div className="flex flex-row justify-between">
-            <div className="flex flex-col gap-3">
-              <p className="text-[18px] font-[400] text-black/50 leading-none">Papel</p>
-              <p className="text-[18px] font-[400] text-black leading-none">Product Designer</p>
+          <div className="flex flex-col lg:flex-row justify-between gap-6 lg:pb-0 pb-10">
+            <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
+              <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Papel</p>
+              <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">Product Designer</p>
             </div>
 
-            <div className="flex flex-col gap-3">
-              <p className="text-[18px] font-[400] text-black/50 leading-none">Projeto</p>
-              <p className="text-[18px] font-[400] text-black leading-none">B2B</p>
+            <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
+              <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Projeto</p>
+              <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">B2B</p>
             </div>
 
-            <div className="flex flex-col gap-3">
-              <p className="text-[18px] font-[400] text-black/50 leading-none">Tempo</p>
-              <p className="text-[18px] font-[400] text-black leading-none">1 Mês</p>
+            <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
+              <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Tempo</p>
+              <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">1 Mês</p>
             </div>
           </div>
         </motion.div>
 
+        {/* Left column */}
         <div 
         className="
-        w-full bg-[url('/images/cover-background-1.png')]
+        min-h-[100dvh] lg:min-h-[60dvh] w-full bg-[url('/images/cover-background-1.png')]
+        lg:min-h-0
         bg-no-repeat bg-cover bg-center relative overflow-hidden"
         >
           <motion.img
@@ -68,7 +76,7 @@ export default function RepSalesAppPage() {
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             src="/images/cover-projects-1.png"
             alt="Rep Sales App"
-            className="absolute inset-0 m-auto scale-80"
+            className="absolute inset-0 m-auto scale-90 lg:scale-80"
           />
         </div>
       </div>
@@ -76,18 +84,18 @@ export default function RepSalesAppPage() {
       {/* Challenge */}
       <section
       className="
-       project-panel flex flex-col justify-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
-        <p className="text-[22px] font-[600] text-white/50 text-center">DESAFIO</p>
+       project-panel flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
+        <p className="text-[18px] font-[600] text-center text-white/50 sm:text-[22px]">DESAFIO</p>
         <p
         className="
-        text-[48px] font-[400] text-white/50 text-center max-w-[1000px] mx-auto"
+        mx-auto max-w-[1000px] text-center lg:text-[32px] text-[22px] font-[400] text-white/50 sm:text-[48px]"
         >
           O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
       </section>
       
       {/* Moodboard */}
       <section className="
-      project-panel grid grid-cols-3 gap-3 justify-center w-full items-center m-auto min-h-[100dvh] lg:p-20 bg-[#ffffff]
+      project-panel hidden min-h-[100dvh] w-full grid-cols-3 items-center justify-center gap-3 bg-[#ffffff] lg:grid lg:p-20
       ">
         <div className="bg-[#005BE2] h-full relative overflow-hidden">
           <img 
@@ -173,18 +181,18 @@ export default function RepSalesAppPage() {
       {/* Research */}
       <section
       className="
-        project-panel flex flex-col justify-center gap-8 w-full mx-auto min-h-[100dvh] lg:px-20 leading-[1.2] bg-[#ffffff]">
-        <p className="text-[22px] font-[600] text-black/50 text-center">RESEARCH</p>
+        project-panel flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#ffffff] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-20">
+        <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESEARCH</p>
         <p
         className="
-        text-[48px] font-[400] text-black text-center"
+        text-center text-[32px] font-[400] text-black sm:text-[48px]"
         >
           Identificando problemas e oportunidades
         </p>
-        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+        <p className="mx-auto max-w-[800px] text-center text-[18px] font-[300] text-black sm:text-[24px]">
           Por meio de entrevistas com vendedores e acompanhamento de suas rotas em campo, mapeei a jornada completa do usuário, identificando os principais pontos de atrito e oportunidades de melhoria.
         </p>
-        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+        <p className="mx-auto max-w-[800px] text-center text-[18px] font-[300] text-black sm:text-[24px]">
           Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
         </p>
       </section>
@@ -194,22 +202,22 @@ export default function RepSalesAppPage() {
 
       {/* Solution 1 */}
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
-        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
-          <p className="text-[40px] font-[300] text-black leading-none">Análise de Crédito</p>
+        <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
+          <p className="text-[32px] font-[300] leading-none text-black sm:text-[40px]">Análise de Crédito</p>
           <hr className="border-[#000000]/30" />
-          <p className="text-[24px] font-[300] text-black/50">Lista de cliente com métodos de pagamentos disponíveis e histórico de pedidos.</p>
+          <p className="text-[18px] font-[300] text-black/50 sm:text-[24px]">Lista de cliente com métodos de pagamentos disponíveis e histórico de pedidos.</p>
         </div>
-        <div className="flex h-full min-h-0 flex-row gap-3">
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+        <div className="flex min-h-0 flex-col gap-3 sm:flex-row lg:h-full">
+          <div className="hidden sm:block flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] sm:min-h-0">
             <img 
               src="/images/clientes-01.png"
               alt="Lista de clientes"
               className="block h-full max-w-full object-contain p-10"
             />
           </div>
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+          <div className="flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] sm:min-h-0">
             <video
               src="/images/clientes-03.mov"
               autoPlay
@@ -224,22 +232,22 @@ export default function RepSalesAppPage() {
 
       {/* Solution 2 */}
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
-        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
-          <p className="text-[40px] font-[300] text-black leading-none">Catálogo</p>
+        <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
+          <p className="text-[32px] font-[300] leading-none text-black sm:text-[40px]">Catálogo</p>
           <hr className="border-[#000000]/30" />
-          <p className="text-[24px] font-[300] text-black/50">Lista de produtos com detalhes dos descontos progressivos e o carrinho que mostra os items adicionados e o pedido mínimo para concluir.</p>
+          <p className="text-[18px] font-[300] text-black/50 sm:text-[24px]">Lista de produtos com detalhes dos descontos progressivos e o carrinho que mostra os items adicionados e o pedido mínimo para concluir.</p>
         </div>
-        <div className="flex h-full min-h-0 flex-row gap-3">
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+        <div className="flex min-h-0 flex-col gap-3 sm:flex-row lg:h-full">
+          <div className="hidden sm:block flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] sm:min-h-0">
             <img 
               src="/images/cover-projects-1.png"
               alt="Lista de clientes"
               className="block h-full max-w-full object-contain p-10"
             />
           </div>
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <div className="flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4 sm:min-h-0">
           <video
               src="/images/clientes-04.webm"
               autoPlay
@@ -254,22 +262,22 @@ export default function RepSalesAppPage() {
 
       {/* Solution 3 */}
       <section className="
-      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
-        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
-          <p className="text-[40px] font-[300] text-black leading-none">Pagamento</p>
+        <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
+          <p className="text-[32px] font-[300] leading-none text-black sm:text-[40px]">Pagamento</p>
           <hr className="border-[#000000]/30" />
-          <p className="text-[24px] font-[300] text-black/50">Seleção simplificada dos pagamentos, principalmente do boleto parcelado.</p>
+          <p className="text-[18px] font-[300] text-black/50 sm:text-[24px]">Seleção simplificada dos pagamentos, principalmente do boleto parcelado.</p>
         </div>
-        <div className="flex h-full min-h-0 flex-row gap-3">
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+        <div className="flex min-h-0 flex-col gap-3 sm:flex-row lg:h-full">
+          <div className="hidden sm:block flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] sm:min-h-0">
             <img 
               src="/images/clientes-05.png"
               alt="Lista de clientes"
               className="block h-full max-w-full object-contai p-10"
             />
           </div>
-          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <div className="flex min-h-[42dvh] w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4 sm:min-h-0">
           <video
               src="/images/clientes-07.webm"
               autoPlay
@@ -284,31 +292,31 @@ export default function RepSalesAppPage() {
 
       {/* Outcome */}
       <section className="
-      project-panel flex flex-col justify-center items-center gap-3 w-full m-auto min-h-[100dvh] bg-[#ffffff] lg:px-55
+      project-panel flex min-h-[100dvh] w-full flex-col items-center justify-center gap-3 bg-[#ffffff] p-6 sm:p-10 lg:px-55
       ">
-        <p className="text-[22px] font-[600] text-black/50 text-center">RESULTADOS</p>
-        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
-          <p className="text-[32px] font-[400] text-black">GMV mensal</p>
-          <p className="text-[32px] font-[400] text-black">~R$ 400k</p>
+        <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESULTADOS</p>
+        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">GMV mensal</p>
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">~R$ 400k</p>
         </div>
-        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
-          <p className="text-[32px] font-[400] text-black">Orçamentos criados</p>
-          <p className="text-[32px] font-[400] text-black">~7k</p>
+        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">Orçamentos criados</p>
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">~7k</p>
         </div>
-        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
-          <p className="text-[32px] font-[400] text-black">Pedidos criados</p>
-          <p className="text-[32px] font-[400] text-black">~4.5k</p>
+        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">Pedidos criados</p>
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">~4.5k</p>
         </div>
-        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
-          <p className="text-[32px] font-[400] text-black">Retenção</p>
-          <p className="text-[32px] font-[400] text-black">~36%</p>
+        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">Retenção</p>
+          <p className="text-[20px] font-[400] text-black sm:text-[32px]">~36%</p>
         </div>
       </section>
 
       {/* DS */}
       <section
       className="
-       project-panel flex flex-col justify-center items-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
+       project-panel flex min-h-[100dvh] w-full flex-col items-center justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
 
         <div className="grid grid-cols-2 w-[80px] h-[44px]">
           <div className="h-full w-full bg-[#005BE2]"></div>
@@ -322,16 +330,15 @@ export default function RepSalesAppPage() {
         </div>
         <p
         className="
-        text-[48px] font-[700] text-white text-center"
+        text-center text-[36px] font-[700] text-white sm:text-[48px]"
         >
           Inventa<span className="m-0 text-white/50">Ds.</span>
         </p>
-        <p className="text-[24px] font-[400] text-white/60 text-center max-w-[800px]">Ao fim do projeto foi desenvolvido um InvendaDs para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
+        <p className="max-w-[800px] text-center text-[18px] font-[400] text-white/60 sm:text-[24px]">Ao fim do projeto foi desenvolvido um InvendaDs para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
         <button
         onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
         className="
-        bg-[#ffffff] p-5 text-black font-[600] hover:bg-[#000000] border 
-        hover:text-white cursor-pointer
+        border bg-[#ffffff] p-4 text-black font-[600] hover:bg-[#000000] hover:text-white sm:p-5 cursor-pointer
         ">Ver Design System</button>
       </section>
     </main>
