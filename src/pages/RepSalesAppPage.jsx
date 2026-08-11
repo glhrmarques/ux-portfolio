@@ -1,263 +1,326 @@
+import { useRef } from "react";
 import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
-import { useScrollReveal } from '../hooks/useScrollReveal'
+
+import { useGSAP } from "@gsap/react";
+import { gsap, ScrollTrigger } from "../gsap";
 
 export default function RepSalesAppPage() {
-  useScrollReveal()
+  const container = useRef(null);
+
+  useGSAP(() => {
+    const panels = gsap.utils.toArray(".project-panel");
+
+    panels.forEach((panel) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+      });
+    });
+  }, { scope: container });
 
   return (
-    <div className="mx-auto w-full max-w-[1440px]">
-      <motion.main 
-        className="flex-1 min-w-0 flex flex-col px-6 py-12 md:px-[240px] md:py-16"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        {/* Section - Intro */}
-        <section className="flex flex-col gap-10 mb-[80px]">
-          <div className="flex flex-col gap-4">
+    <main className="hero mx-auto max-w-screen-2xl" ref={container}>
+      <div className="grid grid-cols-2 w-full min-h-[100dvh]">
+        {/* Right column */}
+        <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="flex flex-col justify-between w-full p-20"
+        >
           <BackArrow />
-            <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[40px] font-medium text-[black]">App para Representantes de Vendas</h1>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">O App de Representantes de Vendas é uma ferramenta para gerenciar clientes, acessar informações de produtos, criar pedidos e apoiar a rotina de vendas em campo.</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">O MVP já havia validado que o produto podia apoiar a operação comercial, mas seu uso ainda dependia de como ele se encaixava no fluxo de trabalho existente dos representantes.</p>
+          <div className="flex flex-col gap-10">
+            <h1 className="text-[40px] font-regular leading-none">App de Vendedores</h1>
+            <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
           </div>
 
-          {/* Team */}
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-            <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">FUNÇÃO</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Product Designer</p>
+          <div className="flex flex-row justify-between">
+            <div className="flex flex-col gap-3">
+              <p className="text-[18px] font-[400] text-black/50 leading-none">Papel</p>
+              <p className="text-[18px] font-[400] text-black leading-none">Product Designer</p>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">PERÍODO</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Jun - Dez de 2025</p>
+            <div className="flex flex-col gap-3">
+              <p className="text-[18px] font-[400] text-black/50 leading-none">Projeto</p>
+              <p className="text-[18px] font-[400] text-black leading-none">B2B</p>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">EQUIPE</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">1 Product Designer</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">2 Backend Eng</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">1 Frontend Eng</p>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">COMPETÊNCIAS</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Product Design</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">UX Research</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Prototype</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Design Interaction</p>
+            <div className="flex flex-col gap-3">
+              <p className="text-[18px] font-[400] text-black/50 leading-none">Tempo</p>
+              <p className="text-[18px] font-[400] text-black leading-none">1 Mês</p>
             </div>
           </div>
-        </section>
+        </motion.div>
 
-        {/* Section - Problem */}
+        <div 
+        className="
+        w-full bg-[url('/images/cover-background-1.png')]
+        bg-no-repeat bg-cover bg-center relative overflow-hidden"
+        >
+          <motion.img
+            initial={{ opacity: 0, y: 300 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+            src="/images/cover-projects-1.png"
+            alt="Rep Sales App"
+            className="absolute inset-0 m-auto scale-80"
+          />
+        </div>
+      </div>
 
-        <section className="flex flex-col gap-10 mb-[80px]">
-          <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">PROBLEMA</p>
-            <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black] max-w-[456px]">O que a Inventa deveria melhorar em seu primeiro app?</h2>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">Os representantes precisavam alternar rapidamente entre o contexto do cliente, a seleção de produtos e a criação de pedidos. E por não terem um app, recorriam a soluções manuais.</p>
+      <section
+      className="
+       flex flex-col justify-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
+        <p className="text-[22px] font-[600] text-white/50 text-center">DESAFIO</p>
+        <p
+        className="
+        text-[48px] font-[400] text-white/50 text-center max-w-[1000px] mx-auto"
+        >
+          O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
+      </section>
+      
+      <section className="
+       grid grid-cols-3 gap-3 justify-center w-full items-center m-auto min-h-[100dvh] lg:p-20 bg-[#ffffff]
+      ">
+        <div className="bg-[#005BE2] h-full relative overflow-hidden">
+          <img 
+          src="/images/moodboard-product.png"
+          alt="Rep Sales App"
+          className="absolute -top-60 left-[5%] w-[90%] object-contain"
+          />
+
+        </div>
+        <div className="flex flex-col gap-3 w-full h-full">
+          <div className="
+          flex flex-col justify-center items-center p-6
+          bw-full bg-[url('/images/cover-background-1.png')] h-full w-full
+          bg-no-repeat bg-cover bg-center relative overflow-hidden">
+              <div className="flex flex-col p-4 bg-[#ffffff] w-full rounded-[12px] gap-6 mb-3">
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Subtotal</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">R$ 1.000,00</p>
+                </div>
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Desconto de 3%</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">-R$ 30,00</p>
+                </div>
+                <hr className="border-[#000000]/20"/>
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <p className="text-[18px] font-[300] text-black leading-none">Total</p>
+                  <p className="text-[18px] font-[300] text-black leading-none">R$ 970,00</p>
+                </div>
+              </div>
+              <div className="flex flex-col p-4 bg-[#ffffff] w-full rounded-[12px] gap-6">
+                <div className="
+                flex flex-row w-full justify-between
+                ">
+                  <div className="flex flex-row gap-2 items-center">
+                    <p className="text-[18px] font-[500] text-black leading-none">15</p>
+                    <div className="w-1 h-1 bg-[#000000]/40 rounded-full"></div>
+                    <p className="text-[18px] font-[500] text-black leading-none">30 dias</p>
+
+                  </div>
+                  <p className="text-[18px] font-[500] text-black leading-none">2x R$ 485,00</p>
+                </div>
+              </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-[56px]">
-            {/* Text 1 */}
-            <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Adoção</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] font-regular text-[#8C8C8C]">O desafio de design era reduzir o esforço de usar a ferramenta durante uma interação comercial ao vivo.</p>
-            </div>
-
-            {/* Text 2 */}
-            <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Autonomia</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] font-regular text-[#8C8C8C]">Os representantes precisavam decidir rapidamente se valia a pena visitar ou reativar uma loja.</p>
-            </div>
-
-            {/* Text 3 */}
-            <div className="flex flex-col gap-2">
-              <p className="font-['Source_Serif_4',sans-serif] text-[20px] md:text-[20px] font-medium text-black">Iteração com feedback</p>
-              <p className="font-['Figtree',sans-serif] text-[16px] font-regular text-[#8C8C8C]">Explorar várias ideias e testar rapidamente conceitos com usuários.</p>
-            </div>
-          </div>
-
-        </section>
-
-        {/* Section - discovery */}
-
-        <section className="flex flex-col gap-10 mb-[80px]">
-          <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C] ">UX RESEARCH</p>
-            <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black] max-w-[372px]">Identificando problemas e oportunidades</h2>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">Para compreender o comportamento dos representantes, ampliamos a análise para toda a jornada de compra e suas interações com o lojista. Esse mapeamento permitiu identificar necessidades, pontos de atrito e oportunidades ao longo do processo, trazendo mais clareza sobre quais funcionalidades priorizar em cada etapa da experiência no aplicativo.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-y-[4px]">
-            {/* Image 1 */}
-            <img
-              src="/images/shadown-01.png"
-              alt="Coletando feedback com representantes de vendas"
-              className="w-full h-[400px] object-cover"
-            />
-
-            {/* Image 2 */}
-            <img
-              src="/images/shadown-02.png"
-              alt="Coletando feedback com representantes de vendas"
-              className="w-full h-[400px] object-cover"
-            />
-
-            {/* Image 3 */}
+          <div className="w-full h-full min-h-0 overflow-hidden relative">
             <img
               src="/images/shadown-03.png"
-              alt="Coletando feedback com representantes de vendas"
-              className="w-full h-[400px] object-cover"
+              alt="Guilherme acompanhando representantes de venda"
+              className="absolute -bottom-50 left-0 w-full object-contain"
             />
-
           </div>
-        </section>
-
-        {/* Section - Core flows */}
-        <section className="flex flex-col gap-14 mb-[160px]">
-          <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">FLUXOS PRINCIPAIS</p>
-            <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">Prototipação e testes</h2>
+        </div>
+        <div className="flex flex-col gap-3 w-full h-full">
+          <div className="
+          basis-[70%] w-full bg-[#005BE2]
+          overflow-hidden relative">
+            <img 
+            src="/images/cover-projects-1.png"
+            alt="Rep Sales App"
+            className="absolute top-0 left-0 w-[100%] object-contain"
+            />
           </div>
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[80px] gap-x-10 items-end ">
-            <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
-              <video
-                  src="/videos/sales-app-core-1.mov"
-                  className="w-full h-[464px] object-contain"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-              />
-            </div>
-
-              <div className="flex flex-col gap-2">
-                <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Contexto do cliente</p>
-                <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Adicionar clientes, análise de crédito e pedidos anteriores</p>
+          <div className="
+          flex justify-center items-center p-8
+          basis-[30%] w-full bg-[url('/images/cover-background-1.png')]
+          bg-no-repeat bg-cover bg-center relative overflow-hidden">
+            <div className="flex flex-row bg-[#005BE2] w-full justify-between items-center p-6">
+              <div className="flex flex-col gap-3">
+                <p className="text-[14px] font-[500] text-white leading-none">Total do pedido</p>
+                <p className="text-[16px] font-[300] text-white leading-none"><span className="text-[22px] font-[500]">R$ 208,85</span> / 10 itens</p>
               </div>
-
-              <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
-              <video
-                  src="/videos/sales-app-core-2.mov"
-                  className="w-full h-[464px] object-contain"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-              />
-            </div>
-
-              <div className="flex flex-col gap-2">
-                <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Navegação no catálogo</p>
-                <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Encontrar produtos por marca e informações do produto</p>
-              </div>
-
-              <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
-              <video
-                  src="/videos/sales-app-core-3.mov"
-                  className="w-full h-[464px] object-contain"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-              />
-            </div>
-
-              <div className="flex flex-col gap-2">
-                <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Seleção de produtos</p>
-                <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Carrinho para verificar o valor mínimo do pedido e os produtos adicionados</p>
-              </div>
-
-              <div className="w-full h-[464px] overflow-hidden bg-[#F4EAE2]">
-              <video
-                  src="/videos/sales-app-core-4.mov"
-                  className="w-full h-[464px] object-contain"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-              />
-            </div>
-
-              <div className="flex flex-col gap-2">
-                <p className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[28px] font-medium text-black">Pagamento simplificado</p>
-                <p className="font-['Figtree',sans-serif] text-[18px] font-medium text-[#8C8C8C]">Seleção de parcelas com menos esforço cognitivo</p>
-              </div>
-          </div>
-
-        </section>
-
-        {/* Section - Design decisions */}
-        <section className="flex flex-col gap-14 mb-[160px]">
-          <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">DECISÕES DE DESIGN</p>
-            <h2 className="font-['Figtree',sans-serif] text-[28px] md:text-[32px] font-medium text-[black]">Foco por padrão, detalhes quando necessário</h2>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">Em vez de expor todos os detalhes de imediato, priorizamos as informações de que os representantes precisavam com mais frequência e mantivemos os detalhes secundários disponíveis quando necessário. Isso ajudou a experiência a manter o foco sem remover o acesso a contextos importantes.</p>
-          </div>
-
-
-          <div className="grid grid-cols-1 gap-[24px]">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-['Source_Serif_4',sans-serif] text-[24px] md:text-[24px] font-medium text-[black]">Priorizar velocidade em vez de exploração</h2>
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[#8C8C8C]">Como os representantes costumam usar o app enquanto conversam com clientes, priorizamos a velocidade em vez de uma navegação profunda. O objetivo não era apenas criar uma experiência de catálogo bonita, mas ajudar os representantes a encontrar produtos, adicionar itens e avançar com o mínimo de interrupção.</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-              <div className="w-full h-[320px] overflow-hidden bg-[#F4EAE2]">
-                <img
-                  src="/images/sales-app-decision-5.png"
-                  alt="Coletando feedback com representantes de vendas"
-                  className="w-full h-[400px] object-contain"
-                />
-              </div>
-              <div className="w-full h-[320px] bg-[#F4EAE2] flex items-end justify-center overflow-hidden">
-                <img
-                  src="/images/sales-app-decision-4.png"
-                  alt="Coletando feedback com representantes de vendas"
-                  className="h-[420px] w-auto object-contain"
-                />
-              </div>
-              <div className="w-full h-[320px] overflow-hidden bg-[#F4EAE2]">
-                <img
-                  src="/images/sales-app-decision-1.png"
-                  alt="Coletando feedback com representantes de vendas"
-                  className="w-full h-[400px] object-contain"
-                />
-              </div>
+              <p className="text-[18px] font-[500] text-white leading-none">Ver itens</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="flex flex-col gap-14 mb-[160px]">
-          <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">RESULTADOS</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+      <section
+      className="
+        flex flex-col justify-center gap-8 w-full mx-auto min-h-[100dvh] lg:px-20 leading-[1.2] bg-[#ffffff]">
+        <p className="text-[22px] font-[600] text-black/50 text-center">RESEARCH</p>
+        <p
+        className="
+        text-[48px] font-[400] text-black text-center"
+        >
+          Identificando problemas e oportunidades
+        </p>
+        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+          Por meio de entrevistas com vendedores e acompanhamento de suas rotas em campo, mapeei a jornada completa do usuário, identificando os principais pontos de atrito e oportunidades de melhoria.
+        </p>
+        <p className="text-[24px] font-[300] text-black text-center max-w-[800px] mx-auto">
+          Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
+        </p>
+      </section>
 
-              <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-                <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Pedidos</p>
-                <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">+7.000</p>
-              </div>
-
-              <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-                <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">GMV mensal</p>
-                <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">R$ 413k</p>
-              </div>
-
-              <div className="w-full h-[320px] bg-[#F4EAE2] flex flex-col justify-end p-[24px]">
-                <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Consultores</p>
-                <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">+100</p>
-              </div>
-
-            </div>
+      <section className="
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      ">
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Análise de Crédito</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Lista de cliente com métodos de pagamentos disponíveis e histórico de pedidos.</p>
+        </div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/clientes-01.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
           </div>
-        </section>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <video
+              src="/images/clientes-03.mov"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
 
-      </motion.main>
-    </div> 
+      <section className="
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      ">
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Catálogo</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Lista de produtos com detalhes dos descontos progressivos e o carrinho que mostra os items adicionados e o pedido mínimo para concluir.</p>
+        </div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/cover-projects-1.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <video
+              src="/images/clientes-04.webm"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="
+      grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
+      ">
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Pagamento</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Seleção simplificada dos pagamentos, principalmente do boleto parcelado.</p>
+        </div>
+        <div className="flex h-full min-h-0 flex-row gap-3">
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
+            <img 
+              src="/images/clientes-05.png"
+              alt="Lista de clientes"
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
+          <video
+              src="/images/clientes-07.webm"
+              autoPlay
+              loop
+              muted 
+              playsInline
+              className="block h-full max-w-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="
+      flex flex-col justify-center gap-3 w-full mx-auto min-h-[40dvh] bg-[#ffffff] lg:p-55
+      ">
+        <p className="text-[22px] font-[600] text-black/50 text-center">RESULTADOS</p>
+        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
+          <p className="text-[32px] font-[400] text-black">GMV mensal</p>
+          <p className="text-[32px] font-[400] text-black">~R$ 400k</p>
+        </div>
+        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
+          <p className="text-[32px] font-[400] text-black">Orçamentos criados</p>
+          <p className="text-[32px] font-[400] text-black">~7k</p>
+        </div>
+        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
+          <p className="text-[32px] font-[400] text-black">Pedidos criados</p>
+          <p className="text-[32px] font-[400] text-black">~4.5k</p>
+        </div>
+        <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
+          <p className="text-[32px] font-[400] text-black">Retenção</p>
+          <p className="text-[32px] font-[400] text-black">~36%</p>
+        </div>
+      </section>
+
+      <section
+      className="
+       flex flex-col justify-center items-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
+
+        <div className="grid grid-cols-2 w-[80px] h-[44px]">
+          <div className="h-full w-full bg-[#005BE2]"></div>
+            <div className="grid grid-rows-2 w-full h-full">
+              <div className="grid grid-cols-2 h-full w-full">
+                <div className="h-full w-full bg-[#363636]"></div>
+                <div className="h-full w-full bg-[#01B971]"></div>
+              </div>
+              <div className="h-full w-full bg-[#ffffff]"></div>
+          </div>
+        </div>
+        <p
+        className="
+        text-[48px] font-[700] text-white text-center"
+        >
+          Inventa<span className="m-0 text-white/50">Ds.</span>
+        </p>
+        <p className="text-[24px] font-[400] text-white/60 text-center max-w-[800px]">Ao fim do projeto foi desenvolvido um InvendaDs para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
+        <button
+        onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
+        className="
+        bg-[#ffffff] p-5 text-black font-[600] hover:bg-[#000000] border 
+        hover:text-white cursor-pointer
+        ">Ver Design System</button>
+      </section>
+    </main>
   )
 }
