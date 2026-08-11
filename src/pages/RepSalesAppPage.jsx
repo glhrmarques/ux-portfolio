@@ -89,7 +89,7 @@ export default function RepSalesAppPage() {
           <img 
           src="/images/moodboard-product.png"
           alt="Rep Sales App"
-          className="absolute -top-40 left-[5%] w-[90%] object-contain"
+          className="absolute -top-60 left-[5%] w-[90%] object-contain"
           />
 
         </div>
@@ -187,7 +187,11 @@ export default function RepSalesAppPage() {
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
-        <div className="bg-[#000000]"></div>
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Análise de Crédito</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Lista de cliente com métodos de pagamentos disponíveis e histórico de pedidos.</p>
+        </div>
         <div className="flex h-full min-h-0 flex-row gap-3">
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
             <img 
@@ -212,7 +216,11 @@ export default function RepSalesAppPage() {
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
-        <div className="bg-[#000000]"></div>
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Catálogo</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Lista de produtos com detalhes dos descontos progressivos e o carrinho que mostra os items adicionados e o pedido mínimo para concluir.</p>
+        </div>
         <div className="flex h-full min-h-0 flex-row gap-3">
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
             <img 
@@ -237,7 +245,11 @@ export default function RepSalesAppPage() {
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
-        <div className="bg-[#000000]"></div>
+        <div className="flex flex-col px-25 pb-10 gap-[40px] justify-end">
+          <p className="text-[40px] font-[300] text-black leading-none">Pagamento</p>
+          <hr className="border-[#000000]/30" />
+          <p className="text-[24px] font-[300] text-black/50">Seleção simplificada dos pagamentos, principalmente do boleto parcelado.</p>
+        </div>
         <div className="flex h-full min-h-0 flex-row gap-3">
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
             <img 
@@ -301,7 +313,7 @@ export default function RepSalesAppPage() {
         >
           Inventa<span className="m-0 text-white/50">Ds.</span>
         </p>
-        <p className="text-[24px] font-[400] text-white/60 text-center">Placeholder</p>
+        <p className="text-[24px] font-[400] text-white/60 text-center max-w-[800px]">Ao fim do projeto foi desenvolvido um InvendaDs para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
         <button
         onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
         className="
