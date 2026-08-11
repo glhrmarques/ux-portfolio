@@ -47,7 +47,7 @@ export default function Footer() {
               +55 1196174-7490
           </button>
         </div>
-      <p className="text-[18px] font-[400] text-white/50">Designed and Coded by Guilherme Marques</p>
+      <p className="text-[16px] lg:text-[18px] font-[400] text-white/50">Designed and Coded by Guilherme Marques</p>
       </div>
     </footer>
   )
