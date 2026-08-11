@@ -22,7 +22,9 @@ export default function RepSalesAppPage() {
   }, { scope: container });
 
   return (
-    <main className="hero mx-auto max-w-screen-2xl" ref={container}>
+    <main className="hero mx-auto max-w-screen-2xl">
+      <section ref={container}>
+      {/* Hero */}
       <div className="grid grid-cols-2 w-full min-h-[100dvh]">
         {/* Right column */}
         <motion.div
@@ -71,9 +73,10 @@ export default function RepSalesAppPage() {
         </div>
       </div>
 
+      {/* Challenge */}
       <section
       className="
-       flex flex-col justify-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
+       project-panel flex flex-col justify-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
         <p className="text-[22px] font-[600] text-white/50 text-center">DESAFIO</p>
         <p
         className="
@@ -82,8 +85,9 @@ export default function RepSalesAppPage() {
           O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
       </section>
       
+      {/* Moodboard */}
       <section className="
-       grid grid-cols-3 gap-3 justify-center w-full items-center m-auto min-h-[100dvh] lg:p-20 bg-[#ffffff]
+      project-panel grid grid-cols-3 gap-3 justify-center w-full items-center m-auto min-h-[100dvh] lg:p-20 bg-[#ffffff]
       ">
         <div className="bg-[#005BE2] h-full relative overflow-hidden">
           <img 
@@ -166,9 +170,10 @@ export default function RepSalesAppPage() {
         </div>
       </section>
 
+      {/* Research */}
       <section
       className="
-        flex flex-col justify-center gap-8 w-full mx-auto min-h-[100dvh] lg:px-20 leading-[1.2] bg-[#ffffff]">
+        project-panel flex flex-col justify-center gap-8 w-full mx-auto min-h-[100dvh] lg:px-20 leading-[1.2] bg-[#ffffff]">
         <p className="text-[22px] font-[600] text-black/50 text-center">RESEARCH</p>
         <p
         className="
@@ -183,7 +188,11 @@ export default function RepSalesAppPage() {
           Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
         </p>
       </section>
+      </section>
 
+      
+
+      {/* Solution 1 */}
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
@@ -197,7 +206,7 @@ export default function RepSalesAppPage() {
             <img 
               src="/images/clientes-01.png"
               alt="Lista de clientes"
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contain p-10"
             />
           </div>
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff]">
@@ -207,12 +216,13 @@ export default function RepSalesAppPage() {
               loop
               muted 
               playsInline
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contain p-8"
             />
           </div>
         </div>
       </section>
 
+      {/* Solution 2 */}
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
@@ -226,7 +236,7 @@ export default function RepSalesAppPage() {
             <img 
               src="/images/cover-projects-1.png"
               alt="Lista de clientes"
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contain p-10"
             />
           </div>
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
@@ -236,12 +246,13 @@ export default function RepSalesAppPage() {
               loop
               muted 
               playsInline
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contain p-8"
             />
           </div>
         </div>
       </section>
 
+      {/* Solution 3 */}
       <section className="
       grid grid-cols-[40%_60%] justify-center gap-3 w-full mx-auto h-[90dvh] bg-[#ffffff] lg:p-10
       ">
@@ -255,7 +266,7 @@ export default function RepSalesAppPage() {
             <img 
               src="/images/clientes-05.png"
               alt="Lista de clientes"
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contai p-10"
             />
           </div>
           <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#ffffff] pt-4">
@@ -265,14 +276,15 @@ export default function RepSalesAppPage() {
               loop
               muted 
               playsInline
-              className="block h-full max-w-full object-contain"
+              className="block h-full max-w-full object-contain p-8"
             />
           </div>
         </div>
       </section>
 
+      {/* Outcome */}
       <section className="
-      flex flex-col justify-center gap-3 w-full mx-auto min-h-[40dvh] bg-[#ffffff] lg:p-55
+      project-panel flex flex-col justify-center items-center gap-3 w-full m-auto min-h-[100dvh] bg-[#ffffff] lg:px-55
       ">
         <p className="text-[22px] font-[600] text-black/50 text-center">RESULTADOS</p>
         <div className="flex flex-rol justify-between w-full border-b border-[#000000]/30 py-8">
@@ -293,9 +305,10 @@ export default function RepSalesAppPage() {
         </div>
       </section>
 
+      {/* DS */}
       <section
       className="
-       flex flex-col justify-center items-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
+       project-panel flex flex-col justify-center items-center gap-8 w-full m-auto min-h-[100dvh] lg:px-55 leading-[1.2] bg-[#000000]">
 
         <div className="grid grid-cols-2 w-[80px] h-[44px]">
           <div className="h-full w-full bg-[#005BE2]"></div>
