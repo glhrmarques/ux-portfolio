@@ -50,6 +50,11 @@ export default function SellerPlatformPage() {
           />
         </div>
       </section>
+
+      <section className="flex flex-col p-4 gap-6 justify-center items-center min-h-[100dvh] bg-[#000000]">
+        <p className="text-[18px] font-[600] text-center text-white/50">DESAFIO</p>
+        <p className="text-[24px] md:text-[48px] font-[300] text-white/50 text-center max-w-[1000px] leading-[1.2]">Desenvolver um portal para apoiar a operação comercial com o <spam className="text-white">desempenho de vendas dos consultores</spam> e <span className="text-white">planejar rotas de visitas.</span></p>
+      </section>
     </main>
   
   )
