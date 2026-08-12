@@ -51,9 +51,20 @@ export default function SellerPlatformPage() {
         </div>
       </section>
 
-      <section className="flex flex-col p-4 gap-6 justify-center items-center min-h-[100dvh] bg-[#000000]">
+      {/* Challenge */}
+      <section className="flex flex-col p-4 gap-6 justify-center min-h-[100dvh] bg-[#000000]">
         <p className="text-[18px] font-[600] text-center text-white/50">DESAFIO</p>
-        <p className="text-[24px] md:text-[48px] font-[300] text-white/50 text-center max-w-[1000px] leading-[1.2]">Desenvolver um portal para apoiar a operação comercial com o <spam className="text-white">desempenho de vendas dos consultores</spam> e <span className="text-white">planejar rotas de visitas.</span></p>
+        <p className="mx-auto text-[24px] md:text-[40px] font-[300] text-white/50 text-center max-w-[800px] leading-[1.2]">Desenvolver um portal para apoiar a operação comercial com o <spam className="text-white">desempenho de vendas dos consultores</spam> e <span className="text-white">planejar rotas de visitas.</span></p>
+      </section>
+
+      {/* AI */}
+      <section className="flex flex-col p-4 gap-6 justify-start min-h-[100dvh] bg-[#000000] overflow-hidden relative">
+        <p className="text-[18px] font-[600] text-center text-white/50 pt-20">DO DESIGN AO DEPLOY</p>
+        <p className="mx-auto text-[24px] md:text-[40px] font-[300] text-white/50 text-center max-w-[800px] leading-[1.2]">Usei IA para conectar design e desenvolvimento, combinando <spam className="text-white">Cursor, Claude Code, MCP do Figma e Googl design.md</spam> para acelerar a criação e manter a consistência do sistema.</p>
+        <img 
+          src="/images/routes-01.png"
+          className="absolute left-1/2 -translate-x-1/2 top-100"         
+        />
       </section>
     </main>
   
