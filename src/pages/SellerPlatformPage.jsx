@@ -59,11 +59,11 @@ export default function SellerPlatformPage() {
 
       {/* AI */}
       <section className="flex flex-col p-4 gap-6 justify-start min-h-[100dvh] bg-[#000000] overflow-hidden relative">
-        <p className="text-[18px] font-[600] text-center text-white/50 pt-20">DO DESIGN AO DEPLOY</p>
+        <p className="text-[18px] font-[600] text-center text-white/50 pt-30 md:pt-20">DO DESIGN AO DEPLOY</p>
         <p className="mx-auto text-[24px] md:text-[40px] font-[300] text-white/50 text-center max-w-[800px] leading-[1.2]">Usei IA para conectar design e desenvolvimento, combinando <spam className="text-white">Cursor, Claude Code, MCP do Figma e Googl design.md</spam> para acelerar a criação e manter a consistência do sistema.</p>
         <img 
           src="/images/routes-01.png"
-          className="absolute left-1/2 -translate-x-1/2 top-100"         
+          className="absolute left-1/2 -translate-x-1/2 top-150 md:top-100 scale-200 md:scale-100"         
         />
       </section>
     </main>
