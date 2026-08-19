@@ -84,7 +84,7 @@ export default function RepSalesAppPage() {
         {/* Challenge */}
         <section
         className="
-        project-panel flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
+        flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
           <p className="text-[18px] font-[600] text-center text-white/50 sm:text-[22px]">DESAFIO</p>
           <p
           className="
@@ -95,7 +95,7 @@ export default function RepSalesAppPage() {
         
         {/* Moodboard */}
         <section className="
-        project-panel hidden min-h-[100dvh] w-full grid-cols-3 items-center justify-center gap-3 bg-[#ffffff] lg:grid lg:p-20
+        hidden min-h-[100dvh] w-full grid-cols-3 items-center justify-center gap-3 bg-[#ffffff] lg:grid lg:p-20
         ">
           <div className="bg-[#005BE2] h-full relative overflow-hidden">
             <img 
@@ -181,7 +181,7 @@ export default function RepSalesAppPage() {
         {/* Research */}
         <section
         className="
-          project-panel flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#ffffff] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-20">
+          flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#ffffff] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-20">
           <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESEARCH</p>
           <p
           className="
@@ -196,15 +196,6 @@ export default function RepSalesAppPage() {
             Os insights obtidos foram consolidados, priorizados em conjunto com stakeholders e alinhados com a equipe de Engenharia para definição das iniciativas de maior impacto.
           </p>
         </section>
-      </section>
-
-      
-
-      {/* Solution 1 */}
-      <section className="
-      hidden sm:block
-      w-full bg-[#ffffff] h-[100dvh]
-      ">
       </section>
 
       {/* Solution 1 */}
@@ -299,7 +290,7 @@ export default function RepSalesAppPage() {
 
       {/* Outcome */}
       <section className="
-      project-panel flex min-h-[100dvh] w-full flex-col items-center justify-center gap-3 bg-[#ffffff] p-6 sm:p-10 lg:px-55
+      flex min-h-[100dvh] w-full flex-col items-center justify-center gap-3 bg-[#ffffff] p-6 sm:p-10 lg:px-55
       ">
         <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESULTADOS</p>
         <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
@@ -323,7 +314,7 @@ export default function RepSalesAppPage() {
       {/* DS */}
       <section
       className="
-       project-panel flex min-h-[100dvh] w-full flex-col items-center justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
+       flex min-h-[100dvh] w-full flex-col items-center justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
 
         <div className="grid grid-cols-2 w-[80px] h-[44px]">
           <div className="h-full w-full bg-[#005BE2]"></div>
