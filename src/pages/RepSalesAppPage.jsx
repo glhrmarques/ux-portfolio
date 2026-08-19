@@ -58,7 +58,7 @@ export default function RepSalesAppPage() {
 
               <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
                 <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Tempo</p>
-                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">1 Mês</p>
+                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">2 Meses</p>
               </div>
             </div>
           </motion.div>
