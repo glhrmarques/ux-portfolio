@@ -38,13 +38,14 @@ export default function SellerPlatformPage() {
 
         {/* Right column */}
         <div className="
-        p-10 bg-[url('/images/cover-background-2.png')] bg-no-repeat bg-cover bg-center
-        min-h-[80dvh] relative overflow-hidden">
+        bg-[url('/images/cover-background-2.png')] bg-no-repeat bg-cover bg-center relative overflow-hidden
+        p-4 h-[30dvh]
+        lg:p-10 lg:min-h-[80dvh]">
           <img
               src="/images/seller-02.avif"
               alt="Rep Sales App"
               className="absolute inset-0 m-auto
-              scale-90 rounded-[12px]
+              scale-90 rounded-[8px]
               lg:left-50 lg:scale-130 lg:rounded-[16px]"
           />
         </div>
