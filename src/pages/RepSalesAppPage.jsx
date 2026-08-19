@@ -1,11 +1,14 @@
 import { useRef } from "react";
 import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 import { useGSAP } from "@gsap/react";
 import { gsap, ScrollTrigger } from "../gsap";
 
 export default function RepSalesAppPage() {
+  useScrollReveal()
+  
   const container = useRef(null);
 
   useGSAP(() => {
@@ -85,9 +88,15 @@ export default function RepSalesAppPage() {
         <section
         className="
         flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
-          <p className="text-[18px] font-[600] text-center text-white/50 sm:text-[22px]">DESAFIO</p>
+          <p 
+          className="
+          reveal-on-scroll
+          text-[18px] font-[600] text-center text-white/50 sm:text-[22px]">
+            DESAFIO
+          </p>
           <p
           className="
+          reveal-on-scroll reveal-delay-3
           mx-auto max-w-[1000px] text-center lg:text-[32px] text-[22px] font-[400] text-white/50 sm:text-[48px]"
           >
             O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
@@ -95,6 +104,7 @@ export default function RepSalesAppPage() {
         
         {/* Moodboard */}
         <section className="
+        reveal-on-scroll
         hidden min-h-[100dvh] w-full grid-cols-3 items-center justify-center gap-3 bg-[#ffffff] lg:grid lg:p-20
         ">
           <div className="bg-[#005BE2] h-full relative overflow-hidden">
@@ -181,7 +191,8 @@ export default function RepSalesAppPage() {
         {/* Research */}
         <section
         className="
-          flex min-h-[100dvh] w-full flex-col justify-center gap-6 bg-[#ffffff] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-20">
+          reveal-on-scroll
+          flex min-h-[80dvh] w-full flex-col justify-center gap-6 bg-[#ffffff] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-20">
           <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESEARCH</p>
           <p
           className="
@@ -200,6 +211,7 @@ export default function RepSalesAppPage() {
 
       {/* Solution 1 */}
       <section className="
+      reveal-on-scroll
       mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
         <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
@@ -230,6 +242,7 @@ export default function RepSalesAppPage() {
 
       {/* Solution 2 */}
       <section className="
+      reveal-on-scroll
       mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
         <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
@@ -260,6 +273,7 @@ export default function RepSalesAppPage() {
 
       {/* Solution 3 */}
       <section className="
+      reveal-on-scroll
       mx-auto grid h-auto w-full grid-cols-1 gap-6 bg-[#ffffff] p-6 sm:p-10 lg:h-[90dvh] lg:grid-cols-[40%_60%] lg:gap-3 lg:p-10
       ">
         <div className="flex flex-col justify-end gap-6 lg:px-25 lg:pb-10 lg:gap-[40px]">
