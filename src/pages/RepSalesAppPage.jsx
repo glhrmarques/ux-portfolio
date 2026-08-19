@@ -53,7 +53,7 @@ export default function RepSalesAppPage() {
 
               <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
                 <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Projeto</p>
-                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">B2B</p>
+                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">B2B App</p>
               </div>
 
               <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
