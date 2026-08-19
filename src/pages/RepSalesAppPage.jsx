@@ -97,7 +97,7 @@ export default function RepSalesAppPage() {
           <p
           className="
           reveal-on-scroll reveal-delay-3
-          mx-auto max-w-[1000px] text-center lg:text-[32px] text-[22px] font-[400] text-white/50 sm:text-[48px]"
+          mx-auto max-w-[1000px] text-center lg:text-[40px] text-[22px] font-[400] text-white/50 sm:text-[48px]"
           >
             O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.</p>
         </section>
