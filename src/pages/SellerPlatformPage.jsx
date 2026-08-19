@@ -39,14 +39,11 @@ export default function SellerPlatformPage() {
         {/* Right column */}
         <div className="
         p-10 bg-[url('/images/cover-background-2.png')] bg-no-repeat bg-cover bg-center
-        min-h-[80dvh]">
-          <video 
-            src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            className="w-full h-full object-contain" 
+        min-h-[80dvh] relative overflow-hidden">
+          <img
+              src="/images/seller-02.avif"
+              alt="Rep Sales App"
+              className="absolute lg:left-50 inset-0 m-auto scale-130 rounded-[16px]"
           />
         </div>
       </section>
@@ -65,7 +62,7 @@ export default function SellerPlatformPage() {
             loop 
             muted 
             playsInline 
-            className="w-fit h-full object-contain border-2 border-[#D9D9D9] rounded-[16px]" 
+            className="w-fit h-full object-contain border-2 border-[#D9D9D9] scale-90 rounded-[16px]" 
           />
       </section>
 
