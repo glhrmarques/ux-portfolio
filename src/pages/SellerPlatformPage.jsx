@@ -1,4 +1,5 @@
 import BackArrow from '../components/BackArrow'
+import { motion } from 'motion/react'
 
 
 export default function SellerPlatformPage() {
@@ -9,7 +10,11 @@ export default function SellerPlatformPage() {
       grid grid-cols-1 md:grid-cols-2 w-full md:min-h-[100dvh]">
         
         {/* Left column */}
-        <div className="
+        <motion.div 
+        initial={{ opacity: 0, x: -300 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="
         flex flex-col justify-between gap-12 p-4 md:p-20 bg-[#ffffff] 
         sm:min-h-[60dvh]">
 
@@ -34,19 +39,23 @@ export default function SellerPlatformPage() {
               <p className="text-[16px] md:text-[18px] font-[400] leading-none">1 Mês</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right column */}
-        <div className="
-        bg-[url('/images/cover-background-2.png')] bg-no-repeat bg-cover bg-center relative overflow-hidden
-        p-4 h-[30dvh]
-        lg:p-10 lg:min-h-[80dvh]">
-          <img
+        <div
+        className="
+        bg-[url('/images/cover-background-2.png')] bg-no-repeat bg-cover bg-center overflow-hidden
+        px-4 py-10
+        lg:relative lg:p-10 lg:min-h-[80dvh]">
+          <motion.img
+              initial={{ opacity: 0, x: 300 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeInOut", delay: 0.8 }} 
               src="/images/seller-02.avif"
               alt="Rep Sales App"
-              className="absolute inset-0 m-auto
-              scale-90 rounded-[8px]
-              lg:left-50 lg:scale-130 lg:rounded-[16px]"
+              className="inset-0 m-auto
+              scale-100 rounded-[8px]
+              lg:absolute lg:left-50 lg:scale-130 lg:rounded-[16px]"
           />
         </div>
       </section>
