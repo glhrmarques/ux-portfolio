@@ -20,7 +20,7 @@ export default function Footer() {
           <img 
           src="/images/myself-01.png" 
           alt="Guilherme Marques" 
-          className="w-[64px] h-[64px] object-cover" 
+          className="w-[64px] h-[64px] saturate-0 object-cover" 
           />
           <div className="flex flex-row gap-6">
           <a

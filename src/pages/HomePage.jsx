@@ -36,7 +36,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="w-[64px] h-[64px]">
+            className="w-[96px] h-[96px]">
               <img 
                 src="/images/myself-01.png" 
                 alt="Guilherme Marques" 
@@ -51,24 +51,17 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 1 }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                   >
-                <p className="font-['Source_Serif_4',sans-serif] text-[18px] md:text-[22px] text-black leading-none font-semibold">Guilherme Marques</p>
-                <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
-                <p className="font-['Source_Serif_4',sans-serif] text-[18px] md:text-[22px] text-black leading-none font-semibold">Product Designer</p>
+                <p className="font-['Source_Serif_4',sans-serif] text-[18px] whitespace-nowrap text-black leading-none font-[500]">Guilherme Marques</p>
+                <div className="w-[4px] h-[4px] bg-[#000000]/30 mx-3"></div>
+                <p className="font-['Source_Serif_4',sans-serif] text-[18px] text-black leading-none font-[500]">Product Designer</p>
               </motion.div>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-                className="text-[16px] text-black/60">
-                  Projetando com excelência. Desenvolvendo com propósito.
-              </motion.p>
             </div>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] text-black">Product Designer com 5 anos de experiência focado em marketplaces B2B, Operações de vendas e Ferramentas internas.
+              className="text-[16px] text-black/50">Product Designer com 5 anos de experiência focado em marketplaces B2B, Operações de vendas e Ferramentas internas.
             </motion.p>
 
             <motion.div
