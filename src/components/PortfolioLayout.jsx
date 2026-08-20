@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
-import Footer from './Footer'
 import BottomBar from './BottomBar'
 
 export default function PortfolioLayout({ variant = 'inner' }) {
@@ -27,7 +26,6 @@ export default function PortfolioLayout({ variant = 'inner' }) {
       <div className={`mx-auto w-full flex flex-col min-h-screen ${bg}`}>
         <Outlet />
       </div>
-      <Footer />
       <BottomBar />
     </>
   )

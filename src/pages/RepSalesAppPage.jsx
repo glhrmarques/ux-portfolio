@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import Footer from '../components/Footer'
 
 import { useGSAP } from "@gsap/react";
 import { gsap, ScrollTrigger } from "../gsap";
@@ -31,6 +32,7 @@ export default function RepSalesAppPage() {
   }, { scope: container });
 
   return (
+    <>
     <main className="hero mx-auto max-w-screen-2xl">
       <section ref={container}>
         {/* Hero */}
@@ -326,6 +328,7 @@ export default function RepSalesAppPage() {
       </section>
 
       {/* DS */}
+    </main>
       <section
       className="
        flex min-h-[100dvh] w-full flex-col items-center justify-center gap-6 bg-[#000000] p-6 leading-[1.2] sm:gap-8 sm:p-10 lg:px-55">
@@ -353,6 +356,7 @@ export default function RepSalesAppPage() {
         border bg-[#ffffff] p-4 text-black font-[600] hover:bg-[#000000] hover:text-white sm:p-5 cursor-pointer
         ">Ver Design System</button>
       </section>
-    </main>
+    <Footer />
+    </>
   )
 }

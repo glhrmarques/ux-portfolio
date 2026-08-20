@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import CustomCursor from '../components/CustomCursor'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import Footer from '../components/Footer'
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -22,6 +23,7 @@ export default function HomePage() {
   
 
   return (
+    <>
     <main className="mx-auto w-full max-w-screen-2xl px-4 lg:px-10">
       <CustomCursor />
 
@@ -201,5 +203,7 @@ export default function HomePage() {
         </Link>
       </motion.section>
     </main>
+    <Footer />
+    </>
   )
 }

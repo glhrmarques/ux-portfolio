@@ -1,12 +1,14 @@
 import BackArrow from '../components/BackArrow'
 import { motion } from 'motion/react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import Footer from '../components/Footer'
 
 
 export default function SellerPlatformPage() {
     useScrollReveal()
 
   return (
+    <>
     <main className="mx-auto max-w-screen-2xl">
       <section className="
       grid grid-cols-1 md:grid-cols-2 w-full md:min-h-[100dvh]">
@@ -130,6 +132,8 @@ export default function SellerPlatformPage() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   
   )
 }

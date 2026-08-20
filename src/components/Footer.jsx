@@ -15,7 +15,7 @@ export default function Footer() {
     'border-b border-[#d9d9d9] py-2 text-[16px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity'
 
   return (
-    <footer className="flex justify-center mx-auto w-full max-w-screen-2xl min-h-[50dvh] bg-[#000000]">
+    <footer className="flex justify-center mx-auto w-full min-h-[50dvh] bg-[#000000]">
       <div className="flex flex-col justify-center items-center gap-8">
           <img 
           src="/images/myself-01.png" 
