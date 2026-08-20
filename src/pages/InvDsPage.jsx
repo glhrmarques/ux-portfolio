@@ -13,6 +13,7 @@ import ClientCard from './dsPages/ClientCard'
 import Widget from './dsPages/Widget'
 import InputText from './dsPages/InputText'
 import Header from './dsPages/Header'
+import ProductCard from './dsPages/ProductCard'
 
 const menuItems = [
   {
@@ -72,6 +73,11 @@ const menuComponent = [
     id: 'header',
     label: 'Header',
     component: Header,
+  },
+  {
+    id: 'productCard',
+    label: 'Product Card',
+    component: ProductCard,
   },
 ]
 
