@@ -87,9 +87,9 @@ export default function RepSalesAppPage() {
         </div>
       </section>
       
-      {/* Challenge */}
+      {/* Problem */}
       <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#000000] gap-[120px] p-20">
+        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#000000] gap-[120px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="lg:text-[22px] text-[18px] font-[700] text-white/50">PROBLEMA</p>
             <p className="lg:text-[40px] text-[22px] font-[300] text-white/50">
@@ -97,26 +97,26 @@ export default function RepSalesAppPage() {
             </p>
           </div>
 
-          {/* Problems */}
-          <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-3 gap-x-20">
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/50">
+          {/* motives */}
+          <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-x-20">
+            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
               <p className="text-[40px] font-[400] text-white/50 mt-10">01</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5]">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
+              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
             </div>
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/50">
+            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
               <p className="text-[40px] font-[400] text-white/50 mt-10">02</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5]">CS recebia os pedidos em fotos no WhatsApp.</p>
+              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
             </div>
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/50">
+            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
               <p className="text-[40px] font-[400] text-white/50 mt-10">03</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5]">O programa estava em expansão. Mais consultores a cada semana</p>
+              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">O programa estava em expansão. Mais consultores a cada semana</p>
             </div>
           </div>
       </section>
 
       {/* Discovery */}
       <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[ffffff] gap-[80px] p-4 md:p-20">
+        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[ffffff] gap-[80px] p-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="lg:text-[22px] text-[18px] font-[700] text-black/50">DISCOVERY</p>
             <p className="lg:text-[40px] text-[22px] font-[300] text-black/50">
@@ -145,9 +145,10 @@ export default function RepSalesAppPage() {
             <div className="h-[600px] bg-[url('/images/sales-app/clientes-2.png')] bg-center bg-cover bg-no-repeat" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Cadastro de clientes</p>
           </div>
-          <div className="flex flex-col gap-2 overflow-hidden">
+          <div className="flex flex-col gap-2 relative">
             <div className="h-[600px] bg-[url('/images/sales-app/clientes-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Análise de crédito</p>
+            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
           </div>
         </div>
       </section>
@@ -165,9 +166,11 @@ export default function RepSalesAppPage() {
             <div className="h-[600px] bg-[url('/images/sales-app/catalogo-2.png')] bg-center bg-cover bg-no-repeat" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Detalhes do produto</p>
           </div>
-          <div className="flex flex-col gap-2 overflow-hidden">
+          <div className="flex flex-col gap-2 overflow-hidden relative">
             <div className="h-[600px] bg-[url('/images/sales-app/catalogo-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Adicionar itens ao carrinho</p>
+            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
+
           </div>
         </div>
       </section>
@@ -185,9 +188,10 @@ export default function RepSalesAppPage() {
             <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-2.png')] bg-center bg-cover bg-no-repeat" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Selecionar parcela</p>
           </div>
-          <div className="flex flex-col gap-2 overflow-hidden">
+          <div className="flex flex-col gap-2 overflow-hidden relative">
             <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
             <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Concluir pedido</p>
+            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
           </div>
         </div>
       </section>
