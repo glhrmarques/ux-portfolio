@@ -76,7 +76,7 @@ export default function ProductCard() {
                     <div className="min-h-[400px] bg-[#ffffff] flex p-6 flex-col justify-center items-center rounded-[16px]">
                         <div className="w-[180px] flex flex-col gap-2">
                             <div className=" flex justify-end items-end p-2
-                            bg-[url('/images/product-card-image.png')] bg-no-repeate bg-no-repeat bg-cover bg-center w-full h-[180px]">
+                            bg-[url('/images/product-card-image.png')] bg-no-repeat bg-cover bg-center w-full h-[180px]">
 
                                 <div className="flex flex-row justify-center gap-2 bg-[#ffffff] border-2 border-[#E1E9EF] rounded-[12px]">
                                     <button className=" flex justify-center items-center
