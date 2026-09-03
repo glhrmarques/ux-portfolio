@@ -23,7 +23,7 @@ export default function ShoppingCart() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Default</p>
-                        <p className="text-white font-regular text-[16px]">Products available to be sold without any discount</p>
+                        <p className="text-white font-regular text-[16px]">Shows up when at least one product is added</p>
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">
@@ -49,8 +49,8 @@ export default function ShoppingCart() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        <p className="text-white font-semibold text-[18px]">Default</p>
-                        <p className="text-white font-regular text-[16px]">Products available to be sold without any discount</p>
+                        <p className="text-white font-semibold text-[18px]">Blocked</p>
+                        <p className="text-white font-regular text-[16px]">User can not to proceed to checkout until the minimum order valued is reached</p>
                     </div>
                 </div>
             </div>
