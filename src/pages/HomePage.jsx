@@ -101,7 +101,7 @@ export default function HomePage() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 1 }}
       transition={{ duration: 0.6, ease: "easeOut", delay: 1.5 }} 
-      className="md:grid md:grid-cols-3 gap-3">
+      className="md:grid md:grid-cols-3 gap-3 mb-10">
         {/* First image */}
         <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
