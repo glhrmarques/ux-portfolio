@@ -14,6 +14,8 @@ import Widget from './dsPages/Widget'
 import InputText from './dsPages/InputText'
 import Header from './dsPages/Header'
 import ProductCard from './dsPages/ProductCard'
+import ShoppingCart from './dsPages/ShoppingCart'
+
 
 const menuItems = [
   {
@@ -78,6 +80,11 @@ const menuComponent = [
     id: 'productCard',
     label: 'Product Card',
     component: ProductCard,
+  },
+  {
+    id: 'shoppingCart',
+    label: 'Shoping Cart',
+    component: ShoppingCart,
   },
 ]
 
