@@ -124,15 +124,42 @@ export default function RepSalesAppPage() {
           <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-x-20">
             <div className="flex flex-col gap-4">
               <p className="text-[40px] font-[400] text-white/50">01</p>
-              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
+              <p className="text-[24px] font-[400] text-white leading-[1.5] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-[40px] font-[400] text-white/50">02</p>
-              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
+              <p className="text-[24px] font-[400] text-white leading-[1.5] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
             </div>
-            <div className="flex flex-col gap-4 border-t-1">
+            <div className="flex flex-col gap-4">
               <p className="text-[40px] font-[400] text-white/50">03</p>
-              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">Novos consultores entrando por semana.</p>
+              <p className="text-[24px] font-[400] text-white leading-[1.5] mb-10">Novos consultores entrando por semana.</p>
+            </div>
+          </div>
+      </section>
+
+      {/* WHERE I STARTED */}
+      <section
+        className="flex flex-col justify-center min-h-[100dvh] bg-[#ffffff] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
+          <div className="reveal-on-scroll flex flex-col gap-6">
+            <p className="text-[16px] font-[700] text-[#000000]">ONDE EU COMECEI</p>
+            <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+              Nós sabiamos que todas as jornadas precisavam de melhorias ou até mesmo serem refeitas. Então, optamos em iniciar em perguntas do que respostas. 
+            </p>
+          </div>
+
+          {/* motives */}
+          <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-x-20">
+            <div className="flex flex-col gap-4">
+              <p className="text-[40px] font-[400] text-white/50">01</p>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-[40px] font-[400] text-white/50">02</p>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-[40px] font-[400] text-white/50">03</p>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">Novos consultores entrando por semana.</p>
             </div>
           </div>
       </section>
