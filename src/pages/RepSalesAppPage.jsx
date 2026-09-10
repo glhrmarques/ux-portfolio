@@ -36,7 +36,7 @@ export default function RepSalesAppPage() {
     <main className="mx-auto max-w-screen-2xl">
       <section ref={container}>
         {/* Hero */}
-        <div className="grid w-full grid-cols-1 lg:grid-cols-2 lg:min-h-[100dvh]">
+        <div className="grid w-full grid-cols-1 lg:grid-cols-2 sm:min-h-[100dvh]">
           {/* Right column */}
           <motion.div
           initial={{ opacity: 0, x: -300 }}
@@ -47,23 +47,23 @@ export default function RepSalesAppPage() {
             <BackArrow />
             <div className="flex flex-col gap-6 sm:gap-10">
               <h1 className="text-[32px] font-regular leading-none sm:text-[40px]">App de Vendedores</h1>
-              <p className="text-[16px] lg:text-[18px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
+              <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-between gap-6 lg:pb-0 pb-10">
-              <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
-                <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Papel</p>
-                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">Product Designer</p>
+            <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
+                <p className="text-[18px] font-[400] text-black leading-none">1 Product Designer, 2 Backends e 1 Frontend </p>
               </div>
 
-              <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
-                <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Projeto</p>
-                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">B2B App</p>
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[18px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
-              <div className="flex flex-row justify-between lg:flex-col gap-2 sm:gap-3">
-                <p className="text-[16px] font-[400] text-black/50 leading-none sm:text-[18px]">Tempo</p>
-                <p className="text-[16px] font-[400] text-black leading-none sm:text-[18px]">3 Meses</p>
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">EMPRESA</p>
+                <a href="https://www.linkedin.com/company/inventashop/" className="text-[18px] font-[400] text-black leading-none">Inventa</a>
               </div>
             </div>
           </motion.div>
