@@ -61,7 +61,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] text-black/50">Product Designer com 5 anos de experiência focado em marketplaces B2B, Operações de vendas e Ferramentas internas.
+              className="text-[16px] text-black/50">Senior Product Designer com 5 anos de experiência atualmente trabalhando na Inventa.
             </motion.p>
 
             <motion.div
