@@ -112,27 +112,27 @@ export default function RepSalesAppPage() {
       
       {/* Problem */}
       <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#000000] gap-[120px] px-4 py-20 md:p-20">
+        className="flex flex-col justify-center min-h-[100dvh] bg-[#000000] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
-            <p className="lg:text-[22px] text-[18px] font-[700] text-white/50">PROBLEMA</p>
-            <p className="lg:text-[40px] text-[22px] font-[300] text-white/50">
+            <p className="text-[16px] font-[700] text-[#ffffff]">PROBLEMA</p>
+            <p className="sm:text-[32px] text-[28px] font-[300] text-white/50">
               O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida </span> para negociar e fechar pedidos.
             </p>
           </div>
 
           {/* motives */}
           <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-x-20">
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
-              <p className="text-[40px] font-[400] text-white/50 mt-10">01</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
+            <div className="flex flex-col gap-4">
+              <p className="text-[40px] font-[400] text-white/50">01</p>
+              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
             </div>
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
-              <p className="text-[40px] font-[400] text-white/50 mt-10">02</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
+            <div className="flex flex-col gap-4">
+              <p className="text-[40px] font-[400] text-white/50">02</p>
+              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
             </div>
-            <div className="flex flex-col gap-4 border-t-1 border-[#ffffff]/30">
-              <p className="text-[40px] font-[400] text-white/50 mt-10">03</p>
-              <p className="text-[22px] font-[300] text-white leading-[1.5] mb-10">O programa estava em expansão. Mais consultores a cada semana</p>
+            <div className="flex flex-col gap-4 border-t-1">
+              <p className="text-[40px] font-[400] text-white/50">03</p>
+              <p className="text-[24px] font-[300] text-white leading-[1.5] mb-10">Novos consultores entrando por semana.</p>
             </div>
           </div>
       </section>
