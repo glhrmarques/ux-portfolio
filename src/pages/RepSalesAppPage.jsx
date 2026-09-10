@@ -86,6 +86,29 @@ export default function RepSalesAppPage() {
           </div>
         </div>
       </section>
+
+      {/* Long story short */}
+      <section
+        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
+          <div className="reveal-on-scroll flex flex-col gap-8">
+            <p className="text-[16px] font-[700] text-[#000000]">SE VOCÊ PRECISASSE LER SÓ UMA PARTE, SERIA ESSSA:</p>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+              A adoção do aplicativo de vendas era tão baixa por conta da complexidade em criar pedidos que os <span className="text-[#000000]">consultores desistiam de usar.</span>
+            </p>
+            <div className="flex flex-col gap-3">
+              <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+                Eu foquei em melhorar adoção e confiança dos usuários, que resultou em:
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 400k GMV Mensal</p>
+                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~7k orçamentos criados</p>
+                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~4.5k pedidos.</p>
+              </div>
+            </div>
+          </div>
+      </section>
       
       {/* Problem */}
       <section
@@ -93,7 +116,7 @@ export default function RepSalesAppPage() {
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="lg:text-[22px] text-[18px] font-[700] text-white/50">PROBLEMA</p>
             <p className="lg:text-[40px] text-[22px] font-[300] text-white/50">
-              O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida</span> para negociar e fechar pedidos.
+              O app de vendas da Inventa é tão ineficiente que <span className="text-white">papel e caneta se tornam a opção mais rápida </span> para negociar e fechar pedidos.
             </p>
           </div>
 
