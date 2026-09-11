@@ -85,6 +85,14 @@ export default function HomePage() {
               >
                 Github
               </a>
+              <a 
+                href="https://drive.google.com/file/d/1Nwcng-1mgBUOb2_6L15odxzGj_JlzNa8/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] hover:opacity-70 transition-opacity"
+              >
+                CV
+              </a>
               <button 
                 onClick={copyPhone} 
                 className="border-b border-[#d9d9d9] py-2 text-[14px] font-medium text-[#1e1e1e] whitespace-nowrap cursor-pointer bg-transparent hover:opacity-70 transition-opacity"
