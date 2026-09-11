@@ -139,7 +139,7 @@ export default function HomePage() {
 
         <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
-            <p className="text-[16px] text-black leading-none font-regular">Roterizador</p>
+            <p className="text-[16px] text-black leading-none font-regular">Rotas para Consultores</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 

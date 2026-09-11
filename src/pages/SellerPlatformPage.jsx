@@ -23,26 +23,27 @@ export default function SellerPlatformPage() {
         sm:min-h-[60dvh]">
 
           <BackArrow />
-          <div className="flex flex-col gap-6">
-            <h1 className="text-[32px] lg:text-[40px] font-regular leading-none">Roterizador</h1>
-            <p className="text-[16px] lg:text-[22px] font-[300]">A Inventa é uma empresa full-service especializada no mercado B2B. Responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais por São Paulo.</p>
-          </div>
+          <div className="flex flex-col gap-6 sm:gap-10">
+              <h1 className="text-[32px] font-regular leading-none sm:text-[40px]">Rotas para Consultores</h1>
+              <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
+            </div>
 
-          <div className="
-          flex flex-col sm:flex-row justify-between gap-6 pb-10 md:pb-0">
-            <div className="flex flex-row sm:flex-col justify-between gap-2">
-              <p className="text-[16px] md:text-[18px] font-[400] text-black/50 leading-none">Papel</p>
-              <p className="text-[16px] md:text-[18px] font-[400] leading-none">Product Designer</p>
+            <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
+                <p className="text-[18px] font-[400] text-black leading-none">1 Product Designer e 1 Backend eng</p>
+              </div>
+
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[18px] font-[400] text-black leading-none">Product Designer</p>
+              </div>
+
+              <div className="flex flex-col justify-between gap-4">
+                <p className="text-[16px] font-[700] text-black/50 leading-none">EMPRESA</p>
+                <a href="https://www.linkedin.com/company/inventashop/" className="text-[18px] font-[400] text-black leading-none">Inventa</a>
+              </div>
             </div>
-            <div className="flex flex-row sm:flex-col justify-between gap-2">
-              <p className="text-[16px] md:text-[18px] font-[400] text-black/50 leading-none">Projeto</p>
-              <p className="text-[16px] md:text-[18px] font-[400] leading-none">B2B SaaS</p>
-            </div>
-            <div className="flex flex-row sm:flex-col justify-between gap-2">
-              <p className="text-[16px] md:text-[18px] font-[400] text-black/50 leading-none">Tempo</p>
-              <p className="text-[16px] md:text-[18px] font-[400] leading-none">1 Mês</p>
-            </div>
-          </div>
         </motion.div>
 
         {/* Right column */}
@@ -64,12 +65,36 @@ export default function SellerPlatformPage() {
         </div>
       </section>
 
-      {/* Challenge */}
-      <section className="flex flex-col p-4 gap-6 justify-center bg-[#000000]
-      h-[100dvh]
-      lg:h-[90dvh]">
-        <p className="reveal-on-scroll text-[18px] font-[600] text-center text-white/50">DESAFIO</p>
-        <p className="reveal-on-scroll mx-auto text-[24px] md:text-[40px] font-[300] text-white/50 text-center max-w-[800px] leading-[1.2]">Desenvolver um portal para apoiar a operação comercial com o <spam className="text-white">desempenho de vendas dos consultores</spam> e <span className="text-white">planejar rotas de visitas.</span></p>
+      {/* Long story short */}
+      <section
+        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
+          <div className="reveal-on-scroll flex flex-col gap-8">
+            <p className="text-[16px] font-[700] text-[#000000]">SE VOCÊ PRECISASSE LER SÓ UMA PARTE, SERIA ESSSA:</p>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+              Otimizar rota para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e <span className="text-[#000000]">menos gasto com transporte.</span>
+            </p>
+            <div className="flex flex-col gap-3">
+              <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+                Desenvolvi um SaaS com IA que cria rotas por dia da semana para os consultores que resultou em:
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 50k GMV Mensal</p>
+                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">+15.00 Rotas</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      {/* Problem */}
+      <section
+        className="flex flex-col justify-center min-h-[100dvh] bg-[#000000] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
+          <div className="reveal-on-scroll flex flex-col gap-6">
+            <p className="text-[16px] font-[700] text-[#ffffff]">PROBLEMA</p>
+            <p className="sm:text-[32px] text-[28px] font-[300] text-white/50">
+              BeautyColor, nosso cliente precisava de um sistema para <span className="text-white">erenciar rotas e acompanhar a evolução das vendas </span> de cada Representante.
+            </p>
+          </div>
       </section>
 
       {/* Solution */}

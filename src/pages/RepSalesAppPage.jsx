@@ -97,14 +97,14 @@ export default function RepSalesAppPage() {
             </p>
             <div className="flex flex-col gap-3">
               <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
-                Eu foquei em melhorar adoção e confiança dos usuários, que resultou em:
+                Eu foquei em melhorar adoção e confiança dos usuários que resultou em:
               </p>
               <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
                 <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 400k GMV Mensal</p>
                 <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~7k orçamentos criados</p>
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~7k Orçamentos criados</p>
                 <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~4.5k pedidos.</p>
+                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~4.5k Pedidos.</p>
               </div>
             </div>
           </div>
