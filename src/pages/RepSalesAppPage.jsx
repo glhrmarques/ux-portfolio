@@ -150,99 +150,94 @@ export default function RepSalesAppPage() {
           {/* motives */}
           <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-x-20">
             <div className="flex flex-col gap-4">
-              <p className="text-[40px] font-[400] text-white/50">01</p>
-              <p className="text-[24px] font-[400] text-[#000000] mb-10">Baixa adoção. Poucos consultores utilizavam o App de vendas.</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+              </svg>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">Como podemos aumentar a confiança e adoção do App?</p>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-[40px] font-[400] text-white/50">02</p>
-              <p className="text-[24px] font-[400] text-[#000000] mb-10">CS recebia os pedidos em fotos no WhatsApp.</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+              </svg>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">Onde devemos priorizar para gerarmos impacto rápido?</p>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-[40px] font-[400] text-white/50">03</p>
-              <p className="text-[24px] font-[400] text-[#000000] mb-10">Novos consultores entrando por semana.</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+              </svg>
+              <p className="text-[24px] font-[400] text-[#000000] mb-10">Em que parte na geração de pedidos o App está dificultando?</p>
             </div>
           </div>
       </section>
 
       {/* Discovery */}
       <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[ffffff] gap-[80px] p-4 py-20 md:p-20">
+        className="flex flex-col justify-center bg-[ffffff] gap-[80px] p-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
-            <p className="lg:text-[22px] text-[18px] font-[700] text-black/50">DISCOVERY</p>
-            <p className="lg:text-[40px] text-[22px] font-[300] text-black/50">
-              A pesquisa revelou que a <span className="text-black">arquitetura da informação, a falta de funcionalidades básicas atrapalhavam a negociação com lojistas.</span>
+            <p className="text-[16px] font-[700] text-[#000000]">DISCOVERY</p>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+              Conduzi Entrevistas, Testes de usabilidade e Rotas com consultores para entender melhor como a jornada de negociação funciona.
+            </p>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+              O discovery revelou que a <span className="text-[#000000]">arquitetura da informação, a falta de funcionalidades básicas e falta de visibilidade dentro do sistema atrapalhavam a negociação com lojistas.</span>
             </p>
           </div>
 
           {/* images */}
           <div className="reveal-on-scroll reveal-delay-2 grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-20 md:flex-1">
-            <div className="h-[300px] md:h-full bg-[url('/images/discovery-1.png')] bg-no-repeat bg-cover bg-center"></div>
-            <div className="h-[300px] md:h-full bg-[url('/images/discovery-2.png')] bg-no-repeat bg-cover bg-center"></div>
-            <div className="h-[300px] md:h-full bg-[url('/images/discovery-3.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div className="h-[400px] bg-[url('/images/discovery-1.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div className="h-[400px] bg-[url('/images/discovery-2.png')] bg-no-repeat bg-cover bg-center"></div>
+            <div className="h-[400px] bg-[url('/images/discovery-3.png')] bg-no-repeat bg-cover bg-center"></div>
           </div>
       </section>
 
       {/* Solution 1 */}
       <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
-        <p className="lg:text-[22px] text-[18px] font-[700] text-black/50 text-center">SOLUÇÕES</p>
+        <div className="flex flex-col gap-6 mb-10">
+          <p className="text-[16px] font-[700] text-[#000000]">JORNADA: CLIENTES</p>
+          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+            Lista de clientes, Análise de crédito e histórico de pedidos 
+          </p>
+        </div>
 
         <div className="grid w-full grid-cols-1 gap-y-20 md:grid-cols-3 overflow-hidden">
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/clientes-1.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Lista de clientes</p>
-          </div>
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/clientes-2.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Cadastro de clientes</p>
-          </div>
-          <div className="flex flex-col gap-2 relative">
-            <div className="h-[600px] bg-[url('/images/sales-app/clientes-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Análise de crédito</p>
-            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
-          </div>
+          <div className="h-[600px] bg-[url('/images/sales-app/clientes-1.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/clientes-2.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/clientes-3.gif')] bg-center bg-cover bg-no-repeat" />
         </div>
       </section>
 
-      <hr className="border-[#000000]/20 my-10"/>
-
       {/* Solution 2 */}
-      <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20">
-        <div className="grid w-full grid-cols-1 gap-y-20 md:grid-cols-3 overflow-hidden">
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/catalogo-1.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Lista de produtos</p>
-          </div>
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/catalogo-2.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Detalhes do produto</p>
-          </div>
-          <div className="flex flex-col gap-2 overflow-hidden relative">
-            <div className="h-[600px] bg-[url('/images/sales-app/catalogo-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Adicionar itens ao carrinho</p>
-            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
+      <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
+        <div className="flex flex-col gap-6 mb-10">
+          <p className="text-[16px] font-[700] text-[#000000]">JORNADA: CATALOGO</p>
+          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+            Lista de produtos, Detalhes do produto e Carrinho
+          </p>
+        </div>
 
-          </div>
+        <div className="grid w-full grid-cols-1 gap-y-20 md:grid-cols-3 overflow-hidden">
+          <div className="h-[600px] bg-[url('/images/sales-app/catalogo-1.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/catalogo-2.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/catalogo-3.gif')] bg-center bg-cover bg-no-repeat" />
         </div>
       </section>
 
       <hr className="border-[#000000]/30 my-10"/>
 
       {/* Solution 3 */}
-      <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20">
+      <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
+        <div className="flex flex-col gap-6 mb-10">
+          <p className="text-[16px] font-[700] text-[#000000]">JORNADA: PAGAMENTO</p>
+          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+            Métodos de pagamento, Selecionar parcela e Pedido concluído
+          </p>
+        </div>
+
         <div className="grid w-full grid-cols-1 gap-y-20 md:grid-cols-3 overflow-hidden">
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-1.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Métodos de pagamento</p>
-          </div>
-          <div className="flex flex-col">
-            <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-2.png')] bg-center bg-cover bg-no-repeat" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Selecionar parcela</p>
-          </div>
-          <div className="flex flex-col gap-2 overflow-hidden relative">
-            <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-3.gif')] bg-center bg-cover bg-no-repeat scale-[1.02]" />
-            <p className="text-[18px] font-[500] text-black/50 text-center leading-none">Concluir pedido</p>
-            <div className="absolute left-2 bottom-5 w-full h-[2px] bg-[#ffffff] sm:hidden"></div>
-          </div>
+          <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-1.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-2.png')] bg-center bg-cover bg-no-repeat" />
+          <div className="h-[600px] bg-[url('/images/sales-app/pagamentos-3.gif')] bg-center bg-cover bg-no-repeat" />
         </div>
       </section>
 
