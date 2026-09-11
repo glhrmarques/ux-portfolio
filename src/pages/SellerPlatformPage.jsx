@@ -70,19 +70,17 @@ export default function SellerPlatformPage() {
         className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-8">
             <p className="text-[16px] font-[700] text-[#000000]">SE PRECISASSE LER SÓ UMA PARTE, SERIA ESSA:</p>
-            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
-              Otimizar rota para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e <span className="text-[#000000]">menos gasto com transporte.</span>
+            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+              Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e <span className="text-[#000000]">menos gasto com transporte.</span>
             </p>
-            <div className="flex flex-col gap-3">
-              <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
                 Desenvolvi um SaaS com IA que cria rotas por dia da semana para os consultores que resultou em:
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
+            </p>
+              <div className="flex flex-col sm:flex-row gap-6 sm:items-center sm:mt-0">
                 <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 50k GMV Mensal</p>
                 <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
                 <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">+15.00 Rotas</p>
               </div>
-            </div>
           </div>
       </section>
 
@@ -91,7 +89,7 @@ export default function SellerPlatformPage() {
         className="flex flex-col justify-center min-h-[100dvh] bg-[#000000] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="text-[16px] font-[700] text-[#ffffff]">PROBLEMA</p>
-            <p className="sm:text-[32px] text-[28px] font-[300] text-white/50">
+            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[300] text-white/50">
               BeautyColor, nosso cliente precisava de um sistema para <span className="text-white">gerenciar rotas e acompanhar a evolução das vendas </span> de cada Representante.
             </p>
           </div>
@@ -100,7 +98,7 @@ export default function SellerPlatformPage() {
       {/* Solution */}
       <section className="flex flex-col items-center justify-center bg-[#ffffff]
       gap-20 px-4 py-10
-      lg:gap-6 lg:p-20">
+      lg:gap-6">
         <video 
             src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
             autoPlay 
@@ -109,31 +107,32 @@ export default function SellerPlatformPage() {
             playsInline 
             className="reveal-on-scroll object-contain border-[#D9D9D9]
             border scale-100 rounded-[8px]
-            lg:border-2 lg:scale-90 lg:rounded-[24px]" 
+            lg:border-2 md:scale-80 lg:rounded-[24px]" 
           />
           <img
               src="/images/Screenshot-2026-02-18-at-13.33.18.avif"
               alt="Rep Sales App"
               className="reveal-on-scroll border-[#D9D9D9]
               border scale-100 rounded-[8px]
-              lg:border-2 lg:scale-90 lg:rounded-[24px]"
+              lg:border-2 lg:scale-80 lg:rounded-[24px]"
           />
           <img
               src="/images/seller-02.avif"
               alt="Rep Sales App"
               className="reveal-on-scroll border-[#D9D9D9]
               border scale-100 rounded-[8px]
-              lg:border-2 lg:scale-90 lg:rounded-[24px]"
+              lg:border-2 lg:scale-80 lg:rounded-[24px]"
           />
       </section>
+
 
       {/* AI */}
       <section className="flex flex-col p-4 gap-6 justify-start bg-[#000000] overflow-hidden relative
       h-[100dvh]
       lg:h-[100dvh]
       ">
-        <p className="reveal-on-scroll text-[18px] font-[600] text-center text-white/50 pt-30 md:pt-20">DO DESIGN AO DEPLOY</p>
-        <p className="reveal-on-scroll mx-auto text-[24px] md:text-[40px] font-[300] text-white/50 text-center max-w-[800px] leading-[1.2]">Usei IA para conectar design e desenvolvimento, combinando <spam className="text-white">Cursor, Claude Code, MCP do Figma e Googl design.md</spam> para acelerar a criação e manter a consistência do sistema.</p>
+        <p className="reveal-on-scroll text-[18px] font-[600] text-center text-[#ffffff] pt-30 md:pt-20">DO DESIGN AO DEPLOY</p>
+        <p className="reveal-on-scroll mx-auto sm:text-[32px] text-[28px] font-[400] text-white/50 text-center max-w-[800px] leading-[1.2]">Usei IA para conectar design e desenvolvimento, combinando <spam className="text-white">Cursor, Claude Code e MCP do Figma</spam> para acelerar a criação e manter a consistência do sistema.</p>
         <img 
           src="/images/routes-01.png"
           className="reveal-on-scroll reveal-delay-30 absolute left-1/2 -translate-x-1/2 top-150 scale-200
