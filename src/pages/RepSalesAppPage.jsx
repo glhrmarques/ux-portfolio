@@ -91,7 +91,7 @@ export default function RepSalesAppPage() {
       <section
         className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-8">
-            <p className="text-[16px] font-[700] text-[#000000]">SE VOCÊ PRECISASSE LER SÓ UMA PARTE, SERIA ESSSA:</p>
+            <p className="text-[16px] font-[700] text-[#000000]">SE PRECISASSE LER SÓ UMA PARTE, SERIA ESSA:</p>
             <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
               A adoção do aplicativo de vendas era tão baixa por conta da complexidade em criar pedidos que os <span className="text-[#000000]">consultores desistiam de usar.</span>
             </p>
