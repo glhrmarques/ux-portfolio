@@ -92,7 +92,7 @@ export default function SellerPlatformPage() {
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="text-[16px] font-[700] text-[#ffffff]">PROBLEMA</p>
             <p className="sm:text-[32px] text-[28px] font-[300] text-white/50">
-              BeautyColor, nosso cliente precisava de um sistema para <span className="text-white">erenciar rotas e acompanhar a evolução das vendas </span> de cada Representante.
+              BeautyColor, nosso cliente precisava de um sistema para <span className="text-white">gerenciar rotas e acompanhar a evolução das vendas </span> de cada Representante.
             </p>
           </div>
       </section>
