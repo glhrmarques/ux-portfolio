@@ -89,23 +89,21 @@ export default function RepSalesAppPage() {
 
       {/* Long story short */}
       <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
-          <div className="reveal-on-scroll flex flex-col gap-8">
-            <p className="text-[16px] font-[700] text-[#000000]">SE PRECISASSE LER SÓ UMA PARTE, SERIA ESSA:</p>
-            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
+        className="flex flex-col justify-center min-h-[100dvh] leading-[1.5] bg-[#FCFCFC] px-4 py-20 md:p-20">
+          <div className="reveal-on-scroll flex flex-col">
+            <p className="text-[16px] font-[700] text-[#000000] mb-6">SE PRECISASSE LER SÓ UMA PARTE, SERIA ESSA:</p>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D] max-w-[1000px] mb-6">
               A adoção do aplicativo de vendas era tão baixa por conta da complexidade em criar pedidos que os <span className="text-[#000000]">consultores desistiam de usar.</span>
             </p>
-            <div className="flex flex-col gap-3">
-              <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
-                Eu foquei em melhorar adoção e confiança dos usuários que resultou em:
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 400k GMV Mensal</p>
-                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~7k Orçamentos criados</p>
-                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~4.5k Pedidos.</p>
-              </div>
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D] mb-2">
+              Eu foquei em melhorar adoção e confiança dos usuários que resultou em:
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 sm:items-center mt-8 sm:mt-0">
+              <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 400k GMV Mensal</p>
+              <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
+              <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~7k Orçamentos criados</p>
+              <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
+              <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~4.5k Pedidos.</p>
             </div>
           </div>
       </section>
@@ -286,7 +284,7 @@ export default function RepSalesAppPage() {
         >
           Inventa<span className="m-0 text-white/50">Ds.</span>
         </p>
-        <p className="reveal-on-scroll reveal-delay-2 max-w-[800px] text-center text-[18px] font-[400] text-white/60 sm:text-[24px]">Ao fim do projeto foi desenvolvido um InvendaDs para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
+        <p className="reveal-on-scroll reveal-delay-2 max-w-[800px] text-center text-[18px] font-[400] text-[#ffffff] sm:text-[24px] leading-[1.5]">Design System desenvolvido para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
         <button
         onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
         className="
