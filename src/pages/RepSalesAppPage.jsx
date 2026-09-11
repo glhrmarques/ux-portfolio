@@ -142,7 +142,7 @@ export default function RepSalesAppPage() {
         className="flex flex-col justify-center min-h-[100dvh] bg-[#ffffff] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
           <div className="reveal-on-scroll flex flex-col gap-6">
             <p className="text-[16px] font-[700] text-[#000000]">ONDE EU COMECEI</p>
-            <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+            <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
               Nós sabiamos que todas as jornadas precisavam de melhorias ou até mesmo serem refeitas. Então, optamos em iniciar em perguntas do que respostas. 
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function RepSalesAppPage() {
       <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
         <div className="flex flex-col gap-6 mb-10">
           <p className="text-[16px] font-[700] text-[#000000]">JORNADA: CLIENTES</p>
-          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+          <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
             Lista de clientes, Análise de crédito e histórico de pedidos 
           </p>
         </div>
@@ -211,7 +211,7 @@ export default function RepSalesAppPage() {
       <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
         <div className="flex flex-col gap-6 mb-10">
           <p className="text-[16px] font-[700] text-[#000000]">JORNADA: CATALOGO</p>
-          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+          <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
             Lista de produtos, Detalhes do produto e Carrinho
           </p>
         </div>
@@ -223,13 +223,12 @@ export default function RepSalesAppPage() {
         </div>
       </section>
 
-      <hr className="border-[#000000]/30 my-10"/>
 
       {/* Solution 3 */}
       <section className="reveal-on-scroll flex flex-col bg-[#ffffff] gap-2 p-4 md:px-20 mt-20">
         <div className="flex flex-col gap-6 mb-10">
           <p className="text-[16px] font-[700] text-[#000000]">JORNADA: PAGAMENTO</p>
-          <p className="sm:text-[32px] text-[28px] font-[300] text-[#7D7D7D]">
+          <p className="sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
             Métodos de pagamento, Selecionar parcela e Pedido concluído
           </p>
         </div>
