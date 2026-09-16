@@ -113,7 +113,7 @@ export default function HomePage() {
         {/* First image */}
         <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
-            <p className="text-[14px] text-black leading-none font-regular">Escalando a Operação & Construindo Confiança</p>
+            <p className="text-[14px] text-black leading-none font-regular">Escalando a Operação e Construindo Confiança</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 
