@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from 'motion/react'
 import BackArrow from '../components/BackArrow'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -7,10 +7,61 @@ import Footer from '../components/Footer'
 import { useGSAP } from "@gsap/react";
 import { gsap, ScrollTrigger } from "../gsap";
 
+function useCountUp(target, isActive, duration = 1600) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!isActive) return;
+
+    const startTime = performance.now();
+    let animationFrame;
+
+    const animate = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.round(target * easedProgress));
+
+      if (progress < 1) animationFrame = requestAnimationFrame(animate);
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
+  }, [duration, isActive, target]);
+
+  return count;
+}
+
 export default function RepSalesAppPage() {
   useScrollReveal()
   
   const container = useRef(null);
+  const statsRef = useRef(null);
+  const [areStatsVisible, setAreStatsVisible] = useState(false);
+  const gmv = useCountUp(400, areStatsVisible);
+  const quotes = useCountUp(7000, areStatsVisible);
+  const orders = useCountUp(4000, areStatsVisible);
+
+  useEffect(() => {
+    const stats = statsRef.current;
+    if (!stats) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      setAreStatsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setAreStatsVisible(true);
+        observer.unobserve(entry.target);
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(stats);
+    return () => observer.disconnect();
+  }, []);
 
   useGSAP(() => {
     const panels = gsap.utils.toArray(".project-panel", container.current);
@@ -90,17 +141,17 @@ export default function RepSalesAppPage() {
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
             <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
-            <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
+            <div ref={statsRef} className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ 400k</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ {gmv}k</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+7.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{quotes.toLocaleString('pt-BR')}</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Orçamentos criados</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+4.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('pt-BR')}</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
               </div>
             </div>

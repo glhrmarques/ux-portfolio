@@ -1,11 +1,64 @@
+import { useEffect, useRef, useState } from 'react'
 import BackArrow from '../components/BackArrow'
 import { motion } from 'motion/react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import Footer from '../components/Footer'
 
+function useCountUp(target, isActive, duration = 1600) {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!isActive) return
+
+    const startTime = performance.now()
+    let animationFrame
+
+    const animate = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1)
+      const easedProgress = 1 - Math.pow(1 - progress, 3)
+      setCount(Math.round(target * easedProgress))
+
+      if (progress < 1) animationFrame = requestAnimationFrame(animate)
+    }
+
+    animationFrame = requestAnimationFrame(animate)
+    return () => cancelAnimationFrame(animationFrame)
+  }, [duration, isActive, target])
+
+  return count
+}
+
 
 export default function SellerPlatformPage() {
-    useScrollReveal()
+  const [areStatsVisible, setAreStatsVisible] = useState(false)
+  const statsRef = useRef(null)
+  const gmv = useCountUp(100, areStatsVisible)
+  const orders = useCountUp(2000, areStatsVisible)
+  const routes = useCountUp(3000, areStatsVisible)
+
+  useScrollReveal()
+
+  useEffect(() => {
+    const stats = statsRef.current
+    if (!stats) return
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      setAreStatsVisible(true)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        setAreStatsVisible(true)
+        observer.unobserve(entry.target)
+      },
+      { threshold: 0.3 }
+    )
+
+    observer.observe(stats)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>
@@ -66,17 +119,17 @@ export default function SellerPlatformPage() {
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
             <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e menos gasto com transporte</p>
-            <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
+            <div ref={statsRef} className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ 100k</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ {gmv}k</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+2.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('pt-BR')}</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+3.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{routes.toLocaleString('pt-BR')}</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Rotas criadas</p>
               </div>
             </div>
