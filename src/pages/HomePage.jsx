@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <>
-    <main className="mx-auto w-full max-w-screen-2xl px-4 lg:px-10">
+    <main className="mx-auto w-full max-w-screen-xl px-4 lg:px-[40px]">
       <CustomCursor />
 
       {/* Hero */}
@@ -52,7 +52,7 @@ export default function HomePage() {
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                   >
                 <p className="font-['Source_Serif_4',sans-serif] text-[18px] whitespace-nowrap text-black leading-none font-[500]">Guilherme Marques</p>
-                <div className="w-[4px] h-[4px] bg-[#000000]/30 mx-3"></div>
+                <div className="w-[4px] h-[4px] bg-[#000000] mx-3"></div>
                 <p className="font-['Source_Serif_4',sans-serif] text-[18px] text-black leading-none font-[500]">Product Designer</p>
               </motion.div>
             </div>
@@ -61,7 +61,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] text-black/50">Senior Product Designer com 5 anos de experiência atualmente trabalhando na Inventa.
+              className="text-[16px] text-black/50">Mais de 5 anos criando produtos digitais B2B e B2C. Transformo problemas complexos em experiências simples, conectando estratégia, pesquisa e resultados de negócio. 
             </motion.p>
 
             <motion.div
@@ -113,7 +113,7 @@ export default function HomePage() {
         {/* First image */}
         <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
-            <p className="text-[16px] text-black leading-none font-regular">App de Vendas</p>
+            <p className="text-[16px] text-black leading-none font-regular">Escalando a Operação & Construindo Confiança</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 
