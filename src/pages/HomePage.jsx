@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <>
-    <main className="mx-auto w-full max-w-screen-xl px-4 lg:px-[40px]">
+    <main className="mx-auto w-full max-w-screen-2xl px-4 lg:px-[40px]">
       <CustomCursor />
 
       {/* Hero */}
@@ -113,7 +113,7 @@ export default function HomePage() {
         {/* First image */}
         <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
-            <p className="text-[16px] text-black leading-none font-regular">Escalando a Operação & Construindo Confiança</p>
+            <p className="text-[14px] text-black leading-none font-regular">Escalando a Operação & Construindo Confiança</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 
@@ -139,7 +139,7 @@ export default function HomePage() {
 
         <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
           <div className="flex flex-row justify-between">
-            <p className="text-[16px] text-black leading-none font-regular">Rotas para Consultores</p>
+            <p className="text-[14px] text-black leading-none font-regular">Rotas para Consultores</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 
@@ -168,7 +168,7 @@ export default function HomePage() {
 
         <Link to="/projects/inv-ds" target="_blank" className="cursor-label-target flex flex-col gap-4 group">
           <div className="flex flex-row justify-between">
-            <p className="text-[16px] text-black leading-none font-regular">Design System</p>
+            <p className="text-[14px] text-black leading-none font-regular">Design System</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 

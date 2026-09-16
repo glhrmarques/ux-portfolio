@@ -9,9 +9,8 @@ export default function SellerPlatformPage() {
 
   return (
     <>
-    <main className="mx-auto max-w-screen-2xl">
-      <section className="
-      grid grid-cols-1 md:grid-cols-2 w-full md:min-h-[100dvh]">
+    <main>
+      <div className="mx-auto max-w-screen-2xl grid w-full grid-cols-1 lg:grid-cols-2 sm:min-h-[90dvh]">
         
         {/* Left column */}
         <motion.div 
@@ -19,29 +18,23 @@ export default function SellerPlatformPage() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
         className="
-        flex flex-col justify-between gap-12 p-4 md:p-20 bg-[#ffffff] 
-        sm:min-h-[60dvh]">
+        flex sm:min-h-[60dvh] w-full flex-col gap-12 p-4 sm:p-10 md:p-10">
 
           <BackArrow />
           <div className="flex flex-col gap-6 sm:gap-10">
-              <h1 className="text-[32px] font-regular leading-none sm:text-[40px]">Rotas para Consultores</h1>
-              <p className="text-[22px] font-[300]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
+              <h1 className="text-[32px] font-[500] leading-[1.5] max-w-[400px]">Rotas para Consultores</h1>
+              <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
-                <p className="text-[18px] font-[400] text-black leading-none">1 Product Designer e 1 Backend eng</p>
-              </div>
-
-              <div className="flex flex-col justify-between gap-4">
                 <p className="text-[16px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
-                <p className="text-[18px] font-[400] text-black leading-none">Product Designer</p>
+                <p className="text-[20px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">EMPRESA</p>
-                <a href="https://www.linkedin.com/company/inventashop/" className="text-[18px] font-[400] text-black leading-none">Inventa</a>
+                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
+                <p className="text-[20px] font-[400] text-black leading-none">1 Backend</p>
               </div>
             </div>
         </motion.div>
@@ -63,96 +56,70 @@ export default function SellerPlatformPage() {
               lg:absolute lg:left-50 lg:scale-130 lg:rounded-[16px]"
           />
         </div>
-      </section>
+      </div>
 
-      {/* Long story short */}
-      <section
-        className="flex flex-col justify-center min-h-[100dvh] leading-[1.2] bg-[#FCFCFC] gap-[120px] px-4 py-20 md:p-20">
-          <div className="reveal-on-scroll flex flex-col gap-8">
-            <p className="text-[16px] font-[700] text-[#000000]">SE PRECISASSE LER SÓ UMA PARTE, SERIA ESSA:</p>
-            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
-              Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e <span className="text-[#000000]">menos gasto com transporte.</span>
-            </p>
-            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[400] text-[#7D7D7D]">
-                Desenvolvi um SaaS com IA que cria rotas por dia da semana para os consultores que resultou em:
-            </p>
-              <div className="flex flex-col sm:flex-row gap-6 sm:items-center sm:mt-0">
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">~R$ 50k GMV Mensal</p>
-                <div className="hidden sm:block w-1 h-1 bg-[#000000] rounded-full"></div>
-                <p className="sm:text-[32px] text-[28px] font-[400] text-[#000000]">+15.00 Rotas</p>
+      {/* IMPACTO */}
+      <section className="min-h-[80dvh] flex items-center bg-[#000000]">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
+            <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
+          </div>
+          <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
+            <p className="text-[32px] font-[400] text-[#ffffff] max-w-[1000px]">Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e menos gasto com transporte</p>
+            <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
+              <div className="flex flex-col">
+                <p className="text-[56px] text-[#ffffff] font-[400]">+R$ 100k</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
               </div>
+              <div className="flex flex-col">
+                <p className="text-[56px] text-[#ffffff] font-[400]">+2.000</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
+              </div>
+              <div className="flex flex-col">
+                <p className="text-[56px] text-[#ffffff] font-[400]">+3.000</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Rotas criadas</p>
+              </div>
+            </div>
           </div>
-      </section>
-
-      {/* Problem */}
-      <section
-        className="flex flex-col justify-center min-h-[100dvh] bg-[#000000] gap-[64px] sm:gap-[90px] px-4 py-20 md:p-20">
-          <div className="reveal-on-scroll flex flex-col gap-6">
-            <p className="text-[16px] font-[700] text-[#ffffff]">PROBLEMA</p>
-            <p className="max-w-[1000px] sm:text-[32px] text-[28px] font-[300] text-white/50">
-              BeautyColor, nosso cliente precisava de um sistema para <span className="text-white">gerenciar rotas e acompanhar a evolução das vendas </span> de cada Representante.
-            </p>
-          </div>
-      </section>
-
-      {/* Solution */}
-      <section className="flex flex-col items-center justify-center bg-[#ffffff]
-      gap-20 px-4 py-10
-      lg:gap-6">
-        <video 
-            src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            className="reveal-on-scroll object-contain border-[#D9D9D9]
-            border scale-100 rounded-[8px]
-            lg:border-2 md:scale-80 lg:rounded-[24px]" 
-          />
-          <img
-              src="/images/Screenshot-2026-02-18-at-13.33.18.avif"
-              alt="Rep Sales App"
-              className="reveal-on-scroll border-[#D9D9D9]
-              border scale-100 rounded-[8px]
-              lg:border-2 lg:scale-80 lg:rounded-[24px]"
-          />
-          <img
-              src="/images/seller-02.avif"
-              alt="Rep Sales App"
-              className="reveal-on-scroll border-[#D9D9D9]
-              border scale-100 rounded-[8px]
-              lg:border-2 lg:scale-80 lg:rounded-[24px]"
-          />
-      </section>
-
-
-      {/* AI */}
-      <section className="flex flex-col p-4 gap-6 justify-start bg-[#000000] overflow-hidden relative
-      h-[100dvh]
-      lg:h-[100dvh]
-      ">
-        <p className="reveal-on-scroll text-[18px] font-[600] text-center text-[#ffffff] pt-30 md:pt-20">DO DESIGN AO DEPLOY</p>
-        <p className="reveal-on-scroll mx-auto sm:text-[32px] text-[28px] font-[400] text-white/50 text-center max-w-[800px] leading-[1.2]">Usei IA para conectar design e desenvolvimento, combinando <spam className="text-white">Cursor, Claude Code e MCP do Figma</spam> para acelerar a criação e manter a consistência do sistema.</p>
-        <img 
-          src="/images/routes-01.png"
-          className="reveal-on-scroll reveal-delay-30 absolute left-1/2 -translate-x-1/2 top-150 scale-200
-          md:top-100 md:scale-100"         
-        />
-      </section>
-
-
-      {/* Outcome */}
-      <section className="
-      project-panel flex min-h-[90dvh] w-full flex-col items-center justify-center gap-3 bg-[#ffffff] p-6 sm:p-10 lg:px-55
-      ">
-        <p className="text-[18px] font-[600] text-center text-black/50 sm:text-[22px]">RESULTADOS</p>
-        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
-          <p className="text-[20px] font-[400] text-black sm:text-[32px]">GMV mensal</p>
-          <p className="text-[20px] font-[400] text-black sm:text-[32px]">~R$ 50k</p>
         </div>
-        <div className="flex w-full flex-row justify-between border-b border-[#000000]/30 py-5 sm:py-8">
-          <p className="text-[20px] font-[400] text-black sm:text-[32px]">Rotas criadas</p>
-          <p className="text-[20px] font-[400] text-black sm:text-[32px]">+1.500</p>
+      </section>
+
+      {/* PROBLEM */}
+      <section className="min-h-[80dvh] flex items-center bg-[#FCFCFC]">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
+            <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
+          </div>
+          <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
+            <p className="text-[32px] font-[400] text-[#000000] max-w-[1000px] mb-6">BeautyColor, nosso cliente precisava de um sistema para gerenciar rotas e acompanhar a evolução das vendas de cada Representante.</p>
+            <div className="flex flex-col gap-6">
+              <p className="text-[20px] font-[400] text-[#000000]">Falta de visibilidade sobre a performance dos consultores</p>
+              <hr className="text-[#000000]/30"/>
+              <p className="text-[20px] font-[400] text-[#000000]">A falta de uma estratégia nas visitas dificultava a mensuração da eficiência dos consultores</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DELIVERY AND RESEARCH */}
+      <section className="flex items-center bg-[#FFFFFF] py-10">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">O QUE ENTREGUEI</p>
+          </div>
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Entrevistei dois stakeholders para alinhar as necessidades de visualização operacional do time</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Transformei os requisitos operacionais em uma solução funcional, desenhando as interfaces e desenvolvendo frontend e backend com suporte de IA, utilizando Codex e Cursor.</p>
+            <video 
+              src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              preload="metadata"
+              className="reveal-on-scroll block w-full max-w-[1000px] rounded-[8px] border border-[#D9D9D9] object-contain lg:rounded-[24px] lg:border-2" 
+            />
+          </div>
         </div>
       </section>
     </main>

@@ -36,18 +36,18 @@ export default function RepSalesAppPage() {
     <main>
       <section ref={container}>
         {/* Hero */}
-        <div className="mx-auto max-w-screen-xl grid w-full grid-cols-1 lg:grid-cols-2 sm:min-h-[90dvh]">
+        <div className="mx-auto max-w-screen-2xl grid w-full grid-cols-1 lg:grid-cols-2 sm:min-h-[90dvh]">
           {/* left column */}
           <motion.div
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="flex sm:min-h-[60dvh] w-full flex-col justify-between gap-12 p-4 sm:p-10 md:p-10"
+          className="flex sm:min-h-[60dvh] w-full flex-col gap-12 p-4 sm:p-10 md:p-10"
           >
             <BackArrow />
-            <div className="flex flex-col gap-6 sm:gap-10">
-              <h1 className="text-[32px] font-regular leading-[1.2]">Escalando a Operação e Construindo Confiança</h1>
-              <p className="text-[20px] font-[300]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
+            <div className="flex flex-col gap-6">
+              <h1 className="text-[32px] font-[500] leading-[1.5] max-w-[400px]">Escalando a Operação e Construindo Confiança</h1>
+              <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
@@ -84,13 +84,13 @@ export default function RepSalesAppPage() {
 
       {/* IMPACTO */}
       <section className="min-h-[80dvh] flex items-center bg-[#000000]">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto  px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[64px]">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
             <p className="text-[24px] font-[400] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
-            <div className="flex flex-row gap-[64px]">
+            <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
                 <p className="text-[56px] text-[#ffffff] font-[400]">+R$ 400k</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
@@ -110,11 +110,11 @@ export default function RepSalesAppPage() {
 
       {/* PROBLEM */}
       <section className="min-h-[80dvh] flex items-center bg-[#FCFCFC]">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto  px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[64px]">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
             <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">O app de vendas da Inventa era tão ineficiente que papel e caneta se tornaram a opção mais fácil para fechar pedidos.</p>
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Consultores iniciavam o fluxo de pedido, mas nunca finalizavam.</p>
@@ -131,17 +131,17 @@ export default function RepSalesAppPage() {
 
       {/* RESEARCH */}
       <section className="flex items-center bg-[#FFFFFF] py-20">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto  px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">RESEARCH</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[24px]">
-            <p className="text-[24px] font-[300] text-[#000000] max-w-[1000px] mb-6">Entrevistei +12 consultores para entender a lógica por trás das pré visitas e visitas, além de identificar quais são as prioridades para uma negociação bem-sucedida.</p>
-            <p className="text-[24px] font-[300] text-[#000000] max-w-[1000px] mb-6">Acompanhei +5 de consultores em suas rotas para entender como as negociações acontecem na prática e identificar necessidades críticas e definir prioridades para evolução.</p>
-            <div className="flex w-full gap-3">
-              <div className="h-[228px] flex-1 bg-[url('/images/discovery-1.png')] bg-no-repeat bg-cover bg-center"></div>
-              <div className="h-[228px] flex-1 bg-[url('/images/discovery-2.png')] bg-no-repeat bg-cover bg-center"></div>
-              <div className="h-[228px] flex-1 bg-[url('/images/discovery-3.png')] bg-no-repeat bg-cover bg-center"></div>
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Entrevistei +12 consultores para entender a lógica por trás das pré visitas e visitas, além de identificar quais são as prioridades para uma negociação bem-sucedida.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Acompanhei +5 de consultores em suas rotas para entender como as negociações acontecem na prática e identificar necessidades críticas e definir prioridades para evolução.</p>
+            <div className="flex w-full flex-col gap-3 lg:flex-row">
+              <div className="h-[320px] w-full bg-[url('/images/discovery-1.png')] bg-no-repeat bg-cover bg-center lg:h-[228px] lg:flex-1"></div>
+              <div className="h-[320px] w-full bg-[url('/images/discovery-2.png')] bg-no-repeat bg-cover bg-center lg:h-[228px] lg:flex-1"></div>
+              <div className="h-[320px] w-full bg-[url('/images/discovery-3.png')] bg-no-repeat bg-cover bg-center lg:h-[228px] lg:flex-1"></div>
             </div>
           </div>
         </div>
@@ -149,14 +149,14 @@ export default function RepSalesAppPage() {
 
       {/* DELIVERY */}
       <section className="flex items-center bg-[#FFFFFF] pt-10">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto  px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">O QUE ENTREGUEI</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[24px]">
-            <p className="text-[24px] font-[300] text-[#000000] max-w-[1000px] mb-6">Evoluímos de uma página centralizadora para uma arquitetura escalável, capaz de acompanhar cada etapa da jornada de negociação e incorporar novas funcionalidades conforme as de cada etapa.</p>
-            <p className="text-[24px] font-[300] text-[#000000] max-w-[1000px] mb-6">Dessa forma, consegui disponibilizar funcionalidades de acordo com o contexto de cada etapa da jornada — como pré-visita, visita e pós-visita — e criar funis para acompanhar a conversão e identificar pontos de abandono.</p>
-            <div className="grid w-full grid-cols-1 items-start gap-10 md:grid-cols-[1fr_2fr] md:gap-12">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Evoluímos de uma página centralizadora para uma arquitetura escalável, capaz de acompanhar cada etapa da jornada de negociação e incorporar novas funcionalidades conforme as de cada etapa.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Dessa forma, consegui disponibilizar funcionalidades de acordo com o contexto de cada etapa da jornada — como pré-visita, visita e pós-visita — e criar funis para acompanhar a conversão e identificar pontos de abandono.</p>
+            <div className="grid w-full grid-cols-1 items-start gap-10 lg:grid-cols-[1fr_2fr] lg:gap-12">
               <div className="flex flex-col items-center gap-2">
                 <p className="text-center text-[16px] font-[500] text-[#000000]/50">ANTES</p>
                 <p className="text-center text-[16px] font-[400] text-[#000000]/50">Todas jornadas juntas</p>
@@ -177,17 +177,16 @@ export default function RepSalesAppPage() {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
 
       {/* DELIVERY 1*/}
       <section className="flex items-center bg-[#FFFFFF] py-20">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">CLIENTES</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[24px]">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Lista de clientes com limite de crédito disponível</p>
               <hr className="text-[#000000]/30"/>
@@ -195,10 +194,10 @@ export default function RepSalesAppPage() {
               <hr className="text-[#000000]/30"/>
               <p className="text-[20px] font-[400] text-[#000000]">Ver histórico de pedidos do cliente</p>
             </div>
-            <div className="flex w-full gap-3">
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/clientes-1.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/clientes-2.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/clientes-3.gif')] bg-center bg-cover bg-no-repeat" />
+            <div className="flex w-full flex-col gap-3 lg:flex-row">
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/clientes-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/clientes-2.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/clientes-3.gif')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
             </div>
           </div>
         </div>
@@ -206,11 +205,11 @@ export default function RepSalesAppPage() {
 
       {/* DELIVERY 2*/}
       <section className="flex items-center bg-[#FFFFFF] py-20">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">CATÁLOGO</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[24px]">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Salvamento automático após iniciar um orçamento</p>
               <hr className="text-[#000000]/30"/>
@@ -218,10 +217,10 @@ export default function RepSalesAppPage() {
               <hr className="text-[#000000]/30"/>
               <p className="text-[20px] font-[400] text-[#000000]">Página de detalhes do produto sobre informações de desconto</p>
             </div>
-            <div className="flex w-full gap-3">
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/catalogo-1.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/catalogo-2.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/catalogo-3.gif')] bg-center bg-cover bg-no-repeat" />
+            <div className="flex w-full flex-col gap-3 lg:flex-row">
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/catalogo-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/catalogo-2.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/catalogo-3.gif')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
             </div>
           </div>
         </div>
@@ -229,11 +228,11 @@ export default function RepSalesAppPage() {
 
       {/* DELIVERY 3*/}
       <section className="flex items-center bg-[#FFFFFF] py-20">
-        <div className="flex flex-row w-[100%] max-w-screen-xl mx-auto px-10">
-          <div className="w-[30%] reveal-on-scroll flex flex-col">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+          <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">PAGAMENTO</p>
           </div>
-          <div className="w-[70%] reveal-on-scroll flex flex-col gap-[24px]">
+          <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Seleção do boleto parcelado de forma simples</p>
               <hr className="text-[#000000]/30"/>
@@ -241,10 +240,10 @@ export default function RepSalesAppPage() {
               <hr className="text-[#000000]/30"/>
               <p className="text-[20px] font-[400] text-[#000000]">Tela de confirmação para prevenir erros antes de confirmar o pedido</p>
             </div>
-            <div className="flex w-full gap-3">
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/pagamentos-1.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/pagamentos-2.png')] bg-center bg-cover bg-no-repeat" />
-              <div className="h-[544px] min-w-0 flex-1 bg-[url('/images/sales-app/pagamentos-3.gif')] bg-center bg-cover bg-no-repeat" />
+            <div className="flex w-full flex-col gap-3 lg:flex-row">
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/pagamentos-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/pagamentos-2.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
+              <div className="h-[544px] w-full bg-[url('/images/sales-app/pagamentos-3.gif')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
             </div>
           </div>
         </div>
