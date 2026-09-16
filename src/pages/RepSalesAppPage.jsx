@@ -97,7 +97,7 @@ export default function RepSalesAppPage() {
           >
             <BackArrow />
             <div className="flex flex-col gap-6">
-              <h1 className="text-[40px] font-[500] leading-[1.2] max-w-[424px]">Escalando a Operação e Construindo Confiança</h1>
+              <h1 className="text-[32px] sm:text-[40px] font-[500] leading-[1.2] max-w-[424px]">Escalando a Operação e Construindo Confiança</h1>
               <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
@@ -135,12 +135,12 @@ export default function RepSalesAppPage() {
 
       {/* IMPACTO */}
       <section className="min-h-[80dvh] flex items-center bg-[#000000]">
-        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-20 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
+            <p className="text-[32px] sm:text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
             <div ref={statsRef} className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
                 <p className="text-[56px] text-[#ffffff] font-[300]">+R$ {gmv}k</p>
@@ -161,7 +161,7 @@ export default function RepSalesAppPage() {
 
       {/* PROBLEM */}
       <section className="min-h-[80dvh] flex items-center bg-[#FCFCFC]">
-        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-20 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
           </div>
