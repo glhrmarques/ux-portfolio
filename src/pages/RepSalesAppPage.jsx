@@ -131,7 +131,7 @@ export default function RepSalesAppPage() {
 
       {/* RESEARCH */}
       <section className="flex items-center bg-[#FFFFFF] py-20">
-        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-xl px-4 sm:px-10 lg:flex-row lg:gap-0">
+        <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
             <p className="text-[16px] font-[700] text-[#000000] mt-2">RESEARCH</p>
           </div>

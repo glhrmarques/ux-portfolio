@@ -28,12 +28,12 @@ export default function SellerPlatformPage() {
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
                 <p className="text-[20px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">TIME</p>
                 <p className="text-[20px] font-[400] text-black leading-none">1 Backend</p>
               </div>
             </div>
