@@ -22,7 +22,7 @@ export default function SellerPlatformPage() {
 
           <BackArrow />
           <div className="flex flex-col gap-6 sm:gap-10">
-              <h1 className="text-[32px] font-[500] leading-[1.5] max-w-[400px]">Rotas para Consultores</h1>
+              <h1 className="text-[40px] font-[500] leading-[1.5] max-w-[400px]">Rotas para Consultores</h1>
               <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
@@ -65,18 +65,18 @@ export default function SellerPlatformPage() {
             <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] font-[400] text-[#ffffff] max-w-[1000px]">Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e menos gasto com transporte</p>
+            <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e menos gasto com transporte</p>
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+R$ 100k</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ 100k</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+2.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+2.000</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+3.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+3.000</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Rotas criadas</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function SellerPlatformPage() {
             <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] font-[400] text-[#000000] max-w-[1000px] mb-6">BeautyColor, nosso cliente precisava de um sistema para gerenciar rotas e acompanhar a evolução das vendas de cada Representante.</p>
+            <p className="text-[32px] font-[500] leading-[1.2] text-[#000000] max-w-[1000px] mb-6">BeautyColor, nosso cliente precisava de um sistema para gerenciar rotas e acompanhar a evolução das vendas de cada Representante.</p>
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Falta de visibilidade sobre a performance dos consultores</p>
               <hr className="text-[#000000]/30"/>

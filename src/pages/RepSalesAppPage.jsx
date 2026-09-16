@@ -46,18 +46,18 @@ export default function RepSalesAppPage() {
           >
             <BackArrow />
             <div className="flex flex-col gap-6">
-              <h1 className="text-[32px] font-[500] leading-[1.5] max-w-[400px]">Escalando a Operação e Construindo Confiança</h1>
+              <h1 className="text-[40px] font-[500] leading-[1.2] max-w-[424px]">Escalando a Operação e Construindo Confiança</h1>
               <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
             </div>
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
                 <p className="text-[20px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[16px] font-[700] text-black/50 leading-none">TIME</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">TIME</p>
                 <p className="text-[20px] font-[400] text-black leading-none">Engenheiros (Backend e Frotend)</p>
               </div>
             </div>
@@ -89,18 +89,18 @@ export default function RepSalesAppPage() {
             <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[24px] font-[400] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
+            <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
             <div className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+R$ 400k</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+R$ 400k</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+7.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+7.000</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Orçamentos criados</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[400]">+4.000</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+4.000</p>
                 <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function RepSalesAppPage() {
             <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">O app de vendas da Inventa era tão ineficiente que papel e caneta se tornaram a opção mais fácil para fechar pedidos.</p>
+            <p className="text-[32px] leading-[1.2] font-[500] text-[#000000] max-w-[1000px] mb-6">O app de vendas da Inventa era tão ineficiente que papel e caneta se tornaram a opção mais fácil para fechar pedidos.</p>
             <div className="flex flex-col gap-6">
               <p className="text-[20px] font-[400] text-[#000000]">Consultores iniciavam o fluxo de pedido, mas nunca finalizavam.</p>
               <hr className="text-[#000000]/30"/>
@@ -158,8 +158,8 @@ export default function RepSalesAppPage() {
             <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Dessa forma, consegui disponibilizar funcionalidades de acordo com o contexto de cada etapa da jornada — como pré-visita, visita e pós-visita — e criar funis para acompanhar a conversão e identificar pontos de abandono.</p>
             <div className="grid w-full grid-cols-1 items-start gap-10 lg:grid-cols-[1fr_2fr] lg:gap-12">
               <div className="flex flex-col items-center gap-2">
-                <p className="text-center text-[16px] font-[500] text-[#000000]/50">ANTES</p>
-                <p className="text-center text-[16px] font-[400] text-[#000000]/50">Todas jornadas juntas</p>
+                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">ANTES</p>
+                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">Todas jornadas juntas</p>
                 <img
                   src="/images/sales-app/old-1"
                   alt="Fluxo de pedido anterior concentrado em uma única jornada"
@@ -167,8 +167,8 @@ export default function RepSalesAppPage() {
                 />
               </div>
               <div className="flex flex-col items-center gap-2">
-                <p className="text-center text-[16px] font-[500] text-[#000000]/50">DEPOIS</p>
-                <p className="text-center text-[16px] font-[400] text-[#000000]/50">Cada jornada separada</p>
+                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">DEPOIS</p>
+                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">Cada jornada separada</p>
                 <img
                   src="/images/sales-app/SalesApp-screens.png"
                   alt="Fluxos de clientes, produtos e pagamento separados"
