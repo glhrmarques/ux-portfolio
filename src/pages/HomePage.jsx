@@ -30,7 +30,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="grid md:grid-cols-3 md:gap-3 min-h-[80dvh] md:min-h-[60dvh] items-center py-[40px]">
         <div className="col-start-2">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col">
 
             <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export default function HomePage() {
 
             <div className="flex flex-col gap-3"> 
               <motion.div 
-                  className="flex fle-row items-center"
+                  className="flex fle-row items-center mt-[32px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 1 }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -61,14 +61,14 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] text-black/50">5 anos de experiência conectando Design centrado no usuário com impacto estratégico ao negócio
+              className="text-[16px] leading-[1.5] text-black/50 mt-[16px]">5 anos de experiência conectando Design centrado no usuário com impacto estratégico ao negócio.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
-              className="flex flex-row gap-6">
+              className="flex flex-row gap-6 mt-[16px]">
               <a 
                 href="https://www.linkedin.com/in/glhrmarques/" 
                 target="_blank" 
