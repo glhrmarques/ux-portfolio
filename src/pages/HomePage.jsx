@@ -61,7 +61,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] text-black/50">Mais de 5 anos criando produtos digitais B2B e B2C. Transformo problemas complexos em experiências simples, conectando estratégia, pesquisa e resultados de negócio. 
+              className="text-[16px] text-black/50">5 anos de experiência conectando Design centrado no usuário com impacto estratégico ao negócio
             </motion.p>
 
             <motion.div
