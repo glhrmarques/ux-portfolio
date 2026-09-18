@@ -111,8 +111,8 @@ export default function HomePage() {
       transition={{ duration: 0.6, ease: "easeOut", delay: 1.5 }} 
       className="md:grid md:grid-cols-3 gap-3 mb-10">
         {/* First image */}
-        <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
-          <div className="flex flex-row justify-between">
+        <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-3 group pb-[80px]">
+          <div className="flex flex-row justify-between items-center">
             <p className="text-[14px] text-black leading-none font-regular">Escalando a Operação e Construindo Confiança</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
@@ -137,8 +137,8 @@ export default function HomePage() {
           </div>
         </Link>
 
-        <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-4 group pb-[80px]">
-          <div className="flex flex-row justify-between">
+        <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-3 group pb-[80px]">
+          <div className="flex flex-row justify-between items-center">
             <p className="text-[14px] text-black leading-none font-regular">Rotas para Consultores</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
@@ -166,8 +166,8 @@ export default function HomePage() {
           </div>
         </Link>
 
-        <Link to="/projects/inv-ds" target="_blank" className="cursor-label-target flex flex-col gap-4 group">
-          <div className="flex flex-row justify-between">
+        <Link to="/projects/inv-ds" target="_blank" className="cursor-label-target flex flex-col gap-3 group">
+          <div className="flex flex-row justify-between items-center">
             <p className="text-[14px] text-black leading-none font-regular">Design System</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
