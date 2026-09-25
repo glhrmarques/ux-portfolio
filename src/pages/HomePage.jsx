@@ -36,7 +36,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="w-[96px] h-[96px]">
+            className="w-[120px] h-[120px]">
               <img 
                 src="/images/myself-01.png" 
                 alt="Guilherme Marques" 
