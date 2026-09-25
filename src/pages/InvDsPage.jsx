@@ -83,7 +83,7 @@ const menuComponent = [
   },
   {
     id: 'shoppingCart',
-    label: 'Shoping Cart',
+    label: 'Shopping Cart',
     component: ShoppingCart,
   },
 ]

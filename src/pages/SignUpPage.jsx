@@ -21,9 +21,9 @@ export default function SignUpPage() {
       {/* Intro */}
       <section className="flex flex-col gap-6 mb-[48px]">
         <BackArrow to="/" />
-        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">Cadastro em GO</h1>
+        <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[44px] font-medium leading-[1.2] text-black">User Sign-up in Go</h1>
         <div className="flex flex-wrap gap-2">
-          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">Junho de 2026</span>
+          <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">June 2026</span>
           <span className="px-4 py-1.5 rounded-full border border-[#d9d9d9] text-[14px] font-medium text-black font-['Figtree',sans-serif]">GO</span>
         </div>
       </section>
@@ -31,18 +31,18 @@ export default function SignUpPage() {
       {/* Content */}
       <section className="flex flex-col gap-[48px]">
         <div className="flex flex-col gap-[16px]">
-          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Objetivo</h2>
-          <p className="text-[18px] font-normal leading-[1.5] text-black">Criar dois endpoints para login e cadastro. Neste estudo, aprendi a integrar com um banco de dados, modelar dados e usar hashing.</p>
+          <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">Goal</h2>
+          <p className="text-[18px] font-normal leading-[1.5] text-black">Build two endpoints for login and sign-up. In this project, I learned to connect to a database, structure data, and hash passwords.</p>
         </div>
 
         <hr className="border-[#d9d9d9]" />
 
-        <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">1. Endpoint de cadastro</h2>
+        <h2 className="font-['Figtree',sans-serif] text-[26px] font-semibold leading-[1.2] text-black">1. Sign-up endpoint</h2>
 
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Criando a tabela USERS</p>
-            <p className="text-[18px] font-normal leading-[1.5] text-black">No banco de dados, criei a tabela responsável por armazenar todos os usuários cadastrados com SQL:</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the users table</p>
+            <p className="text-[18px] font-normal leading-[1.5] text-black">I used SQL to create a table to store registered users:</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-sql">{`CREATE TYPE user_tipo AS ENUM ('nutricionista', 'admin', 'paciente');
 
@@ -60,8 +60,8 @@ CREATE TABLE usuarios (
 
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Criando o mesmo schema em GO para cadastrar usuários.</p>
-            <p className="text-[18px] font-normal leading-[1.5] text-black">Antes de criar o schema, importei todos os pacotes necessários para construir o endpoint.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the user data structure in Go</p>
+            <p className="text-[18px] font-normal leading-[1.5] text-black">First, I imported the packages needed to build the endpoint.</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`import (
     "context"
@@ -88,8 +88,8 @@ CREATE TABLE usuarios (
 
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[8px]">
-            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Criando o endpoint</p>
-            <p className="text-[18px] font-normal leading-[1.5] text-black">Aqui está a implementação do endpoint de cadastro.</p>
+            <p className="font-['Figtree',sans-serif] text-[18px] font-semibold leading-[1.2] text-black">Creating the endpoint</p>
+            <p className="text-[18px] font-normal leading-[1.5] text-black">Here is the code for the sign-up endpoint.</p>
           </div>
           <pre className="bg-[#f3f3f3] rounded-[8px] p-[12px] w-full"><code className="language-go">{`function addUsers(c *gin.Context){
     var newUser Users

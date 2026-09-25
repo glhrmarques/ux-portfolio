@@ -18,15 +18,15 @@ export default function ProductCard() {
                                     </svg>
                                 </button>
                             </div>
-                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Antitranspirante Aerossol Invisible 250ml</p>
+                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Invisible Antiperspirant Spray 250ml</p>
                             <div className="flex flex-col gap-3">
                                 <p className="text-[16px] leading-none font-[400] text-black/50 line-through invisible"> R$ 0,00 </p>
                                 <div className="flex flex-row gap-2 items-center">
                                     <p className="text-[22px] leading-none font-[700] text-black">R$ 0,00</p>
-                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 un.)</p>
+                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 unit)</p>
                                 </div>
                                 <hr className="border-black/30"/>
-                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 Em estoque</p>
+                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 In stock</p>
                             </div>
                         </div>
                     </div>
@@ -53,15 +53,15 @@ export default function ProductCard() {
                                     </svg>
                                 </button>
                             </div>
-                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Antitranspirante Aerossol Invisible 250ml</p>
+                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Invisible Antiperspirant Spray 250ml</p>
                             <div className="flex flex-col gap-3">
                                 <p className="text-[16px] leading-none font-[400] text-black/50 line-through"> R$10,00 </p>
                                 <div className="flex flex-row gap-2 items-center">
                                     <p className="text-[22px] leading-none font-[700] text-black">R$ 5,00</p>
-                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 un.)</p>
+                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 unit)</p>
                                 </div>
                                 <hr className="border-black/30"/>
-                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 Em estoque</p>
+                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 In stock</p>
                             </div>
                         </div>
                     </div>
@@ -97,15 +97,15 @@ export default function ProductCard() {
                                     </button>
                                 </div>
                             </div>
-                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Antitranspirante Aerossol Invisible 250ml</p>
+                            <p className="text-[16px] font-[500] text-black line-clamp-2">Rexona Men Invisible Antiperspirant Spray 250ml</p>
                             <div className="flex flex-col gap-3">
                                 <p className="text-[16px] leading-none font-[400] text-black/50 line-through invisible"> R$ 0,00 </p>
                                 <div className="flex flex-row gap-2 items-center">
                                     <p className="text-[22px] leading-none font-[700] text-black">R$ 0,00</p>
-                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 un.)</p>
+                                    <p className="text-[16px] leading-none font-[400] text-black/50"> (1 unit)</p>
                                 </div>
                                 <hr className="border-black/30"/>
-                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 Em estoque</p>
+                                <p className="text-[16px] leading-nomne font-[400] text-black/50">+99 In stock</p>
                             </div>
                         </div>
                     </div>
@@ -122,16 +122,16 @@ export default function ProductCard() {
                             <div className="flex justify-end items-end p-2 saturate-1 opacity-60
                             bg-[url('/images/product-card-image.png')] bg-no-repeate bg-no-repeat bg-cover bg-center w-full h-[180px]">
                             </div>
-                            <p className="text-[16px] font-[500] text-black/50 line-clamp-2">Rexona Men Antitranspirante Aerossol Invisible 250ml</p>
+                            <p className="text-[16px] font-[500] text-black/50 line-clamp-2">Rexona Men Invisible Antiperspirant Spray 250ml</p>
                             <div className="flex flex-col gap-3">
                                 <hr className="border-black/30"/>
-                                <p className="text-[16px] leading-nomne font-[600] text-black">Sem estoque</p>
+                                <p className="text-[16px] leading-nomne font-[600] text-black">Out of stock</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Out of stock</p>
-                        <p className="text-white font-regular text-[16px]">Sorted as last products in the list with no stock available</p>
+                        <p className="text-white font-regular text-[16px]">Out-of-stock products appear at the end of the list.</p>
                     </div>
                 </div>
                 

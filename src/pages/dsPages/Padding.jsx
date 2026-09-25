@@ -6,7 +6,7 @@ export default function Padding() {
       <div className="flex flex-col gap-6 w-full pb-[56px]">
         <div className="grid grid-cols-2 gap-6 items-center">
           <p className="font-['Inter',sans-serif] text-[24px] text-white font-medium">What is</p>
-          <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular">Preenchimento é o espaçamento interno dos componentes que separa o conteúdo de seus limites externos.</p>
+          <p className="font-['Inter',sans-serif] text-[16px] text-white font-regular">Padding is the space between a component’s content and its edges.</p>
         </div>
       </div>
 

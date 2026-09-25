@@ -6,7 +6,7 @@ export default function Footer() {
 
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
-      e.target.textContent = 'Copiado'
+      e.target.textContent = 'Copied'
       setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
     })
   }, [])

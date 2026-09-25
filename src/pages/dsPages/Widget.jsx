@@ -19,7 +19,7 @@ export default function Widget() {
                                     </svg>
                                 </div>
                                 <div className="flex justify-start">
-                                    <span className="text-white">Clientes</span>
+                                    <span className="text-white">Customers</span>
                                 </div>
                             </button>
                             <div className="grid grid-cols-3 gap-3">                   
@@ -35,7 +35,7 @@ export default function Widget() {
                                         </svg>
                                     </div>
                                     <div className="flex justify-center">
-                                        <span className="text-black text-[14px]">Catálogo</span>
+                                        <span className="text-black text-[14px]">Catalog</span>
                                     </div>
                                 </button>
                                 <button
@@ -51,7 +51,7 @@ export default function Widget() {
 
                                     </div>
                                     <div className="flex justify-center">
-                                        <span className="text-black text-[14px]">Orçamentos</span>
+                                        <span className="text-black text-[14px]">Quotes</span>
                                     </div>
                                 </button>
                                 <button
@@ -67,7 +67,7 @@ export default function Widget() {
 
                                     </div>
                                     <div className="flex justify-center">
-                                        <span className="text-black text-[14px]">Pedidos</span>
+                                        <span className="text-black text-[14px]">Orders</span>
                                     </div>
                                 </button>
                             </div>
@@ -75,7 +75,7 @@ export default function Widget() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Home widget</p>
-                        <p className="text-white font-regular text-[16px]">Focused to display the main workflows in the app.</p>
+                        <p className="text-white font-regular text-[16px]">Shows the main tasks in the app.</p>
                     </div>
                 </div>
             </section>
@@ -95,7 +95,7 @@ export default function Widget() {
                                 </svg>
                             </div>
                             <div className="flex justify-start">
-                                <span className="text-white">Clientes</span>
+                                <span className="text-white">Customers</span>
                             </div>
                         </button>
                     </div>
@@ -122,13 +122,13 @@ export default function Widget() {
 
                             </div>
                             <div className="flex justify-center">
-                                <span className="text-black">Catálogo</span>
+                                <span className="text-black">Catalog</span>
                             </div>
                         </button>
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Secondary widget</p>
-                        <p className="text-white font-regular text-[16px]">Focused in the other workflows, order by the most access to the least accessed.</p>
+                        <p className="text-white font-regular text-[16px]">Shows other tasks, from most to least used.</p>
                     </div>
                 </div>
             </section>

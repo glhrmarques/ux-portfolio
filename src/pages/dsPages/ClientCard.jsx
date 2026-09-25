@@ -13,7 +13,7 @@ export default function ClientCard() {
 
                         <div className="flex items-center justify-between gap-4">
                             <p className="text-[28px] font-normal text-[#7B7B7B] md:text-[16px]">
-                                Limite de crédito
+                                Credit limit
                             </p>
                             <p className="rounded-[8px] bg-[#D0F4E3] px-4 py-2 leading-none md:text-[16px]">
                                 R$ 2.120,00
@@ -25,20 +25,20 @@ export default function ClientCard() {
                                 type="button"
                                 className="w-fit rounded-[16px] border-2 border-[#E1E9EF] bg-[#FFFFFF] px-8 py-4 text-[16px] font-bold text-black hover:bg-[#E1E9EF] cursor-pointer"
                                 >
-                                Criar orçamento
+                                Create quote
                             </button>
                             <button
                                 type="button"
                                 className="w-fit rounded-full px-12 py-6 text-[16px] underline font-semibold text-black cursor-pointer"
                                 >
-                                Mais detalhes
+                                More details
                             </button>
                         </div>
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
                     <p className="text-white font-semibold text-[18px]">Credit Approved</p>
-                    <p className="text-white font-regular text-[16px]">Credit limit approved that allows the shopper to purcahse.</p>
+                    <p className="text-white font-regular text-[16px]">The customer has approved credit and can place an order.</p>
                 </div>
             </div>
 
@@ -52,10 +52,10 @@ export default function ClientCard() {
 
                         <div className="flex items-center justify-between gap-4">
                             <p className="text-[28px] font-normal text-[#7B7B7B] md:text-[16px]">
-                                Limite de crédito
+                                Credit limit
                             </p>
                             <p className="rounded-[8px] bg-[#005BE2]/20 px-4 py-2 leading-none md:text-[16px]">
-                                Apenas PIX
+                                PIX only
                             </p>
                         </div>
 
@@ -64,20 +64,20 @@ export default function ClientCard() {
                                 type="button"
                                 className="w-fit rounded-[16px] border-2 border-[#E1E9EF] bg-[#FFFFFF] px-8 py-4 text-[16px] font-bold text-black hover:bg-[#E1E9EF] cursor-pointer"
                                 >
-                                Criar orçamento
+                                Create quote
                             </button>
                             <button
                                 type="button"
                                 className="w-fit rounded-full px-12 py-6 text-[16px] underline font-semibold text-black cursor-pointer"
                                 >
-                                Mais detalhes
+                                More details
                             </button>
                         </div>
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
                     <p className="text-white font-semibold text-[18px]">Credit denied</p>
-                    <p className="text-white font-regular text-[16px]">Limit denied, shopper can only pay by PIX.</p>
+                    <p className="text-white font-regular text-[16px]">Credit was not approved. The customer can only pay with PIX.</p>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@ export default function ClientCard() {
                         <div className="flex items-center justify-start gap-2 py-2">
                             <div className="h-[10px] w-[10px] rounded-full bg-[#E1E9EF]"></div>
                             <p className="leading-none md:text-[16px]">
-                                Cliente atendido por outro consultor
+                                Customer assigned to another sales rep
                             </p>
                         </div>
 
@@ -101,20 +101,20 @@ export default function ClientCard() {
                                 type="button"
                                 className="w-fit rounded-[16px] bg-[#E1E9EF] px-8 py-4 text-[16px] font-semibold text-[#777A7C]"
                                 >
-                                Criar orçamento
+                                Create quote
                             </button>
                             <button
                                 type="button"
                                 className="w-fit rounded-full px-12 py-6 text-[16px] underline font-semibold text-black cursor-pointer"
                                 >
-                                Mais detalhes
+                                More details
                             </button>
                         </div>
                     </div>
                 </div> 
                 <div className="flex flex-col gap-4">
                     <p className="text-white font-semibold text-[18px]">Customer blocked</p>
-                    <p className="text-white font-regular text-[16px]">When the shopper has already been attended to by another sales representative.</p>
+                    <p className="text-white font-regular text-[16px]">The customer is already assigned to another sales rep.</p>
                 </div>
             </div>
         </article>

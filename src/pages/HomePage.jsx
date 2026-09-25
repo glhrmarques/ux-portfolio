@@ -15,7 +15,7 @@ export default function HomePage() {
 
   const copyPhone = useCallback((e) => {
     navigator.clipboard.writeText('+5511961747490').then(() => {
-      e.target.textContent = 'Copiado!'
+      e.target.textContent = 'Copied!'
       setTimeout(() => { e.target.textContent = '+55 1196174-7490' }, 2000)
     })
   }, [])
@@ -61,7 +61,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] leading-[1.5] text-black/50 mt-[16px]">5 anos de experiência conectando Design centrado no usuário com impacto estratégico ao negócio.
+              className="text-[16px] leading-[1.5] text-black/50 mt-[16px]">5 years of experience designing for people and helping businesses grow.
             </motion.p>
 
             <motion.div
@@ -113,7 +113,7 @@ export default function HomePage() {
         {/* First image */}
         <Link to="/projects/rep-sales-app" className="cursor-label-target flex flex-col gap-3 group pb-[80px]">
           <div className="flex flex-row justify-between items-center">
-            <p className="text-[14px] text-black leading-none font-regular">Escalando a Operação e Construindo Confiança</p>
+            <p className="text-[14px] text-black leading-none font-regular">Growing the Business and Building Trust</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 
@@ -139,7 +139,7 @@ export default function HomePage() {
 
         <Link to="/projects/seller-platform" className="cursor-label-target flex flex-col gap-3 group pb-[80px]">
           <div className="flex flex-row justify-between items-center">
-            <p className="text-[14px] text-black leading-none font-regular">Rotas para Consultores</p>
+            <p className="text-[14px] text-black leading-none font-regular">Routes for Sales Reps</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" viewBox="0 0 24 24" 

@@ -39,7 +39,7 @@ export default function Header() {
                             <span className="
                             underline font-semibold text-black
                             ">
-                                Salvar rascunho e sair
+                                Save draft and exit
                             </span>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 

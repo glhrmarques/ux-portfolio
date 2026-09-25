@@ -75,19 +75,19 @@ export default function SellerPlatformPage() {
 
           <BackArrow />
           <div className="flex flex-col gap-6 sm:gap-10">
-              <h1 className="text-[40px] font-[500] leading-[1.5] max-w-[400px]">Rotas para Consultores</h1>
-              <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
+              <h1 className="text-[40px] font-[500] leading-[1.5] max-w-[400px]">Routes for Sales Reps</h1>
+              <p className="text-[20px] font-[400]">Inventa handles the full logistics process, from storage to delivery. It also has a team of sales reps in São Paulo.</p>
             </div>
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[14px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">MY ROLE</p>
                 <p className="text-[20px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[14px] font-[700] text-black/50 leading-none">TIME</p>
-                <p className="text-[20px] font-[400] text-black leading-none">1 Backend</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">TEAM</p>
+                <p className="text-[20px] font-[400] text-black leading-none">1 Backend Engineer</p>
               </div>
             </div>
         </motion.div>
@@ -111,26 +111,26 @@ export default function SellerPlatformPage() {
         </div>
       </div>
 
-      {/* IMPACTO */}
+      {/* IMPACT */}
       <section className="min-h-[80dvh] flex items-center bg-[#000000]">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
+            <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACT</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Otimizar as rotas para consultores significa mais clientes em um dia, mais cobertura da carteira atendida e menos gasto com transporte</p>
+            <p className="text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Optimizing routes for sales reps means more customer visits per day, greater coverage of their customer wallet and lower transportation costs.</p>
             <div ref={statsRef} className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
                 <p className="text-[56px] text-[#ffffff] font-[300]">+R$ {gmv}k</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Monthly sales (GMV)</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('pt-BR')}</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('en-US')}</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Orders created</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+{routes.toLocaleString('pt-BR')}</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">Rotas criadas</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{routes.toLocaleString('en-US')}</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Routes created</p>
               </div>
             </div>
           </div>
@@ -141,14 +141,14 @@ export default function SellerPlatformPage() {
       <section className="min-h-[80dvh] flex items-center bg-[#FCFCFC]">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-10 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEM</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] font-[500] leading-[1.2] text-[#000000] max-w-[1000px] mb-6">BeautyColor, nosso cliente precisava de um sistema para gerenciar rotas e acompanhar a evolução das vendas de cada Representante.</p>
+            <p className="text-[32px] font-[500] leading-[1.2] text-[#000000] max-w-[1000px] mb-6">Our client BeautyColor, needed a system to manage routes and track sales for each rep.</p>
             <div className="flex flex-col gap-6">
-              <p className="text-[20px] font-[400] text-[#000000]">Falta de visibilidade sobre a performance dos consultores</p>
+              <p className="text-[20px] font-[400] text-[#000000]">No clear view of how sales reps were performing</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">A falta de uma estratégia nas visitas dificultava a mensuração da eficiência dos consultores</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Without a clear visit plan, it was hard to measure how well sales reps used their time.</p>
             </div>
           </div>
         </div>
@@ -158,11 +158,11 @@ export default function SellerPlatformPage() {
       <section className="flex items-center bg-[#FFFFFF] py-10">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-2">O QUE ENTREGUEI</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">WHAT I DELIVERED</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Entrevistei dois stakeholders para alinhar as necessidades de visualização operacional do time</p>
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Transformei os requisitos operacionais em uma solução funcional, desenhando as interfaces e desenvolvendo frontend e backend com suporte de IA, utilizando Codex e Cursor.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">I interviewed two stakeholders to understand what the team needed to track.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">I turned these needs into a working tool. I designed the screens and built the frontend and backend with AI support from Codex and Cursor.</p>
             <video 
               src="/images/Screen Recording 2026-02-07 at 00.03.45.mp4" 
               autoPlay 

@@ -12,13 +12,13 @@ export default function ShoppingCart() {
                         flex justify-between items-center
                         max-w-[400px] w-[400px] h-[100px] bg-[#005BE2] p-6">
                             <div className=" flex flex-col gap-3">
-                                <p className="text-[14px] leading-none text-[#ffffff] font-[400]">Total do pedido</p>
+                                <p className="text-[14px] leading-none text-[#ffffff] font-[400]">Order total</p>
                                 <div className="flex flex-row gap-1 items-center">
                                     <p className="text-[22px] leading-none text-[#ffffff] font-[400]">R$ 288,00</p>
-                                    <p className="text-[14px] leading-none text-[#ffffff] font-[400]">/ 70 itens</p>
+                                    <p className="text-[14px] leading-none text-[#ffffff] font-[400]">/ 70 items</p>
                                 </div>
                             </div>
-                            <p className="text-[16px] leading-none text-[#ffffff] font-[700]">Ver itens</p>
+                            <p className="text-[16px] leading-none text-[#ffffff] font-[700]">View items</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
@@ -34,23 +34,23 @@ export default function ShoppingCart() {
                         flex justify-between items-center
                         max-w-[1000px] w-full h-[100px] bg-[#ffffff] p-6 border-t border-black/20">
                             <div className=" flex flex-col gap-3">
-                                <p className="text-[14px] leading-none text-[#000000] font-[400]">Total do pedido</p>
+                                <p className="text-[14px] leading-none text-[#000000] font-[400]">Order total</p>
                                 <div className="flex flex-row gap-1 items-center">
                                     <p className="text-[22px] leading-none text-[#000000] font-[400]">R$ 288,00</p>
-                                    <p className="text-[14px] leading-none text-[#000000] font-[400]">/ 70 itens</p>
+                                    <p className="text-[14px] leading-none text-[#000000] font-[400]">/ 70 items</p>
                                 </div>
                             </div>
                             <button
                                 type="button"
                                 className="w-fit rounded-[16px] bg-[#E1E9EF] px-4 py-3 text-[14px] font-semibold text-[#777A7C]"
                                 >
-                                Continuar
+                                Continue
                                 </button>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <p className="text-white font-semibold text-[18px]">Blocked</p>
-                        <p className="text-white font-regular text-[16px]">User can not to proceed to checkout until the minimum order valued is reached</p>
+                        <p className="text-white font-regular text-[16px]">The customer must reach the minimum order amount before checkout.</p>
                     </div>
                 </div>
             </div>

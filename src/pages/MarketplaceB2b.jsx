@@ -18,19 +18,19 @@ export default function MarketplaceB2b() {
           <div className="flex flex-col gap-4">
           <BackArrow />
             <h1 className="font-['Figtree',sans-serif] text-[32px] md:text-[40px] font-medium text-[black]">Marketplace B2B</h1>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">A plataforma é um marketplace B2B que aproxima grandes marcas de pequenos lojistas. Ao assumir a operação logística e comercial, oferece ao fornecedor mais controle sobre preços e demanda, enquanto garante aos lojistas melhores condições de compra e entregas rápidas.</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black]">This B2B marketplace connects large brands with small retailers. It handles logistics and sales, giving suppliers more control over prices and demand, and retailers better deals and fast delivery.</p>
           </div>
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">INDUSTRIA</p>
+              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">INDUSTRY</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">B2B</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Marketplace</p>
             </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">SQUAD</p>
+              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">TEAM</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">1 Product Designer</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">1 Product Manager</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">1 Backend Eng</p>
@@ -38,7 +38,7 @@ export default function MarketplaceB2b() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">ENTREGÁVEIS</p>
+              <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">DELIVERABLES</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">User Interface</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">User Experience</p>
               <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] text-[black]">Prototype</p>
@@ -51,9 +51,9 @@ export default function MarketplaceB2b() {
 
         <section className="flex flex-col gap-10 mb-[80px]">
           <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-bold text-[#8C8C8C]">DESAFIO</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">No varejo B2B, a negociação de condições comerciais faz parte natural da compra. Porém, no marketplace, os lojistas não tinham um espaço claro para acessar descontos, frete grátis ou outras vantagens antes de finalizar o pedido.</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">Isso criava atrito na jornada: muitos compradores abandonavam o carrinho ou precisavam acionar o time de CX para solicitar condições ao fornecedor. Um processo burocrático, lento e pouco escalável.</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-bold text-[#8C8C8C]">CHALLENGE</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">In B2B retail, negotiating a deal is a normal part of buying. But the marketplace had no clear place for retailers to find discounts, free shipping, or other offers before checkout.</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">Many buyers left their carts or contacted customer support to ask suppliers for better deals. The process was slow and hard to manage as demand grew.</p>
           </div>
         </section>
 
@@ -61,9 +61,9 @@ export default function MarketplaceB2b() {
 
         <section className="flex flex-col gap-10 mb-[80px]">
           <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-bold text-[#8C8C8C]">SOLUÇÃO</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">Integramos os diferencias comerciais de cada marca nos dois principais pontos de decisão da jornada: página da marca e a página de detalhes do produto.</p>
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">A proposta partiu de um comportamento central do pequeno lojista de reabastecer a gôndola comprando volumes maiores de um mesmo item. A interface passou a tornar visíveis os incentivos ligados a esse comportamento, como descontos progressivos por quantidade, frete grátis e cupons disponíveis.</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-bold text-[#8C8C8C]">SOLUTION</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">We added each brand’s offers to the two main places where buyers make decisions: the brand page and the product details page.</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[18px] text-[black] font-regular">Small retailers often restock by buying larger quantities of the same item. We made related offers easy to find, including bulk discounts, free shipping, and coupons.</p>
           </div>
         </section>
 
@@ -72,7 +72,7 @@ export default function MarketplaceB2b() {
             <div className="flex w-full h-[540px] bg-[#F5F0EC] items-center justify-center overflow-hidden pt-[190px]">
                 <img
                       src="/images/marketplace-02.png"
-                      alt="print do marketplace com os novos componentes"
+                      alt="Marketplace showing the new components"
                       className="w-[70%] object-contain"
                 />
             </div>
@@ -80,14 +80,14 @@ export default function MarketplaceB2b() {
                 <div className="flex h-[540px] min-w-0 bg-[#F5F0EC] items-center justify-center py-7">
                     <img
                           src="/images/marketplace-01.png"
-                          alt="print do marketplace com os novos componentes"
+                          alt="Marketplace showing the new components"
                           className="max-h-full max-w-full object-contain"
                     />
                 </div>
                 <div className="flex h-[540px] min-w-0 bg-[#F5F0EC] items-center justify-center p-10 ">
                     <img
                           src="/images/marketplace-03.png"
-                          alt="print do marketplace com os novos componentes"
+                          alt="Marketplace showing the new components"
                           className="max-h-full max-w-full object-contain"
                     />
                 </div>
@@ -98,11 +98,11 @@ export default function MarketplaceB2b() {
 
         <section className="flex flex-col gap-14 mb-[160px] reveal-on-scroll reveal-delay-1">
           <div className="flex flex-col gap-4">
-            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">IMPACTO</p>
+            <p className="font-['Figtree',sans-serif] text-[16px] md:text-[16px] font-medium text-[#8C8C8C]">IMPACT</p>
             
             <div className="flex flex-row">
               <div className="w-full h-[320px] bg-[#F5F0EC] flex flex-col justify-end p-[24px]">
-                <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Tickets abertos sobre condições comerciais</p>
+                <p className="font-['Figtree', sans-serif] text-[20px] md:text-[24px] font-medium text-black">Support requests about deals and payment terms</p>
                 <p className="font-['Figtree', sans-serif] text-[48px] md:text-[56px] font-regular text-black">-40%</p>
               </div>
 

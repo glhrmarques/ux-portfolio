@@ -57,7 +57,7 @@ export default function CustomCursor() {
         font-medium uppercase text-xs text-white tracking-wide"
       style={{ left: cursor.x, top: cursor.y }}
     >
-      <p>Ver projeto</p>
+      <p>View project</p>
     </div>
   )
 }

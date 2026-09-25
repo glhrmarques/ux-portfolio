@@ -97,19 +97,19 @@ export default function RepSalesAppPage() {
           >
             <BackArrow />
             <div className="flex flex-col gap-6">
-              <h1 className="text-[32px] sm:text-[40px] font-[500] leading-[1.2] max-w-[424px]">Escalando a Operação e Construindo Confiança</h1>
-              <p className="text-[20px] font-[400]">A Inventa é uma empresa full-service responsável por toda a operação logística, incluindo armazenagem e distribuição, e conta com uma equipe de consultores comerciais em São Paulo.</p>
+              <h1 className="text-[32px] sm:text-[40px] font-[500] leading-[1.2] max-w-[424px]">Growing the Business and Building Trust</h1>
+              <p className="text-[20px] font-[400]">Inventa handles the full logistics process, from storage to delivery. It also has a team of sales reps in São Paulo.</p>
             </div>
 
             <div className="flex flex-col  justify-between gap-12 lg:pb-0 pb-10">
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[14px] font-[700] text-black/50 leading-none">MEU PAPEL</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">MY ROLE</p>
                 <p className="text-[20px] font-[400] text-black leading-none">Product Designer</p>
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <p className="text-[14px] font-[700] text-black/50 leading-none">TIME</p>
-                <p className="text-[20px] font-[400] text-black leading-none">Engenheiros (Backend e Frotend)</p>
+                <p className="text-[14px] font-[700] text-black/50 leading-none">TEAM</p>
+                <p className="text-[20px] font-[400] text-black leading-none">Backend and Frontend Engineers</p>
               </div>
             </div>
           </motion.div>
@@ -133,26 +133,26 @@ export default function RepSalesAppPage() {
         </div>
       </section>
 
-      {/* IMPACTO */}
+      {/* IMPACT */}
       <section className="min-h-[80dvh] flex items-center bg-[#000000]">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-20 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACTO</p>
+            <p className="text-[16px] font-[700] text-[#ffffff] mt-1">IMPACT</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] sm:text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">Diante da baixa adoção, conduzi pesquisas e implementei uma nova arquitetura para simplificar a experiência e aumentar a confiança dos usuários na criação de pedidos no aplicativo de vendas B2B.</p>
+            <p className="text-[32px] sm:text-[32px] font-[500] leading-[1.2] text-[#ffffff] max-w-[1000px]">To address low adoption of the sales app, I researched user needs and redesigned its structure to make it easier to use and help users feel confident placing B2B orders.</p>
             <div ref={statsRef} className="flex flex-col gap-8 lg:flex-row lg:gap-[64px]">
               <div className="flex flex-col">
                 <p className="text-[56px] text-[#ffffff] font-[300]">+R$ {gmv}k</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">GMV mensal</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Monthly sales (GMV)</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+{quotes.toLocaleString('pt-BR')}</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">Orçamentos criados</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{quotes.toLocaleString('en-US')}</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Quotes created</p>
               </div>
               <div className="flex flex-col">
-                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('pt-BR')}</p>
-                <p className="text-[20px] text-[#ffffff] font-[400]">Pedidos criados</p>
+                <p className="text-[56px] text-[#ffffff] font-[300]">+{orders.toLocaleString('en-US')}</p>
+                <p className="text-[20px] text-[#ffffff] font-[400]">Orders created</p>
               </div>
             </div>
           </div>
@@ -163,18 +163,18 @@ export default function RepSalesAppPage() {
       <section className="min-h-[80dvh] flex items-center bg-[#FCFCFC]">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl py-20 sm:py-0 px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEMA</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-1">PROBLEM</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[64px] lg:w-[70%]">
-            <p className="text-[32px] leading-[1.2] font-[500] text-[#000000] max-w-[1000px] mb-6">O app de vendas da Inventa era tão ineficiente que papel e caneta se tornaram a opção mais fácil para fechar pedidos.</p>
+            <p className="text-[32px] leading-[1.2] font-[500] text-[#000000] max-w-[1000px] mb-6">Inventa’s sales app was so inefficient that pen and paper became the easiest way to place orders.</p>
             <div className="flex flex-col gap-6">
-              <p className="text-[20px] font-[400] text-[#000000]">Consultores iniciavam o fluxo de pedido, mas nunca finalizavam.</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Sales reps started orders but did not finish them.</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Alto volume de contato com CS para criarem os pedidos enviados por WhatsApp.</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Sales reps often sent orders through WhatsApp and asked CS team to create them.</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Usuários não conseguiam selecionar o boleto parcelado.</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Users could not select the boleto installment option.</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Eu era o único Product Designer para repensar a UX do MVP.</p>
+              <p className="text-[20px] font-[400] text-[#000000]">I was the only Product Designer working on the user experience of the first version.</p>
             </div>
           </div>
         </div>
@@ -187,8 +187,8 @@ export default function RepSalesAppPage() {
             <p className="text-[16px] font-[700] text-[#000000] mt-2">RESEARCH</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Entrevistei +12 consultores para entender a lógica por trás das pré visitas e visitas, além de identificar quais são as prioridades para uma negociação bem-sucedida.</p>
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Acompanhei +5 de consultores em suas rotas para entender como as negociações acontecem na prática e identificar necessidades críticas e definir prioridades para evolução.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">I interviewed 12+ sales reps to understand the reasoning behind their pre-visit planning and customer visits, and identify the priorities for a successful negotiation.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">I shadowed 5+ sales reps on their routes to understand how negotiations happen in practice, identify critical needs, and set priorities for product improvements.</p>
             <div className="flex w-full flex-col gap-3 lg:flex-row">
               <div className="h-[320px] w-full bg-[url('/images/discovery-1.png')] bg-no-repeat bg-cover bg-center lg:h-[228px] lg:flex-1"></div>
               <div className="h-[320px] w-full bg-[url('/images/discovery-2.png')] bg-no-repeat bg-cover bg-center lg:h-[228px] lg:flex-1"></div>
@@ -202,27 +202,27 @@ export default function RepSalesAppPage() {
       <section className="flex items-center bg-[#FFFFFF] pt-10">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-2">O QUE ENTREGUEI</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">WHAT I DELIVERED</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Evoluímos de uma página centralizadora para uma arquitetura escalável, capaz de acompanhar cada etapa da jornada de negociação e incorporar novas funcionalidades conforme as de cada etapa.</p>
-            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">Dessa forma, consegui disponibilizar funcionalidades de acordo com o contexto de cada etapa da jornada — como pré-visita, visita e pós-visita — e criar funis para acompanhar a conversão e identificar pontos de abandono.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">We moved from a single central page to a scalable architecture that supports each stage of the sales journey and allows new features to be added based on the needs of each stage.</p>
+            <p className="text-[24px] font-[400] text-[#000000] max-w-[1000px] mb-6">This allowed me to provide features tailored to each stage of the journey — before, during, and after customer visits — and create funnels to track conversion and identify churning points.</p>
             <div className="grid w-full grid-cols-1 items-start gap-10 lg:grid-cols-[1fr_2fr] lg:gap-12">
               <div className="flex flex-col items-center gap-2">
-                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">ANTES</p>
-                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">Todas jornadas juntas</p>
+                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">BEFORE</p>
+                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">All steps together</p>
                 <img
                   src="/images/sales-app/old-1"
-                  alt="Fluxo de pedido anterior concentrado em uma única jornada"
+                  alt="Previous order process with all steps in one flow"
                   className="h-auto w-full max-w-[202px] object-contain"
                 />
               </div>
               <div className="flex flex-col items-center gap-2">
-                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">DEPOIS</p>
-                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">Cada jornada separada</p>
+                <p className="text-center text-[16px] font-[700] leading-none text-[#000000]/50">AFTER</p>
+                <p className="text-center text-[16px] font-[400] leading-none text-[#000000]/50">Separate steps</p>
                 <img
                   src="/images/sales-app/SalesApp-screens.png"
-                  alt="Fluxos de clientes, produtos e pagamento separados"
+                  alt="Separate customer, product, and payment flows"
                   className="h-auto w-full max-w-[560px] object-contain"
                 />
               </div>
@@ -235,15 +235,15 @@ export default function RepSalesAppPage() {
       <section className="flex items-center bg-[#FFFFFF] py-20">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-2">CLIENTES</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">CUSTOMERS</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
-              <p className="text-[20px] font-[400] text-[#000000]">Lista de clientes com limite de crédito disponível</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Customer list showing available credit</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Solicitar reanálise de Crédito</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Request a credit review</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Ver histórico de pedidos do cliente</p>
+              <p className="text-[20px] font-[400] text-[#000000]">View customer order history</p>
             </div>
             <div className="flex w-full flex-col gap-3 lg:flex-row">
               <div className="h-[544px] w-full bg-[url('/images/sales-app/clientes-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
@@ -258,15 +258,15 @@ export default function RepSalesAppPage() {
       <section className="flex items-center bg-[#FFFFFF] py-20">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-2">CATÁLOGO</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">CATALOG</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
-              <p className="text-[20px] font-[400] text-[#000000]">Salvamento automático após iniciar um orçamento</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Automatic saving when starting a quote</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Carrinho para acompanhar limite de crédito, itens adicionados e valor do pedido mínimo</p>
+              <p className="text-[20px] font-[400] text-[#000000]">A cart showing available credit, added items, and the minimum order amount</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Página de detalhes do produto sobre informações de desconto</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Product details with discount information</p>
             </div>
             <div className="flex w-full flex-col gap-3 lg:flex-row">
               <div className="h-[544px] w-full bg-[url('/images/sales-app/catalogo-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
@@ -281,15 +281,15 @@ export default function RepSalesAppPage() {
       <section className="flex items-center bg-[#FFFFFF] py-20">
         <div className="flex w-full flex-col gap-8 mx-auto max-w-screen-2xl px-4 sm:px-10 lg:flex-row lg:gap-0">
           <div className="w-full reveal-on-scroll flex flex-col lg:w-[30%]">
-            <p className="text-[16px] font-[700] text-[#000000] mt-2">PAGAMENTO</p>
+            <p className="text-[16px] font-[700] text-[#000000] mt-2">PAYMENT</p>
           </div>
           <div className="w-full reveal-on-scroll flex flex-col gap-[24px] lg:w-[70%]">
             <div className="flex flex-col gap-6">
-              <p className="text-[20px] font-[400] text-[#000000]">Seleção do boleto parcelado de forma simples</p>
+              <p className="text-[20px] font-[400] text-[#000000]">An easy way to choose boleto installments</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Salvar pedido como rascunho ou compartilhar por PDF</p>
+              <p className="text-[20px] font-[400] text-[#000000]">Save an order as a draft or share it as a PDF</p>
               <hr className="text-[#000000]/30"/>
-              <p className="text-[20px] font-[400] text-[#000000]">Tela de confirmação para prevenir erros antes de confirmar o pedido</p>
+              <p className="text-[20px] font-[400] text-[#000000]">A review screen to catch mistakes before placing an order</p>
             </div>
             <div className="flex w-full flex-col gap-3 lg:flex-row">
               <div className="h-[544px] w-full bg-[url('/images/sales-app/pagamentos-1.png')] bg-center bg-cover bg-no-repeat lg:min-w-0 lg:flex-1" />
@@ -321,12 +321,12 @@ export default function RepSalesAppPage() {
         >
           Inventa<span className="m-0 text-white/50">Ds.</span>
         </p>
-        <p className="reveal-on-scroll reveal-delay-2 max-w-[800px] text-center text-[18px] font-[400] text-[#ffffff] sm:text-[24px] leading-[1.5]">Design System desenvolvido para aumentar velocidade de desenolvimento e consistência das interfaces.</p>
+        <p className="reveal-on-scroll reveal-delay-2 max-w-[800px] text-center text-[18px] font-[400] text-[#ffffff] sm:text-[24px] leading-[1.5]">A design system built to speed up development and keep interfaces consistent.</p>
         <button
         onClick={() => window.open("/projects/inv-ds", "_blank", "noopener,noreferrer")}
         className="
         reveal-on-scroll reveal-delay-2 border bg-[#ffffff] p-4 text-black font-[600] hover:bg-[#000000] hover:text-white sm:p-5 cursor-pointer
-        ">Ver Design System</button>
+        ">View Design System</button>
       </section>
       */}
     <Footer />
