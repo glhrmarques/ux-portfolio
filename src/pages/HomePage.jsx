@@ -61,7 +61,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-              className="text-[16px] leading-[1.5] text-black/50 mt-[16px]">5 years of experience designing for people and helping businesses grow.
+              className="text-[16px] leading-[1.5] text-black/50 mt-[16px]">5 years of experience connecting user-centered design with strategic business impact.
             </motion.p>
 
             <motion.div
